@@ -12,6 +12,19 @@
 
 ---
 
+- SwiftUI Lottie Animation
+- SwiftUI Animation
+- SwiftUI Podfile
+- SwiftUI HStack, VStack, ZStack
+- SwiftUI TextView
+- SwiftUI Button
+- SwiftUI Rectangle
+- SwiftUI Divider
+- SwiftUI Spacer
+- Xcode 12 Cocoapods
+
+---
+
 ## Install Pod
 
 - Run: `sudo gem install -n /usr/local/bin cocoapods`
