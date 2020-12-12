@@ -1,3 +1,3 @@
-# APP ICONS
+# iOS
 
 Copy `AppIcon.appiconset` inside `Assets.xcassets`
