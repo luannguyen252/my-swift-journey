@@ -25,7 +25,7 @@ struct SideBar: View {
                         
                         Text("Photo Mac App")
                             .fontWeight(.semibold)
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("darkBlue"))
                         
                         Spacer(minLength: 0)
                     } //: HSTACK
@@ -81,9 +81,9 @@ struct SideBar: View {
 
                     VStack(alignment: .leading, spacing: 8, content: {
                         Text("Luan Nguyen")
-                            .font(.caption)
+                            .font(.title3)
                             .fontWeight(.semibold)
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("darkBlue"))
                         
                         Text("Last Login 12/12/20")
                             .font(.caption2)

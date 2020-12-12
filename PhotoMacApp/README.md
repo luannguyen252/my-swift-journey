@@ -2,7 +2,7 @@
 
 > Build a Photo Mac application with SwiftUI.
 
-![Photo Mac App 1](./PhotoMacApp_1.png "Photo Mac App 1")
+![Photo Mac App](./PhotoMacApp.png "Photo Mac App")
 
 ---
 

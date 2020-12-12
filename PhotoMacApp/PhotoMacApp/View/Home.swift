@@ -50,7 +50,7 @@ struct Home: View {
                         Image(systemName: "plus")
                             .foregroundColor(.white)
                             .padding(10)
-                            .background(Color.black)
+                            .background(Color("darkBlue"))
                             .cornerRadius(10)
                     }) //: BUTTON
                     .buttonStyle(PlainButtonStyle())
