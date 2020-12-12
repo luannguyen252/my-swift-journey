@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B38504C22584BEAF001C62D3 /* MyFirstTVOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38504C12584BEAF001C62D3 /* MyFirstTVOSAppApp.swift */; };
+		B38504C42584BEAF001C62D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38504C32584BEAF001C62D3 /* ContentView.swift */; };
+		B38504C62584BEB3001C62D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38504C52584BEB3001C62D3 /* Assets.xcassets */; };
+		B38504C92584BEB3001C62D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38504C82584BEB3001C62D3 /* Preview Assets.xcassets */; };
+		B38504D72584E7DB001C62D3 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38504D62584E7DB001C62D3 /* GridView.swift */; };
+		B38504E02584ECC2001C62D3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38504DF2584ECC2001C62D3 /* Item.swift */; };
+		B38504E72584F639001C62D3 /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = B38504E62584F639001C62D3 /* Grid */; };
+		B38504EB2584F8F6001C62D3 /* GridStack in Frameworks */ = {isa = PBXBuildFile; productRef = B38504EA2584F8F6001C62D3 /* GridStack */; };
+		B38504F22584FB11001C62D3 /* GridStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38504F12584FB11001C62D3 /* GridStackView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B38504BE2584BEAF001C62D3 /* MyFirstTVOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstTVOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38504C12584BEAF001C62D3 /* MyFirstTVOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstTVOSAppApp.swift; sourceTree = "<group>"; };
+		B38504C32584BEAF001C62D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B38504C52584BEB3001C62D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B38504C82584BEB3001C62D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B38504CA2584BEB3001C62D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38504D62584E7DB001C62D3 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		B38504DF2584ECC2001C62D3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B38504F12584FB11001C62D3 /* GridStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStackView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B38504BB2584BEAE001C62D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38504E72584F639001C62D3 /* Grid in Frameworks */,
+				B38504EB2584F8F6001C62D3 /* GridStack in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B38504B52584BEAE001C62D3 = {
+			isa = PBXGroup;
+			children = (
+				B38504C02584BEAF001C62D3 /* MyFirstTVOSApp */,
+				B38504BF2584BEAF001C62D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B38504BF2584BEAF001C62D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B38504BE2584BEAF001C62D3 /* MyFirstTVOSApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B38504C02584BEAF001C62D3 /* MyFirstTVOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				B38504DE2584ECB5001C62D3 /* Model */,
+				B38504D12584BEEA001C62D3 /* View */,
+				B38504C12584BEAF001C62D3 /* MyFirstTVOSAppApp.swift */,
+				B38504C52584BEB3001C62D3 /* Assets.xcassets */,
+				B38504CA2584BEB3001C62D3 /* Info.plist */,
+				B38504C72584BEB3001C62D3 /* Preview Content */,
+			);
+			path = MyFirstTVOSApp;
+			sourceTree = "<group>";
+		};
+		B38504C72584BEB3001C62D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B38504C82584BEB3001C62D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B38504D12584BEEA001C62D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B38504C32584BEAF001C62D3 /* ContentView.swift */,
+				B38504D62584E7DB001C62D3 /* GridView.swift */,
+				B38504F12584FB11001C62D3 /* GridStackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B38504DE2584ECB5001C62D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B38504DF2584ECC2001C62D3 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B38504BD2584BEAE001C62D3 /* MyFirstTVOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38504CD2584BEB3001C62D3 /* Build configuration list for PBXNativeTarget "MyFirstTVOSApp" */;
+			buildPhases = (
+				B38504BA2584BEAE001C62D3 /* Sources */,
+				B38504BB2584BEAE001C62D3 /* Frameworks */,
+				B38504BC2584BEAE001C62D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFirstTVOSApp;
+			packageProductDependencies = (
+				B38504E62584F639001C62D3 /* Grid */,
+				B38504EA2584F8F6001C62D3 /* GridStack */,
+			);
+			productName = MyFirstTVOSApp;
+			productReference = B38504BE2584BEAF001C62D3 /* MyFirstTVOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B38504B62584BEAE001C62D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B38504BD2584BEAE001C62D3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = B38504B92584BEAE001C62D3 /* Build configuration list for PBXProject "MyFirstTVOSApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B38504B52584BEAE001C62D3;
+			packageReferences = (
+				B38504E52584F639001C62D3 /* XCRemoteSwiftPackageReference "swiftui-grid" */,
+				B38504E92584F8F6001C62D3 /* XCRemoteSwiftPackageReference "GridStack" */,
+			);
+			productRefGroup = B38504BF2584BEAF001C62D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B38504BD2584BEAE001C62D3 /* MyFirstTVOSApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B38504BC2584BEAE001C62D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38504C92584BEB3001C62D3 /* Preview Assets.xcassets in Resources */,
+				B38504C62584BEB3001C62D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B38504BA2584BEAE001C62D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38504E02584ECC2001C62D3 /* Item.swift in Sources */,
+				B38504C42584BEAF001C62D3 /* ContentView.swift in Sources */,
+				B38504D72584E7DB001C62D3 /* GridView.swift in Sources */,
+				B38504C22584BEAF001C62D3 /* MyFirstTVOSAppApp.swift in Sources */,
+				B38504F22584FB11001C62D3 /* GridStackView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B38504CB2584BEB3001C62D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Debug;
+		};
+		B38504CC2584BEB3001C62D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B38504CE2584BEB3001C62D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyFirstTVOSApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyFirstTVOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = design.luannguyen.MyFirstTVOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Debug;
+		};
+		B38504CF2584BEB3001C62D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyFirstTVOSApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyFirstTVOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = design.luannguyen.MyFirstTVOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B38504B92584BEAE001C62D3 /* Build configuration list for PBXProject "MyFirstTVOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38504CB2584BEB3001C62D3 /* Debug */,
+				B38504CC2584BEB3001C62D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38504CD2584BEB3001C62D3 /* Build configuration list for PBXNativeTarget "MyFirstTVOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38504CE2584BEB3001C62D3 /* Debug */,
+				B38504CF2584BEB3001C62D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B38504E52584F639001C62D3 /* XCRemoteSwiftPackageReference "swiftui-grid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-grid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		B38504E92584F8F6001C62D3 /* XCRemoteSwiftPackageReference "GridStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pietropizzi/GridStack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B38504E62584F639001C62D3 /* Grid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38504E52584F639001C62D3 /* XCRemoteSwiftPackageReference "swiftui-grid" */;
+			productName = Grid;
+		};
+		B38504EA2584F8F6001C62D3 /* GridStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38504E92584F8F6001C62D3 /* XCRemoteSwiftPackageReference "GridStack" */;
+			productName = GridStack;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B38504B62584BEAE001C62D3 /* Project object */;
+}
