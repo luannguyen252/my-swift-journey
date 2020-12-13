@@ -20,15 +20,70 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 ---
 
-## Pending Projects
+- Take a design-first approach
+- Effortlessly share model code
+- Be judicious when sharing new code
+- Learn once, apply anywhere
 
-1. [My First Widget](./MyFirstWidget/)
-
-2. [My First App Clips](./MyFirstAppClips/)
-
-3. [Fetch Data API](./FetchDataAPI/)
+## iOS
 
 ---
+
+## iPadOS
+
+---
+
+## macOS
+
+- Keyboard shortcuts
+
+---
+
+## watchOS
+
+1. Provide useful information
+2. Offer intuitive actions
+3. Deliver at the right time
+
+## tvOS
+
+**3 keypoints:**
+
+1. 10-foot experience
+
+- Large screen
+- Long viewing distance
+- Extended periods of use
+- Multiple viewers at the same time
+
+2. Focus and the Siri Remote
+
+- Entire interface must support focus
+- SwiftUI supports focus by default
+
+3. Streamlined navigation
+
+- TabbedView
+
+![tvOS - TabbedView](./_Images/tvOS_TabbedView_1.png "tvOS - TabbedView")
+
+---
+
+## Pending Projects
+
+1. [My First App Clips](./MyFirstAppClips/)
+
+2. [Fetch Data API](./FetchDataAPI/)
+
+---
+
+---
+
+## Helpful Links
+
+1. [SwiftUI On All Devices - WWDC 2019 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2019/240/)
+
+> Once you've learned the basics of SwiftUI, you've learned what you need to know to use SwiftUI anywhere. You can use the same SwiftUI skills for making an iOS app as you would for making an app on watchOS, tvOS or macOS. We'll cover the basics, and then dig into more detail about how SwiftUI can help you make changes to your app on every Apple device. Hear about design principles for each platform and learn about how much code you can share across platforms.
 
 ## License
 
