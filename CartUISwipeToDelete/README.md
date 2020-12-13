@@ -11,3 +11,17 @@
 ![Cart UI Swipe To Delete 4](./CartUISwipeToDelete_4.png "Cart UI Swipe To Delete 4")
 
 ---
+
+- SwiftUI Gestures
+- SwiftUI Drag Gesture
+- SwiftUI VStack
+- SwiftUI HStack
+- SwiftUI ZStack
+- SwiftUI LinearGradient
+- SwiftUI Animations
+- SwiftUI TextView
+- SwiftUI Button
+- SwiftUI Spacer
+- SwiftUI Shape
+- SwiftUI Image
+- Xcode 12 SwiftUI 2.0

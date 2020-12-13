@@ -6,7 +6,7 @@
 
 ---
 
-Further Reading:
+- [App Clips - App Clips - Human Interface Guidelines - Apple Developer](https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/)
 
 - [Introducing App Clips](https://developer.apple.com/app-clips/)
 
