@@ -18,7 +18,7 @@ struct detailMiddle: View {
                     .foregroundColor(Color("bg"))
             } //: HSTACK
             HStack(spacing: 8) {
-                ForEach(0..<5) {_ in
+                ForEach(0..<5) { _ in
                     Image(systemName: "star.fill")
                         .font(.body)
                         .foregroundColor(.yellow)
@@ -29,7 +29,7 @@ struct detailMiddle: View {
             Text("Number Of People In Your Group")
                 .foregroundColor(.gray)
             HStack(spacing: 6) {
-                ForEach(0..<5){i in
+                ForEach(0..<5) { i in
                     Button(action: {
                     }) {
                         Text("\(i + 1)")

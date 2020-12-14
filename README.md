@@ -77,6 +77,12 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 ---
 
+## Update User Interface
+
+1. [Courses App](./CoursesApp/)
+
+2. [Custom Curves and Shapes](./CustomCurvesAndShapes/)
+
 ---
 
 ## Helpful Links

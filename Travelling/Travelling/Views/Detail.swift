@@ -14,8 +14,8 @@ struct Detail: View {
             Image("topbg")
                 .resizable()
                 .aspectRatio(1.35, contentMode: .fill)
-                .frame(width:UIScreen.main.bounds.width,height: 500).offset(y: -200).padding(.bottom, -200)
-            GeometryReader{geo in
+                .frame(width: UIScreen.main.bounds.width, height: 500).offset(y: -200).padding(.bottom, -200)
+            GeometryReader { geo in
                 VStack(alignment: .leading) {
                    detailTop()
                    detailMiddle()
