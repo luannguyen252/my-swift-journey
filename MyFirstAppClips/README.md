@@ -2,6 +2,10 @@
 
 > Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app.
 
+- Allow users to perform specific tasks.
+- Allow users who do not have your app to still use its functionality.
+- App Clips are basically small pieces of functionality from your app that you can offer to users without requiring them to download the entire app.
+
 ![My First App Clips 1](./MyFirstAppClips_1.png "My First App Clips 1")
 
 Start 12:47: [Building App Clips Target in iOS 14](https://youtu.be/_hNNDRR2Ldg?t=767)
