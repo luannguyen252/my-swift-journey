@@ -10,6 +10,14 @@
 
 ![Tab Bar 4](./TabBar_4.png "Tab Bar 4")
 
+![Tab Bar 5](./TabBar_5.png "Tab Bar 5")
+
+![Tab Bar 6](./TabBar_6.png "Tab Bar 6")
+
+![Tab Bar 7](./TabBar_7.png "Tab Bar 7")
+
+![Tab Bar 8](./TabBar_8.png "Tab Bar 8")
+
 ---
 
 - SwiftUI TabView

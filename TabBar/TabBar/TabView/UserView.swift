@@ -15,7 +15,7 @@ struct UserView: View {
             Text("User Content Here.")
                 .font(.title3)
                 .fontWeight(.regular)
-                .foregroundColor(.black).opacity(0.6)
+                .foregroundColor(Color("text")).opacity(0.6)
                 
                 //: NAVIGATION TITLE
                 .navigationBarTitle("User")
