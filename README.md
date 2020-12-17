@@ -75,6 +75,10 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 2. [Fetch Data API](./FetchDataAPI/)
 
+3. [Detect Shake Gestures](./DetectShakeGestures/)
+
+4. [Auto Validation](./AutoValidation/)
+
 ---
 
 ## Update User Interface
