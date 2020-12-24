@@ -10,4 +10,10 @@
 
 ![Banking App 4](./BankingApp_4.png "Banking App 4")
 
+![Banking App 5](./BankingApp_5.png "Banking App 5")
+
+![Banking App 6](./BankingApp_6.png "Banking App 6")
+
+![Banking App 7](./BankingApp_7.png "Banking App 7")
+
 ---

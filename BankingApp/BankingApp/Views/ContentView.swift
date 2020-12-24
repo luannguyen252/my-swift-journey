@@ -58,6 +58,7 @@ struct ContentView: View {
                 startAnimation.toggle()
             }
         }
+        .statusBar(hidden: true)
     }
 }
 

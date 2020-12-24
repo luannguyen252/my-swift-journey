@@ -14,13 +14,21 @@ struct TopBarView: View {
             Button(action: {
                 print("Button Pressed!")
             }, label: {
-                Image(systemName: "line.horizontal.3")
-                    .padding(.all, 20)
+//                Image(systemName: "line.horizontal.3")
+//                    .font(.title2)
+//                    .padding(.all, 16)
+                Image(uiImage: #imageLiteral(resourceName: "profile"))
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 40, height: 40, alignment: .center)
+                    .cornerRadius(20)
             })
+            .padding(.horizontal, 8)
             
-            Text("HOME")
-                .kerning(2.0)
-                .bold()
+            Text("Luan Nguyen")
+                .kerning(1.0)
+                .font(.system(size: 16))
+                .fontWeight(.bold)
             
             Spacer()
             
@@ -28,7 +36,8 @@ struct TopBarView: View {
                 print("Button Pressed!")
             }, label: {
                 Image(systemName: "magnifyingglass")
-                    .padding(.all, 20)
+                    .font(.title2)
+                    .padding(.all, 16)
             })
         } //: HSTACK
         .foregroundColor(.white)

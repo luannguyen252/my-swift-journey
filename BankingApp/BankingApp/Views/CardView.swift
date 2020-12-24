@@ -14,8 +14,9 @@ struct CardView: View {
     // MARK: - BODY
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 40)
+            RoundedRectangle(cornerRadius: 24)
                 .fill(ColorConstants.cardBackground)
+                .shadow(color: ColorConstants.cardTopRight.opacity(0.5), radius: 16, x: 0, y: 8)
             
             VStack {
                 HStack {
@@ -55,7 +56,7 @@ struct CardView: View {
             
         } //: ZSTACK
         .foregroundColor(.white)
-        .padding(.leading, 20)
-        .padding(.trailing, 20)
+        .padding(.leading, 16)
+        .padding(.trailing, 16)
     }
 }

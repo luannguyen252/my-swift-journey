@@ -20,12 +20,14 @@ struct CardDetailTopBarView: View {
                 }
             }, label: {
                 Image(systemName: "multiply")
-                    .padding(.all, 20)
+                    .font(.title2)
+                    .padding(.all, 16)
             })
 
-            Text("CARD DETAILS")
-                .kerning(2.0)
-                .bold()
+            Text("Card Details")
+                .kerning(1.5)
+                .font(.system(size: 24))
+                .fontWeight(.heavy)
 
             Spacer()
 
@@ -33,13 +35,14 @@ struct CardDetailTopBarView: View {
                 print("Button Pressed!")
             }, label: {
                 Image(systemName: "slider.vertical.3")
-                    .padding(.all, 20)
+                    .font(.title2)
+                    .padding(.all, 16)
             })
         } //: HSTACK
         .foregroundColor(.white)
         .padding(.top, 64)
-        .padding(.bottom, 20)
-        .padding(.leading, 20)
-        .padding(.trailing, 20)
+        .padding(.bottom, 32)
+        .padding(.leading, 16)
+        .padding(.trailing, 16)
     }
 }

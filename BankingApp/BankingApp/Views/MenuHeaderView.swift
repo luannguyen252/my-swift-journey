@@ -16,8 +16,9 @@ struct MenuHeaderView: View {
     var body: some View {
         HStack {
             Text(title)
+                .kerning(1.5)
                 .font(.system(size: 24))
-                .bold()
+                .fontWeight(.heavy)
             
             Spacer()
             
@@ -25,11 +26,12 @@ struct MenuHeaderView: View {
                 print("Button Pressed!")
             }, label: {
                 Image(systemName: imageName)
-                    .padding(.all, 20)
+                    .font(.title2)
+                    .padding(.all, 16)
             })
         } //: HSTACK
         .foregroundColor(.white)
-        .padding(.leading, 20)
-        .padding(.trailing, 20)
+        .padding(.leading, 16)
+        .padding(.trailing, 16)
     }
 }

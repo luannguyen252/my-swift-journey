@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ColorConstants {
-    static let primary = Color.init(red: 47/255, green: 16/255, blue: 118/255)
+    // static let primary = Color.init(red: 47/255, green: 16/255, blue: 118/255)
+    static let primary = Color.init(red: 3/255, green: 2/255, blue: 0/255)
     static let secondary = Color.init(red: 142/255, green: 119/255, blue: 204/255)
     static let imageTint = Color.init(red: 182/255, green: 152/255, blue: 255/255)
     static let imageTint2 = Color.init(red: 120/255, green: 90/255, blue: 201/255)
