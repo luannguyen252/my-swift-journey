@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - HEXAGOAN ROUNDED
 struct HexagoanRounded: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
@@ -30,11 +31,11 @@ struct HexagoanRounded: Shape {
                                 x: width * $0.xFactors.2,
                                 y: height * $0.yFactors.2))
         }
-        
         return path
     }
 }
 
+// MARK: - HEXAGOAN PARAMETERS
 struct HexagoanParameters {
     struct Segment {
         let xFactors: (CGFloat, CGFloat, CGFloat)

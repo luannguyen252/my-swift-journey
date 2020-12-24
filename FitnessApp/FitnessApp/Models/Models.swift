@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Models {
+    // MARK: - DASHBOARD MENU MODEL
     struct DashboardMenu {
         let id = UUID()
         let title: String
@@ -17,6 +18,7 @@ struct Models {
         var selected: Bool = false
     }
     
+    // MARK: - BPM MODEL
     struct BPM: Identifiable{
         let id = UUID()
         let value: CGFloat
@@ -24,6 +26,7 @@ struct Models {
         var selected: Bool = false
     }
     
+    // MARK: - HEART RATE MENU MODEL
     struct HeartRateMenu: Identifiable {
         let id: Int
         let name: String

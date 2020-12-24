@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct FitnessAppApp: App {
+    // MARK: - BODY
     var body: some Scene {
         WindowGroup {
             ContentView()

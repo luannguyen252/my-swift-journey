@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct DashboardView: View {
+    // MARK: - PROPERTIES
     @EnvironmentObject var dashboardManager: DashboardManager
     
+    // MARK: - BODY
     var body: some View {
         ZStack {
             HexagoanRounded()
@@ -26,15 +28,17 @@ struct DashboardView: View {
                 Text(dashboardManager.dashboardMenus[dashboardManager.selectedMenuIndex].currentValue)
                     .font(.system(size: 50))
                     .foregroundColor(ColorConstants.textCirclePrimary)
+                
                 Text(dashboardManager.dashboardMenus[dashboardManager.selectedMenuIndex].unit)
                     .foregroundColor(ColorConstants.textCircleSecendary)
-            }
+            } //: VSTACK
             
             HStack(spacing: 30) {
                 Image(systemName: "ellipsis")
                     .rotationEffect(Angle.degrees(90))
                     .fixedSize()
                     .frame(width: 20, height: 60)
+                
                 HStack(spacing: 140) {
                     VStack(spacing: 140) {
                         Image(systemName: dashboardManager.dashboardMenus[0].name)
@@ -43,13 +47,14 @@ struct DashboardView: View {
                             .onTapGesture {
                                 dashboardManager.selectMenu(index: 0)
                             }
+                        
                         Image(systemName: dashboardManager.dashboardMenus[1].name)
                             .font(.system(size: 30))
                             .foregroundColor(dashboardManager.selectedMenuIndex == 1 ? ColorConstants.selectedColor : ColorConstants.unselectedBackground)
                             .onTapGesture {
                                 dashboardManager.selectMenu(index: 1)
                             }
-                    }
+                    } //: VSTACK
                     
                     VStack(spacing: 140) {
                         Image(systemName: dashboardManager.dashboardMenus[2].name)
@@ -64,14 +69,15 @@ struct DashboardView: View {
                             .onTapGesture {
                                 dashboardManager.selectMenu(index: 3)
                             }
-                    }
-                }
+                    } //: VSTACK
+                } //: HSTACK
+                
                 Text("Analyze")
                     .rotationEffect(Angle.degrees(-90))
                     .fixedSize()
                     .frame(width: 20, height: 60)
-            }
+            } //: HSTACK
             .foregroundColor(ColorConstants.unselectedBackground)
-        }
+        } //: ZSTACK
     }
 }
