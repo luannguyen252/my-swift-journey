@@ -11,6 +11,15 @@
 		B370A88025974DE400266DBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A87F25974DE400266DBE /* ContentView.swift */; };
 		B370A88225974DE900266DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B370A88125974DE900266DBE /* Assets.xcassets */; };
 		B370A88525974DE900266DBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B370A88425974DE900266DBE /* Preview Assets.xcassets */; };
+		B370A88F25974E7600266DBE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A88E25974E7600266DBE /* Data.swift */; };
+		B370A89425974EA200266DBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A89325974EA200266DBE /* Model.swift */; };
+		B370A89925974EC000266DBE /* ModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A89825974EC000266DBE /* ModeSelector.swift */; };
+		B370A89E25974EE000266DBE /* CircularRular.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A89D25974EE000266DBE /* CircularRular.swift */; };
+		B370A8A225974F4200266DBE /* FanSpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A8A125974F4200266DBE /* FanSpeedView.swift */; };
+		B370A8A525974F5800266DBE /* ModeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A8A425974F5800266DBE /* ModeSelectionView.swift */; };
+		B370A8A825974F7000266DBE /* PowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A8A725974F7000266DBE /* PowerView.swift */; };
+		B370A8AB25974F8200266DBE /* SmartScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A8AA25974F8200266DBE /* SmartScheduleView.swift */; };
+		B370A8AE25974F9600266DBE /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A8AD25974F9600266DBE /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		B370A88125974DE900266DBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B370A88425974DE900266DBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B370A88625974DE900266DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B370A88E25974E7600266DBE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B370A89325974EA200266DBE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B370A89825974EC000266DBE /* ModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelector.swift; sourceTree = "<group>"; };
+		B370A89D25974EE000266DBE /* CircularRular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRular.swift; sourceTree = "<group>"; };
+		B370A8A125974F4200266DBE /* FanSpeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanSpeedView.swift; sourceTree = "<group>"; };
+		B370A8A425974F5800266DBE /* ModeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelectionView.swift; sourceTree = "<group>"; };
+		B370A8A725974F7000266DBE /* PowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerView.swift; sourceTree = "<group>"; };
+		B370A8AA25974F8200266DBE /* SmartScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScheduleView.swift; sourceTree = "<group>"; };
+		B370A8AD25974F9600266DBE /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +70,11 @@
 		B370A87C25974DE400266DBE /* SwiftUIAirConditionerController */ = {
 			isa = PBXGroup;
 			children = (
+				B370A88D25974E6E00266DBE /* Data */,
+				B370A89225974E9700266DBE /* Model */,
+				B370A89C25974ED300266DBE /* View */,
+				B370A89725974EB500266DBE /* ViewModel */,
 				B370A87D25974DE400266DBE /* SwiftUIAirConditionerControllerApp.swift */,
-				B370A87F25974DE400266DBE /* ContentView.swift */,
 				B370A88125974DE900266DBE /* Assets.xcassets */,
 				B370A88625974DE900266DBE /* Info.plist */,
 				B370A88325974DE900266DBE /* Preview Content */,
@@ -67,6 +88,44 @@
 				B370A88425974DE900266DBE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B370A88D25974E6E00266DBE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B370A88E25974E7600266DBE /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B370A89225974E9700266DBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B370A89325974EA200266DBE /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B370A89725974EB500266DBE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B370A89825974EC000266DBE /* ModeSelector.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B370A89C25974ED300266DBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B370A87F25974DE400266DBE /* ContentView.swift */,
+				B370A89D25974EE000266DBE /* CircularRular.swift */,
+				B370A8A125974F4200266DBE /* FanSpeedView.swift */,
+				B370A8A425974F5800266DBE /* ModeSelectionView.swift */,
+				B370A8A725974F7000266DBE /* PowerView.swift */,
+				B370A8AA25974F8200266DBE /* SmartScheduleView.swift */,
+				B370A8AD25974F9600266DBE /* SwiftUIView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +197,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B370A8A525974F5800266DBE /* ModeSelectionView.swift in Sources */,
+				B370A89925974EC000266DBE /* ModeSelector.swift in Sources */,
+				B370A8AE25974F9600266DBE /* SwiftUIView.swift in Sources */,
+				B370A89E25974EE000266DBE /* CircularRular.swift in Sources */,
+				B370A8A825974F7000266DBE /* PowerView.swift in Sources */,
 				B370A88025974DE400266DBE /* ContentView.swift in Sources */,
+				B370A88F25974E7600266DBE /* Data.swift in Sources */,
 				B370A87E25974DE400266DBE /* SwiftUIAirConditionerControllerApp.swift in Sources */,
+				B370A89425974EA200266DBE /* Model.swift in Sources */,
+				B370A8A225974F4200266DBE /* FanSpeedView.swift in Sources */,
+				B370A8AB25974F8200266DBE /* SmartScheduleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
