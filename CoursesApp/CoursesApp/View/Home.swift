@@ -17,7 +17,7 @@ struct Home: View {
         VStack {
             HStack {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Hello, Luan Nguyen")
+                    Text("Unicorn Courses")
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(Color("text"))
@@ -36,8 +36,8 @@ struct Home: View {
                     Image("profile")
                         .resizable()
                         .renderingMode(.original)
-                        .frame(width: 56, height: 56)
-                        .cornerRadius(16)
+                        .frame(width: 40, height: 40)
+                        .cornerRadius(40)
                 }
             } //: HSTACK
             .padding()
@@ -52,7 +52,7 @@ struct Home: View {
                     } //: HSTACK
                     .padding(.vertical, 12)
                     .padding(.horizontal)
-                    .background(Color.white)
+                    .background(Color("textField"))
                     .clipShape(Capsule())
                     
                     HStack {

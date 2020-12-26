@@ -36,7 +36,7 @@ struct CourseCardView: View {
                 } //: HSTACK
                 .padding()
             } //: VSTACK
-            .background(Color.white)
+            .background(Color("bgCard"))
             .cornerRadius(16)
             
             Spacer(minLength: 0)

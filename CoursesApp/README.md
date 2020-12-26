@@ -14,4 +14,14 @@
 
 ![Courses App 6](./CoursesApp_6.png "Courses App 6")
 
+![Courses App 7](./CoursesApp_7.png "Courses App 7")
+
+![Courses App 8](./CoursesApp_8.png "Courses App 8")
+
+![Courses App 9](./CoursesApp_9.png "Courses App 9")
+
+![Courses App 10](./CoursesApp_10.png "Courses App 10")
+
+![Courses App 11](./CoursesApp_11.png "Courses App 11")
+
 ---

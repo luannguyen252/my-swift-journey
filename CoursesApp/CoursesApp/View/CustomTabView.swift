@@ -11,6 +11,7 @@ struct CustomTabView: View {
     // MARK: - PROPERTIES
     @State var selectedTab = "home"
     @State var edge = UIApplication.shared.windows.first?.safeAreaInsets
+    @Environment(\.colorScheme) var colorScheme
     
     // MARK: - BODY
     var body: some View {
@@ -40,10 +41,10 @@ struct CustomTabView: View {
             } //: HSTACK
             .padding(.horizontal, 25)
             .padding(.vertical, 5)
-            .background(Color.white)
+            .background(colorScheme == .dark ? Color.black.opacity(0.85) : Color.white.opacity(0.85))
             .clipShape(Capsule())
-            .shadow(color: Color.black.opacity(0.1), radius: 12, x: 4, y: 4)
-            .shadow(color: Color.black.opacity(0.1), radius: 12, x: -4, y: -4)
+            .shadow(color: Color("shadowTabBar").opacity(0.1), radius: 12, x: 4, y: 4)
+            .shadow(color: Color("shadowTabBar").opacity(0.1), radius: 12, x: -4, y: -4)
             .padding(.horizontal)
             // For Smaller iPhones
             // Elevations
