@@ -34,7 +34,7 @@ struct ContentView: View {
                                 .fontWeight(.light)
                         }
                         
-                        Text("Air Conditioner Controller")
+                        Text("Air Conditioning Controller")
                             .font(.title3)
                             .foregroundColor(colorScheme == .dark ? Color.black.opacity(0.5) : Color.white.opacity(0.5))
                             .fontWeight(.regular)
