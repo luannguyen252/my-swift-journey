@@ -20,6 +20,16 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 ---
 
+## Detect Dark Mode
+
+```swift
+@Environment(\.colorScheme) var colorScheme
+
+.foregroundColor(colorScheme == .dark ? Color.black : Color.white)
+```
+
+---
+
 - Take a design-first approach
 - Effortlessly share model code
 - Be judicious when sharing new code
