@@ -11,6 +11,7 @@ import Combine
 struct ContentView: View {
     @State var isCardTapped: Bool = false
     @State var scrollingDisabled = false
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack(spacing: 0) {
@@ -28,7 +29,7 @@ struct ContentView: View {
                     Text("Hello, Luan Nguyen")
                         .font(.system(size: 16))
                         .fontWeight(.regular)
-                        .foregroundColor(.black)
+                        .foregroundColor(colorScheme == .dark ? .white : .black)
                 }
             }
 
