@@ -89,6 +89,8 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 4. [Auto Validation](./AutoValidation/)
 
+5. [Simple iOS and watchOS App](./SimpleIOSAndWatchOSApp/)
+
 ---
 
 ## Update User Interface
