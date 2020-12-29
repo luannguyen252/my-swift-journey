@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - ACTIVITY RING
+    @State private var progress: CGFloat = 0.3
+    
     var body: some View {
-        MovingViewsOverTheKeyboard()
+        // MARK: - MOVING VIEWS OVER THE KEYBOARD
+        // MovingViewsOverTheKeyboard()
+        
+        // MARK: - ACTIVITY RING
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            ActivityRing(progress: $progress)
+                .fixedSize()
+        }
     }
 }
 
