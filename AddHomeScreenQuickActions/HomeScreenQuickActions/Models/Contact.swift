@@ -25,7 +25,6 @@ struct Contact: Hashable, Codable {
 }
 
 /// Adds a property containing a contact represented as a Home Screen quick action compatible userInfo dictionary.
-
 extension Contact {
 
     /// - Tag: QuickActionUserInfo

@@ -7,11 +7,8 @@
 
 import ClockKit
 
-
 class ComplicationController: NSObject, CLKComplicationDataSource {
-    
     // MARK: - Complication Configuration
-
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
             CLKComplicationDescriptor(identifier: "complication", displayName: "SimpleIOSAndWatchOSApp", supportedFamilies: CLKComplicationFamily.allCases)
@@ -27,7 +24,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
 
     // MARK: - Timeline Configuration
-    
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
         // Call the handler with the last entry date you can currently provide or nil if you can't support future timelines
         handler(nil)
@@ -39,7 +35,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
 
     // MARK: - Timeline Population
-    
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
         handler(nil)
@@ -51,7 +46,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
 
     // MARK: - Sample Templates
-    
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
         handler(nil)

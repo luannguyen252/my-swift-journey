@@ -1,0 +1,1069 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C810D02423DD6F5400FA7A89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C886735323DC723B00E20671 /* Localizable.strings */; };
+		C810D09023DD7F9D00FA7A89 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886735823DC7F7A00E20671 /* NotificationManager.swift */; };
+		C8319D5523EEE28600744181 /* DictionaryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8319D5423EEE28600744181 /* DictionaryRepresentation.swift */; };
+		C8319D5723EF966300744181 /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8319D5623EF966300744181 /* PlantCell.swift */; };
+		C874289723EE9EEB0056F3EB /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289623EE9EEB0056F3EB /* WatchConnectivityProvider.swift */; };
+		C874289A23EEA2ED0056F3EB /* PhoneConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289923EEA2ED0056F3EB /* PhoneConnectivityProvider.swift */; };
+		C874289C23EEA3370056F3EB /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289B23EEA3370056F3EB /* Log.swift */; };
+		C874289E23EEA53A0056F3EB /* WatchCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289D23EEA53A0056F3EB /* WatchCommunication.swift */; };
+		C874289F23EEA53A0056F3EB /* WatchCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874289D23EEA53A0056F3EB /* WatchCommunication.swift */; };
+		C87428A123EECCE70056F3EB /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87428A023EECCE70056F3EB /* PlantListView.swift */; };
+		C87DF65A2477BB1E00FB9A88 /* PlantListFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DF6592477BB1E00FB9A88 /* PlantListFlowCoordinator.swift */; };
+		C88672BC23DC17E100E20671 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88672BA23DC17E100E20671 /* Interface.storyboard */; };
+		C88672BE23DC17E100E20671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88672BD23DC17E100E20671 /* Assets.xcassets */; };
+		C88672C523DC17E200E20671 /* WaterMyPlantsWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C88672C423DC17E200E20671 /* WaterMyPlantsWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C88672CC23DC17E200E20671 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672CB23DC17E200E20671 /* HostingController.swift */; };
+		C88672CE23DC17E200E20671 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672CD23DC17E200E20671 /* ExtensionDelegate.swift */; };
+		C88672D023DC17E200E20671 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672CF23DC17E200E20671 /* NotificationController.swift */; };
+		C88672D223DC17E200E20671 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88672D123DC17E200E20671 /* NotificationView.swift */; };
+		C88672D423DC17E200E20671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88672D323DC17E200E20671 /* Assets.xcassets */; };
+		C88672D723DC17E200E20671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88672D623DC17E200E20671 /* Preview Assets.xcassets */; };
+		C88672DC23DC17E200E20671 /* WaterMyPlantsWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C88672B823DC17E100E20671 /* WaterMyPlantsWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C886735123DC612F00E20671 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886735023DC612F00E20671 /* Plant.swift */; };
+		C886735623DC731200E20671 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886735523DC731200E20671 /* NotificationViewModel.swift */; };
+		C8EED31423CAFB29007D855F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED31323CAFB29007D855F /* AppDelegate.swift */; };
+		C8EED31623CAFB29007D855F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED31523CAFB29007D855F /* SceneDelegate.swift */; };
+		C8EED31D23CAFB2A007D855F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EED31C23CAFB2A007D855F /* Assets.xcassets */; };
+		C8EED32023CAFB2A007D855F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EED31F23CAFB2A007D855F /* Preview Assets.xcassets */; };
+		C8EED32323CAFB2A007D855F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EED32123CAFB2A007D855F /* LaunchScreen.storyboard */; };
+		C8EED32E23CAFB2A007D855F /* WaterMyPlantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED32D23CAFB2A007D855F /* WaterMyPlantsTests.swift */; };
+		C8EED33923CAFB2A007D855F /* WaterMyPlantsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED33823CAFB2A007D855F /* WaterMyPlantsUITests.swift */; };
+		C8EED34B23CAFB89007D855F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34923CAFB89007D855F /* Log.swift */; };
+		C8EED34C23CAFB89007D855F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34A23CAFB89007D855F /* DependencyContainer.swift */; };
+		C8EED35123CAFBA1007D855F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34D23CAFBA1007D855F /* Plant.swift */; };
+		C8EED35223CAFBA1007D855F /* CoreData+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34E23CAFBA1007D855F /* CoreData+Extensions.swift */; };
+		C8EED35323CAFBA1007D855F /* Plants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8EED34F23CAFBA1007D855F /* Plants.xcdatamodeld */; };
+		C8EED35823CAFBC5007D855F /* PlantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35423CAFBC5007D855F /* PlantListViewModel.swift */; };
+		C8EED35923CAFBC5007D855F /* AddPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35523CAFBC5007D855F /* AddPlantViewModel.swift */; };
+		C8EED35A23CAFBC5007D855F /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35623CAFBC5007D855F /* PlantListView.swift */; };
+		C8EED35B23CAFBC5007D855F /* AddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EED35723CAFBC5007D855F /* AddPlantView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C88672C623DC17E200E20671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EED30823CAFB29007D855F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88672C323DC17E200E20671;
+			remoteInfo = "WaterMyPlantsWatch Extension";
+		};
+		C88672DA23DC17E200E20671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EED30823CAFB29007D855F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88672B723DC17E100E20671;
+			remoteInfo = WaterMyPlantsWatch;
+		};
+		C8EED32A23CAFB2A007D855F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EED30823CAFB29007D855F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8EED30F23CAFB29007D855F;
+			remoteInfo = WaterMyPlants;
+		};
+		C8EED33523CAFB2A007D855F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EED30823CAFB29007D855F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8EED30F23CAFB29007D855F;
+			remoteInfo = WaterMyPlants;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C88672DD23DC17E200E20671 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C88672DC23DC17E200E20671 /* WaterMyPlantsWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88672E023DC17E200E20671 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C88672C523DC17E200E20671 /* WaterMyPlantsWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C8319D5423EEE28600744181 /* DictionaryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRepresentation.swift; sourceTree = "<group>"; };
+		C8319D5623EF966300744181 /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		C874289623EE9EEB0056F3EB /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
+		C874289923EEA2ED0056F3EB /* PhoneConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnectivityProvider.swift; sourceTree = "<group>"; };
+		C874289B23EEA3370056F3EB /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		C874289D23EEA53A0056F3EB /* WatchCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCommunication.swift; sourceTree = "<group>"; };
+		C87428A023EECCE70056F3EB /* PlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
+		C87DF6592477BB1E00FB9A88 /* PlantListFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListFlowCoordinator.swift; sourceTree = "<group>"; };
+		C88672B823DC17E100E20671 /* WaterMyPlantsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMyPlantsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88672BB23DC17E100E20671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C88672BD23DC17E100E20671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C88672BF23DC17E100E20671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88672C423DC17E200E20671 /* WaterMyPlantsWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WaterMyPlantsWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88672CB23DC17E200E20671 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		C88672CD23DC17E200E20671 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C88672CF23DC17E200E20671 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C88672D123DC17E200E20671 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C88672D323DC17E200E20671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C88672D623DC17E200E20671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C88672D823DC17E200E20671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88672D923DC17E200E20671 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C886735023DC612F00E20671 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		C886735323DC723B00E20671 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C886735523DC731200E20671 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		C886735823DC7F7A00E20671 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C8EED31023CAFB29007D855F /* WaterMyPlants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMyPlants.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EED31323CAFB29007D855F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8EED31523CAFB29007D855F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C8EED31C23CAFB2A007D855F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8EED31F23CAFB2A007D855F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8EED32223CAFB2A007D855F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8EED32423CAFB2A007D855F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8EED32923CAFB2A007D855F /* WaterMyPlantsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMyPlantsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EED32D23CAFB2A007D855F /* WaterMyPlantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMyPlantsTests.swift; sourceTree = "<group>"; };
+		C8EED32F23CAFB2A007D855F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8EED33423CAFB2A007D855F /* WaterMyPlantsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMyPlantsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EED33823CAFB2A007D855F /* WaterMyPlantsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMyPlantsUITests.swift; sourceTree = "<group>"; };
+		C8EED33A23CAFB2A007D855F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8EED34923CAFB89007D855F /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		C8EED34A23CAFB89007D855F /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		C8EED34D23CAFBA1007D855F /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		C8EED34E23CAFBA1007D855F /* CoreData+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreData+Extensions.swift"; sourceTree = "<group>"; };
+		C8EED35023CAFBA1007D855F /* Plants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Plants.xcdatamodel; sourceTree = "<group>"; };
+		C8EED35423CAFBC5007D855F /* PlantListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListViewModel.swift; sourceTree = "<group>"; };
+		C8EED35523CAFBC5007D855F /* AddPlantViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewModel.swift; sourceTree = "<group>"; };
+		C8EED35623CAFBC5007D855F /* PlantListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
+		C8EED35723CAFBC5007D855F /* AddPlantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C88672C123DC17E200E20671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED30D23CAFB29007D855F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED32623CAFB2A007D855F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED33123CAFB2A007D855F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8319D5323EEE26B00744181 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C8319D5423EEE28600744181 /* DictionaryRepresentation.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C874289823EEA2B80056F3EB /* DynamicNotification */ = {
+			isa = PBXGroup;
+			children = (
+				C88672CF23DC17E200E20671 /* NotificationController.swift */,
+				C88672D123DC17E200E20671 /* NotificationView.swift */,
+				C886735523DC731200E20671 /* NotificationViewModel.swift */,
+			);
+			path = DynamicNotification;
+			sourceTree = "<group>";
+		};
+		C87428A423EECDF90056F3EB /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				C88672CB23DC17E200E20671 /* HostingController.swift */,
+				C87428A023EECCE70056F3EB /* PlantListView.swift */,
+				C8319D5623EF966300744181 /* PlantCell.swift */,
+				C886735023DC612F00E20671 /* Plant.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		C87428A523EECE170056F3EB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C88672CD23DC17E200E20671 /* ExtensionDelegate.swift */,
+				C874289B23EEA3370056F3EB /* Log.swift */,
+				C874289923EEA2ED0056F3EB /* PhoneConnectivityProvider.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C88672B923DC17E100E20671 /* WaterMyPlantsWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C88672BA23DC17E100E20671 /* Interface.storyboard */,
+				C88672BD23DC17E100E20671 /* Assets.xcassets */,
+				C88672BF23DC17E100E20671 /* Info.plist */,
+			);
+			path = WaterMyPlantsWatch;
+			sourceTree = "<group>";
+		};
+		C88672C823DC17E200E20671 /* WaterMyPlantsWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C87428A523EECE170056F3EB /* Application */,
+				C874289823EEA2B80056F3EB /* DynamicNotification */,
+				C8319D5323EEE26B00744181 /* General */,
+				C87428A423EECDF90056F3EB /* Plant */,
+				C886735223DC722100E20671 /* Resources */,
+				C88672D523DC17E200E20671 /* Preview Content */,
+			);
+			path = "WaterMyPlantsWatch Extension";
+			sourceTree = "<group>";
+		};
+		C88672D523DC17E200E20671 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C88672D623DC17E200E20671 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C886735223DC722100E20671 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C88672D323DC17E200E20671 /* Assets.xcassets */,
+				C88672D823DC17E200E20671 /* Info.plist */,
+				C886735323DC723B00E20671 /* Localizable.strings */,
+				C88672D923DC17E200E20671 /* PushNotificationPayload.apns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C886735723DC7F1800E20671 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				C886735823DC7F7A00E20671 /* NotificationManager.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		C8EED30723CAFB29007D855F = {
+			isa = PBXGroup;
+			children = (
+				C8EED31223CAFB29007D855F /* WaterMyPlants */,
+				C8EED32C23CAFB2A007D855F /* WaterMyPlantsTests */,
+				C8EED33723CAFB2A007D855F /* WaterMyPlantsUITests */,
+				C88672B923DC17E100E20671 /* WaterMyPlantsWatch */,
+				C88672C823DC17E200E20671 /* WaterMyPlantsWatch Extension */,
+				C8EED31123CAFB29007D855F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8EED31123CAFB29007D855F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED31023CAFB29007D855F /* WaterMyPlants.app */,
+				C8EED32923CAFB2A007D855F /* WaterMyPlantsTests.xctest */,
+				C8EED33423CAFB2A007D855F /* WaterMyPlantsUITests.xctest */,
+				C88672B823DC17E100E20671 /* WaterMyPlantsWatch.app */,
+				C88672C423DC17E200E20671 /* WaterMyPlantsWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8EED31223CAFB29007D855F /* WaterMyPlants */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED34623CAFB4F007D855F /* Application */,
+				C886735723DC7F1800E20671 /* Notification */,
+				C8EED34723CAFB58007D855F /* Persistence */,
+				C8EED34823CAFB6B007D855F /* Plant */,
+				C8EED31C23CAFB2A007D855F /* Assets.xcassets */,
+				C8EED32123CAFB2A007D855F /* LaunchScreen.storyboard */,
+				C8EED32423CAFB2A007D855F /* Info.plist */,
+				C8EED31E23CAFB2A007D855F /* Preview Content */,
+			);
+			path = WaterMyPlants;
+			sourceTree = "<group>";
+		};
+		C8EED31E23CAFB2A007D855F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED31F23CAFB2A007D855F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8EED32C23CAFB2A007D855F /* WaterMyPlantsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED32D23CAFB2A007D855F /* WaterMyPlantsTests.swift */,
+				C8EED32F23CAFB2A007D855F /* Info.plist */,
+			);
+			path = WaterMyPlantsTests;
+			sourceTree = "<group>";
+		};
+		C8EED33723CAFB2A007D855F /* WaterMyPlantsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED33823CAFB2A007D855F /* WaterMyPlantsUITests.swift */,
+				C8EED33A23CAFB2A007D855F /* Info.plist */,
+			);
+			path = WaterMyPlantsUITests;
+			sourceTree = "<group>";
+		};
+		C8EED34623CAFB4F007D855F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED31323CAFB29007D855F /* AppDelegate.swift */,
+				C8EED31523CAFB29007D855F /* SceneDelegate.swift */,
+				C8EED34A23CAFB89007D855F /* DependencyContainer.swift */,
+				C8EED34923CAFB89007D855F /* Log.swift */,
+				C874289623EE9EEB0056F3EB /* WatchConnectivityProvider.swift */,
+				C874289D23EEA53A0056F3EB /* WatchCommunication.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C8EED34723CAFB58007D855F /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED34E23CAFBA1007D855F /* CoreData+Extensions.swift */,
+				C8EED34D23CAFBA1007D855F /* Plant.swift */,
+				C8EED34F23CAFBA1007D855F /* Plants.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		C8EED34823CAFB6B007D855F /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				C8EED35723CAFBC5007D855F /* AddPlantView.swift */,
+				C8EED35523CAFBC5007D855F /* AddPlantViewModel.swift */,
+				C8EED35623CAFBC5007D855F /* PlantListView.swift */,
+				C8EED35423CAFBC5007D855F /* PlantListViewModel.swift */,
+				C87DF6592477BB1E00FB9A88 /* PlantListFlowCoordinator.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C88672B723DC17E100E20671 /* WaterMyPlantsWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88672E423DC17E200E20671 /* Build configuration list for PBXNativeTarget "WaterMyPlantsWatch" */;
+			buildPhases = (
+				C88672B623DC17E100E20671 /* Resources */,
+				C88672E023DC17E200E20671 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C88672C723DC17E200E20671 /* PBXTargetDependency */,
+			);
+			name = WaterMyPlantsWatch;
+			productName = WaterMyPlantsWatch;
+			productReference = C88672B823DC17E100E20671 /* WaterMyPlantsWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C88672C323DC17E200E20671 /* WaterMyPlantsWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88672E323DC17E200E20671 /* Build configuration list for PBXNativeTarget "WaterMyPlantsWatch Extension" */;
+			buildPhases = (
+				C88672C023DC17E200E20671 /* Sources */,
+				C88672C123DC17E200E20671 /* Frameworks */,
+				C88672C223DC17E200E20671 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaterMyPlantsWatch Extension";
+			productName = "WaterMyPlantsWatch Extension";
+			productReference = C88672C423DC17E200E20671 /* WaterMyPlantsWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C8EED30F23CAFB29007D855F /* WaterMyPlants */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8EED33D23CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlants" */;
+			buildPhases = (
+				C8EED30C23CAFB29007D855F /* Sources */,
+				C8EED30D23CAFB29007D855F /* Frameworks */,
+				C8EED30E23CAFB29007D855F /* Resources */,
+				C88672DD23DC17E200E20671 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C88672DB23DC17E200E20671 /* PBXTargetDependency */,
+			);
+			name = WaterMyPlants;
+			productName = WaterMyPlants;
+			productReference = C8EED31023CAFB29007D855F /* WaterMyPlants.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8EED32823CAFB2A007D855F /* WaterMyPlantsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8EED34023CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsTests" */;
+			buildPhases = (
+				C8EED32523CAFB2A007D855F /* Sources */,
+				C8EED32623CAFB2A007D855F /* Frameworks */,
+				C8EED32723CAFB2A007D855F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8EED32B23CAFB2A007D855F /* PBXTargetDependency */,
+			);
+			name = WaterMyPlantsTests;
+			productName = WaterMyPlantsTests;
+			productReference = C8EED32923CAFB2A007D855F /* WaterMyPlantsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8EED33323CAFB2A007D855F /* WaterMyPlantsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8EED34323CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsUITests" */;
+			buildPhases = (
+				C8EED33023CAFB2A007D855F /* Sources */,
+				C8EED33123CAFB2A007D855F /* Frameworks */,
+				C8EED33223CAFB2A007D855F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8EED33623CAFB2A007D855F /* PBXTargetDependency */,
+			);
+			name = WaterMyPlantsUITests;
+			productName = WaterMyPlantsUITests;
+			productReference = C8EED33423CAFB2A007D855F /* WaterMyPlantsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8EED30823CAFB29007D855F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Augmented Code";
+				TargetAttributes = {
+					C88672B723DC17E100E20671 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C88672C323DC17E200E20671 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C8EED30F23CAFB29007D855F = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C8EED32823CAFB2A007D855F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C8EED30F23CAFB29007D855F;
+					};
+					C8EED33323CAFB2A007D855F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C8EED30F23CAFB29007D855F;
+					};
+				};
+			};
+			buildConfigurationList = C8EED30B23CAFB29007D855F /* Build configuration list for PBXProject "WaterMyPlants" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8EED30723CAFB29007D855F;
+			productRefGroup = C8EED31123CAFB29007D855F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8EED30F23CAFB29007D855F /* WaterMyPlants */,
+				C8EED32823CAFB2A007D855F /* WaterMyPlantsTests */,
+				C8EED33323CAFB2A007D855F /* WaterMyPlantsUITests */,
+				C88672B723DC17E100E20671 /* WaterMyPlantsWatch */,
+				C88672C323DC17E200E20671 /* WaterMyPlantsWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C88672B623DC17E100E20671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88672BE23DC17E100E20671 /* Assets.xcassets in Resources */,
+				C88672BC23DC17E100E20671 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88672C223DC17E200E20671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88672D723DC17E200E20671 /* Preview Assets.xcassets in Resources */,
+				C810D02423DD6F5400FA7A89 /* Localizable.strings in Resources */,
+				C88672D423DC17E200E20671 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED30E23CAFB29007D855F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED32323CAFB2A007D855F /* LaunchScreen.storyboard in Resources */,
+				C8EED32023CAFB2A007D855F /* Preview Assets.xcassets in Resources */,
+				C8EED31D23CAFB2A007D855F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED32723CAFB2A007D855F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED33223CAFB2A007D855F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C88672C023DC17E200E20671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8319D5523EEE28600744181 /* DictionaryRepresentation.swift in Sources */,
+				C88672CC23DC17E200E20671 /* HostingController.swift in Sources */,
+				C886735123DC612F00E20671 /* Plant.swift in Sources */,
+				C874289F23EEA53A0056F3EB /* WatchCommunication.swift in Sources */,
+				C874289C23EEA3370056F3EB /* Log.swift in Sources */,
+				C886735623DC731200E20671 /* NotificationViewModel.swift in Sources */,
+				C8319D5723EF966300744181 /* PlantCell.swift in Sources */,
+				C88672D023DC17E200E20671 /* NotificationController.swift in Sources */,
+				C88672CE23DC17E200E20671 /* ExtensionDelegate.swift in Sources */,
+				C874289A23EEA2ED0056F3EB /* PhoneConnectivityProvider.swift in Sources */,
+				C88672D223DC17E200E20671 /* NotificationView.swift in Sources */,
+				C87428A123EECCE70056F3EB /* PlantListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED30C23CAFB29007D855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED35923CAFBC5007D855F /* AddPlantViewModel.swift in Sources */,
+				C8EED31423CAFB29007D855F /* AppDelegate.swift in Sources */,
+				C8EED35A23CAFBC5007D855F /* PlantListView.swift in Sources */,
+				C8EED35223CAFBA1007D855F /* CoreData+Extensions.swift in Sources */,
+				C8EED35823CAFBC5007D855F /* PlantListViewModel.swift in Sources */,
+				C8EED35123CAFBA1007D855F /* Plant.swift in Sources */,
+				C810D09023DD7F9D00FA7A89 /* NotificationManager.swift in Sources */,
+				C87DF65A2477BB1E00FB9A88 /* PlantListFlowCoordinator.swift in Sources */,
+				C8EED35B23CAFBC5007D855F /* AddPlantView.swift in Sources */,
+				C874289E23EEA53A0056F3EB /* WatchCommunication.swift in Sources */,
+				C8EED31623CAFB29007D855F /* SceneDelegate.swift in Sources */,
+				C8EED34B23CAFB89007D855F /* Log.swift in Sources */,
+				C874289723EE9EEB0056F3EB /* WatchConnectivityProvider.swift in Sources */,
+				C8EED35323CAFBA1007D855F /* Plants.xcdatamodeld in Sources */,
+				C8EED34C23CAFB89007D855F /* DependencyContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED32523CAFB2A007D855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED32E23CAFB2A007D855F /* WaterMyPlantsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8EED33023CAFB2A007D855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EED33923CAFB2A007D855F /* WaterMyPlantsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C88672C723DC17E200E20671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C88672C323DC17E200E20671 /* WaterMyPlantsWatch Extension */;
+			targetProxy = C88672C623DC17E200E20671 /* PBXContainerItemProxy */;
+		};
+		C88672DB23DC17E200E20671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C88672B723DC17E100E20671 /* WaterMyPlantsWatch */;
+			targetProxy = C88672DA23DC17E200E20671 /* PBXContainerItemProxy */;
+		};
+		C8EED32B23CAFB2A007D855F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8EED30F23CAFB29007D855F /* WaterMyPlants */;
+			targetProxy = C8EED32A23CAFB2A007D855F /* PBXContainerItemProxy */;
+		};
+		C8EED33623CAFB2A007D855F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8EED30F23CAFB29007D855F /* WaterMyPlants */;
+			targetProxy = C8EED33523CAFB2A007D855F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C88672BA23DC17E100E20671 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C88672BB23DC17E100E20671 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		C8EED32123CAFB2A007D855F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8EED32223CAFB2A007D855F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C88672DE23DC17E200E20671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				IBSC_MODULE = WaterMyPlantsWatch_Extension;
+				INFOPLIST_FILE = WaterMyPlantsWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		C88672DF23DC17E200E20671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				IBSC_MODULE = WaterMyPlantsWatch_Extension;
+				INFOPLIST_FILE = WaterMyPlantsWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		C88672E123DC17E200E20671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlantsWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WaterMyPlantsWatch Extension/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		C88672E223DC17E200E20671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlantsWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WaterMyPlantsWatch Extension/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		C8EED33B23CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8EED33C23CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8EED33E23CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlants/Preview Content\"";
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterMyPlants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8EED33F23CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMyPlants/Preview Content\"";
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterMyPlants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8EED34123CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterMyPlants.app/WaterMyPlants";
+			};
+			name = Debug;
+		};
+		C8EED34223CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterMyPlants.app/WaterMyPlants";
+			};
+			name = Release;
+		};
+		C8EED34423CAFB2A007D855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterMyPlants;
+			};
+			name = Debug;
+		};
+		C8EED34523CAFB2A007D855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJPC47UM3W;
+				INFOPLIST_FILE = WaterMyPlantsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmentedcode.WaterMyPlantsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterMyPlants;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C88672E323DC17E200E20671 /* Build configuration list for PBXNativeTarget "WaterMyPlantsWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88672E123DC17E200E20671 /* Debug */,
+				C88672E223DC17E200E20671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C88672E423DC17E200E20671 /* Build configuration list for PBXNativeTarget "WaterMyPlantsWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88672DE23DC17E200E20671 /* Debug */,
+				C88672DF23DC17E200E20671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EED30B23CAFB29007D855F /* Build configuration list for PBXProject "WaterMyPlants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED33B23CAFB2A007D855F /* Debug */,
+				C8EED33C23CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EED33D23CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED33E23CAFB2A007D855F /* Debug */,
+				C8EED33F23CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EED34023CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED34123CAFB2A007D855F /* Debug */,
+				C8EED34223CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8EED34323CAFB2A007D855F /* Build configuration list for PBXNativeTarget "WaterMyPlantsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EED34423CAFB2A007D855F /* Debug */,
+				C8EED34523CAFB2A007D855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8EED34F23CAFBA1007D855F /* Plants.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8EED35023CAFBA1007D855F /* Plants.xcdatamodel */,
+			);
+			currentVersion = C8EED35023CAFBA1007D855F /* Plants.xcdatamodel */;
+			path = Plants.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C8EED30823CAFB29007D855F /* Project object */;
+}

@@ -14,10 +14,10 @@ struct ContactsData {
 
     // An sample set of contact data.
     var contacts = [
-        Contact(name: "John Doe", email: "john@example.com", favorite: false),
-        Contact(name: "Jane Doe", email: "jane@example.com", favorite: false),
-        Contact(name: "Richard Roe", email: "richard@example.com", favorite: false),
-        Contact(name: "Jane Roe", email: "jane2@example.com", favorite: false)
+        Contact(name: "Nguyen Van A", email: "nguyen_van_a@example.com", favorite: false),
+        Contact(name: "Nguyen Van B", email: "nguyen_van_b@example.com", favorite: false),
+        Contact(name: "Nguyen Van C", email: "nguyen_van_c@example.com", favorite: false),
+        Contact(name: "Nguyen Van D", email: "nguyen_van_d@example.com", favorite: false)
     ]
 
     // Returns all favorite contacts from the sample data.
