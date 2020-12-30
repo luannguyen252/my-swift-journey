@@ -9,7 +9,33 @@ import SwiftUI
 
 struct ZStackWithImages: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // 1.
+        ZStack {
+            GeometryReader { gr in
+                Image("backgroundImage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: gr.size.width)
+                    .edgesIgnoringSafeArea(.all)
+            }
+            
+            VStack {
+                Text("ZStack With Images")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+            }
+        }
+        
+        // 12
+        ZStack {
+            Image("backgroundImage")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
+            
+            Circle()
+        }
     }
 }
 
