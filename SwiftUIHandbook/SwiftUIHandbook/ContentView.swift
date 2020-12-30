@@ -9,19 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     // MARK: - ACTIVITY RING
-    @State private var progress: CGFloat = 0.3
+    // @State private var progress: CGFloat = 0.3
     
     var body: some View {
         // MARK: - MOVING VIEWS OVER THE KEYBOARD
         // MovingViewsOverTheKeyboard()
         
         // MARK: - ACTIVITY RING
-        ZStack {
+        /* ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             ActivityRing(progress: $progress)
                 .fixedSize()
-        }
+        } */
+        
+        // MARK: - HAPTIC FEEDBACK VIBRATIONS
+        HapticFeedbackVibrations()
     }
 }
 
