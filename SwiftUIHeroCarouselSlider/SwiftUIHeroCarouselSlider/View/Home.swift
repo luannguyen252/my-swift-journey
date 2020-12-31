@@ -29,7 +29,7 @@ struct Home: View {
                             
                             Text("Luan Nguyen")
                                 .fontWeight(.bold)
-                                .foregroundColor(.black)
+                                .foregroundColor(Color("text"))
                                 .padding(.leading, 4)
                         }
                     })
@@ -49,7 +49,7 @@ struct Home: View {
                             
                             Spacer(minLength: 0)
                         } //: HSTACK
-                        .frame(height: 400)
+                        .frame(height: 450)
                         .contentShape(Rectangle())
                         .offset(x: model.cards[index].offset)
                         .gesture(DragGesture(minimumDistance: 0)
@@ -60,19 +60,19 @@ struct Home: View {
                                     }))
                     }
                 } //: ZSTACK
-                .padding(.top, 25)
-                .padding(.horizontal, 30)
+                .padding(.top, 24)
+                .padding(.horizontal, 32)
                 
                 Button(action: ResetViews, label: {
-                    Image(systemName: "arrow.left")
-                        .font(.system(size: 20, weight: .semibold))
+                    Image(systemName: "arrow.clockwise")
+                        .font(.system(size: 24, weight: .semibold))
                         .foregroundColor(Color("AccentColor"))
                         .padding()
                         .background(Color.white)
                         .clipShape(Circle())
-                        .shadow(color: Color.black.opacity(0.2), radius: 16, x: 4, y: 0)
+                        .shadow(color: Color.black.opacity(0.1), radius: 16, x: 4, y: 0)
                 })
-                .padding(.top, 35)
+                .padding(.top, 32)
                 
                 Spacer()
             } //: VSTACK

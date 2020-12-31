@@ -8,6 +8,4 @@
 
 ![SwiftUI Hero Carousel Slider 4](./SwiftUIHeroCarouselSlider_4.png "SwiftUI Hero Carousel Slider 4")
 
-![SwiftUI Hero Carousel Slider 5](./SwiftUIHeroCarouselSlider_5.png "SwiftUI Hero Carousel Slider 5")
-
 ---

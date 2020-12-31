@@ -19,7 +19,7 @@ struct CardView: View {
                 .foregroundColor(Color.white.opacity(0.85))
                 .frame(maxWidth: .infinity,alignment: .leading)
                 .padding()
-                .padding(.top,10)
+                .padding(.top, 16)
                 .matchedGeometryEffect(id: "Date-\(card.id)", in: animation)
             
             HStack {
@@ -45,12 +45,12 @@ struct CardView: View {
                 }
             } //: HSTACK
             .foregroundColor(Color.white.opacity(0.9))
-            .padding(30)
+            .padding(48)
         } //: VSTACK
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             card.cardColor
-                .cornerRadius(25)
+                .cornerRadius(32)
                 .matchedGeometryEffect(id: "bgColor-\(card.id)", in: animation)
         ) //: BACKGROUND
         .onTapGesture {

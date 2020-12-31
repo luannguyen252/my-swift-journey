@@ -60,16 +60,16 @@ struct DetailView: View {
                 
                 if model.showContent {
                     Button(action: CloseView, label: {
-                        Image(systemName: "arrow.down")
-                            .font(.system(size: 20, weight: .semibold))
-                            .foregroundColor(.blue)
+                        Image(systemName: "xmark")
+                            .font(.system(size: 24, weight: .semibold))
+                            .foregroundColor(model.selectedCard.cardColor)
                             .padding()
-                            .background(Color.white.opacity(0.6))
+                            .background(Color.white.opacity(0.9))
                             .clipShape(Circle())
-                            .padding(5)
-                            .background(Color.white.opacity(0.7))
+                            .padding(4)
+                            .background(Color.white.opacity(0.5))
                             .clipShape(Circle())
-                            .shadow(radius: 3)
+                            .shadow(color: Color.black.opacity(0.1), radius: 16, x: 4, y: 0)
                     })
                     .padding(.bottom)
                 }
