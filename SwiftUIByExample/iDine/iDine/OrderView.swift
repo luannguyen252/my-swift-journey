@@ -11,17 +11,12 @@ struct OrderView: View {
     // MARK: - PROPERTIES
     @EnvironmentObject var order: Order
     
-    // MARK: - DELETE ITEMS
-    func deleteItems(at offsets: IndexSet){
-        order.items.remove(atOffsets: offsets)
-    }
-    
     // MARK: - BODY
     var body: some View {
         NavigationView {
             List {
                 Section {
-                    ForEach(order.items){ item in
+                    ForEach(order.items) { item in
                         HStack {
                             Text(item.name)
                             
@@ -34,7 +29,7 @@ struct OrderView: View {
                 }
                 
                 Section {
-                    NavigationLink(destination:CheckoutView()){
+                    NavigationLink(destination: CheckoutView()) {
                         Text("Place Order")
                     }
                 }
@@ -42,8 +37,13 @@ struct OrderView: View {
             } //: LIST
             .navigationBarTitle("Order")
             .listStyle(GroupedListStyle())
-            .navigationBarItems(trailing: EditButton())
+            .navigationBarItems(trailing: EditButton().opacity(order.items.isEmpty ? 0 : 1))
         } //: NAVIGATION VIEW
+    }
+    
+    // MARK: - DELETE ITEMS
+    func deleteItems(at offsets: IndexSet) {
+        order.items.remove(atOffsets: offsets)
     }
 }
 
@@ -51,8 +51,10 @@ struct OrderView: View {
 #if DEBUG
 struct OrderView_Previews: PreviewProvider {
     static let order = Order()
+    
     static var previews: some View {
-        OrderView().environmentObject(order)
+        OrderView()
+            .environmentObject(order)
     }
 }
 #endif

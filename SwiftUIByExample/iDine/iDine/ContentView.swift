@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(menu) { section in
-                    Section(header: Text(section.name)) {
+                    Section(header: Text(section.name).font(.caption)) {
                         ForEach(section.items) { item in
                             ItemRow(item: item)
                         }

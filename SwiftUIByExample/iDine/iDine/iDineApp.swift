@@ -11,11 +11,14 @@ import SwiftUI
 struct iDineApp: App {
     // MARK: - PROPERTIES
     var order = Order()
+    var favorites = Favorites()
     
     // MARK: - BODY
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(order)
+            AppView()
+                .environmentObject(order)
+                .environmentObject(favorites)
         }
     }
 }
