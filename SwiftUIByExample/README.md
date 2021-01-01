@@ -99,3 +99,7 @@ class Order: ObservableObject {
 - [What’s the difference between @ObservedObject, @State, and @EnvironmentObject?](https://www.hackingwithswift.com/quick-start/swiftui/whats-the-difference-between-observedobject-state-and-environmentobject)
 
 ## Adding items to an order with @EnvironmentObject
+
+[How to create a tappable button](https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-tappable-button)
+
+## Adding TabView and tabItem()
