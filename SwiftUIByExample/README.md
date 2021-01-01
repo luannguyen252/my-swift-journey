@@ -100,6 +100,37 @@ class Order: ObservableObject {
 
 ## Adding items to an order with @EnvironmentObject
 
-[How to create a tappable button](https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-tappable-button)
+- [How to create a tappable button](https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-tappable-button)
 
 ## Adding TabView and tabItem()
+
+- [How to embed views in a tab bar using TabView](https://www.hackingwithswift.com/quick-start/swiftui/how-to-embed-views-in-a-tab-bar-using-tabview)
+
+## Bindings and forms
+
+- [Working with state](https://www.hackingwithswift.com/quick-start/swiftui/working-with-state)
+- [How to create a picker and read values from it](https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-picker-and-read-values-from-it)]
+
+## Two-way bindings in SwiftUI
+
+- [Working with forms](https://www.hackingwithswift.com/quick-start/swiftui/working-with-forms)
+- [Basic form design](https://www.hackingwithswift.com/quick-start/swiftui/basic-form-design)
+- [How to create a toggle switch](https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-toggle-switch)
+- [How to read text from a TextField](https://www.hackingwithswift.com/quick-start/swiftui/how-to-read-text-from-a-textfield)
+- [How to animate changes in binding values](https://www.hackingwithswift.com/quick-start/swiftui/how-to-animate-changes-in-binding-values)
+- [How to create a segmented control and read values from it](https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-segmented-control-and-read-values-from-it)
+
+## Formatting interpolated strings in SwiftUI
+
+- [How to format text inside text views](https://www.hackingwithswift.com/quick-start/swiftui/how-to-format-text-inside-text-views)
+
+## Presenting an alert
+
+- [Working with presentations](https://www.hackingwithswift.com/quick-start/swiftui/working-with-presentations)
+- [How to show an alert](https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-an-alert)
+
+## Adding swipe to delete and EditButton
+
+- [How to let users delete rows from a list](https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-delete-rows-from-a-list)
+- [How to enable editing on a list using EditButton](https://www.hackingwithswift.com/quick-start/swiftui/how-to-enable-editing-on-a-list-using-editbutton)
+- [Enabling and disabling elements in forms](https://www.hackingwithswift.com/quick-start/swiftui/enabling-and-disabling-elements-in-forms)
