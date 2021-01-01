@@ -64,7 +64,7 @@ struct OnDeleteContentView: View {
             }
         }
         .onDeleteCommand {
-            print("Delete \(selection)")
+            print("Delete \($selection)")
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
