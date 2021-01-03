@@ -30,6 +30,49 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 ---
 
+## Change Status Bar
+
+```swift
+import SwiftUI
+
+// Using this to provide .lightContent status bar style
+class HostingController<T: View>: UIHostingController<T> {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+```
+
+---
+
+## Use HEX Colors
+
+```swift
+import SwiftUI
+
+prefix operator ⋮
+prefix func ⋮(hex:UInt32) -> Color {
+    return Color(hex)
+}
+
+extension Color {
+    init(_ hex: UInt32, opacity:Double = 1.0) {
+        let red = Double((hex & 0xff0000) >> 16) / 255.0
+        let green = Double((hex & 0xff00) >> 8) / 255.0
+        let blue = Double((hex & 0xff) >> 0) / 255.0
+        self.init(.sRGB, red: red, green: green, blue: blue, opacity: opacity)
+    }
+}
+
+let hexColor:(UInt32) -> (Color) = {
+    return Color($0)
+}
+```
+
+Use: `.foregroundColor(Color(0x111111))`
+
+---
+
 - Take a design-first approach
 - Effortlessly share model code
 - Be judicious when sharing new code
