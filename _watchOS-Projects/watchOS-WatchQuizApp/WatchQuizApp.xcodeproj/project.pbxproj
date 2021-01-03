@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		253D45E522D76F0300C8A482 /* QuestionsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D45E422D76F0300C8A482 /* QuestionsListModel.swift */; };
+		2542FA3822D5E32500D55B2D /* WatchQuizApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2542FA3722D5E32500D55B2D /* WatchQuizApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2542FA3E22D5E32500D55B2D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2542FA3C22D5E32500D55B2D /* Interface.storyboard */; };
+		2542FA4022D5E32700D55B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2542FA3F22D5E32700D55B2D /* Assets.xcassets */; };
+		2542FA4722D5E32700D55B2D /* WatchQuizApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2542FA4622D5E32700D55B2D /* WatchQuizApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2542FA4C22D5E32700D55B2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA4B22D5E32700D55B2D /* ContentView.swift */; };
+		2542FA4E22D5E32700D55B2D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA4D22D5E32700D55B2D /* HostingController.swift */; };
+		2542FA5022D5E32700D55B2D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA4F22D5E32700D55B2D /* ExtensionDelegate.swift */; };
+		2542FA5222D5E32700D55B2D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA5122D5E32700D55B2D /* NotificationController.swift */; };
+		2542FA5422D5E32700D55B2D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA5322D5E32700D55B2D /* NotificationView.swift */; };
+		2542FA5622D5E32700D55B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2542FA5522D5E32700D55B2D /* Assets.xcassets */; };
+		2542FA5922D5E32700D55B2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2542FA5822D5E32700D55B2D /* Preview Assets.xcassets */; };
+		2542FA6A22D5E3FC00D55B2D /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 2542FA6922D5E3FC00D55B2D /* questions.json */; };
+		2542FA6C22D5E8F600D55B2D /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA6B22D5E8F600D55B2D /* CategoriesList.swift */; };
+		2542FA6E22D5EA1300D55B2D /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA6D22D5EA1300D55B2D /* DataSource.swift */; };
+		2542FA7022D5F4C100D55B2D /* QuestionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA6F22D5F4C100D55B2D /* QuestionsList.swift */; };
+		2542FA7222D6368200D55B2D /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2542FA7122D6368200D55B2D /* categories.json */; };
+		2542FA7422D642C200D55B2D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542FA7322D642C200D55B2D /* Common.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2542FA3922D5E32500D55B2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2542FA2D22D5E32500D55B2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2542FA3622D5E32500D55B2D;
+			remoteInfo = "WatchQuizApp WatchKit App";
+		};
+		2542FA4822D5E32700D55B2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2542FA2D22D5E32500D55B2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2542FA4522D5E32700D55B2D;
+			remoteInfo = "WatchQuizApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2542FA6122D5E32700D55B2D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2542FA4722D5E32700D55B2D /* WatchQuizApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2542FA6522D5E32700D55B2D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2542FA3822D5E32500D55B2D /* WatchQuizApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		253D45E422D76F0300C8A482 /* QuestionsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsListModel.swift; sourceTree = "<group>"; };
+		2542FA3322D5E32500D55B2D /* WatchQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2542FA3722D5E32500D55B2D /* WatchQuizApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchQuizApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2542FA3D22D5E32500D55B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2542FA3F22D5E32700D55B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2542FA4122D5E32700D55B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2542FA4622D5E32700D55B2D /* WatchQuizApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchQuizApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2542FA4B22D5E32700D55B2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2542FA4D22D5E32700D55B2D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		2542FA4F22D5E32700D55B2D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2542FA5122D5E32700D55B2D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2542FA5322D5E32700D55B2D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2542FA5522D5E32700D55B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2542FA5822D5E32700D55B2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2542FA5A22D5E32700D55B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2542FA5B22D5E32700D55B2D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2542FA6922D5E3FC00D55B2D /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		2542FA6B22D5E8F600D55B2D /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
+		2542FA6D22D5EA1300D55B2D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		2542FA6F22D5F4C100D55B2D /* QuestionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsList.swift; sourceTree = "<group>"; };
+		2542FA7122D6368200D55B2D /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
+		2542FA7322D642C200D55B2D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2542FA4322D5E32700D55B2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2542FA2C22D5E32500D55B2D = {
+			isa = PBXGroup;
+			children = (
+				2542FA3B22D5E32500D55B2D /* WatchQuizApp WatchKit App */,
+				2542FA4A22D5E32700D55B2D /* WatchQuizApp WatchKit Extension */,
+				2542FA3422D5E32500D55B2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2542FA3422D5E32500D55B2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2542FA3322D5E32500D55B2D /* WatchQuizApp.app */,
+				2542FA3722D5E32500D55B2D /* WatchQuizApp WatchKit App.app */,
+				2542FA4622D5E32700D55B2D /* WatchQuizApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2542FA3B22D5E32500D55B2D /* WatchQuizApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2542FA3C22D5E32500D55B2D /* Interface.storyboard */,
+				2542FA3F22D5E32700D55B2D /* Assets.xcassets */,
+				2542FA4122D5E32700D55B2D /* Info.plist */,
+			);
+			path = "WatchQuizApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		2542FA4A22D5E32700D55B2D /* WatchQuizApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2542FA5522D5E32700D55B2D /* Assets.xcassets */,
+				2542FA5722D5E32700D55B2D /* Preview Content */,
+				2542FA5A22D5E32700D55B2D /* Info.plist */,
+				2542FA5B22D5E32700D55B2D /* PushNotificationPayload.apns */,
+				2542FA6922D5E3FC00D55B2D /* questions.json */,
+				2542FA7122D6368200D55B2D /* categories.json */,
+				2542FA6B22D5E8F600D55B2D /* CategoriesList.swift */,
+				2542FA7322D642C200D55B2D /* Common.swift */,
+				2542FA4B22D5E32700D55B2D /* ContentView.swift */,
+				2542FA6D22D5EA1300D55B2D /* DataSource.swift */,
+				2542FA4D22D5E32700D55B2D /* HostingController.swift */,
+				2542FA4F22D5E32700D55B2D /* ExtensionDelegate.swift */,
+				2542FA5122D5E32700D55B2D /* NotificationController.swift */,
+				2542FA5322D5E32700D55B2D /* NotificationView.swift */,
+				2542FA6F22D5F4C100D55B2D /* QuestionsList.swift */,
+				253D45E422D76F0300C8A482 /* QuestionsListModel.swift */,
+			);
+			path = "WatchQuizApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2542FA5722D5E32700D55B2D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2542FA5822D5E32700D55B2D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2542FA3222D5E32500D55B2D /* WatchQuizApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2542FA6622D5E32700D55B2D /* Build configuration list for PBXNativeTarget "WatchQuizApp" */;
+			buildPhases = (
+				2542FA3122D5E32500D55B2D /* Resources */,
+				2542FA6522D5E32700D55B2D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2542FA3A22D5E32500D55B2D /* PBXTargetDependency */,
+			);
+			name = WatchQuizApp;
+			productName = WatchQuizApp;
+			productReference = 2542FA3322D5E32500D55B2D /* WatchQuizApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2542FA3622D5E32500D55B2D /* WatchQuizApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2542FA6222D5E32700D55B2D /* Build configuration list for PBXNativeTarget "WatchQuizApp WatchKit App" */;
+			buildPhases = (
+				2542FA3522D5E32500D55B2D /* Resources */,
+				2542FA6122D5E32700D55B2D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2542FA4922D5E32700D55B2D /* PBXTargetDependency */,
+			);
+			name = "WatchQuizApp WatchKit App";
+			productName = "WatchQuizApp WatchKit App";
+			productReference = 2542FA3722D5E32500D55B2D /* WatchQuizApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2542FA4522D5E32700D55B2D /* WatchQuizApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2542FA5E22D5E32700D55B2D /* Build configuration list for PBXNativeTarget "WatchQuizApp WatchKit Extension" */;
+			buildPhases = (
+				2542FA4222D5E32700D55B2D /* Sources */,
+				2542FA4322D5E32700D55B2D /* Frameworks */,
+				2542FA4422D5E32700D55B2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchQuizApp WatchKit Extension";
+			productName = "WatchQuizApp WatchKit Extension";
+			productReference = 2542FA4622D5E32700D55B2D /* WatchQuizApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2542FA2D22D5E32500D55B2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Gualtiero Frigerio";
+				TargetAttributes = {
+					2542FA3222D5E32500D55B2D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					2542FA3622D5E32500D55B2D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					2542FA4522D5E32700D55B2D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 2542FA3022D5E32500D55B2D /* Build configuration list for PBXProject "WatchQuizApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2542FA2C22D5E32500D55B2D;
+			productRefGroup = 2542FA3422D5E32500D55B2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2542FA3222D5E32500D55B2D /* WatchQuizApp */,
+				2542FA3622D5E32500D55B2D /* WatchQuizApp WatchKit App */,
+				2542FA4522D5E32700D55B2D /* WatchQuizApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2542FA3122D5E32500D55B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2542FA3522D5E32500D55B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2542FA4022D5E32700D55B2D /* Assets.xcassets in Resources */,
+				2542FA3E22D5E32500D55B2D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2542FA4422D5E32700D55B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2542FA6A22D5E3FC00D55B2D /* questions.json in Resources */,
+				2542FA7222D6368200D55B2D /* categories.json in Resources */,
+				2542FA5922D5E32700D55B2D /* Preview Assets.xcassets in Resources */,
+				2542FA5622D5E32700D55B2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2542FA4222D5E32700D55B2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2542FA6E22D5EA1300D55B2D /* DataSource.swift in Sources */,
+				2542FA4E22D5E32700D55B2D /* HostingController.swift in Sources */,
+				2542FA4C22D5E32700D55B2D /* ContentView.swift in Sources */,
+				253D45E522D76F0300C8A482 /* QuestionsListModel.swift in Sources */,
+				2542FA5222D5E32700D55B2D /* NotificationController.swift in Sources */,
+				2542FA7422D642C200D55B2D /* Common.swift in Sources */,
+				2542FA6C22D5E8F600D55B2D /* CategoriesList.swift in Sources */,
+				2542FA7022D5F4C100D55B2D /* QuestionsList.swift in Sources */,
+				2542FA5022D5E32700D55B2D /* ExtensionDelegate.swift in Sources */,
+				2542FA5422D5E32700D55B2D /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2542FA3A22D5E32500D55B2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2542FA3622D5E32500D55B2D /* WatchQuizApp WatchKit App */;
+			targetProxy = 2542FA3922D5E32500D55B2D /* PBXContainerItemProxy */;
+		};
+		2542FA4922D5E32700D55B2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2542FA4522D5E32700D55B2D /* WatchQuizApp WatchKit Extension */;
+			targetProxy = 2542FA4822D5E32700D55B2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2542FA3C22D5E32500D55B2D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2542FA3D22D5E32500D55B2D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2542FA5C22D5E32700D55B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2542FA5D22D5E32700D55B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2542FA5F22D5E32700D55B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchQuizApp WatchKit Extension\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchQuizApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gfrigerio.WatchQuizApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		2542FA6022D5E32700D55B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchQuizApp WatchKit Extension\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchQuizApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gfrigerio.WatchQuizApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		2542FA6322D5E32700D55B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchQuizApp_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchQuizApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = gfrigerio.WatchQuizApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		2542FA6422D5E32700D55B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchQuizApp_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchQuizApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = gfrigerio.WatchQuizApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		2542FA6722D5E32700D55B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gfrigerio.WatchQuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2542FA6822D5E32700D55B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gfrigerio.WatchQuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2542FA3022D5E32500D55B2D /* Build configuration list for PBXProject "WatchQuizApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2542FA5C22D5E32700D55B2D /* Debug */,
+				2542FA5D22D5E32700D55B2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2542FA5E22D5E32700D55B2D /* Build configuration list for PBXNativeTarget "WatchQuizApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2542FA5F22D5E32700D55B2D /* Debug */,
+				2542FA6022D5E32700D55B2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2542FA6222D5E32700D55B2D /* Build configuration list for PBXNativeTarget "WatchQuizApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2542FA6322D5E32700D55B2D /* Debug */,
+				2542FA6422D5E32700D55B2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2542FA6622D5E32700D55B2D /* Build configuration list for PBXNativeTarget "WatchQuizApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2542FA6722D5E32700D55B2D /* Debug */,
+				2542FA6822D5E32700D55B2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2542FA2D22D5E32500D55B2D /* Project object */;
+}
