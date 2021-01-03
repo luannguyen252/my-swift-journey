@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,13 @@
 		B3DF9EF225A1C1560096650C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF9EF125A1C1560096650C /* ContentView.swift */; };
 		B3DF9EF425A1C1590096650C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DF9EF325A1C1590096650C /* Assets.xcassets */; };
 		B3DF9EF725A1C1590096650C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DF9EF625A1C1590096650C /* Preview Assets.xcassets */; };
+		B3DF9F3C25A1E6D50096650C /* MyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF9F3B25A1E6D50096650C /* MyMap.swift */; };
+		B3DF9F4125A1E9800096650C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF9F4025A1E9800096650C /* LocationManager.swift */; };
+		B3DF9F4525A1EDA70096650C /* PhotoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF9F4425A1EDA70096650C /* PhotoGrid.swift */; };
+		B3DF9F4825A1EE330096650C /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF9F4725A1EE330096650C /* DownloadManager.swift */; };
+		B3DF9F4C25A1EE580096650C /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF9F4B25A1EE580096650C /* APIHelper.swift */; };
+		B3DF9F5025A1EE6E0096650C /* DownloadedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF9F4F25A1EE6E0096650C /* DownloadedImage.swift */; };
+		B3DF9F5425A1EFE10096650C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = B3DF9F5325A1EFE10096650C /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,12 @@
 		B3DF9EF325A1C1590096650C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3DF9EF625A1C1590096650C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3DF9EF825A1C1590096650C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DF9F3B25A1E6D50096650C /* MyMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMap.swift; sourceTree = "<group>"; };
+		B3DF9F4025A1E9800096650C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B3DF9F4425A1EDA70096650C /* PhotoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrid.swift; sourceTree = "<group>"; };
+		B3DF9F4725A1EE330096650C /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		B3DF9F4B25A1EE580096650C /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		B3DF9F4F25A1EE6E0096650C /* DownloadedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DF9F5425A1EFE10096650C /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +70,9 @@
 				B3DF9EF825A1C1590096650C /* Info.plist */,
 				B3DF9EF525A1C1590096650C /* Preview Content */,
 				B3DF9EEF25A1C1560096650C /* CityExplorerApp.swift */,
-				B3DF9EF125A1C1560096650C /* ContentView.swift */,
+				B3DF9F4A25A1EE4E0096650C /* Helper */,
+				B3DF9F3F25A1E9730096650C /* Model */,
+				B3DF9F3E25A1E9660096650C /* Views */,
 			);
 			path = CityExplorer;
 			sourceTree = "<group>";
@@ -67,6 +83,34 @@
 				B3DF9EF625A1C1590096650C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3DF9F3E25A1E9660096650C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF9EF125A1C1560096650C /* ContentView.swift */,
+				B3DF9F3B25A1E6D50096650C /* MyMap.swift */,
+				B3DF9F4425A1EDA70096650C /* PhotoGrid.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3DF9F3F25A1E9730096650C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF9F4025A1E9800096650C /* LocationManager.swift */,
+				B3DF9F4725A1EE330096650C /* DownloadManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3DF9F4A25A1EE4E0096650C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF9F4B25A1EE580096650C /* APIHelper.swift */,
+				B3DF9F4F25A1EE6E0096650C /* DownloadedImage.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +129,9 @@
 			dependencies = (
 			);
 			name = CityExplorer;
+			packageProductDependencies = (
+				B3DF9F5325A1EFE10096650C /* AlamofireImage */,
+			);
 			productName = CityExplorer;
 			productReference = B3DF9EEC25A1C1560096650C /* CityExplorer.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +159,9 @@
 				Base,
 			);
 			mainGroup = B3DF9EE325A1C1560096650C;
+			packageReferences = (
+				B3DF9F5225A1EFE10096650C /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = B3DF9EED25A1C1560096650C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DF9F4C25A1EE580096650C /* APIHelper.swift in Sources */,
+				B3DF9F4125A1E9800096650C /* LocationManager.swift in Sources */,
+				B3DF9F4825A1EE330096650C /* DownloadManager.swift in Sources */,
 				B3DF9EF225A1C1560096650C /* ContentView.swift in Sources */,
+				B3DF9F5025A1EE6E0096650C /* DownloadedImage.swift in Sources */,
+				B3DF9F4525A1EDA70096650C /* PhotoGrid.swift in Sources */,
 				B3DF9EF025A1C1560096650C /* CityExplorerApp.swift in Sources */,
+				B3DF9F3C25A1E6D50096650C /* MyMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3DF9F5225A1EFE10096650C /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3DF9F5325A1EFE10096650C /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3DF9F5225A1EFE10096650C /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3DF9EE425A1C1560096650C /* Project object */;
 }

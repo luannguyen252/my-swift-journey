@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct CityExplorerApp: App {
+    // MARK: - PROPERTIES
+    @StateObject var locationManager = LocationManager()
+    
     // MARK: - BODY
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(locationManager)
         }
     }
 }
