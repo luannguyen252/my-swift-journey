@@ -65,7 +65,7 @@ struct BreathInOut3: View {
             .scaleEffect(breath ? 2.0 : 0.2)
             .animation(Animation.easeOut(duration: 4).delay(1.0).repeatForever())
             .opacity(breath ? 1.0 : 0.5)
-            .onAppear() {self.breath.toggle()}
+            .onAppear() { self.breath.toggle() }
             
             Circle()
                 .frame(width: 30, height: 30, alignment: .center)
