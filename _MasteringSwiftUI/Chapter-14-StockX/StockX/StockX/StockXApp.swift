@@ -12,7 +12,7 @@ struct StockXApp: App {
     // MARK: - BODY
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StockList()
         }
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 class LocationManager: ObservableObject {
     // Set current location
-    @Published var currentRegion = MKCoordinateRegion(center: CLLocation(latitude: 48.864716, longitude: 2.349014).coordinate, latitudinalMeters: CLLocationDistance(10000), longitudinalMeters: CLLocationDistance(10000))
+    @Published var currentRegion = MKCoordinateRegion(center: CLLocation(latitude: 21.0278, longitude: 105.8342).coordinate, latitudinalMeters: CLLocationDistance(10000), longitudinalMeters: CLLocationDistance(10000))
     
     // User location manager and authorization status
     let userLocationManager = CLLocationManager()
