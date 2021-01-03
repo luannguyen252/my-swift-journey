@@ -9,10 +9,14 @@ import SwiftUI
 
 @main
 struct PhotoEditorApp: App {
+    // MARK: - PROPERTIES
+    @StateObject var imageController = ImageController()
+    
     // MARK: - BODY
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(imageController)
         }
     }
 }
