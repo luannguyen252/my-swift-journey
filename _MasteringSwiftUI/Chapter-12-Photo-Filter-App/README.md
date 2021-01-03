@@ -11,3 +11,7 @@
 - `Privacy – Photo Library Additions Usage Description`
 
 ![Privacy – Photo Library Additions Usage Description](./PrivacyPhotoLibraryAdditionsUsageDescription.png "Privacy – Photo Library Additions Usage Description")
+
+## Core Image Filter Reference
+
+[Core Image Filter Reference](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html)
