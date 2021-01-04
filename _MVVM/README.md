@@ -2,6 +2,7 @@
 
 [SwiftUI 2.0: MVVM - A Practical Approach](https://www.youtube.com/watch?v=LntH6moCuo0)
 [SwiftUI MVVM | A Realistic Example](https://www.youtube.com/watch?v=bdqEcpppAMc)
+[SwiftUI MVVM Programming with ObservableObject @Published @ObservedObject](https://www.youtube.com/watch?v=1IlUBHvgY8Q)
 
 - Preferred Architectural Design Paradigm for SwiftUI Projects
 - Improves Code Organization
