@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B850469122A73F3E00838F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B850469022A73F3E00838F04 /* AppDelegate.swift */; };
+		B850469322A73F3E00838F04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B850469222A73F3E00838F04 /* SceneDelegate.swift */; };
+		B850469522A73F3E00838F04 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B850469422A73F3E00838F04 /* PlayerView.swift */; };
+		B850469722A73F4100838F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B850469622A73F4100838F04 /* Assets.xcassets */; };
+		B850469A22A73F4100838F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B850469922A73F4100838F04 /* Preview Assets.xcassets */; };
+		B850469D22A73F4100838F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B850469B22A73F4100838F04 /* LaunchScreen.storyboard */; };
+		B85046A522A7414F00838F04 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046A422A7414F00838F04 /* Player.swift */; };
+		B85046A722A775B900838F04 /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046A622A775B900838F04 /* StatText.swift */; };
+		B85046A922A77B5C00838F04 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046A822A77B5C00838F04 /* PlayerRow.swift */; };
+		B85046AB22A77E3000838F04 /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046AA22A77E3000838F04 /* PlayerList.swift */; };
+		B8DD45C222BEAA1B0016B4E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD45C122BEAA1B0016B4E9 /* AppDelegate.swift */; };
+		B8DD45C422BEAA1B0016B4E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD45C322BEAA1B0016B4E9 /* ContentView.swift */; };
+		B8DD45C622BEAA1E0016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD45C522BEAA1E0016B4E9 /* Assets.xcassets */; };
+		B8DD45C922BEAA1E0016B4E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD45C822BEAA1E0016B4E9 /* Preview Assets.xcassets */; };
+		B8DD45CC22BEAA1E0016B4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DD45CA22BEAA1E0016B4E9 /* Main.storyboard */; };
+		B8DD45D222BEAADC0016B4E9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046A422A7414F00838F04 /* Player.swift */; };
+		B8DD45D322BEAAE10016B4E9 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046A822A77B5C00838F04 /* PlayerRow.swift */; };
+		B8DD45D422BEAAE70016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B850469622A73F4100838F04 /* Assets.xcassets */; };
+		B8DD45DC22BEAD310016B4E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD45DB22BEAD310016B4E9 /* AppDelegate.swift */; };
+		B8DD45DE22BEAD310016B4E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD45DD22BEAD310016B4E9 /* ContentView.swift */; };
+		B8DD45E022BEAD340016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD45DF22BEAD340016B4E9 /* Assets.xcassets */; };
+		B8DD45E322BEAD340016B4E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD45E222BEAD340016B4E9 /* Preview Assets.xcassets */; };
+		B8DD45E822BEAD6A0016B4E9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046A422A7414F00838F04 /* Player.swift */; };
+		B8DD45E922BEAD6D0016B4E9 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85046A822A77B5C00838F04 /* PlayerRow.swift */; };
+		B8DD45EA22BEAD700016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B850469622A73F4100838F04 /* Assets.xcassets */; };
+		B8DD45F122BEB2010016B4E9 /* NBA WATCH WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B8DD45F022BEB2010016B4E9 /* NBA WATCH WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8DD45F722BEB2010016B4E9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DD45F522BEB2010016B4E9 /* Interface.storyboard */; };
+		B8DD45F922BEB2030016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD45F822BEB2030016B4E9 /* Assets.xcassets */; };
+		B8DD460022BEB2030016B4E9 /* NBA WATCH WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8DD45FF22BEB2030016B4E9 /* NBA WATCH WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8DD460522BEB2030016B4E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD460422BEB2030016B4E9 /* ContentView.swift */; };
+		B8DD460722BEB2030016B4E9 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD460622BEB2030016B4E9 /* HostingController.swift */; };
+		B8DD460922BEB2030016B4E9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD460822BEB2030016B4E9 /* ExtensionDelegate.swift */; };
+		B8DD460B22BEB2040016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD460A22BEB2040016B4E9 /* Assets.xcassets */; };
+		B8DD460E22BEB2040016B4E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD460D22BEB2040016B4E9 /* Preview Assets.xcassets */; };
+		B8DD461B22BEB28C0016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B850469622A73F4100838F04 /* Assets.xcassets */; };
+		B8DD461C22BEB28C0016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B850469622A73F4100838F04 /* Assets.xcassets */; };
+		B8DD461D22BEB28C0016B4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B850469622A73F4100838F04 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8DD45F222BEB2010016B4E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B850468522A73F3E00838F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8DD45EF22BEB2010016B4E9;
+			remoteInfo = "NBA WATCH WatchKit App";
+		};
+		B8DD460122BEB2030016B4E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B850468522A73F3E00838F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8DD45FE22BEB2030016B4E9;
+			remoteInfo = "NBA WATCH WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8DD461322BEB2040016B4E9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8DD460022BEB2030016B4E9 /* NBA WATCH WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD461722BEB2040016B4E9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B8DD45F122BEB2010016B4E9 /* NBA WATCH WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B850468D22A73F3E00838F04 /* NBA Player Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Player Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B850469022A73F3E00838F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B850469222A73F3E00838F04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B850469422A73F3E00838F04 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		B850469622A73F4100838F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B850469922A73F4100838F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B850469C22A73F4100838F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B850469E22A73F4100838F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85046A422A7414F00838F04 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B85046A622A775B900838F04 /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
+		B85046A822A77B5C00838F04 /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
+		B85046AA22A77E3000838F04 /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
+		B8DD45BF22BEAA1B0016B4E9 /* NBA Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD45C122BEAA1B0016B4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8DD45C322BEAA1B0016B4E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8DD45C522BEAA1E0016B4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8DD45C822BEAA1E0016B4E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8DD45CB22BEAA1E0016B4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8DD45CD22BEAA1E0016B4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DD45CE22BEAA1E0016B4E9 /* NBA_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NBA_Mac.entitlements; sourceTree = "<group>"; };
+		B8DD45D922BEAD310016B4E9 /* NBA TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD45DB22BEAD310016B4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8DD45DD22BEAD310016B4E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8DD45DF22BEAD340016B4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8DD45E222BEAD340016B4E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8DD45E422BEAD340016B4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DD45ED22BEB2010016B4E9 /* NBA WATCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA WATCH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD45F022BEB2010016B4E9 /* NBA WATCH WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA WATCH WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD45F622BEB2010016B4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B8DD45F822BEB2030016B4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8DD45FA22BEB2030016B4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DD45FF22BEB2030016B4E9 /* NBA WATCH WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NBA WATCH WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD460422BEB2030016B4E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8DD460622BEB2030016B4E9 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		B8DD460822BEB2030016B4E9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B8DD460A22BEB2040016B4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8DD460D22BEB2040016B4E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8DD460F22BEB2040016B4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B850468A22A73F3E00838F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45BC22BEAA1B0016B4E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45D622BEAD310016B4E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45FC22BEB2030016B4E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B850468422A73F3E00838F04 = {
+			isa = PBXGroup;
+			children = (
+				B850468F22A73F3E00838F04 /* NBA Player Fun */,
+				B8DD45C022BEAA1B0016B4E9 /* NBA Mac */,
+				B8DD45DA22BEAD310016B4E9 /* NBA TV */,
+				B8DD45F422BEB2010016B4E9 /* NBA WATCH WatchKit App */,
+				B8DD460322BEB2030016B4E9 /* NBA WATCH WatchKit Extension */,
+				B850468E22A73F3E00838F04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B850468E22A73F3E00838F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B850468D22A73F3E00838F04 /* NBA Player Fun.app */,
+				B8DD45BF22BEAA1B0016B4E9 /* NBA Mac.app */,
+				B8DD45D922BEAD310016B4E9 /* NBA TV.app */,
+				B8DD45ED22BEB2010016B4E9 /* NBA WATCH.app */,
+				B8DD45F022BEB2010016B4E9 /* NBA WATCH WatchKit App.app */,
+				B8DD45FF22BEB2030016B4E9 /* NBA WATCH WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B850468F22A73F3E00838F04 /* NBA Player Fun */ = {
+			isa = PBXGroup;
+			children = (
+				B85046A422A7414F00838F04 /* Player.swift */,
+				B850469022A73F3E00838F04 /* AppDelegate.swift */,
+				B850469222A73F3E00838F04 /* SceneDelegate.swift */,
+				B850469422A73F3E00838F04 /* PlayerView.swift */,
+				B85046A622A775B900838F04 /* StatText.swift */,
+				B85046A822A77B5C00838F04 /* PlayerRow.swift */,
+				B85046AA22A77E3000838F04 /* PlayerList.swift */,
+				B850469622A73F4100838F04 /* Assets.xcassets */,
+				B850469B22A73F4100838F04 /* LaunchScreen.storyboard */,
+				B850469E22A73F4100838F04 /* Info.plist */,
+				B850469822A73F4100838F04 /* Preview Content */,
+			);
+			path = "NBA Player Fun";
+			sourceTree = "<group>";
+		};
+		B850469822A73F4100838F04 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B850469922A73F4100838F04 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8DD45C022BEAA1B0016B4E9 /* NBA Mac */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD45C122BEAA1B0016B4E9 /* AppDelegate.swift */,
+				B8DD45C322BEAA1B0016B4E9 /* ContentView.swift */,
+				B8DD45C522BEAA1E0016B4E9 /* Assets.xcassets */,
+				B8DD45CA22BEAA1E0016B4E9 /* Main.storyboard */,
+				B8DD45CD22BEAA1E0016B4E9 /* Info.plist */,
+				B8DD45CE22BEAA1E0016B4E9 /* NBA_Mac.entitlements */,
+				B8DD45C722BEAA1E0016B4E9 /* Preview Content */,
+			);
+			path = "NBA Mac";
+			sourceTree = "<group>";
+		};
+		B8DD45C722BEAA1E0016B4E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD45C822BEAA1E0016B4E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8DD45DA22BEAD310016B4E9 /* NBA TV */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD45DB22BEAD310016B4E9 /* AppDelegate.swift */,
+				B8DD45DD22BEAD310016B4E9 /* ContentView.swift */,
+				B8DD45DF22BEAD340016B4E9 /* Assets.xcassets */,
+				B8DD45E422BEAD340016B4E9 /* Info.plist */,
+				B8DD45E122BEAD340016B4E9 /* Preview Content */,
+			);
+			path = "NBA TV";
+			sourceTree = "<group>";
+		};
+		B8DD45E122BEAD340016B4E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD45E222BEAD340016B4E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8DD45F422BEB2010016B4E9 /* NBA WATCH WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD45F522BEB2010016B4E9 /* Interface.storyboard */,
+				B8DD45F822BEB2030016B4E9 /* Assets.xcassets */,
+				B8DD45FA22BEB2030016B4E9 /* Info.plist */,
+			);
+			path = "NBA WATCH WatchKit App";
+			sourceTree = "<group>";
+		};
+		B8DD460322BEB2030016B4E9 /* NBA WATCH WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD460422BEB2030016B4E9 /* ContentView.swift */,
+				B8DD460622BEB2030016B4E9 /* HostingController.swift */,
+				B8DD460822BEB2030016B4E9 /* ExtensionDelegate.swift */,
+				B8DD460A22BEB2040016B4E9 /* Assets.xcassets */,
+				B8DD460F22BEB2040016B4E9 /* Info.plist */,
+				B8DD460C22BEB2040016B4E9 /* Preview Content */,
+			);
+			path = "NBA WATCH WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B8DD460C22BEB2040016B4E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD460D22BEB2040016B4E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B850468C22A73F3E00838F04 /* NBA Player Fun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85046A122A73F4100838F04 /* Build configuration list for PBXNativeTarget "NBA Player Fun" */;
+			buildPhases = (
+				B850468922A73F3E00838F04 /* Sources */,
+				B850468A22A73F3E00838F04 /* Frameworks */,
+				B850468B22A73F3E00838F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NBA Player Fun";
+			productName = "NBA Player Fun";
+			productReference = B850468D22A73F3E00838F04 /* NBA Player Fun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8DD45BE22BEAA1B0016B4E9 /* NBA Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD45D122BEAA1E0016B4E9 /* Build configuration list for PBXNativeTarget "NBA Mac" */;
+			buildPhases = (
+				B8DD45BB22BEAA1B0016B4E9 /* Sources */,
+				B8DD45BC22BEAA1B0016B4E9 /* Frameworks */,
+				B8DD45BD22BEAA1B0016B4E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NBA Mac";
+			productName = "NBA Mac";
+			productReference = B8DD45BF22BEAA1B0016B4E9 /* NBA Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8DD45D822BEAD310016B4E9 /* NBA TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD45E522BEAD340016B4E9 /* Build configuration list for PBXNativeTarget "NBA TV" */;
+			buildPhases = (
+				B8DD45D522BEAD310016B4E9 /* Sources */,
+				B8DD45D622BEAD310016B4E9 /* Frameworks */,
+				B8DD45D722BEAD310016B4E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NBA TV";
+			productName = "NBA TV";
+			productReference = B8DD45D922BEAD310016B4E9 /* NBA TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8DD45EC22BEB2010016B4E9 /* NBA WATCH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD461822BEB2040016B4E9 /* Build configuration list for PBXNativeTarget "NBA WATCH" */;
+			buildPhases = (
+				B8DD45EB22BEB2010016B4E9 /* Resources */,
+				B8DD461722BEB2040016B4E9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8DD45F322BEB2010016B4E9 /* PBXTargetDependency */,
+			);
+			name = "NBA WATCH";
+			productName = "NBA WATCH";
+			productReference = B8DD45ED22BEB2010016B4E9 /* NBA WATCH.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B8DD45EF22BEB2010016B4E9 /* NBA WATCH WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD461422BEB2040016B4E9 /* Build configuration list for PBXNativeTarget "NBA WATCH WatchKit App" */;
+			buildPhases = (
+				B8DD45EE22BEB2010016B4E9 /* Resources */,
+				B8DD461322BEB2040016B4E9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8DD460222BEB2030016B4E9 /* PBXTargetDependency */,
+			);
+			name = "NBA WATCH WatchKit App";
+			productName = "NBA WATCH WatchKit App";
+			productReference = B8DD45F022BEB2010016B4E9 /* NBA WATCH WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B8DD45FE22BEB2030016B4E9 /* NBA WATCH WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD461022BEB2040016B4E9 /* Build configuration list for PBXNativeTarget "NBA WATCH WatchKit Extension" */;
+			buildPhases = (
+				B8DD45FB22BEB2030016B4E9 /* Sources */,
+				B8DD45FC22BEB2030016B4E9 /* Frameworks */,
+				B8DD45FD22BEB2030016B4E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NBA WATCH WatchKit Extension";
+			productName = "NBA WATCH WatchKit Extension";
+			productReference = B8DD45FF22BEB2030016B4E9 /* NBA WATCH WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B850468522A73F3E00838F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Nick Walter";
+				TargetAttributes = {
+					B850468C22A73F3E00838F04 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B8DD45BE22BEAA1B0016B4E9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B8DD45D822BEAD310016B4E9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B8DD45EC22BEB2010016B4E9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B8DD45EF22BEB2010016B4E9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B8DD45FE22BEB2030016B4E9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = B850468822A73F3E00838F04 /* Build configuration list for PBXProject "NBA Player Fun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B850468422A73F3E00838F04;
+			productRefGroup = B850468E22A73F3E00838F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B850468C22A73F3E00838F04 /* NBA Player Fun */,
+				B8DD45BE22BEAA1B0016B4E9 /* NBA Mac */,
+				B8DD45D822BEAD310016B4E9 /* NBA TV */,
+				B8DD45EC22BEB2010016B4E9 /* NBA WATCH */,
+				B8DD45EF22BEB2010016B4E9 /* NBA WATCH WatchKit App */,
+				B8DD45FE22BEB2030016B4E9 /* NBA WATCH WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B850468B22A73F3E00838F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B850469D22A73F4100838F04 /* LaunchScreen.storyboard in Resources */,
+				B850469A22A73F4100838F04 /* Preview Assets.xcassets in Resources */,
+				B850469722A73F4100838F04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45BD22BEAA1B0016B4E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD45CC22BEAA1E0016B4E9 /* Main.storyboard in Resources */,
+				B8DD45C922BEAA1E0016B4E9 /* Preview Assets.xcassets in Resources */,
+				B8DD45D422BEAAE70016B4E9 /* Assets.xcassets in Resources */,
+				B8DD45C622BEAA1E0016B4E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45D722BEAD310016B4E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD45E322BEAD340016B4E9 /* Preview Assets.xcassets in Resources */,
+				B8DD45EA22BEAD700016B4E9 /* Assets.xcassets in Resources */,
+				B8DD45E022BEAD340016B4E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45EB22BEB2010016B4E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD461B22BEB28C0016B4E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45EE22BEB2010016B4E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD45F922BEB2030016B4E9 /* Assets.xcassets in Resources */,
+				B8DD461C22BEB28C0016B4E9 /* Assets.xcassets in Resources */,
+				B8DD45F722BEB2010016B4E9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45FD22BEB2030016B4E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD460E22BEB2040016B4E9 /* Preview Assets.xcassets in Resources */,
+				B8DD461D22BEB28C0016B4E9 /* Assets.xcassets in Resources */,
+				B8DD460B22BEB2040016B4E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B850468922A73F3E00838F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85046A522A7414F00838F04 /* Player.swift in Sources */,
+				B850469122A73F3E00838F04 /* AppDelegate.swift in Sources */,
+				B850469322A73F3E00838F04 /* SceneDelegate.swift in Sources */,
+				B850469522A73F3E00838F04 /* PlayerView.swift in Sources */,
+				B85046A722A775B900838F04 /* StatText.swift in Sources */,
+				B85046AB22A77E3000838F04 /* PlayerList.swift in Sources */,
+				B85046A922A77B5C00838F04 /* PlayerRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45BB22BEAA1B0016B4E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD45C422BEAA1B0016B4E9 /* ContentView.swift in Sources */,
+				B8DD45D222BEAADC0016B4E9 /* Player.swift in Sources */,
+				B8DD45C222BEAA1B0016B4E9 /* AppDelegate.swift in Sources */,
+				B8DD45D322BEAAE10016B4E9 /* PlayerRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45D522BEAD310016B4E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD45DE22BEAD310016B4E9 /* ContentView.swift in Sources */,
+				B8DD45E822BEAD6A0016B4E9 /* Player.swift in Sources */,
+				B8DD45DC22BEAD310016B4E9 /* AppDelegate.swift in Sources */,
+				B8DD45E922BEAD6D0016B4E9 /* PlayerRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD45FB22BEB2030016B4E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD460722BEB2030016B4E9 /* HostingController.swift in Sources */,
+				B8DD460522BEB2030016B4E9 /* ContentView.swift in Sources */,
+				B8DD460922BEB2030016B4E9 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8DD45F322BEB2010016B4E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8DD45EF22BEB2010016B4E9 /* NBA WATCH WatchKit App */;
+			targetProxy = B8DD45F222BEB2010016B4E9 /* PBXContainerItemProxy */;
+		};
+		B8DD460222BEB2030016B4E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8DD45FE22BEB2030016B4E9 /* NBA WATCH WatchKit Extension */;
+			targetProxy = B8DD460122BEB2030016B4E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B850469B22A73F4100838F04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B850469C22A73F4100838F04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8DD45CA22BEAA1E0016B4E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8DD45CB22BEAA1E0016B4E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8DD45F522BEB2010016B4E9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8DD45F622BEB2010016B4E9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B850469F22A73F4100838F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B85046A022A73F4100838F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B85046A222A73F4100838F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA Player Fun\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA Player Fun/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-Player-Fun";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B85046A322A73F4100838F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA Player Fun\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA Player Fun/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-Player-Fun";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8DD45CF22BEAA1E0016B4E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NBA Mac/NBA_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA Mac\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8DD45D022BEAA1E0016B4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NBA Mac/NBA_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA Mac\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B8DD45E622BEAD340016B4E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA TV\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		B8DD45E722BEAD340016B4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA TV\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
+		B8DD461122BEB2040016B4E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA WATCH WatchKit Extension\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA WATCH WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-WATCH.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		B8DD461222BEB2040016B4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NBA WATCH WatchKit Extension\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NBA WATCH WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-WATCH.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		B8DD461522BEB2040016B4E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = NBA_WATCH_WatchKit_Extension;
+				INFOPLIST_FILE = "NBA WATCH WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-WATCH.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		B8DD461622BEB2040016B4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = NBA_WATCH_WatchKit_Extension;
+				INFOPLIST_FILE = "NBA WATCH WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-WATCH.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		B8DD461922BEB2040016B4E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-WATCH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8DD461A22BEB2040016B4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zappycode.NBA-WATCH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B850468822A73F3E00838F04 /* Build configuration list for PBXProject "NBA Player Fun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B850469F22A73F4100838F04 /* Debug */,
+				B85046A022A73F4100838F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85046A122A73F4100838F04 /* Build configuration list for PBXNativeTarget "NBA Player Fun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85046A222A73F4100838F04 /* Debug */,
+				B85046A322A73F4100838F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD45D122BEAA1E0016B4E9 /* Build configuration list for PBXNativeTarget "NBA Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD45CF22BEAA1E0016B4E9 /* Debug */,
+				B8DD45D022BEAA1E0016B4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD45E522BEAD340016B4E9 /* Build configuration list for PBXNativeTarget "NBA TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD45E622BEAD340016B4E9 /* Debug */,
+				B8DD45E722BEAD340016B4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD461022BEB2040016B4E9 /* Build configuration list for PBXNativeTarget "NBA WATCH WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD461122BEB2040016B4E9 /* Debug */,
+				B8DD461222BEB2040016B4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD461422BEB2040016B4E9 /* Build configuration list for PBXNativeTarget "NBA WATCH WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD461522BEB2040016B4E9 /* Debug */,
+				B8DD461622BEB2040016B4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD461822BEB2040016B4E9 /* Build configuration list for PBXNativeTarget "NBA WATCH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD461922BEB2040016B4E9 /* Debug */,
+				B8DD461A22BEB2040016B4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B850468522A73F3E00838F04 /* Project object */;
+}
