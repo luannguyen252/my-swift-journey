@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="RunUhooi" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="RunUhooi" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About RunUhooi" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Quit RunUhooi" keyEquivalent="q" id="4sb-4s-VLi"/>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RunUhooi" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menu" destination="iMs-Kx-PtI" id="g4P-MU-z4R"/>
+                    </connections>
+                </customObject>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <menu id="iMs-Kx-PtI">
+                    <items>
+                        <menuItem title="Select Uhooi" id="XB2-bT-QPA">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" title="Select Uhooi" id="uNT-Zo-Y3d">
+                                <items>
+                                    <menuItem title="Color" state="on" id="bD0-QO-i1t">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="selectRunner:" target="Voe-Tx-rLC" id="EqU-hH-y7U"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Monochrome" tag="1" id="mpE-E4-PWt">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="selectRunner:" target="Voe-Tx-rLC" id="V7G-SP-7Pl"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" tag="-1" id="lfy-Ur-11w"/>
+                        <menuItem title="Show CPU Usage" state="on" tag="1" id="j8P-N1-pZN">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="toggleShowCpuUsage:" target="Voe-Tx-rLC" id="4S4-Ht-FQ7"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" tag="-1" id="pVg-X6-esd"/>
+                        <menuItem title="Open Activity Monitor" tag="2" id="Rsx-id-p3C">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="openActivityMonitor:" target="Voe-Tx-rLC" id="hzw-86-Y7J"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Open The Uhooi Page" tag="3" id="0cI-rm-Rzg">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="openTheUhooiPage:" target="Voe-Tx-rLC" id="qQf-Xm-4Eo"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" tag="-1" id="74j-nS-moC"/>
+                        <menuItem title="About RunUhooi" tag="4" id="Mem-Rf-eus">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="openAbout:" target="Voe-Tx-rLC" id="Jk3-HF-3zU"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Quit RunUhooi" tag="5" id="9dU-1n-JPT">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="terminate:" target="Ady-hI-5gd" id="7ST-NN-60g"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
