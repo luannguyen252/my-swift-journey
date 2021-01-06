@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quakes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbr-NE-fA4">
+                                <rect key="frame" x="103.5" y="134" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOV-1m-6kk">
+                                <rect key="frame" x="163" y="676" width="88" height="30"/>
+                                <state key="normal" title="Get Location"/>
+                                <connections>
+                                    <action selector="getButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXv-EW-sd1"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I0B-dz-8HS">
+                                <rect key="frame" x="0.0" y="183" width="414" height="468"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Rap-k2-g5p"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nhE-EW-6Rq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I0B-dz-8HS" firstAttribute="top" secondItem="Bbr-NE-fA4" secondAttribute="bottom" constant="28" id="6SB-NV-7s3"/>
+                            <constraint firstItem="zOV-1m-6kk" firstAttribute="centerX" secondItem="Bbr-NE-fA4" secondAttribute="centerX" id="FeF-u1-3eN"/>
+                            <constraint firstItem="I0B-dz-8HS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K4i-Dd-feK"/>
+                            <constraint firstItem="I0B-dz-8HS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2Z-cU-oay"/>
+                            <constraint firstItem="zOV-1m-6kk" firstAttribute="top" secondItem="I0B-dz-8HS" secondAttribute="bottom" constant="25" id="i3o-35-Pxh"/>
+                            <constraint firstItem="Bbr-NE-fA4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i89-1u-PLX"/>
+                            <constraint firstItem="I0B-dz-8HS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="igj-3c-L1W"/>
+                            <constraint firstItem="I0B-dz-8HS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.522321" id="qtq-id-Nnn"/>
+                            <constraint firstItem="Bbr-NE-fA4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="udQ-wD-Mph"/>
+                            <constraint firstItem="Bbr-NE-fA4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="vI3-3Q-i02"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="getButton" destination="zOV-1m-6kk" id="3yu-U8-92U"/>
+                        <outlet property="headerLabel" destination="Bbr-NE-fA4" id="0oy-fL-U5U"/>
+                        <outlet property="quakesTableView" destination="I0B-dz-8HS" id="LFd-J8-M7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
