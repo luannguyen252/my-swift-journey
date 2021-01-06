@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Workout List Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="WorkoutListInterfaceController" customModule="FitnessExample_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Workouts" id="kmF-Yb-eAv"/>
+                        <table alignment="left" id="bMW-EW-rOC">
+                            <items>
+                                <tableRow identifier="WorkoutListRow" id="crq-P6-Oet" customClass="WorkoutListRow" customModule="FitnessExample_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="WqJ-Vj-0YT">
+                                        <items>
+                                            <label alignment="left" text="Label" id="2nQ-C1-V9Z"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="eFd-Oz-XOa" kind="push" id="stM-0H-N1K"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="workoutListLabel" destination="2nQ-C1-V9Z" id="HHF-x7-kEX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="workoutTable" destination="bMW-EW-rOC" id="OdO-2N-oRx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Workout Interface Controller-->
+        <scene sceneID="XUi-tB-Abb">
+            <objects>
+                <controller id="eFd-Oz-XOa" customClass="WorkoutInterfaceController" customModule="FitnessExample_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Label" id="PVY-rP-qfx"/>
+                        <imageView alignment="left" id="Btc-o5-pCN"/>
+                        <label width="136" alignment="left" text="Label" id="pN7-wA-cIp"/>
+                        <group width="1" alignment="left" id="wHx-WL-eRC">
+                            <items>
+                                <label height="20" alignment="left" text="BPM" id="vhX-Ph-cr1"/>
+                                <label alignment="left" text="rate label" id="Zz1-6A-hTT">
+                                    <color key="textColor" red="0.81065538189999997" green="0.15603298609999999" blue="0.1886121962" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Start" id="sh3-vP-5Ai">
+                            <connections>
+                                <action selector="workoutButtonTap" destination="eFd-Oz-XOa" id="Wvu-T4-V4l"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="pN7-wA-cIp" id="jGN-Zn-pT3"/>
+                        <outlet property="heartBeatLabel" destination="Zz1-6A-hTT" id="0Ze-xv-Byf"/>
+                        <outlet property="titleLabel" destination="PVY-rP-qfx" id="A8F-Rr-dnG"/>
+                        <outlet property="workoutButton" destination="sh3-vP-5Ai" id="j2T-8m-C63"/>
+                        <outlet property="workoutImage" destination="Btc-o5-pCN" id="9A5-4O-SAh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="531" y="344"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="FitnessExample_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="FitnessExample_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="643"/>
+        </scene>
+    </scenes>
+</document>
