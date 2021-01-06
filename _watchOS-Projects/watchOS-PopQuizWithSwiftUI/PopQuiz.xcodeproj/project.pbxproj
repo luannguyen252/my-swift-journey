@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		822DAB0F2297926B00E0ECEE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DAB0D2297910F00E0ECEE /* NotificationView.swift */; };
+		8268ACAB227DF42F00A641EF /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268ACAA227DF42F00A641EF /* CardList.swift */; };
+		8268ACAE227DF4D100A641EF /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268ACAD227DF4D100A641EF /* FlipView.swift */; };
+		8268ACB0227DF58300A641EF /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268ACAF227DF58300A641EF /* CardStack.swift */; };
+		8268ACB2227DF9CF00A641EF /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268ACB1227DF9CF00A641EF /* FlashCard.swift */; };
+		A7007017227A7ADF00FBE971 /* PopQuiz WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A7007016227A7ADF00FBE971 /* PopQuiz WatchKit App.app */; };
+		A700701D227A7ADF00FBE971 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A700701B227A7ADF00FBE971 /* Interface.storyboard */; };
+		A700701F227A7AE000FBE971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A700701E227A7AE000FBE971 /* Assets.xcassets */; };
+		A7007026227A7AE000FBE971 /* PopQuiz WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7007025227A7AE000FBE971 /* PopQuiz WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A700702B227A7AE000FBE971 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700702A227A7AE000FBE971 /* InterfaceController.swift */; };
+		A700702D227A7AE000FBE971 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700702C227A7AE000FBE971 /* ExtensionDelegate.swift */; };
+		A700702F227A7AE000FBE971 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700702E227A7AE000FBE971 /* NotificationController.swift */; };
+		A7007033227A7AE100FBE971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7007032227A7AE100FBE971 /* Assets.xcassets */; };
+		A7CB68A82280EBA000FAE7B8 /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB68A72280EBA000FAE7B8 /* TopicList.swift */; };
+		A7E8EF2F2281573A00A4F06F /* FlashCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8EF2E2281573A00A4F06F /* FlashCardModel.swift */; };
+		A7EF1ED52297B1520025D811 /* CardSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF1ED42297B1520025D811 /* CardSide.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7007018227A7ADF00FBE971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A700700C227A7ADF00FBE971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7007015227A7ADF00FBE971;
+			remoteInfo = "PopQuiz WatchKit App";
+		};
+		A7007027227A7AE000FBE971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A700700C227A7ADF00FBE971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7007024227A7AE000FBE971;
+			remoteInfo = "PopQuiz WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A700703B227A7AE100FBE971 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7007026227A7AE000FBE971 /* PopQuiz WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A700703F227A7AE100FBE971 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A7007017227A7ADF00FBE971 /* PopQuiz WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		822DAB0D2297910F00E0ECEE /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		8268ACAA227DF42F00A641EF /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		8268ACAD227DF4D100A641EF /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		8268ACAF227DF58300A641EF /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		8268ACB1227DF9CF00A641EF /* FlashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
+		A7007012227A7ADF00FBE971 /* PopQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7007016227A7ADF00FBE971 /* PopQuiz WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PopQuiz WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A700701C227A7ADF00FBE971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A700701E227A7AE000FBE971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7007020227A7AE000FBE971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7007025227A7AE000FBE971 /* PopQuiz WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PopQuiz WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A700702A227A7AE000FBE971 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A700702C227A7AE000FBE971 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A700702E227A7AE000FBE971 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A7007032227A7AE100FBE971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7007034227A7AE100FBE971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7007035227A7AE100FBE971 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A7CB68A72280EBA000FAE7B8 /* TopicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicList.swift; sourceTree = "<group>"; };
+		A7E8EF2E2281573A00A4F06F /* FlashCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardModel.swift; sourceTree = "<group>"; };
+		A7EF1ED42297B1520025D811 /* CardSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSide.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7007022227A7AE000FBE971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BBBB089FE097B4130D2CCCA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		8268ACA9227DF42300A641EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8268ACAC227DF4C400A641EF /* Containers */,
+				8268ACAA227DF42F00A641EF /* CardList.swift */,
+				8268ACB1227DF9CF00A641EF /* FlashCard.swift */,
+				822DAB0D2297910F00E0ECEE /* NotificationView.swift */,
+				A7CB68A72280EBA000FAE7B8 /* TopicList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8268ACAC227DF4C400A641EF /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				A7EF1ED42297B1520025D811 /* CardSide.swift */,
+				8268ACAD227DF4D100A641EF /* FlipView.swift */,
+				8268ACAF227DF58300A641EF /* CardStack.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		82FA9381228A87F500D12BF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8EF2E2281573A00A4F06F /* FlashCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A700700B227A7ADF00FBE971 = {
+			isa = PBXGroup;
+			children = (
+				A700701A227A7ADF00FBE971 /* PopQuiz WatchKit App */,
+				A7007029227A7AE000FBE971 /* PopQuiz WatchKit Extension */,
+				A7007013227A7ADF00FBE971 /* Products */,
+				5BBBB089FE097B4130D2CCCA /* Configuration */,
+			);
+			sourceTree = "<group>";
+		};
+		A7007013227A7ADF00FBE971 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7007012227A7ADF00FBE971 /* PopQuiz.app */,
+				A7007016227A7ADF00FBE971 /* PopQuiz WatchKit App.app */,
+				A7007025227A7AE000FBE971 /* PopQuiz WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A700701A227A7ADF00FBE971 /* PopQuiz WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A700701B227A7ADF00FBE971 /* Interface.storyboard */,
+				A700701E227A7AE000FBE971 /* Assets.xcassets */,
+				A7007020227A7AE000FBE971 /* Info.plist */,
+			);
+			path = "PopQuiz WatchKit App";
+			sourceTree = "<group>";
+		};
+		A7007029227A7AE000FBE971 /* PopQuiz WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				82FA9381228A87F500D12BF4 /* Model */,
+				8268ACA9227DF42300A641EF /* Views */,
+				A700702A227A7AE000FBE971 /* InterfaceController.swift */,
+				A700702E227A7AE000FBE971 /* NotificationController.swift */,
+				A700702C227A7AE000FBE971 /* ExtensionDelegate.swift */,
+				A7007032227A7AE100FBE971 /* Assets.xcassets */,
+				A7007034227A7AE100FBE971 /* Info.plist */,
+				A7007035227A7AE100FBE971 /* PushNotificationPayload.apns */,
+			);
+			path = "PopQuiz WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7007011227A7ADF00FBE971 /* PopQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7007040227A7AE100FBE971 /* Build configuration list for PBXNativeTarget "PopQuiz" */;
+			buildPhases = (
+				A7007010227A7ADF00FBE971 /* Resources */,
+				A700703F227A7AE100FBE971 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7007019227A7ADF00FBE971 /* PBXTargetDependency */,
+			);
+			name = PopQuiz;
+			productName = PopQuiz;
+			productReference = A7007012227A7ADF00FBE971 /* PopQuiz.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A7007015227A7ADF00FBE971 /* PopQuiz WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A700703C227A7AE100FBE971 /* Build configuration list for PBXNativeTarget "PopQuiz WatchKit App" */;
+			buildPhases = (
+				A7007014227A7ADF00FBE971 /* Resources */,
+				A700703B227A7AE100FBE971 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7007028227A7AE000FBE971 /* PBXTargetDependency */,
+			);
+			name = "PopQuiz WatchKit App";
+			productName = "PopQuiz WatchKit App";
+			productReference = A7007016227A7ADF00FBE971 /* PopQuiz WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A7007024227A7AE000FBE971 /* PopQuiz WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7007038227A7AE100FBE971 /* Build configuration list for PBXNativeTarget "PopQuiz WatchKit Extension" */;
+			buildPhases = (
+				A7007021227A7AE000FBE971 /* Sources */,
+				A7007022227A7AE000FBE971 /* Frameworks */,
+				A7007023227A7AE000FBE971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PopQuiz WatchKit Extension";
+			productName = "PopQuiz WatchKit Extension";
+			productReference = A7007025227A7AE000FBE971 /* PopQuiz WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A700700C227A7ADF00FBE971 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					A7007011227A7ADF00FBE971 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A7007015227A7ADF00FBE971 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A7007024227A7AE000FBE971 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = A700700F227A7ADF00FBE971 /* Build configuration list for PBXProject "PopQuiz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A700700B227A7ADF00FBE971;
+			productRefGroup = A7007013227A7ADF00FBE971 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7007011227A7ADF00FBE971 /* PopQuiz */,
+				A7007015227A7ADF00FBE971 /* PopQuiz WatchKit App */,
+				A7007024227A7AE000FBE971 /* PopQuiz WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7007010227A7ADF00FBE971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7007014227A7ADF00FBE971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A700701F227A7AE000FBE971 /* Assets.xcassets in Resources */,
+				A700701D227A7ADF00FBE971 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7007023227A7AE000FBE971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7007033227A7AE100FBE971 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7007021227A7AE000FBE971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E8EF2F2281573A00A4F06F /* FlashCardModel.swift in Sources */,
+				8268ACAB227DF42F00A641EF /* CardList.swift in Sources */,
+				A7CB68A82280EBA000FAE7B8 /* TopicList.swift in Sources */,
+				822DAB0F2297926B00E0ECEE /* NotificationView.swift in Sources */,
+				A7EF1ED52297B1520025D811 /* CardSide.swift in Sources */,
+				8268ACAE227DF4D100A641EF /* FlipView.swift in Sources */,
+				8268ACB2227DF9CF00A641EF /* FlashCard.swift in Sources */,
+				A700702F227A7AE000FBE971 /* NotificationController.swift in Sources */,
+				A700702D227A7AE000FBE971 /* ExtensionDelegate.swift in Sources */,
+				A700702B227A7AE000FBE971 /* InterfaceController.swift in Sources */,
+				8268ACB0227DF58300A641EF /* CardStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7007019227A7ADF00FBE971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7007015227A7ADF00FBE971 /* PopQuiz WatchKit App */;
+			targetProxy = A7007018227A7ADF00FBE971 /* PBXContainerItemProxy */;
+		};
+		A7007028227A7AE000FBE971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7007024227A7AE000FBE971 /* PopQuiz WatchKit Extension */;
+			targetProxy = A7007027227A7AE000FBE971 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A700701B227A7ADF00FBE971 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A700701C227A7ADF00FBE971 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7007036227A7AE100FBE971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7007037227A7AE100FBE971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7007039227A7AE100FBE971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PopQuiz WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -disable-typo-correction";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PopQuiz${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		A700703A227A7AE100FBE971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PopQuiz WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -disable-typo-correction";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PopQuiz${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		A700703D227A7AE100FBE971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = PopQuiz_WatchKit_Extension;
+				INFOPLIST_FILE = "PopQuiz WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PopQuiz${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		A700703E227A7AE100FBE971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = PopQuiz_WatchKit_Extension;
+				INFOPLIST_FILE = "PopQuiz WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PopQuiz${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		A7007041227A7AE100FBE971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PopQuiz${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A7007042227A7AE100FBE971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE65EF73BE1643EE1B50A3 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PopQuiz${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A700700F227A7ADF00FBE971 /* Build configuration list for PBXProject "PopQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7007036227A7AE100FBE971 /* Debug */,
+				A7007037227A7AE100FBE971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7007038227A7AE100FBE971 /* Build configuration list for PBXNativeTarget "PopQuiz WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7007039227A7AE100FBE971 /* Debug */,
+				A700703A227A7AE100FBE971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A700703C227A7AE100FBE971 /* Build configuration list for PBXNativeTarget "PopQuiz WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A700703D227A7AE100FBE971 /* Debug */,
+				A700703E227A7AE100FBE971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7007040227A7AE100FBE971 /* Build configuration list for PBXNativeTarget "PopQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7007041227A7AE100FBE971 /* Debug */,
+				A7007042227A7AE100FBE971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A700700C227A7ADF00FBE971 /* Project object */;
+}
