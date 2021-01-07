@@ -1,5 +1,9 @@
 # My Swift Journey
 
+![Swift](https://img.shields.io/badge/Language-Swift-orange)
+![SwiftUI](https://img.shields.io/badge/Platform-SwiftUI-purple)
+![Xcode 12](https://img.shields.io/badge/IDE-Xcode%2012-blue)
+
 > A collection for my journey to learn Swift programming language, a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond.
 
 ![My Swift Journey](./MySwiftJourneyCover.png "My Swift Journey")
