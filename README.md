@@ -1,7 +1,9 @@
 # My Swift Journey
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Swift](https://img.shields.io/badge/Language-Swift-orange)
 ![SwiftUI](https://img.shields.io/badge/Platform-SwiftUI-purple)
+[![User Interface: SwiftUI](https://img.shields.io/badge/User%20Interface-SwiftUI-blue)](https://developer.apple.com/xcode/interface-builder/)
 ![Xcode 12](https://img.shields.io/badge/IDE-Xcode%2012-blue)
 
 > A collection for my journey to learn Swift programming language, a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond.
