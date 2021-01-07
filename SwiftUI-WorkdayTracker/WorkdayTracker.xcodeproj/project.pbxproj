@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC34DE06251794D400B0E6CB /* WorkdayTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DE05251794D400B0E6CB /* WorkdayTrackerApp.swift */; };
+		FC34DE08251794D400B0E6CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DE07251794D400B0E6CB /* ContentView.swift */; };
+		FC34DE0A251794DB00B0E6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC34DE09251794DB00B0E6CB /* Assets.xcassets */; };
+		FC34DE0D251794DB00B0E6CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC34DE0C251794DB00B0E6CB /* Preview Assets.xcassets */; };
+		FC34DE0F251794DB00B0E6CB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DE0E251794DB00B0E6CB /* Persistence.swift */; };
+		FC34DE12251794DB00B0E6CB /* WorkdayTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC34DE10251794DB00B0E6CB /* WorkdayTracker.xcdatamodeld */; };
+		FC34DE1D251794DC00B0E6CB /* WorkdayTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DE1C251794DC00B0E6CB /* WorkdayTrackerTests.swift */; };
+		FC34DE28251794DC00B0E6CB /* WorkdayTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34DE27251794DC00B0E6CB /* WorkdayTrackerUITests.swift */; };
+		FC5EF2E725179CB20068D96C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EF2E625179CB20068D96C /* SettingsView.swift */; };
+		FC5EF2EC25179CC50068D96C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EF2EB25179CC50068D96C /* MapView.swift */; };
+		FC5EF2F125179CFC0068D96C /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EF2F025179CFC0068D96C /* DaysView.swift */; };
+		FC601F1025272139004EE525 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC601F0F25272138004EE525 /* SettingsViewModel.swift */; };
+		FCE135872517BC7A00A724B3 /* TrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE135862517BC7A00A724B3 /* TrackerModel.swift */; };
+		FCE135902517C10300A724B3 /* Day+CoewDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1358F2517C10300A724B3 /* Day+CoewDataClass.swift */; };
+		FCE135952517C19500A724B3 /* Day+CoreDataPropeties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE135942517C19500A724B3 /* Day+CoreDataPropeties.swift */; };
+		FCE1359E2517C56300A724B3 /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1359D2517C56300A724B3 /* GeoManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC34DE19251794DC00B0E6CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC34DDFA251794D400B0E6CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC34DE01251794D400B0E6CB;
+			remoteInfo = WorkdayTracker;
+		};
+		FC34DE24251794DC00B0E6CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC34DDFA251794D400B0E6CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC34DE01251794D400B0E6CB;
+			remoteInfo = WorkdayTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC34DE02251794D400B0E6CB /* WorkdayTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkdayTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC34DE05251794D400B0E6CB /* WorkdayTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayTrackerApp.swift; sourceTree = "<group>"; };
+		FC34DE07251794D400B0E6CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC34DE09251794DB00B0E6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC34DE0C251794DB00B0E6CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC34DE0E251794DB00B0E6CB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FC34DE11251794DB00B0E6CB /* WorkdayTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkdayTracker.xcdatamodel; sourceTree = "<group>"; };
+		FC34DE13251794DB00B0E6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC34DE18251794DC00B0E6CB /* WorkdayTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkdayTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC34DE1C251794DC00B0E6CB /* WorkdayTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayTrackerTests.swift; sourceTree = "<group>"; };
+		FC34DE1E251794DC00B0E6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC34DE23251794DC00B0E6CB /* WorkdayTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkdayTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC34DE27251794DC00B0E6CB /* WorkdayTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayTrackerUITests.swift; sourceTree = "<group>"; };
+		FC34DE29251794DC00B0E6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5EF2E625179CB20068D96C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FC5EF2EB25179CC50068D96C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FC5EF2F025179CFC0068D96C /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
+		FC601F0F25272138004EE525 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		FCE135862517BC7A00A724B3 /* TrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerModel.swift; sourceTree = "<group>"; };
+		FCE1358F2517C10300A724B3 /* Day+CoewDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoewDataClass.swift"; sourceTree = "<group>"; };
+		FCE135942517C19500A724B3 /* Day+CoreDataPropeties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataPropeties.swift"; sourceTree = "<group>"; };
+		FCE1359D2517C56300A724B3 /* GeoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC34DDFF251794D400B0E6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC34DE15251794DB00B0E6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC34DE20251794DC00B0E6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC34DDF9251794D400B0E6CB = {
+			isa = PBXGroup;
+			children = (
+				FC34DE04251794D400B0E6CB /* WorkdayTracker */,
+				FC34DE1B251794DC00B0E6CB /* WorkdayTrackerTests */,
+				FC34DE26251794DC00B0E6CB /* WorkdayTrackerUITests */,
+				FC34DE03251794D400B0E6CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC34DE03251794D400B0E6CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC34DE02251794D400B0E6CB /* WorkdayTracker.app */,
+				FC34DE18251794DC00B0E6CB /* WorkdayTrackerTests.xctest */,
+				FC34DE23251794DC00B0E6CB /* WorkdayTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC34DE04251794D400B0E6CB /* WorkdayTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FC34DE05251794D400B0E6CB /* WorkdayTrackerApp.swift */,
+				FC5EF2F82517A49A0068D96C /* View */,
+				FC601F142527213F004EE525 /* View Model */,
+				FCE1358E2517C06500A724B3 /* Model */,
+				FCE1359C2517C52100A724B3 /* Framework Layer */,
+				FC34DE13251794DB00B0E6CB /* Info.plist */,
+				FC34DE09251794DB00B0E6CB /* Assets.xcassets */,
+				FC34DE0B251794DB00B0E6CB /* Preview Content */,
+			);
+			path = WorkdayTracker;
+			sourceTree = "<group>";
+		};
+		FC34DE0B251794DB00B0E6CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FC34DE0C251794DB00B0E6CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC34DE1B251794DC00B0E6CB /* WorkdayTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC34DE1C251794DC00B0E6CB /* WorkdayTrackerTests.swift */,
+				FC34DE1E251794DC00B0E6CB /* Info.plist */,
+			);
+			path = WorkdayTrackerTests;
+			sourceTree = "<group>";
+		};
+		FC34DE26251794DC00B0E6CB /* WorkdayTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC34DE27251794DC00B0E6CB /* WorkdayTrackerUITests.swift */,
+				FC34DE29251794DC00B0E6CB /* Info.plist */,
+			);
+			path = WorkdayTrackerUITests;
+			sourceTree = "<group>";
+		};
+		FC5EF2F82517A49A0068D96C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC34DE07251794D400B0E6CB /* ContentView.swift */,
+				FC5EF2F025179CFC0068D96C /* DaysView.swift */,
+				FC5EF2E625179CB20068D96C /* SettingsView.swift */,
+				FC5EF2EB25179CC50068D96C /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC601F142527213F004EE525 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC601F0F25272138004EE525 /* SettingsViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		FCE1358E2517C06500A724B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC34DE10251794DB00B0E6CB /* WorkdayTracker.xcdatamodeld */,
+				FC34DE0E251794DB00B0E6CB /* Persistence.swift */,
+				FCE135862517BC7A00A724B3 /* TrackerModel.swift */,
+				FCE1358F2517C10300A724B3 /* Day+CoewDataClass.swift */,
+				FCE135942517C19500A724B3 /* Day+CoreDataPropeties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE1359C2517C52100A724B3 /* Framework Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FCE1359D2517C56300A724B3 /* GeoManager.swift */,
+			);
+			path = "Framework Layer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC34DE01251794D400B0E6CB /* WorkdayTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC34DE2C251794DC00B0E6CB /* Build configuration list for PBXNativeTarget "WorkdayTracker" */;
+			buildPhases = (
+				FC34DDFE251794D400B0E6CB /* Sources */,
+				FC34DDFF251794D400B0E6CB /* Frameworks */,
+				FC34DE00251794D400B0E6CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkdayTracker;
+			productName = WorkdayTracker;
+			productReference = FC34DE02251794D400B0E6CB /* WorkdayTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC34DE17251794DB00B0E6CB /* WorkdayTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC34DE2F251794DC00B0E6CB /* Build configuration list for PBXNativeTarget "WorkdayTrackerTests" */;
+			buildPhases = (
+				FC34DE14251794DB00B0E6CB /* Sources */,
+				FC34DE15251794DB00B0E6CB /* Frameworks */,
+				FC34DE16251794DB00B0E6CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC34DE1A251794DC00B0E6CB /* PBXTargetDependency */,
+			);
+			name = WorkdayTrackerTests;
+			productName = WorkdayTrackerTests;
+			productReference = FC34DE18251794DC00B0E6CB /* WorkdayTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC34DE22251794DC00B0E6CB /* WorkdayTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC34DE32251794DC00B0E6CB /* Build configuration list for PBXNativeTarget "WorkdayTrackerUITests" */;
+			buildPhases = (
+				FC34DE1F251794DC00B0E6CB /* Sources */,
+				FC34DE20251794DC00B0E6CB /* Frameworks */,
+				FC34DE21251794DC00B0E6CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC34DE25251794DC00B0E6CB /* PBXTargetDependency */,
+			);
+			name = WorkdayTrackerUITests;
+			productName = WorkdayTrackerUITests;
+			productReference = FC34DE23251794DC00B0E6CB /* WorkdayTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC34DDFA251794D400B0E6CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FC34DE01251794D400B0E6CB = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					FC34DE17251794DB00B0E6CB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = FC34DE01251794D400B0E6CB;
+					};
+					FC34DE22251794DC00B0E6CB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = FC34DE01251794D400B0E6CB;
+					};
+				};
+			};
+			buildConfigurationList = FC34DDFD251794D400B0E6CB /* Build configuration list for PBXProject "WorkdayTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC34DDF9251794D400B0E6CB;
+			productRefGroup = FC34DE03251794D400B0E6CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC34DE01251794D400B0E6CB /* WorkdayTracker */,
+				FC34DE17251794DB00B0E6CB /* WorkdayTrackerTests */,
+				FC34DE22251794DC00B0E6CB /* WorkdayTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC34DE00251794D400B0E6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC34DE0D251794DB00B0E6CB /* Preview Assets.xcassets in Resources */,
+				FC34DE0A251794DB00B0E6CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC34DE16251794DB00B0E6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC34DE21251794DC00B0E6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC34DDFE251794D400B0E6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5EF2E725179CB20068D96C /* SettingsView.swift in Sources */,
+				FC5EF2EC25179CC50068D96C /* MapView.swift in Sources */,
+				FC34DE12251794DB00B0E6CB /* WorkdayTracker.xcdatamodeld in Sources */,
+				FCE1359E2517C56300A724B3 /* GeoManager.swift in Sources */,
+				FCE135952517C19500A724B3 /* Day+CoreDataPropeties.swift in Sources */,
+				FCE135872517BC7A00A724B3 /* TrackerModel.swift in Sources */,
+				FC5EF2F125179CFC0068D96C /* DaysView.swift in Sources */,
+				FCE135902517C10300A724B3 /* Day+CoewDataClass.swift in Sources */,
+				FC34DE0F251794DB00B0E6CB /* Persistence.swift in Sources */,
+				FC34DE08251794D400B0E6CB /* ContentView.swift in Sources */,
+				FC34DE06251794D400B0E6CB /* WorkdayTrackerApp.swift in Sources */,
+				FC601F1025272139004EE525 /* SettingsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC34DE14251794DB00B0E6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC34DE1D251794DC00B0E6CB /* WorkdayTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC34DE1F251794DC00B0E6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC34DE28251794DC00B0E6CB /* WorkdayTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC34DE1A251794DC00B0E6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC34DE01251794D400B0E6CB /* WorkdayTracker */;
+			targetProxy = FC34DE19251794DC00B0E6CB /* PBXContainerItemProxy */;
+		};
+		FC34DE25251794DC00B0E6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC34DE01251794D400B0E6CB /* WorkdayTracker */;
+			targetProxy = FC34DE24251794DC00B0E6CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC34DE2A251794DC00B0E6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC34DE2B251794DC00B0E6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC34DE2D251794DC00B0E6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WorkdayTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WorkdayTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.WorkdayTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC34DE2E251794DC00B0E6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WorkdayTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WorkdayTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.WorkdayTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC34DE30251794DC00B0E6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = WorkdayTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.WorkdayTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkdayTracker.app/WorkdayTracker";
+			};
+			name = Debug;
+		};
+		FC34DE31251794DC00B0E6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = WorkdayTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.WorkdayTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkdayTracker.app/WorkdayTracker";
+			};
+			name = Release;
+		};
+		FC34DE33251794DC00B0E6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = WorkdayTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.WorkdayTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorkdayTracker;
+			};
+			name = Debug;
+		};
+		FC34DE34251794DC00B0E6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = WorkdayTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.WorkdayTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorkdayTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC34DDFD251794D400B0E6CB /* Build configuration list for PBXProject "WorkdayTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC34DE2A251794DC00B0E6CB /* Debug */,
+				FC34DE2B251794DC00B0E6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC34DE2C251794DC00B0E6CB /* Build configuration list for PBXNativeTarget "WorkdayTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC34DE2D251794DC00B0E6CB /* Debug */,
+				FC34DE2E251794DC00B0E6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC34DE2F251794DC00B0E6CB /* Build configuration list for PBXNativeTarget "WorkdayTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC34DE30251794DC00B0E6CB /* Debug */,
+				FC34DE31251794DC00B0E6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC34DE32251794DC00B0E6CB /* Build configuration list for PBXNativeTarget "WorkdayTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC34DE33251794DC00B0E6CB /* Debug */,
+				FC34DE34251794DC00B0E6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC34DE10251794DB00B0E6CB /* WorkdayTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC34DE11251794DB00B0E6CB /* WorkdayTracker.xcdatamodel */,
+			);
+			currentVersion = FC34DE11251794DB00B0E6CB /* WorkdayTracker.xcdatamodel */;
+			path = WorkdayTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC34DDFA251794D400B0E6CB /* Project object */;
+}
