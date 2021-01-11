@@ -79,6 +79,12 @@ Use: `.foregroundColor(Color(0x111111))`
 
 ---
 
+# For phones having lesser screen size
+
+`ScrollView(UIScreen.main.bounds.height < 750 ? .vertical : .init(), showsIndicators: false) { ... }`
+
+---
+
 - Take a design-first approach
 - Effortlessly share model code
 - Be judicious when sharing new code
