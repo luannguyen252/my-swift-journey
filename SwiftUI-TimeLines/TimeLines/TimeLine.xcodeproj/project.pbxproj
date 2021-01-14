@@ -1,0 +1,1405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035977A92452D2B10056732F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035977A82452D2B10056732F /* SearchBar.swift */; };
+		03A0C4B224692D63008B5A64 /* WatchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0C4B124692D63008B5A64 /* WatchHandler.swift */; };
+		03B82ED92454B36C002DA493 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B82ED82454B36C002DA493 /* State.swift */; };
+		03B82EDB245587C1002DA493 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B82EDA245587C1002DA493 /* Tags.swift */; };
+		03B82EDD24558EAE002DA493 /* TagEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B82EDC24558EAD002DA493 /* TagEdition.swift */; };
+		03B82EDF2455DA27002DA493 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B82EDE2455DA27002DA493 /* KeyboardAdaptive.swift */; };
+		03B8BF22243E2E410009E084 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8BF21243E2E410009E084 /* SearchController.swift */; };
+		03B8BFBB244463BD0009E084 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B8BFB9244463BD0009E084 /* Interface.storyboard */; };
+		03B8BFBD244463C00009E084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B8BFBC244463C00009E084 /* Assets.xcassets */; };
+		03B8BFC4244463C00009E084 /* TimeLineWatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03B8BFC3244463C00009E084 /* TimeLineWatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03B8BFC9244463C00009E084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8BFC8244463C00009E084 /* ContentView.swift */; };
+		03B8BFCB244463C00009E084 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8BFCA244463C00009E084 /* HostingController.swift */; };
+		03B8BFCD244463C00009E084 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8BFCC244463C00009E084 /* ExtensionDelegate.swift */; };
+		03B8BFCF244463C10009E084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B8BFCE244463C10009E084 /* Assets.xcassets */; };
+		03B8BFD2244463C10009E084 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B8BFD1244463C10009E084 /* Preview Assets.xcassets */; };
+		03B8BFD6244463C10009E084 /* Time Lines.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03B8BFB7244463BD0009E084 /* Time Lines.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03CD2B962444669600DFCD04 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B8BFAD24437EF90009E084 /* CloudKit.framework */; };
+		03CD2B97244466AC00DFCD04 /* TimeLineSharedWatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B8BF9F24437B0D0009E084 /* TimeLineSharedWatchOS.framework */; };
+		03CD2B98244466AC00DFCD04 /* TimeLineSharedWatchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03B8BF9F24437B0D0009E084 /* TimeLineSharedWatchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03D5A530243738D3004AC5EB /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A52F243738D3004AC5EB /* WidgetView.swift */; };
+		03D5A53324373C84004AC5EB /* TimeLineShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D633A32436165100F8D2CE /* TimeLineShared.framework */; };
+		03D5A53B24374E96004AC5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D633652436149C00F8D2CE /* Assets.xcassets */; };
+		03D5A54724378BFB004AC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D633B024361C6A00F8D2CE /* CloudKit.framework */; };
+		03D5A5F22438C4FD004AC5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A5F12438C4FD004AC5EB /* AppDelegate.swift */; };
+		03D5A5F62438C4FF004AC5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D5A5F52438C4FF004AC5EB /* Assets.xcassets */; };
+		03D5A5F92438C4FF004AC5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D5A5F82438C4FF004AC5EB /* Preview Assets.xcassets */; };
+		03D5A5FC2438C4FF004AC5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D5A5FA2438C4FF004AC5EB /* Main.storyboard */; };
+		03D5A6062438C531004AC5EB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A6022438C531004AC5EB /* MenuView.swift */; };
+		03D5A6072438C531004AC5EB /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A6032438C531004AC5EB /* StatusBarController.swift */; };
+		03D5A6082438C531004AC5EB /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A6042438C531004AC5EB /* EventMonitor.swift */; };
+		03D5A60A2438C542004AC5EB /* TimeLineSharedMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D5A5D42438B6D4004AC5EB /* TimeLineSharedMacOS.framework */; };
+		03D5A60B2438C542004AC5EB /* TimeLineSharedMacOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D5A5D42438B6D4004AC5EB /* TimeLineSharedMacOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03D5A60E2438C564004AC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D5A60D2438C564004AC5EB /* CloudKit.framework */; };
+		03D5A63E2439C466004AC5EB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A63D2439C466004AC5EB /* Utils.swift */; };
+		03D5A64A2439CAD7004AC5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D5A6492439CAD7004AC5EB /* Assets.xcassets */; };
+		03D5A64D2439CAD7004AC5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D5A64C2439CAD7004AC5EB /* Preview Assets.xcassets */; };
+		03D5A6572439CB20004AC5EB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A6562439CB20004AC5EB /* main.swift */; };
+		03D5A6592439CBE8004AC5EB /* TimeLineMacOS-launchagent.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D5A6432439CAD6004AC5EB /* TimeLineMacOS-launchagent.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03D5A65A2439CBF5004AC5EB /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D5A6282439BD01004AC5EB /* ServiceManagement.framework */; };
+		03D5A65C2439CC15004AC5EB /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A65B2439CC15004AC5EB /* LaunchAtLogin.swift */; };
+		03D5A675243C7D43004AC5EB /* ManageContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A674243C7D42004AC5EB /* ManageContacts.swift */; };
+		03D5A689243DB959004AC5EB /* ContactEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A688243DB959004AC5EB /* ContactEdition.swift */; };
+		03D6335D2436149700F8D2CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6335C2436149700F8D2CE /* AppDelegate.swift */; };
+		03D6335F2436149700F8D2CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6335E2436149700F8D2CE /* SceneDelegate.swift */; };
+		03D633642436149700F8D2CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D633632436149700F8D2CE /* ContentView.swift */; };
+		03D633662436149C00F8D2CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D633652436149C00F8D2CE /* Assets.xcassets */; };
+		03D633692436149C00F8D2CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D633682436149C00F8D2CE /* Preview Assets.xcassets */; };
+		03D6336C2436149C00F8D2CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D6336A2436149C00F8D2CE /* LaunchScreen.storyboard */; };
+		03D6337A2436151A00F8D2CE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D633792436151A00F8D2CE /* NotificationCenter.framework */; };
+		03D6337D2436151A00F8D2CE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6337C2436151A00F8D2CE /* TodayViewController.swift */; };
+		03D633802436151A00F8D2CE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D6337E2436151A00F8D2CE /* MainInterface.storyboard */; };
+		03D633842436151A00F8D2CE /* Time Lines Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03D633772436151A00F8D2CE /* Time Lines Widget.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03D633AC243619AF00F8D2CE /* TimeLineShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D633A32436165100F8D2CE /* TimeLineShared.framework */; };
+		03D633AD243619AF00F8D2CE /* TimeLineShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D633A32436165100F8D2CE /* TimeLineShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03D633B124361C6A00F8D2CE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D633B024361C6A00F8D2CE /* CloudKit.framework */; };
+		03D633BE24362B8900F8D2CE /* ContactEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D633BD24362B8900F8D2CE /* ContactEdition.swift */; };
+		03D633C02436343700F8D2CE /* LocationSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D633BF2436343700F8D2CE /* LocationSearchController.swift */; };
+		03DCC2C22451CE98000D0B94 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DCC2C12451CE98000D0B94 /* ActivityIndicator.swift */; };
+		03F04B35244DF32000931FB0 /* AutoFocusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F04B34244DF32000931FB0 /* AutoFocusTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03B8BF9E24437B0D0009E084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D6339E2436165100F8D2CE /* TimeLineShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03B8BF9524437AF70009E084;
+			remoteInfo = TimeLineSharedWatchOS;
+		};
+		03B8BFC5244463C00009E084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D633512436149700F8D2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B8BFC2244463C00009E084;
+			remoteInfo = "TimeLineWatchOS Extension";
+		};
+		03B8BFD4244463C10009E084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D633512436149700F8D2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B8BFB6244463BD0009E084;
+			remoteInfo = TimeLineWatchOS;
+		};
+		03D5A5D32438B6D4004AC5EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D6339E2436165100F8D2CE /* TimeLineShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03D5A5C32438B68D004AC5EB;
+			remoteInfo = TimeLineSharedMacOS;
+		};
+		03D633822436151A00F8D2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D633512436149700F8D2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03D633762436151A00F8D2CE;
+			remoteInfo = "TimeLine Widget";
+		};
+		03D633A22436165100F8D2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D6339E2436165100F8D2CE /* TimeLineShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03D633932436165100F8D2CE;
+			remoteInfo = TimeLineShared;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03B8BF8024435EDB0009E084 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				03B8BFD6244463C10009E084 /* Time Lines.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B8BFDA244463C10009E084 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03B8BFC4244463C00009E084 /* TimeLineWatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CD2B99244466AC00DFCD04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03CD2B98244466AC00DFCD04 /* TimeLineSharedWatchOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A60C2438C542004AC5EB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03D5A60B2438C542004AC5EB /* TimeLineSharedMacOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A6582439CBD4004AC5EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				03D5A6592439CBE8004AC5EB /* TimeLineMacOS-launchagent.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633882436151A00F8D2CE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03D633842436151A00F8D2CE /* Time Lines Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633AE243619AF00F8D2CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03D633AD243619AF00F8D2CE /* TimeLineShared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		035977A82452D2B10056732F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		03A0C4B124692D63008B5A64 /* WatchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHandler.swift; sourceTree = "<group>"; };
+		03B82ED82454B36C002DA493 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		03B82EDA245587C1002DA493 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		03B82EDC24558EAD002DA493 /* TagEdition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEdition.swift; sourceTree = "<group>"; };
+		03B82EDE2455DA27002DA493 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		03B8BF21243E2E410009E084 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		03B8BF5B24435ED60009E084 /* TimeLineWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TimeLineWatchOS.app; path = "/Users/mathieudutour/Projects/TimeLine/build/Debug-watchos/TimeLineWatchOS.app"; sourceTree = "<absolute>"; };
+		03B8BFAD24437EF90009E084 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		03B8BFB7244463BD0009E084 /* Time Lines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Lines.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B8BFBA244463BD0009E084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		03B8BFBC244463C00009E084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B8BFBE244463C00009E084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B8BFC3244463C00009E084 /* TimeLineWatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TimeLineWatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B8BFC8244463C00009E084 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "TimeLineWatchOS Extension/ContentView.swift"; sourceTree = SOURCE_ROOT; };
+		03B8BFCA244463C00009E084 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HostingController.swift; path = "TimeLineWatchOS Extension/HostingController.swift"; sourceTree = SOURCE_ROOT; };
+		03B8BFCC244463C00009E084 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionDelegate.swift; path = "TimeLineWatchOS Extension/ExtensionDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		03B8BFCE244463C10009E084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B8BFD1244463C10009E084 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03B8BFD3244463C10009E084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03CD2B952444667800DFCD04 /* TimeLineWatchOS Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TimeLineWatchOS Extension.entitlements"; sourceTree = "<group>"; };
+		03D5A52F243738D3004AC5EB /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		03D5A53224373BBB004AC5EB /* TimeLine Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TimeLine Widget.entitlements"; sourceTree = "<group>"; };
+		03D5A5E12438C217004AC5EB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		03D5A5EF2438C4FD004AC5EB /* Time Lines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Lines.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D5A5F12438C4FD004AC5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03D5A5F52438C4FF004AC5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03D5A5F82438C4FF004AC5EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03D5A5FB2438C4FF004AC5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03D5A5FD2438C4FF004AC5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D5A5FE2438C4FF004AC5EB /* TimeLineMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeLineMacOS.entitlements; sourceTree = "<group>"; };
+		03D5A6022438C531004AC5EB /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		03D5A6032438C531004AC5EB /* StatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		03D5A6042438C531004AC5EB /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		03D5A60D2438C564004AC5EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		03D5A6282439BD01004AC5EB /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ServiceManagement.framework; sourceTree = DEVELOPER_DIR; };
+		03D5A62A2439BF82004AC5EB /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		03D5A63D2439C466004AC5EB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		03D5A6432439CAD6004AC5EB /* TimeLineMacOS-launchagent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeLineMacOS-launchagent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D5A6492439CAD7004AC5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03D5A64C2439CAD7004AC5EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03D5A6512439CAD7004AC5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D5A6562439CB20004AC5EB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		03D5A65B2439CC15004AC5EB /* LaunchAtLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLogin.swift; sourceTree = "<group>"; };
+		03D5A674243C7D42004AC5EB /* ManageContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageContacts.swift; sourceTree = "<group>"; };
+		03D5A688243DB959004AC5EB /* ContactEdition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEdition.swift; sourceTree = "<group>"; };
+		03D633592436149700F8D2CE /* Time Lines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Lines.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D6335C2436149700F8D2CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03D6335E2436149700F8D2CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03D633632436149700F8D2CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03D633652436149C00F8D2CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03D633682436149C00F8D2CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03D6336B2436149C00F8D2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03D6336D2436149C00F8D2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D633772436151A00F8D2CE /* Time Lines Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Time Lines Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D633792436151A00F8D2CE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		03D6337C2436151A00F8D2CE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		03D6337F2436151A00F8D2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		03D633812436151A00F8D2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D6339E2436165100F8D2CE /* TimeLineShared.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TimeLineShared.xcodeproj; path = TimeLineShared/TimeLineShared.xcodeproj; sourceTree = "<group>"; };
+		03D633AF24361C5D00F8D2CE /* TimeLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeLine.entitlements; sourceTree = "<group>"; };
+		03D633B024361C6A00F8D2CE /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		03D633BD24362B8900F8D2CE /* ContactEdition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEdition.swift; sourceTree = "<group>"; };
+		03D633BF2436343700F8D2CE /* LocationSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchController.swift; sourceTree = "<group>"; };
+		03DCC2C12451CE98000D0B94 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		03F04B34244DF32000931FB0 /* AutoFocusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03B8BFC0244463C00009E084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CD2B97244466AC00DFCD04 /* TimeLineSharedWatchOS.framework in Frameworks */,
+				03CD2B962444669600DFCD04 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A5EC2438C4FD004AC5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A65A2439CBF5004AC5EB /* ServiceManagement.framework in Frameworks */,
+				03D5A60A2438C542004AC5EB /* TimeLineSharedMacOS.framework in Frameworks */,
+				03D5A60E2438C564004AC5EB /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A6402439CAD6004AC5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633562436149700F8D2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D633AC243619AF00F8D2CE /* TimeLineShared.framework in Frameworks */,
+				03D633B124361C6A00F8D2CE /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633742436151A00F8D2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A54724378BFB004AC5EB /* CloudKit.framework in Frameworks */,
+				03D5A53324373C84004AC5EB /* TimeLineShared.framework in Frameworks */,
+				03D6337A2436151A00F8D2CE /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B8BFB8244463BD0009E084 /* TimeLineWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				03B8BFB9244463BD0009E084 /* Interface.storyboard */,
+				03B8BFBC244463C00009E084 /* Assets.xcassets */,
+				03B8BFBE244463C00009E084 /* Info.plist */,
+			);
+			path = TimeLineWatchOS;
+			sourceTree = "<group>";
+		};
+		03B8BFC7244463C00009E084 /* TimeLineWatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03CD2B952444667800DFCD04 /* TimeLineWatchOS Extension.entitlements */,
+				03B8BFC8244463C00009E084 /* ContentView.swift */,
+				03B8BFCA244463C00009E084 /* HostingController.swift */,
+				03B8BFCC244463C00009E084 /* ExtensionDelegate.swift */,
+				03B8BFCE244463C10009E084 /* Assets.xcassets */,
+				03B8BFD3244463C10009E084 /* Info.plist */,
+				03B8BFD0244463C10009E084 /* Preview Content */,
+			);
+			path = "TimeLineWatchOS Extension";
+			sourceTree = "<group>";
+		};
+		03B8BFD0244463C10009E084 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03B8BFD1244463C10009E084 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03CD2B912444646B00DFCD04 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				03B8BF5B24435ED60009E084 /* TimeLineWatchOS.app */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		03D5A5F02438C4FD004AC5EB /* TimeLineMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				03D5A5F12438C4FD004AC5EB /* AppDelegate.swift */,
+				03D5A63D2439C466004AC5EB /* Utils.swift */,
+				03D5A65B2439CC15004AC5EB /* LaunchAtLogin.swift */,
+				03D5A6042438C531004AC5EB /* EventMonitor.swift */,
+				03D5A6022438C531004AC5EB /* MenuView.swift */,
+				03D5A6032438C531004AC5EB /* StatusBarController.swift */,
+				03D5A674243C7D42004AC5EB /* ManageContacts.swift */,
+				03D5A688243DB959004AC5EB /* ContactEdition.swift */,
+				03B8BF21243E2E410009E084 /* SearchController.swift */,
+				03F04B34244DF32000931FB0 /* AutoFocusTextField.swift */,
+				03D5A5F52438C4FF004AC5EB /* Assets.xcassets */,
+				03D5A5FA2438C4FF004AC5EB /* Main.storyboard */,
+				03D5A5FD2438C4FF004AC5EB /* Info.plist */,
+				03D5A5FE2438C4FF004AC5EB /* TimeLineMacOS.entitlements */,
+				03D5A5F72438C4FF004AC5EB /* Preview Content */,
+			);
+			path = TimeLineMacOS;
+			sourceTree = "<group>";
+		};
+		03D5A5F72438C4FF004AC5EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03D5A5F82438C4FF004AC5EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03D5A6442439CAD6004AC5EB /* TimeLineMacOS-launchagent */ = {
+			isa = PBXGroup;
+			children = (
+				03D5A6562439CB20004AC5EB /* main.swift */,
+				03D5A6492439CAD7004AC5EB /* Assets.xcassets */,
+				03D5A6512439CAD7004AC5EB /* Info.plist */,
+				03D5A64B2439CAD7004AC5EB /* Preview Content */,
+			);
+			path = "TimeLineMacOS-launchagent";
+			sourceTree = "<group>";
+		};
+		03D5A64B2439CAD7004AC5EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03D5A64C2439CAD7004AC5EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03D633502436149700F8D2CE = {
+			isa = PBXGroup;
+			children = (
+				03D5A62A2439BF82004AC5EB /* Cartfile */,
+				03D6335B2436149700F8D2CE /* TimeLine */,
+				03D6337B2436151A00F8D2CE /* TimeLine Widget */,
+				03D5A5F02438C4FD004AC5EB /* TimeLineMacOS */,
+				03D5A6442439CAD6004AC5EB /* TimeLineMacOS-launchagent */,
+				03B8BFB8244463BD0009E084 /* TimeLineWatchOS */,
+				03B8BFC7244463C00009E084 /* TimeLineWatchOS Extension */,
+				03D633782436151A00F8D2CE /* Frameworks */,
+				03D6335A2436149700F8D2CE /* Products */,
+				03CD2B912444646B00DFCD04 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		03D6335A2436149700F8D2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03D633592436149700F8D2CE /* Time Lines.app */,
+				03D633772436151A00F8D2CE /* Time Lines Widget.appex */,
+				03D5A5EF2438C4FD004AC5EB /* Time Lines.app */,
+				03D5A6432439CAD6004AC5EB /* TimeLineMacOS-launchagent.app */,
+				03B8BFB7244463BD0009E084 /* Time Lines.app */,
+				03B8BFC3244463C00009E084 /* TimeLineWatchOS Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03D6335B2436149700F8D2CE /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				03D633AF24361C5D00F8D2CE /* TimeLine.entitlements */,
+				03D6335C2436149700F8D2CE /* AppDelegate.swift */,
+				03D6335E2436149700F8D2CE /* SceneDelegate.swift */,
+				03A0C4B124692D63008B5A64 /* WatchHandler.swift */,
+				03B82ED82454B36C002DA493 /* State.swift */,
+				03D633632436149700F8D2CE /* ContentView.swift */,
+				03D633BD24362B8900F8D2CE /* ContactEdition.swift */,
+				03B82EDA245587C1002DA493 /* Tags.swift */,
+				03B82EDC24558EAD002DA493 /* TagEdition.swift */,
+				035977A82452D2B10056732F /* SearchBar.swift */,
+				03B82EDE2455DA27002DA493 /* KeyboardAdaptive.swift */,
+				03DCC2C12451CE98000D0B94 /* ActivityIndicator.swift */,
+				03D633BF2436343700F8D2CE /* LocationSearchController.swift */,
+				03D633652436149C00F8D2CE /* Assets.xcassets */,
+				03D6336A2436149C00F8D2CE /* LaunchScreen.storyboard */,
+				03D6336D2436149C00F8D2CE /* Info.plist */,
+				03D633672436149C00F8D2CE /* Preview Content */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		03D633672436149C00F8D2CE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03D633682436149C00F8D2CE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03D633782436151A00F8D2CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B8BFAD24437EF90009E084 /* CloudKit.framework */,
+				03D5A6282439BD01004AC5EB /* ServiceManagement.framework */,
+				03D5A60D2438C564004AC5EB /* CloudKit.framework */,
+				03D5A5E12438C217004AC5EB /* SwiftUI.framework */,
+				03D633B024361C6A00F8D2CE /* CloudKit.framework */,
+				03D6339E2436165100F8D2CE /* TimeLineShared.xcodeproj */,
+				03D633792436151A00F8D2CE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D6337B2436151A00F8D2CE /* TimeLine Widget */ = {
+			isa = PBXGroup;
+			children = (
+				03D5A53224373BBB004AC5EB /* TimeLine Widget.entitlements */,
+				03D6337C2436151A00F8D2CE /* TodayViewController.swift */,
+				03D6337E2436151A00F8D2CE /* MainInterface.storyboard */,
+				03D5A52F243738D3004AC5EB /* WidgetView.swift */,
+				03D633812436151A00F8D2CE /* Info.plist */,
+			);
+			path = "TimeLine Widget";
+			sourceTree = "<group>";
+		};
+		03D6339F2436165100F8D2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03D633A32436165100F8D2CE /* TimeLineShared.framework */,
+				03D5A5D42438B6D4004AC5EB /* TimeLineSharedMacOS.framework */,
+				03B8BF9F24437B0D0009E084 /* TimeLineSharedWatchOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03B8BFB6244463BD0009E084 /* TimeLineWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B8BFDB244463C10009E084 /* Build configuration list for PBXNativeTarget "TimeLineWatchOS" */;
+			buildPhases = (
+				03B8BFB5244463BD0009E084 /* Resources */,
+				03B8BFDA244463C10009E084 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03B8BFC6244463C00009E084 /* PBXTargetDependency */,
+			);
+			name = TimeLineWatchOS;
+			productName = TimeLineWatchOS;
+			productReference = 03B8BFB7244463BD0009E084 /* Time Lines.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		03B8BFC2244463C00009E084 /* TimeLineWatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B8BFD7244463C10009E084 /* Build configuration list for PBXNativeTarget "TimeLineWatchOS Extension" */;
+			buildPhases = (
+				03B8BFBF244463C00009E084 /* Sources */,
+				03B8BFC0244463C00009E084 /* Frameworks */,
+				03B8BFC1244463C00009E084 /* Resources */,
+				03CD2B99244466AC00DFCD04 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TimeLineWatchOS Extension";
+			productName = "TimeLineWatchOS Extension";
+			productReference = 03B8BFC3244463C00009E084 /* TimeLineWatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		03D5A5EE2438C4FD004AC5EB /* TimeLineMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D5A5FF2438C4FF004AC5EB /* Build configuration list for PBXNativeTarget "TimeLineMacOS" */;
+			buildPhases = (
+				03D5A5EB2438C4FD004AC5EB /* Sources */,
+				03D5A5EC2438C4FD004AC5EB /* Frameworks */,
+				03D5A5ED2438C4FD004AC5EB /* Resources */,
+				03D5A60C2438C542004AC5EB /* Embed Frameworks */,
+				03D5A6582439CBD4004AC5EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeLineMacOS;
+			packageProductDependencies = (
+			);
+			productName = TimeLineMacOS;
+			productReference = 03D5A5EF2438C4FD004AC5EB /* Time Lines.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03D5A6422439CAD6004AC5EB /* TimeLineMacOS-launchagent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D5A6532439CAD7004AC5EB /* Build configuration list for PBXNativeTarget "TimeLineMacOS-launchagent" */;
+			buildPhases = (
+				03D5A63F2439CAD6004AC5EB /* Sources */,
+				03D5A6402439CAD6004AC5EB /* Frameworks */,
+				03D5A6412439CAD6004AC5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TimeLineMacOS-launchagent";
+			productName = "TimeLineMacOS-launchagent";
+			productReference = 03D5A6432439CAD6004AC5EB /* TimeLineMacOS-launchagent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03D633582436149700F8D2CE /* TimeLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D633702436149C00F8D2CE /* Build configuration list for PBXNativeTarget "TimeLine" */;
+			buildPhases = (
+				03D633552436149700F8D2CE /* Sources */,
+				03D633562436149700F8D2CE /* Frameworks */,
+				03D633572436149700F8D2CE /* Resources */,
+				03D633882436151A00F8D2CE /* Embed App Extensions */,
+				03D633AE243619AF00F8D2CE /* Embed Frameworks */,
+				03B8BF8024435EDB0009E084 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03D633832436151A00F8D2CE /* PBXTargetDependency */,
+				03B8BFD5244463C10009E084 /* PBXTargetDependency */,
+			);
+			name = TimeLine;
+			packageProductDependencies = (
+			);
+			productName = TimeLine;
+			productReference = 03D633592436149700F8D2CE /* Time Lines.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03D633762436151A00F8D2CE /* TimeLine Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D633852436151A00F8D2CE /* Build configuration list for PBXNativeTarget "TimeLine Widget" */;
+			buildPhases = (
+				03D633732436151A00F8D2CE /* Sources */,
+				03D633742436151A00F8D2CE /* Frameworks */,
+				03D633752436151A00F8D2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TimeLine Widget";
+			productName = "TimeLine Widget";
+			productReference = 03D633772436151A00F8D2CE /* Time Lines Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03D633512436149700F8D2CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Mathieu Dutour";
+				TargetAttributes = {
+					03B8BFB6244463BD0009E084 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					03B8BFC2244463C00009E084 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					03D5A5EE2438C4FD004AC5EB = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					03D5A6422439CAD6004AC5EB = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					03D633582436149700F8D2CE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					03D633762436151A00F8D2CE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 03D633542436149700F8D2CE /* Build configuration list for PBXProject "TimeLine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03D633502436149700F8D2CE;
+			packageReferences = (
+			);
+			productRefGroup = 03D6335A2436149700F8D2CE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 03D6339F2436165100F8D2CE /* Products */;
+					ProjectRef = 03D6339E2436165100F8D2CE /* TimeLineShared.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				03D633582436149700F8D2CE /* TimeLine */,
+				03D633762436151A00F8D2CE /* TimeLine Widget */,
+				03D5A5EE2438C4FD004AC5EB /* TimeLineMacOS */,
+				03D5A6422439CAD6004AC5EB /* TimeLineMacOS-launchagent */,
+				03B8BFB6244463BD0009E084 /* TimeLineWatchOS */,
+				03B8BFC2244463C00009E084 /* TimeLineWatchOS Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		03B8BF9F24437B0D0009E084 /* TimeLineSharedWatchOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TimeLineSharedWatchOS.framework;
+			remoteRef = 03B8BF9E24437B0D0009E084 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03D5A5D42438B6D4004AC5EB /* TimeLineSharedMacOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TimeLineSharedMacOS.framework;
+			remoteRef = 03D5A5D32438B6D4004AC5EB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03D633A32436165100F8D2CE /* TimeLineShared.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TimeLineShared.framework;
+			remoteRef = 03D633A22436165100F8D2CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03B8BFB5244463BD0009E084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B8BFBD244463C00009E084 /* Assets.xcassets in Resources */,
+				03B8BFBB244463BD0009E084 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B8BFC1244463C00009E084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B8BFD2244463C10009E084 /* Preview Assets.xcassets in Resources */,
+				03B8BFCF244463C10009E084 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A5ED2438C4FD004AC5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A5FC2438C4FF004AC5EB /* Main.storyboard in Resources */,
+				03D5A5F92438C4FF004AC5EB /* Preview Assets.xcassets in Resources */,
+				03D5A5F62438C4FF004AC5EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A6412439CAD6004AC5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A64D2439CAD7004AC5EB /* Preview Assets.xcassets in Resources */,
+				03D5A64A2439CAD7004AC5EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633572436149700F8D2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D6336C2436149C00F8D2CE /* LaunchScreen.storyboard in Resources */,
+				03D633692436149C00F8D2CE /* Preview Assets.xcassets in Resources */,
+				03D633662436149C00F8D2CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633752436151A00F8D2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A53B24374E96004AC5EB /* Assets.xcassets in Resources */,
+				03D633802436151A00F8D2CE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03B8BFBF244463C00009E084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B8BFCB244463C00009E084 /* HostingController.swift in Sources */,
+				03B8BFC9244463C00009E084 /* ContentView.swift in Sources */,
+				03B8BFCD244463C00009E084 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A5EB2438C4FD004AC5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A63E2439C466004AC5EB /* Utils.swift in Sources */,
+				03B8BF22243E2E410009E084 /* SearchController.swift in Sources */,
+				03D5A6082438C531004AC5EB /* EventMonitor.swift in Sources */,
+				03D5A6072438C531004AC5EB /* StatusBarController.swift in Sources */,
+				03D5A65C2439CC15004AC5EB /* LaunchAtLogin.swift in Sources */,
+				03D5A6062438C531004AC5EB /* MenuView.swift in Sources */,
+				03D5A689243DB959004AC5EB /* ContactEdition.swift in Sources */,
+				03D5A5F22438C4FD004AC5EB /* AppDelegate.swift in Sources */,
+				03D5A675243C7D43004AC5EB /* ManageContacts.swift in Sources */,
+				03F04B35244DF32000931FB0 /* AutoFocusTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D5A63F2439CAD6004AC5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A6572439CB20004AC5EB /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633552436149700F8D2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035977A92452D2B10056732F /* SearchBar.swift in Sources */,
+				03D6335D2436149700F8D2CE /* AppDelegate.swift in Sources */,
+				03B82EDF2455DA27002DA493 /* KeyboardAdaptive.swift in Sources */,
+				03D633C02436343700F8D2CE /* LocationSearchController.swift in Sources */,
+				03D633642436149700F8D2CE /* ContentView.swift in Sources */,
+				03D6335F2436149700F8D2CE /* SceneDelegate.swift in Sources */,
+				03A0C4B224692D63008B5A64 /* WatchHandler.swift in Sources */,
+				03B82EDB245587C1002DA493 /* Tags.swift in Sources */,
+				03DCC2C22451CE98000D0B94 /* ActivityIndicator.swift in Sources */,
+				03B82EDD24558EAE002DA493 /* TagEdition.swift in Sources */,
+				03D633BE24362B8900F8D2CE /* ContactEdition.swift in Sources */,
+				03B82ED92454B36C002DA493 /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D633732436151A00F8D2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5A530243738D3004AC5EB /* WidgetView.swift in Sources */,
+				03D6337D2436151A00F8D2CE /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03B8BFC6244463C00009E084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03B8BFC2244463C00009E084 /* TimeLineWatchOS Extension */;
+			targetProxy = 03B8BFC5244463C00009E084 /* PBXContainerItemProxy */;
+		};
+		03B8BFD5244463C10009E084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03B8BFB6244463BD0009E084 /* TimeLineWatchOS */;
+			targetProxy = 03B8BFD4244463C10009E084 /* PBXContainerItemProxy */;
+		};
+		03D633832436151A00F8D2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 03D633762436151A00F8D2CE /* TimeLine Widget */;
+			targetProxy = 03D633822436151A00F8D2CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03B8BFB9244463BD0009E084 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03B8BFBA244463BD0009E084 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		03D5A5FA2438C4FF004AC5EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D5A5FB2438C4FF004AC5EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03D6336A2436149C00F8D2CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D6336B2436149C00F8D2CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		03D6337E2436151A00F8D2CE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D6337F2436151A00F8D2CE /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03B8BFD8244463C10009E084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "TimeLineWatchOS Extension/TimeLineWatchOS Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TimeLineWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development me.dutour.mathieu.TimeLine.watchkitapp.watchkitextension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		03B8BFD9244463C10009E084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "TimeLineWatchOS Extension/TimeLineWatchOS Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TimeLineWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.dutour.mathieu.TimeLine.watchkitapp.watchkitextension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		03B8BFDC244463C10009E084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				IBSC_MODULE = TimeLineWatchOS_Extension;
+				INFOPLIST_FILE = TimeLineWatchOS/Info.plist;
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine.watchkitapp;
+				PRODUCT_NAME = "Time Lines";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development me.dutour.mathieu.TimeLine.watchkitapp";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		03B8BFDD244463C10009E084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				IBSC_MODULE = TimeLineWatchOS_Extension;
+				INFOPLIST_FILE = TimeLineWatchOS/Info.plist;
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine.watchkitapp;
+				PRODUCT_NAME = "Time Lines";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.dutour.mathieu.TimeLine.watchkitapp";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		03D5A6002438C4FF004AC5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeLineMacOS/TimeLineMacOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = TimeLineMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine;
+				PRODUCT_NAME = "Time Lines";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03D5A6012438C4FF004AC5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeLineMacOS/TimeLineMacOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = TimeLineMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine;
+				PRODUCT_NAME = "Time Lines";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03D5A6542439CAD7004AC5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TimeLineMacOS-launchagent/TimeLineMacOS-launchagent.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeLineMacOS-launchagent/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TimeLineMacOS-launchagent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.TimeLineMacOS-launchagent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03D5A6552439CAD7004AC5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TimeLineMacOS-launchagent/TimeLineMacOS-launchagent.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeLineMacOS-launchagent/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TimeLineMacOS-launchagent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.TimeLineMacOS-launchagent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03D6336E2436149C00F8D2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03D6336F2436149C00F8D2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03D633712436149C00F8D2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeLine/TimeLine.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeLine/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeLine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine;
+				PRODUCT_NAME = "Time Lines";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development me.dutour.mathieu.TimeLine";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		03D633722436149C00F8D2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeLine/TimeLine.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeLine/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeLine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dutour.mathieu.TimeLine;
+				PRODUCT_NAME = "Time Lines";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.dutour.mathieu.TimeLine";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		03D633862436151A00F8D2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TimeLine Widget/TimeLine Widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				INFOPLIST_FILE = "TimeLine Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.TimeLine.TimeLine-Widget";
+				PRODUCT_NAME = "Time Lines Widget";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development me.dutour.mathieu.TimeLine.TimeLine-Widget";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03D633872436151A00F8D2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TimeLine Widget/TimeLine Widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 56;
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				INFOPLIST_FILE = "TimeLine Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.TimeLine.TimeLine-Widget";
+				PRODUCT_NAME = "Time Lines Widget";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.dutour.mathieu.TimeLine.TimeLine-Widget";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03B8BFD7244463C10009E084 /* Build configuration list for PBXNativeTarget "TimeLineWatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B8BFD8244463C10009E084 /* Debug */,
+				03B8BFD9244463C10009E084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B8BFDB244463C10009E084 /* Build configuration list for PBXNativeTarget "TimeLineWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B8BFDC244463C10009E084 /* Debug */,
+				03B8BFDD244463C10009E084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D5A5FF2438C4FF004AC5EB /* Build configuration list for PBXNativeTarget "TimeLineMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D5A6002438C4FF004AC5EB /* Debug */,
+				03D5A6012438C4FF004AC5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D5A6532439CAD7004AC5EB /* Build configuration list for PBXNativeTarget "TimeLineMacOS-launchagent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D5A6542439CAD7004AC5EB /* Debug */,
+				03D5A6552439CAD7004AC5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D633542436149700F8D2CE /* Build configuration list for PBXProject "TimeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D6336E2436149C00F8D2CE /* Debug */,
+				03D6336F2436149C00F8D2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D633702436149C00F8D2CE /* Build configuration list for PBXNativeTarget "TimeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D633712436149C00F8D2CE /* Debug */,
+				03D633722436149C00F8D2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D633852436151A00F8D2CE /* Build configuration list for PBXNativeTarget "TimeLine Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D633862436151A00F8D2CE /* Debug */,
+				03D633872436151A00F8D2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03D633512436149700F8D2CE /* Project object */;
+}
