@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D51C57E82556C9B80047FFBD /* AppStoreGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C57E72556C9B80047FFBD /* AppStoreGridApp.swift */; };
+		D51C57EA2556C9B80047FFBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C57E92556C9B80047FFBD /* ContentView.swift */; };
+		D51C57EC2556C9B90047FFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51C57EB2556C9B90047FFBD /* Assets.xcassets */; };
+		D51C57EF2556C9B90047FFBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51C57EE2556C9B90047FFBD /* Preview Assets.xcassets */; };
+		D51C57F92556CE150047FFBD /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D51C57F82556CE150047FFBD /* KingfisherSwiftUI */; };
+		D51C57FB2556CE150047FFBD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D51C57FA2556CE150047FFBD /* Kingfisher */; };
+		D51C57FE2556CEEB0047FFBD /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C57FD2556CEEB0047FFBD /* GridView.swift */; };
+		D51C58062556CF920047FFBD /* ModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C58052556CF920047FFBD /* ModelHelpers.swift */; };
+		D51C580A2556D1300047FFBD /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C58092556D1300047FFBD /* GridCellView.swift */; };
+		D53277B62556E04500832289 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53277B52556E04500832289 /* Application.swift */; };
+		D53277BA25581E7E00832289 /* GridVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53277B925581E7E00832289 /* GridVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D51C57E42556C9B80047FFBD /* AppStoreGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51C57E72556C9B80047FFBD /* AppStoreGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreGridApp.swift; sourceTree = "<group>"; };
+		D51C57E92556C9B80047FFBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D51C57EB2556C9B90047FFBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D51C57EE2556C9B90047FFBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D51C57F02556C9B90047FFBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D51C57FD2556CEEB0047FFBD /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		D51C58052556CF920047FFBD /* ModelHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelpers.swift; sourceTree = "<group>"; };
+		D51C58092556D1300047FFBD /* GridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
+		D53277B52556E04500832289 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		D53277B925581E7E00832289 /* GridVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D51C57E12556C9B80047FFBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51C57FB2556CE150047FFBD /* Kingfisher in Frameworks */,
+				D51C57F92556CE150047FFBD /* KingfisherSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D51C57DB2556C9B80047FFBD = {
+			isa = PBXGroup;
+			children = (
+				D51C57E62556C9B80047FFBD /* AppStoreGrid */,
+				D51C57E52556C9B80047FFBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D51C57E52556C9B80047FFBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D51C57E42556C9B80047FFBD /* AppStoreGrid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D51C57E62556C9B80047FFBD /* AppStoreGrid */ = {
+			isa = PBXGroup;
+			children = (
+				D51C58002556CF250047FFBD /* Model */,
+				D51C58082556D1060047FFBD /* View */,
+				D51C57E72556C9B80047FFBD /* AppStoreGridApp.swift */,
+				D51C57E92556C9B80047FFBD /* ContentView.swift */,
+				D51C57EB2556C9B90047FFBD /* Assets.xcassets */,
+				D51C57F02556C9B90047FFBD /* Info.plist */,
+				D51C57ED2556C9B90047FFBD /* Preview Content */,
+			);
+			path = AppStoreGrid;
+			sourceTree = "<group>";
+		};
+		D51C57ED2556C9B90047FFBD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D51C57EE2556C9B90047FFBD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D51C58002556CF250047FFBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D51C58052556CF920047FFBD /* ModelHelpers.swift */,
+				D53277B52556E04500832289 /* Application.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D51C58082556D1060047FFBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D51C58092556D1300047FFBD /* GridCellView.swift */,
+				D51C57FD2556CEEB0047FFBD /* GridView.swift */,
+				D53277B925581E7E00832289 /* GridVM.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D51C57E32556C9B80047FFBD /* AppStoreGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51C57F32556C9B90047FFBD /* Build configuration list for PBXNativeTarget "AppStoreGrid" */;
+			buildPhases = (
+				D51C57E02556C9B80047FFBD /* Sources */,
+				D51C57E12556C9B80047FFBD /* Frameworks */,
+				D51C57E22556C9B80047FFBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppStoreGrid;
+			packageProductDependencies = (
+				D51C57F82556CE150047FFBD /* KingfisherSwiftUI */,
+				D51C57FA2556CE150047FFBD /* Kingfisher */,
+			);
+			productName = AppStoreGrid;
+			productReference = D51C57E42556C9B80047FFBD /* AppStoreGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D51C57DC2556C9B80047FFBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					D51C57E32556C9B80047FFBD = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = D51C57DF2556C9B80047FFBD /* Build configuration list for PBXProject "AppStoreGrid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D51C57DB2556C9B80047FFBD;
+			packageReferences = (
+				D51C57F72556CE150047FFBD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = D51C57E52556C9B80047FFBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D51C57E32556C9B80047FFBD /* AppStoreGrid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D51C57E22556C9B80047FFBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51C57EF2556C9B90047FFBD /* Preview Assets.xcassets in Resources */,
+				D51C57EC2556C9B90047FFBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D51C57E02556C9B80047FFBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53277BA25581E7E00832289 /* GridVM.swift in Sources */,
+				D53277B62556E04500832289 /* Application.swift in Sources */,
+				D51C580A2556D1300047FFBD /* GridCellView.swift in Sources */,
+				D51C58062556CF920047FFBD /* ModelHelpers.swift in Sources */,
+				D51C57EA2556C9B80047FFBD /* ContentView.swift in Sources */,
+				D51C57FE2556CEEB0047FFBD /* GridView.swift in Sources */,
+				D51C57E82556C9B80047FFBD /* AppStoreGridApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D51C57F12556C9B90047FFBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D51C57F22556C9B90047FFBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D51C57F42556C9B90047FFBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AppStoreGrid/Preview Content\"";
+				DEVELOPMENT_TEAM = JM8BMXQ5NG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AppStoreGrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serafinennes.AppStoreGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51C57F52556C9B90047FFBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AppStoreGrid/Preview Content\"";
+				DEVELOPMENT_TEAM = JM8BMXQ5NG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AppStoreGrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serafinennes.AppStoreGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D51C57DF2556C9B80047FFBD /* Build configuration list for PBXProject "AppStoreGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51C57F12556C9B90047FFBD /* Debug */,
+				D51C57F22556C9B90047FFBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51C57F32556C9B90047FFBD /* Build configuration list for PBXNativeTarget "AppStoreGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51C57F42556C9B90047FFBD /* Debug */,
+				D51C57F52556C9B90047FFBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D51C57F72556CE150047FFBD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D51C57F82556CE150047FFBD /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51C57F72556CE150047FFBD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		D51C57FA2556CE150047FFBD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D51C57F72556CE150047FFBD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D51C57DC2556C9B80047FFBD /* Project object */;
+}
