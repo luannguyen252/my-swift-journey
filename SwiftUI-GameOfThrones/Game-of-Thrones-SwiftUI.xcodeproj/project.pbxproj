@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B95616E224C8BF0F003A3ACF /* GameOfThronesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95616D024C8BF0D003A3ACF /* GameOfThronesApp.swift */; };
+		B95616E324C8BF0F003A3ACF /* GameOfThronesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95616D024C8BF0D003A3ACF /* GameOfThronesApp.swift */; };
+		B95616E624C8BF0F003A3ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95616D224C8BF0F003A3ACF /* Assets.xcassets */; };
+		B95616E724C8BF0F003A3ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95616D224C8BF0F003A3ACF /* Assets.xcassets */; };
+		B95616EE24C8C7FD003A3ACF /* HouseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ABD23032FD600E2B3F5 /* HouseDataModel.swift */; };
+		B95616EF24C8C7FD003A3ACF /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC023032FD600E2B3F5 /* APIServiceError.swift */; };
+		B95616F024C8C7FD003A3ACF /* HouseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ABE23032FD600E2B3F5 /* HouseResponseModel.swift */; };
+		B95616F124C8C7FD003A3ACF /* HouseDataModelConvertibleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ABF23032FD600E2B3F5 /* HouseDataModelConvertibleError.swift */; };
+		B95616F224C8C7FD003A3ACF /* HouseResponseModel+HouseDataModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC123032FD600E2B3F5 /* HouseResponseModel+HouseDataModelConvertible.swift */; };
+		B95616F324C8C7FD003A3ACF /* HouseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ABD23032FD600E2B3F5 /* HouseDataModel.swift */; };
+		B95616F424C8C7FD003A3ACF /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC023032FD600E2B3F5 /* APIServiceError.swift */; };
+		B95616F524C8C7FD003A3ACF /* HouseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ABE23032FD600E2B3F5 /* HouseResponseModel.swift */; };
+		B95616F624C8C7FD003A3ACF /* HouseDataModelConvertibleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ABF23032FD600E2B3F5 /* HouseDataModelConvertibleError.swift */; };
+		B95616F724C8C7FD003A3ACF /* HouseResponseModel+HouseDataModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC123032FD600E2B3F5 /* HouseResponseModel+HouseDataModelConvertible.swift */; };
+		B95616F824C8C801003A3ACF /* HouseDataModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC723032FDD00E2B3F5 /* HouseDataModelConvertible.swift */; };
+		B95616F924C8C801003A3ACF /* HouseDataModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC723032FDD00E2B3F5 /* HouseDataModelConvertible.swift */; };
+		B95616FA24C8C805003A3ACF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC923032FE300E2B3F5 /* APIService.swift */; };
+		B95616FB24C8C805003A3ACF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AC923032FE300E2B3F5 /* APIService.swift */; };
+		B95616FC24C8C808003A3ACF /* HouseMetadataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ACB23032FEA00E2B3F5 /* HouseMetadataModel.swift */; };
+		B95616FD24C8C808003A3ACF /* HouseMetadataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ACB23032FEA00E2B3F5 /* HouseMetadataModel.swift */; };
+		B95616FE24C8C80E003A3ACF /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ACD2303342900E2B3F5 /* HouseModel.swift */; };
+		B95616FF24C8C80E003A3ACF /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ACD2303342900E2B3F5 /* HouseModel.swift */; };
+		B956170024C8C812003A3ACF /* HouseSwornMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD02303343100E2B3F5 /* HouseSwornMembersView.swift */; };
+		B956170124C8C812003A3ACF /* HouseAncestralWeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD42303343100E2B3F5 /* HouseAncestralWeaponsView.swift */; };
+		B956170224C8C812003A3ACF /* HouseCadetBranchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD32303343100E2B3F5 /* HouseCadetBranchesView.swift */; };
+		B956170324C8C812003A3ACF /* HouseFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD22303343100E2B3F5 /* HouseFactsView.swift */; };
+		B956170424C8C812003A3ACF /* HouseTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ACF2303343100E2B3F5 /* HouseTitlesView.swift */; };
+		B956170524C8C812003A3ACF /* HouseSeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD12303343100E2B3F5 /* HouseSeatsView.swift */; };
+		B956170624C8C813003A3ACF /* HouseSwornMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD02303343100E2B3F5 /* HouseSwornMembersView.swift */; };
+		B956170724C8C813003A3ACF /* HouseAncestralWeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD42303343100E2B3F5 /* HouseAncestralWeaponsView.swift */; };
+		B956170824C8C813003A3ACF /* HouseCadetBranchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD32303343100E2B3F5 /* HouseCadetBranchesView.swift */; };
+		B956170924C8C813003A3ACF /* HouseFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD22303343100E2B3F5 /* HouseFactsView.swift */; };
+		B956170A24C8C813003A3ACF /* HouseTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ACF2303343100E2B3F5 /* HouseTitlesView.swift */; };
+		B956170B24C8C813003A3ACF /* HouseSeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AD12303343100E2B3F5 /* HouseSeatsView.swift */; };
+		B956170E24C8C817003A3ACF /* HouseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AE02303343A00E2B3F5 /* HouseDetailViewModel.swift */; };
+		B956170F24C8C817003A3ACF /* HouseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ADB2303343A00E2B3F5 /* HouseDetailScreen.swift */; };
+		B956171224C8C818003A3ACF /* HouseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AE02303343A00E2B3F5 /* HouseDetailViewModel.swift */; };
+		B956171324C8C818003A3ACF /* HouseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03ADB2303343A00E2B3F5 /* HouseDetailScreen.swift */; };
+		B956171624C8C81B003A3ACF /* HouseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AF12303345B00E2B3F5 /* HouseListViewModel.swift */; };
+		B956171724C8C81B003A3ACF /* HouseListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AF32303345B00E2B3F5 /* HouseListScreen.swift */; };
+		B956171824C8C81B003A3ACF /* HouseListViewModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BA37A023096E3300D3CCA8 /* HouseListViewModelError.swift */; };
+		B956171B24C8C81C003A3ACF /* HouseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AF12303345B00E2B3F5 /* HouseListViewModel.swift */; };
+		B956171C24C8C81C003A3ACF /* HouseListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E03AF32303345B00E2B3F5 /* HouseListScreen.swift */; };
+		B956171D24C8C81C003A3ACF /* HouseListViewModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BA37A023096E3300D3CCA8 /* HouseListViewModelError.swift */; };
+		B956171F24C8C82F003A3ACF /* AdvancedList in Frameworks */ = {isa = PBXBuildFile; productRef = B956171E24C8C82F003A3ACF /* AdvancedList */; };
+		B956172124C8C836003A3ACF /* AdvancedList in Frameworks */ = {isa = PBXBuildFile; productRef = B956172024C8C836003A3ACF /* AdvancedList */; };
+		B956172724C8EBC3003A3ACF /* PrimaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172624C8EBC3003A3ACF /* PrimaryView.swift */; };
+		B956172824C8EBC3003A3ACF /* PrimaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172624C8EBC3003A3ACF /* PrimaryView.swift */; };
+		B956172D24C8ED08003A3ACF /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172C24C8ED08003A3ACF /* NavigationItem.swift */; };
+		B956172E24C8ED08003A3ACF /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172C24C8ED08003A3ACF /* NavigationItem.swift */; };
+		B9DD1A4224CDD7FC00E3C35F /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172324C8EB70003A3ACF /* Sidebar.swift */; };
+		B9DD1A4724CDDA6300E3C35F /* HouseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A4624CDDA6300E3C35F /* HouseRow.swift */; };
+		B9DD1A4824CDDA6300E3C35F /* HouseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A4624CDDA6300E3C35F /* HouseRow.swift */; };
+		B9DD1A4924CE240D00E3C35F /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956172324C8EB70003A3ACF /* Sidebar.swift */; };
+		B9DD1A4B24CE270500E3C35F /* HouseDetailViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A4A24CE270500E3C35F /* HouseDetailViewModelState.swift */; };
+		B9DD1A4C24CE270500E3C35F /* HouseDetailViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A4A24CE270500E3C35F /* HouseDetailViewModelState.swift */; };
+		B9DD1A4E24CE275100E3C35F /* HouseModel+initWithDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A4D24CE275100E3C35F /* HouseModel+initWithDataModel.swift */; };
+		B9DD1A4F24CE275100E3C35F /* HouseModel+initWithDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A4D24CE275100E3C35F /* HouseModel+initWithDataModel.swift */; };
+		B9DD1A5424CE326500E3C35F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A5324CE326500E3C35F /* DetailView.swift */; };
+		B9DD1A5524CE326500E3C35F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD1A5324CE326500E3C35F /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B918F92B24CDC8DD003721C6 /* Game-of-Thrones-SwiftUI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Game-of-Thrones-SwiftUI.gif"; path = "../../../../../../../Macintosh HD/Users/crelies/dev/public/mobile/Game-of-Thrones-VIPER-SwiftUI/Game-of-Thrones-SwiftUI.gif"; sourceTree = "<group>"; };
+		B943C44A230336DF00E1BBA0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B95616D024C8BF0D003A3ACF /* GameOfThronesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesApp.swift; sourceTree = "<group>"; };
+		B95616D224C8BF0F003A3ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B95616D724C8BF0F003A3ACF /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95616D924C8BF0F003A3ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95616DE24C8BF0F003A3ACF /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95616E024C8BF0F003A3ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95616E124C8BF0F003A3ACF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B956172324C8EB70003A3ACF /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		B956172624C8EBC3003A3ACF /* PrimaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryView.swift; sourceTree = "<group>"; };
+		B956172C24C8ED08003A3ACF /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		B9BA37A023096E3300D3CCA8 /* HouseListViewModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewModelError.swift; sourceTree = "<group>"; };
+		B9DD1A4624CDDA6300E3C35F /* HouseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRow.swift; sourceTree = "<group>"; };
+		B9DD1A4A24CE270500E3C35F /* HouseDetailViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewModelState.swift; sourceTree = "<group>"; };
+		B9DD1A4D24CE275100E3C35F /* HouseModel+initWithDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HouseModel+initWithDataModel.swift"; sourceTree = "<group>"; };
+		B9DD1A5324CE326500E3C35F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B9E03ABD23032FD600E2B3F5 /* HouseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDataModel.swift; sourceTree = "<group>"; };
+		B9E03ABE23032FD600E2B3F5 /* HouseResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseResponseModel.swift; sourceTree = "<group>"; };
+		B9E03ABF23032FD600E2B3F5 /* HouseDataModelConvertibleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDataModelConvertibleError.swift; sourceTree = "<group>"; };
+		B9E03AC023032FD600E2B3F5 /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
+		B9E03AC123032FD600E2B3F5 /* HouseResponseModel+HouseDataModelConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HouseResponseModel+HouseDataModelConvertible.swift"; sourceTree = "<group>"; };
+		B9E03AC723032FDD00E2B3F5 /* HouseDataModelConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDataModelConvertible.swift; sourceTree = "<group>"; };
+		B9E03AC923032FE300E2B3F5 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B9E03ACB23032FEA00E2B3F5 /* HouseMetadataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseMetadataModel.swift; sourceTree = "<group>"; };
+		B9E03ACD2303342900E2B3F5 /* HouseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+		B9E03ACF2303343100E2B3F5 /* HouseTitlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTitlesView.swift; sourceTree = "<group>"; };
+		B9E03AD02303343100E2B3F5 /* HouseSwornMembersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseSwornMembersView.swift; sourceTree = "<group>"; };
+		B9E03AD12303343100E2B3F5 /* HouseSeatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseSeatsView.swift; sourceTree = "<group>"; };
+		B9E03AD22303343100E2B3F5 /* HouseFactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseFactsView.swift; sourceTree = "<group>"; };
+		B9E03AD32303343100E2B3F5 /* HouseCadetBranchesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseCadetBranchesView.swift; sourceTree = "<group>"; };
+		B9E03AD42303343100E2B3F5 /* HouseAncestralWeaponsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseAncestralWeaponsView.swift; sourceTree = "<group>"; };
+		B9E03ADB2303343A00E2B3F5 /* HouseDetailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDetailScreen.swift; sourceTree = "<group>"; };
+		B9E03AE02303343A00E2B3F5 /* HouseDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDetailViewModel.swift; sourceTree = "<group>"; };
+		B9E03AF12303345B00E2B3F5 /* HouseListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseListViewModel.swift; sourceTree = "<group>"; };
+		B9E03AF32303345B00E2B3F5 /* HouseListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseListScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B95616D424C8BF0F003A3ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B956172124C8C836003A3ACF /* AdvancedList in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B95616DB24C8BF0F003A3ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B956171F24C8C82F003A3ACF /* AdvancedList in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B918F92924CDC792003721C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03ACD2303342900E2B3F5 /* HouseModel.swift */,
+				B9DD1A4D24CE275100E3C35F /* HouseModel+initWithDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B918F92A24CDC7A8003721C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AF12303345B00E2B3F5 /* HouseListViewModel.swift */,
+				B9BA37A023096E3300D3CCA8 /* HouseListViewModelError.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B91CAD612305AB6400EB67B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B95616CF24C8BF0D003A3ACF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AB123032E6D00E2B3F5 /* Global */,
+				B9E03AB023032E6700E2B3F5 /* Features */,
+				B95616D024C8BF0D003A3ACF /* GameOfThronesApp.swift */,
+				B95616D224C8BF0F003A3ACF /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B95616D824C8BF0F003A3ACF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B95616D924C8BF0F003A3ACF /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		B95616DF24C8BF0F003A3ACF /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B95616E024C8BF0F003A3ACF /* Info.plist */,
+				B95616E124C8BF0F003A3ACF /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		B956172224C8EB5D003A3ACF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B956172324C8EB70003A3ACF /* Sidebar.swift */,
+				B956172624C8EBC3003A3ACF /* PrimaryView.swift */,
+				B9DD1A5324CE326500E3C35F /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9E03A9023032E4000E2B3F5 = {
+			isa = PBXGroup;
+			children = (
+				B918F92B24CDC8DD003721C6 /* Game-of-Thrones-SwiftUI.gif */,
+				B943C44A230336DF00E1BBA0 /* README.md */,
+				B95616CF24C8BF0D003A3ACF /* Shared */,
+				B95616D824C8BF0F003A3ACF /* iOS */,
+				B95616DF24C8BF0F003A3ACF /* macOS */,
+				B9E03A9A23032E4000E2B3F5 /* Products */,
+				B91CAD612305AB6400EB67B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9E03A9A23032E4000E2B3F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B95616D724C8BF0F003A3ACF /* GameOfThrones.app */,
+				B95616DE24C8BF0F003A3ACF /* GameOfThrones.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9E03AB023032E6700E2B3F5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AB223032E7700E2B3F5 /* HouseDetail */,
+				B9E03AB323032E7D00E2B3F5 /* HouseList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B9E03AB123032E6D00E2B3F5 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AB423032E8800E2B3F5 /* Models */,
+				B9E03AB523032E8D00E2B3F5 /* Protocols */,
+				B9E03AB623032E9400E2B3F5 /* Services */,
+				B956172224C8EB5D003A3ACF /* Views */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		B9E03AB223032E7700E2B3F5 /* HouseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03ADB2303343A00E2B3F5 /* HouseDetailScreen.swift */,
+				B918F92924CDC792003721C6 /* Models */,
+				B9E03AB823032EAE00E2B3F5 /* ViewModels */,
+				B9E03AB923032EB300E2B3F5 /* Views */,
+			);
+			path = HouseDetail;
+			sourceTree = "<group>";
+		};
+		B9E03AB323032E7D00E2B3F5 /* HouseList */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AF32303345B00E2B3F5 /* HouseListScreen.swift */,
+				B9DD1A4624CDDA6300E3C35F /* HouseRow.swift */,
+				B918F92A24CDC7A8003721C6 /* ViewModels */,
+			);
+			path = HouseList;
+			sourceTree = "<group>";
+		};
+		B9E03AB423032E8800E2B3F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AC023032FD600E2B3F5 /* APIServiceError.swift */,
+				B9E03ABD23032FD600E2B3F5 /* HouseDataModel.swift */,
+				B9E03ABF23032FD600E2B3F5 /* HouseDataModelConvertibleError.swift */,
+				B9E03ACB23032FEA00E2B3F5 /* HouseMetadataModel.swift */,
+				B9E03ABE23032FD600E2B3F5 /* HouseResponseModel.swift */,
+				B9E03AC123032FD600E2B3F5 /* HouseResponseModel+HouseDataModelConvertible.swift */,
+				B956172C24C8ED08003A3ACF /* NavigationItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9E03AB523032E8D00E2B3F5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AC723032FDD00E2B3F5 /* HouseDataModelConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B9E03AB623032E9400E2B3F5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AC923032FE300E2B3F5 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B9E03AB823032EAE00E2B3F5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AE02303343A00E2B3F5 /* HouseDetailViewModel.swift */,
+				B9DD1A4A24CE270500E3C35F /* HouseDetailViewModelState.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B9E03AB923032EB300E2B3F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9E03AD42303343100E2B3F5 /* HouseAncestralWeaponsView.swift */,
+				B9E03AD32303343100E2B3F5 /* HouseCadetBranchesView.swift */,
+				B9E03AD22303343100E2B3F5 /* HouseFactsView.swift */,
+				B9E03AD12303343100E2B3F5 /* HouseSeatsView.swift */,
+				B9E03AD02303343100E2B3F5 /* HouseSwornMembersView.swift */,
+				B9E03ACF2303343100E2B3F5 /* HouseTitlesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B95616D624C8BF0F003A3ACF /* GameOfThrones (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B95616E824C8BF0F003A3ACF /* Build configuration list for PBXNativeTarget "GameOfThrones (iOS)" */;
+			buildPhases = (
+				B95616D324C8BF0F003A3ACF /* Sources */,
+				B95616D424C8BF0F003A3ACF /* Frameworks */,
+				B95616D524C8BF0F003A3ACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GameOfThrones (iOS)";
+			packageProductDependencies = (
+				B956172024C8C836003A3ACF /* AdvancedList */,
+			);
+			productName = "GameOfThrones (iOS)";
+			productReference = B95616D724C8BF0F003A3ACF /* GameOfThrones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B95616DD24C8BF0F003A3ACF /* GameOfThrones (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B95616EB24C8BF0F003A3ACF /* Build configuration list for PBXNativeTarget "GameOfThrones (macOS)" */;
+			buildPhases = (
+				B95616DA24C8BF0F003A3ACF /* Sources */,
+				B95616DB24C8BF0F003A3ACF /* Frameworks */,
+				B95616DC24C8BF0F003A3ACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GameOfThrones (macOS)";
+			packageProductDependencies = (
+				B956171E24C8C82F003A3ACF /* AdvancedList */,
+			);
+			productName = "GameOfThrones (macOS)";
+			productReference = B95616DE24C8BF0F003A3ACF /* GameOfThrones.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9E03A9123032E4000E2B3F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Christian Elies";
+				TargetAttributes = {
+					B95616D624C8BF0F003A3ACF = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					B95616DD24C8BF0F003A3ACF = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = B9E03A9423032E4000E2B3F5 /* Build configuration list for PBXProject "Game-of-Thrones-SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9E03A9023032E4000E2B3F5;
+			packageReferences = (
+				B91CAD642306B5F300EB67B1 /* XCRemoteSwiftPackageReference "AdvancedList" */,
+			);
+			productRefGroup = B9E03A9A23032E4000E2B3F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B95616D624C8BF0F003A3ACF /* GameOfThrones (iOS) */,
+				B95616DD24C8BF0F003A3ACF /* GameOfThrones (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B95616D524C8BF0F003A3ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95616E624C8BF0F003A3ACF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B95616DC24C8BF0F003A3ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95616E724C8BF0F003A3ACF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B95616D324C8BF0F003A3ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95616FE24C8C80E003A3ACF /* HouseModel.swift in Sources */,
+				B95616F024C8C7FD003A3ACF /* HouseResponseModel.swift in Sources */,
+				B9DD1A4B24CE270500E3C35F /* HouseDetailViewModelState.swift in Sources */,
+				B956170224C8C812003A3ACF /* HouseCadetBranchesView.swift in Sources */,
+				B956170E24C8C817003A3ACF /* HouseDetailViewModel.swift in Sources */,
+				B956170424C8C812003A3ACF /* HouseTitlesView.swift in Sources */,
+				B95616EF24C8C7FD003A3ACF /* APIServiceError.swift in Sources */,
+				B956171624C8C81B003A3ACF /* HouseListViewModel.swift in Sources */,
+				B95616F124C8C7FD003A3ACF /* HouseDataModelConvertibleError.swift in Sources */,
+				B956170024C8C812003A3ACF /* HouseSwornMembersView.swift in Sources */,
+				B956172724C8EBC3003A3ACF /* PrimaryView.swift in Sources */,
+				B956170324C8C812003A3ACF /* HouseFactsView.swift in Sources */,
+				B956170124C8C812003A3ACF /* HouseAncestralWeaponsView.swift in Sources */,
+				B95616F224C8C7FD003A3ACF /* HouseResponseModel+HouseDataModelConvertible.swift in Sources */,
+				B956170524C8C812003A3ACF /* HouseSeatsView.swift in Sources */,
+				B95616E224C8BF0F003A3ACF /* GameOfThronesApp.swift in Sources */,
+				B956170F24C8C817003A3ACF /* HouseDetailScreen.swift in Sources */,
+				B9DD1A5424CE326500E3C35F /* DetailView.swift in Sources */,
+				B956172D24C8ED08003A3ACF /* NavigationItem.swift in Sources */,
+				B95616F824C8C801003A3ACF /* HouseDataModelConvertible.swift in Sources */,
+				B956171824C8C81B003A3ACF /* HouseListViewModelError.swift in Sources */,
+				B9DD1A4724CDDA6300E3C35F /* HouseRow.swift in Sources */,
+				B95616FA24C8C805003A3ACF /* APIService.swift in Sources */,
+				B95616EE24C8C7FD003A3ACF /* HouseDataModel.swift in Sources */,
+				B95616FC24C8C808003A3ACF /* HouseMetadataModel.swift in Sources */,
+				B9DD1A4924CE240D00E3C35F /* Sidebar.swift in Sources */,
+				B956171724C8C81B003A3ACF /* HouseListScreen.swift in Sources */,
+				B9DD1A4E24CE275100E3C35F /* HouseModel+initWithDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B95616DA24C8BF0F003A3ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95616FF24C8C80E003A3ACF /* HouseModel.swift in Sources */,
+				B95616F524C8C7FD003A3ACF /* HouseResponseModel.swift in Sources */,
+				B9DD1A4C24CE270500E3C35F /* HouseDetailViewModelState.swift in Sources */,
+				B956170824C8C813003A3ACF /* HouseCadetBranchesView.swift in Sources */,
+				B956171224C8C818003A3ACF /* HouseDetailViewModel.swift in Sources */,
+				B956170A24C8C813003A3ACF /* HouseTitlesView.swift in Sources */,
+				B95616F424C8C7FD003A3ACF /* APIServiceError.swift in Sources */,
+				B956171B24C8C81C003A3ACF /* HouseListViewModel.swift in Sources */,
+				B95616F624C8C7FD003A3ACF /* HouseDataModelConvertibleError.swift in Sources */,
+				B956170624C8C813003A3ACF /* HouseSwornMembersView.swift in Sources */,
+				B956172824C8EBC3003A3ACF /* PrimaryView.swift in Sources */,
+				B956170924C8C813003A3ACF /* HouseFactsView.swift in Sources */,
+				B956170724C8C813003A3ACF /* HouseAncestralWeaponsView.swift in Sources */,
+				B95616F724C8C7FD003A3ACF /* HouseResponseModel+HouseDataModelConvertible.swift in Sources */,
+				B956170B24C8C813003A3ACF /* HouseSeatsView.swift in Sources */,
+				B95616E324C8BF0F003A3ACF /* GameOfThronesApp.swift in Sources */,
+				B9DD1A4224CDD7FC00E3C35F /* Sidebar.swift in Sources */,
+				B9DD1A5524CE326500E3C35F /* DetailView.swift in Sources */,
+				B956171324C8C818003A3ACF /* HouseDetailScreen.swift in Sources */,
+				B956172E24C8ED08003A3ACF /* NavigationItem.swift in Sources */,
+				B95616F924C8C801003A3ACF /* HouseDataModelConvertible.swift in Sources */,
+				B956171D24C8C81C003A3ACF /* HouseListViewModelError.swift in Sources */,
+				B95616FB24C8C805003A3ACF /* APIService.swift in Sources */,
+				B95616F324C8C7FD003A3ACF /* HouseDataModel.swift in Sources */,
+				B95616FD24C8C808003A3ACF /* HouseMetadataModel.swift in Sources */,
+				B9DD1A4824CDDA6300E3C35F /* HouseRow.swift in Sources */,
+				B956171C24C8C81C003A3ACF /* HouseListScreen.swift in Sources */,
+				B9DD1A4F24CE275100E3C35F /* HouseModel+initWithDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B95616E924C8BF0F003A3ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.crelies.GameOfThrones;
+				PRODUCT_NAME = GameOfThrones;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B95616EA24C8BF0F003A3ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.crelies.GameOfThrones;
+				PRODUCT_NAME = GameOfThrones;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B95616EC24C8BF0F003A3ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = de.crelies.GameOfThrones;
+				PRODUCT_NAME = GameOfThrones;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B95616ED24C8BF0F003A3ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = de.crelies.GameOfThrones;
+				PRODUCT_NAME = GameOfThrones;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B9E03AAB23032E4100E2B3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9E03AAC23032E4100E2B3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B95616E824C8BF0F003A3ACF /* Build configuration list for PBXNativeTarget "GameOfThrones (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B95616E924C8BF0F003A3ACF /* Debug */,
+				B95616EA24C8BF0F003A3ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B95616EB24C8BF0F003A3ACF /* Build configuration list for PBXNativeTarget "GameOfThrones (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B95616EC24C8BF0F003A3ACF /* Debug */,
+				B95616ED24C8BF0F003A3ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9E03A9423032E4000E2B3F5 /* Build configuration list for PBXProject "Game-of-Thrones-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9E03AAB23032E4100E2B3F5 /* Debug */,
+				B9E03AAC23032E4100E2B3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B91CAD642306B5F300EB67B1 /* XCRemoteSwiftPackageReference "AdvancedList" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crelies/AdvancedList.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B956171E24C8C82F003A3ACF /* AdvancedList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91CAD642306B5F300EB67B1 /* XCRemoteSwiftPackageReference "AdvancedList" */;
+			productName = AdvancedList;
+		};
+		B956172024C8C836003A3ACF /* AdvancedList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91CAD642306B5F300EB67B1 /* XCRemoteSwiftPackageReference "AdvancedList" */;
+			productName = AdvancedList;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B9E03A9123032E4000E2B3F5 /* Project object */;
+}
