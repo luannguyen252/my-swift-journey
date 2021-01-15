@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADBB2BB4258DD21F00726887 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB2BB3258DD21F00726887 /* Tests_iOS.swift */; };
+		ADBB2BBF258DD21F00726887 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB2BBE258DD21F00726887 /* Tests_macOS.swift */; };
+		ADBB2BC1258DD21F00726887 /* GlassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB2B98258DD21F00726887 /* GlassApp.swift */; };
+		ADBB2BC2258DD21F00726887 /* GlassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB2B98258DD21F00726887 /* GlassApp.swift */; };
+		ADBB2BC3258DD21F00726887 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB2B99258DD21F00726887 /* ContentView.swift */; };
+		ADBB2BC4258DD21F00726887 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB2B99258DD21F00726887 /* ContentView.swift */; };
+		ADBB2BC5258DD21F00726887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBB2B9A258DD21F00726887 /* Assets.xcassets */; };
+		ADBB2BC6258DD21F00726887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBB2B9A258DD21F00726887 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADBB2BB0258DD21F00726887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBB2B93258DD21F00726887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADBB2B9E258DD21F00726887;
+			remoteInfo = "Glass (iOS)";
+		};
+		ADBB2BBB258DD21F00726887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBB2B93258DD21F00726887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADBB2BA6258DD21F00726887;
+			remoteInfo = "Glass (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADBB2B98258DD21F00726887 /* GlassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassApp.swift; sourceTree = "<group>"; };
+		ADBB2B99258DD21F00726887 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADBB2B9A258DD21F00726887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADBB2B9F258DD21F00726887 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBB2BA2258DD21F00726887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBB2BA7258DD21F00726887 /* Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBB2BA9258DD21F00726887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBB2BAA258DD21F00726887 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		ADBB2BAF258DD21F00726887 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBB2BB3258DD21F00726887 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		ADBB2BB5258DD21F00726887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBB2BBA258DD21F00726887 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBB2BBE258DD21F00726887 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		ADBB2BC0258DD21F00726887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADBB2B9C258DD21F00726887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BA4258DD21F00726887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BAC258DD21F00726887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BB7258DD21F00726887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADBB2B92258DD21F00726887 = {
+			isa = PBXGroup;
+			children = (
+				ADBB2B97258DD21F00726887 /* Shared */,
+				ADBB2BA1258DD21F00726887 /* iOS */,
+				ADBB2BA8258DD21F00726887 /* macOS */,
+				ADBB2BB2258DD21F00726887 /* Tests iOS */,
+				ADBB2BBD258DD21F00726887 /* Tests macOS */,
+				ADBB2BA0258DD21F00726887 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADBB2B97258DD21F00726887 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB2B98258DD21F00726887 /* GlassApp.swift */,
+				ADBB2B99258DD21F00726887 /* ContentView.swift */,
+				ADBB2B9A258DD21F00726887 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ADBB2BA0258DD21F00726887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB2B9F258DD21F00726887 /* Glass.app */,
+				ADBB2BA7258DD21F00726887 /* Glass.app */,
+				ADBB2BAF258DD21F00726887 /* Tests iOS.xctest */,
+				ADBB2BBA258DD21F00726887 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADBB2BA1258DD21F00726887 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB2BA2258DD21F00726887 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		ADBB2BA8258DD21F00726887 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB2BA9258DD21F00726887 /* Info.plist */,
+				ADBB2BAA258DD21F00726887 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		ADBB2BB2258DD21F00726887 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB2BB3258DD21F00726887 /* Tests_iOS.swift */,
+				ADBB2BB5258DD21F00726887 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		ADBB2BBD258DD21F00726887 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB2BBE258DD21F00726887 /* Tests_macOS.swift */,
+				ADBB2BC0258DD21F00726887 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADBB2B9E258DD21F00726887 /* Glass (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBB2BC9258DD21F00726887 /* Build configuration list for PBXNativeTarget "Glass (iOS)" */;
+			buildPhases = (
+				ADBB2B9B258DD21F00726887 /* Sources */,
+				ADBB2B9C258DD21F00726887 /* Frameworks */,
+				ADBB2B9D258DD21F00726887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glass (iOS)";
+			productName = "Glass (iOS)";
+			productReference = ADBB2B9F258DD21F00726887 /* Glass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADBB2BA6258DD21F00726887 /* Glass (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBB2BCC258DD21F00726887 /* Build configuration list for PBXNativeTarget "Glass (macOS)" */;
+			buildPhases = (
+				ADBB2BA3258DD21F00726887 /* Sources */,
+				ADBB2BA4258DD21F00726887 /* Frameworks */,
+				ADBB2BA5258DD21F00726887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glass (macOS)";
+			productName = "Glass (macOS)";
+			productReference = ADBB2BA7258DD21F00726887 /* Glass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADBB2BAE258DD21F00726887 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBB2BCF258DD21F00726887 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				ADBB2BAB258DD21F00726887 /* Sources */,
+				ADBB2BAC258DD21F00726887 /* Frameworks */,
+				ADBB2BAD258DD21F00726887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADBB2BB1258DD21F00726887 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = ADBB2BAF258DD21F00726887 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ADBB2BB9258DD21F00726887 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBB2BD2258DD21F00726887 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				ADBB2BB6258DD21F00726887 /* Sources */,
+				ADBB2BB7258DD21F00726887 /* Frameworks */,
+				ADBB2BB8258DD21F00726887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADBB2BBC258DD21F00726887 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = ADBB2BBA258DD21F00726887 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADBB2B93258DD21F00726887 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					ADBB2B9E258DD21F00726887 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					ADBB2BA6258DD21F00726887 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					ADBB2BAE258DD21F00726887 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ADBB2B9E258DD21F00726887;
+					};
+					ADBB2BB9258DD21F00726887 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ADBB2BA6258DD21F00726887;
+					};
+				};
+			};
+			buildConfigurationList = ADBB2B96258DD21F00726887 /* Build configuration list for PBXProject "Glass" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADBB2B92258DD21F00726887;
+			productRefGroup = ADBB2BA0258DD21F00726887 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADBB2B9E258DD21F00726887 /* Glass (iOS) */,
+				ADBB2BA6258DD21F00726887 /* Glass (macOS) */,
+				ADBB2BAE258DD21F00726887 /* Tests iOS */,
+				ADBB2BB9258DD21F00726887 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADBB2B9D258DD21F00726887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB2BC5258DD21F00726887 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BA5258DD21F00726887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB2BC6258DD21F00726887 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BAD258DD21F00726887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BB8258DD21F00726887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADBB2B9B258DD21F00726887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB2BC3258DD21F00726887 /* ContentView.swift in Sources */,
+				ADBB2BC1258DD21F00726887 /* GlassApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BA3258DD21F00726887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB2BC4258DD21F00726887 /* ContentView.swift in Sources */,
+				ADBB2BC2258DD21F00726887 /* GlassApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BAB258DD21F00726887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB2BB4258DD21F00726887 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB2BB6258DD21F00726887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB2BBF258DD21F00726887 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADBB2BB1258DD21F00726887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADBB2B9E258DD21F00726887 /* Glass (iOS) */;
+			targetProxy = ADBB2BB0258DD21F00726887 /* PBXContainerItemProxy */;
+		};
+		ADBB2BBC258DD21F00726887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADBB2BA6258DD21F00726887 /* Glass (macOS) */;
+			targetProxy = ADBB2BBB258DD21F00726887 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADBB2BC7258DD21F00726887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADBB2BC8258DD21F00726887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ADBB2BCA258DD21F00726887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Glass;
+				PRODUCT_NAME = Glass;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADBB2BCB258DD21F00726887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Glass;
+				PRODUCT_NAME = Glass;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADBB2BCD258DD21F00726887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Glass;
+				PRODUCT_NAME = Glass;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ADBB2BCE258DD21F00726887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Glass;
+				PRODUCT_NAME = Glass;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ADBB2BD0258DD21F00726887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Glass (iOS)";
+			};
+			name = Debug;
+		};
+		ADBB2BD1258DD21F00726887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Glass (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADBB2BD3258DD21F00726887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Glass (macOS)";
+			};
+			name = Debug;
+		};
+		ADBB2BD4258DD21F00726887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Glass (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADBB2B96258DD21F00726887 /* Build configuration list for PBXProject "Glass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB2BC7258DD21F00726887 /* Debug */,
+				ADBB2BC8258DD21F00726887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBB2BC9258DD21F00726887 /* Build configuration list for PBXNativeTarget "Glass (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB2BCA258DD21F00726887 /* Debug */,
+				ADBB2BCB258DD21F00726887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBB2BCC258DD21F00726887 /* Build configuration list for PBXNativeTarget "Glass (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB2BCD258DD21F00726887 /* Debug */,
+				ADBB2BCE258DD21F00726887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBB2BCF258DD21F00726887 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB2BD0258DD21F00726887 /* Debug */,
+				ADBB2BD1258DD21F00726887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBB2BD2258DD21F00726887 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB2BD3258DD21F00726887 /* Debug */,
+				ADBB2BD4258DD21F00726887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADBB2B93258DD21F00726887 /* Project object */;
+}
