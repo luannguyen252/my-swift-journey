@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Service View Controller-->
+        <scene sceneID="uhn-DW-6Is">
+            <objects>
+                <viewController storyboardIdentifier="AddServiceViewController" id="dyp-ae-97u" customClass="AddServiceViewController" customModule="Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dmU-tZ-rNu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3At-aj-0Qz">
+                                <rect key="frame" x="16" y="54" width="343" height="125"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="PzC-KP-E9c">
+                                        <rect key="frame" x="0.0" y="33" width="225" height="59"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Service URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsI-sV-SYL">
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="17"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="url"/>
+                                                <connections>
+                                                    <action selector="urlTextFieldEditingDidEnd:" destination="dyp-ae-97u" eventType="editingDidEnd" id="YVo-ek-JnH"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Service Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="psI-iQ-z7E">
+                                                <rect key="frame" x="0.0" y="42" width="225" height="17"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="nameTextFieldEditingChanged:" destination="dyp-ae-97u" eventType="editingChanged" id="jF9-cW-m23"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UUs-ow-R4P">
+                                        <rect key="frame" x="233" y="0.0" width="110" height="125"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missing-image" translatesAutoresizingMaskIntoConstraints="NO" id="8zx-5H-8yK">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="NeV-X1-WCP"/>
+                                                    <constraint firstAttribute="height" constant="110" id="YOW-ku-yPT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDL-El-igJ">
+                                                <rect key="frame" x="0.0" y="120" width="110" height="5"/>
+                                                <state key="normal" title="Edit"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8zx-5H-8yK" firstAttribute="top" secondItem="UUs-ow-R4P" secondAttribute="topMargin" id="VQ4-Be-afN"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="kkX-nv-qX5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3At-aj-0Qz" firstAttribute="top" secondItem="l0M-Nt-Gu7" secondAttribute="top" constant="10" id="Bmn-kE-wIc"/>
+                            <constraint firstAttribute="trailing" secondItem="3At-aj-0Qz" secondAttribute="trailing" constant="16" id="u18-pp-7vQ"/>
+                            <constraint firstItem="3At-aj-0Qz" firstAttribute="leading" secondItem="dmU-tZ-rNu" secondAttribute="leadingMargin" id="zPz-Hy-01a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l0M-Nt-Gu7"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageContainer" destination="UUs-ow-R4P" id="NW6-rz-a3C"/>
+                        <outlet property="logoImageView" destination="8zx-5H-8yK" id="UTr-I8-ykq"/>
+                        <outlet property="nameTextField" destination="psI-iQ-z7E" id="H3V-Lb-Njx"/>
+                        <outlet property="serviceUrlTextField" destination="CsI-sV-SYL" id="koD-hd-2iU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msO-sV-e5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4738.3999999999996" y="136.69950738916256"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="missing-image" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>
