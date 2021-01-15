@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		292A999524E56D8300E6A91C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A999424E56D8300E6A91C /* Button.swift */; };
+		293001FF24D88A9B002DA5A0 /* AddEditSurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293001FE24D88A9B002DA5A0 /* AddEditSurveyViewModel.swift */; };
+		2930020224D88BB1002DA5A0 /* AddEditQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2930020124D88BB1002DA5A0 /* AddEditQuestionViewModel.swift */; };
+		293A0A6E24E04026008D0001 /* PublisherState+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A0A6D24E04026008D0001 /* PublisherState+ErrorAlert.swift */; };
+		297C8C2A24DEB349009910C9 /* Combine+VoidPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C8C2924DEB349009910C9 /* Combine+VoidPublisher.swift */; };
+		297C8C2C24DEC7C6009910C9 /* Publisher+CombineEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C8C2B24DEC7C6009910C9 /* Publisher+CombineEnabled.swift */; };
+		297C8C2E24DEE098009910C9 /* CancellableBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C8C2D24DEE098009910C9 /* CancellableBag.swift */; };
+		297C8C3024DEE0E5009910C9 /* AnyCancellable+CancellableBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C8C2F24DEE0E5009910C9 /* AnyCancellable+CancellableBag.swift */; };
+		297C8C3224DEE69E009910C9 /* PublisherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C8C3124DEE69E009910C9 /* PublisherResult.swift */; };
+		297C8C3424DF03A8009910C9 /* SurveyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C8C3324DF03A8009910C9 /* SurveyListViewModel.swift */; };
+		297C8C3624DF04A9009910C9 /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C8C3524DF04A9009910C9 /* QuestionListViewModel.swift */; };
+		29A2A80D24D5B8D000A4E5AD /* SurveyAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A80C24D5B8D000A4E5AD /* SurveyAppModel.swift */; };
+		29A2A81224D5BA4C00A4E5AD /* TabbarName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A81124D5BA4C00A4E5AD /* TabbarName.swift */; };
+		29A2A81524D5BFAF00A4E5AD /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A81424D5BFAF00A4E5AD /* WebAPI.swift */; };
+		29A2A81724D5BFBD00A4E5AD /* SurveyWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A81624D5BFBD00A4E5AD /* SurveyWebAPI.swift */; };
+		29A2A81924D5C00600A4E5AD /* WebAPI.Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A81824D5C00600A4E5AD /* WebAPI.Endpoint.swift */; };
+		29A2A81E24D72B3100A4E5AD /* Combine+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A81D24D72B3100A4E5AD /* Combine+Error.swift */; };
+		29A2A82024D72D2B00A4E5AD /* WebAPI.HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A81F24D72D2B00A4E5AD /* WebAPI.HTTPMethod.swift */; };
+		29A2A82224D742FC00A4E5AD /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A82124D742FC00A4E5AD /* Survey.swift */; };
+		29A2A82424D7443A00A4E5AD /* WebAPI.Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A82324D7443A00A4E5AD /* WebAPI.Empty.swift */; };
+		29A2A82624D745C500A4E5AD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A82524D745C500A4E5AD /* Question.swift */; };
+		29A2A82824D745DE00A4E5AD /* QuestionAnswerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A82724D745DE00A4E5AD /* QuestionAnswerType.swift */; };
+		29A2A82A24D7460600A4E5AD /* QuestionAnswerChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A82924D7460600A4E5AD /* QuestionAnswerChoice.swift */; };
+		29A2A82D24D74BBD00A4E5AD /* SurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A82C24D74BBD00A4E5AD /* SurveyRepository.swift */; };
+		29A2A82F24D74BCE00A4E5AD /* QuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A82E24D74BCE00A4E5AD /* QuestionRepository.swift */; };
+		29A2A83124D7548A00A4E5AD /* ManageListMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2A83024D7548A00A4E5AD /* ManageListMode.swift */; };
+		29A784C825921F4F00E99500 /* Binding+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A784C725921F4F00E99500 /* Binding+Utilities.swift */; };
+		29B8A7C024D862F90034F21C /* AddEditSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A7BF24D862F90034F21C /* AddEditSurveyView.swift */; };
+		29B8A7C224D86BD30034F21C /* AddEditQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A7C124D86BD30034F21C /* AddEditQuestionView.swift */; };
+		29B8A7C524D86BF80034F21C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A7C424D86BF80034F21C /* QuestionListView.swift */; };
+		29C14020248CD914001985DD /* SurveyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1401F248CD914001985DD /* SurveyApp.swift */; };
+		29C14024248CD914001985DD /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C14023248CD914001985DD /* TabbarView.swift */; };
+		29C14026248CD915001985DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C14025248CD915001985DD /* Assets.xcassets */; };
+		29C14029248CD915001985DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C14028248CD915001985DD /* Preview Assets.xcassets */; };
+		29D80CC7248D224C0086C314 /* ManageSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D80CC6248D224C0086C314 /* ManageSurveyView.swift */; };
+		29D80CC9248D225A0086C314 /* SurveyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D80CC8248D225A0086C314 /* SurveyListView.swift */; };
+		29D8993724DD965E009F9537 /* ManageSurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D8993624DD965E009F9537 /* ManageSurveyViewModel.swift */; };
+		29D8993924DEAE6A009F9537 /* CombineEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D8993824DEAE6A009F9537 /* CombineEnabled.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		292A999424E56D8300E6A91C /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		293001FE24D88A9B002DA5A0 /* AddEditSurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditSurveyViewModel.swift; sourceTree = "<group>"; };
+		2930020124D88BB1002DA5A0 /* AddEditQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditQuestionViewModel.swift; sourceTree = "<group>"; };
+		293A0A6D24E04026008D0001 /* PublisherState+ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PublisherState+ErrorAlert.swift"; sourceTree = "<group>"; };
+		297C8C2924DEB349009910C9 /* Combine+VoidPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+VoidPublisher.swift"; sourceTree = "<group>"; };
+		297C8C2B24DEC7C6009910C9 /* Publisher+CombineEnabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+CombineEnabled.swift"; sourceTree = "<group>"; };
+		297C8C2D24DEE098009910C9 /* CancellableBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableBag.swift; sourceTree = "<group>"; };
+		297C8C2F24DEE0E5009910C9 /* AnyCancellable+CancellableBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancellable+CancellableBag.swift"; sourceTree = "<group>"; };
+		297C8C3124DEE69E009910C9 /* PublisherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherResult.swift; sourceTree = "<group>"; };
+		297C8C3324DF03A8009910C9 /* SurveyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListViewModel.swift; sourceTree = "<group>"; };
+		297C8C3524DF04A9009910C9 /* QuestionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
+		29A2A80C24D5B8D000A4E5AD /* SurveyAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppModel.swift; sourceTree = "<group>"; };
+		29A2A81124D5BA4C00A4E5AD /* TabbarName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarName.swift; sourceTree = "<group>"; };
+		29A2A81424D5BFAF00A4E5AD /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		29A2A81624D5BFBD00A4E5AD /* SurveyWebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyWebAPI.swift; sourceTree = "<group>"; };
+		29A2A81824D5C00600A4E5AD /* WebAPI.Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.Endpoint.swift; sourceTree = "<group>"; };
+		29A2A81D24D72B3100A4E5AD /* Combine+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+Error.swift"; sourceTree = "<group>"; };
+		29A2A81F24D72D2B00A4E5AD /* WebAPI.HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.HTTPMethod.swift; sourceTree = "<group>"; };
+		29A2A82124D742FC00A4E5AD /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		29A2A82324D7443A00A4E5AD /* WebAPI.Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.Empty.swift; sourceTree = "<group>"; };
+		29A2A82524D745C500A4E5AD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		29A2A82724D745DE00A4E5AD /* QuestionAnswerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerType.swift; sourceTree = "<group>"; };
+		29A2A82924D7460600A4E5AD /* QuestionAnswerChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerChoice.swift; sourceTree = "<group>"; };
+		29A2A82C24D74BBD00A4E5AD /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepository.swift; sourceTree = "<group>"; };
+		29A2A82E24D74BCE00A4E5AD /* QuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRepository.swift; sourceTree = "<group>"; };
+		29A2A83024D7548A00A4E5AD /* ManageListMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageListMode.swift; sourceTree = "<group>"; };
+		29A784C725921F4F00E99500 /* Binding+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Utilities.swift"; sourceTree = "<group>"; };
+		29B8A7BF24D862F90034F21C /* AddEditSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditSurveyView.swift; sourceTree = "<group>"; };
+		29B8A7C124D86BD30034F21C /* AddEditQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditQuestionView.swift; sourceTree = "<group>"; };
+		29B8A7C424D86BF80034F21C /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
+		29C1401C248CD914001985DD /* SwiftUISurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C1401F248CD914001985DD /* SurveyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApp.swift; sourceTree = "<group>"; };
+		29C14023248CD914001985DD /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		29C14025248CD915001985DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29C14028248CD915001985DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		29C1402D248CD915001985DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29D80CC6248D224C0086C314 /* ManageSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageSurveyView.swift; sourceTree = "<group>"; };
+		29D80CC8248D225A0086C314 /* SurveyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListView.swift; sourceTree = "<group>"; };
+		29D8993624DD965E009F9537 /* ManageSurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageSurveyViewModel.swift; sourceTree = "<group>"; };
+		29D8993824DEAE6A009F9537 /* CombineEnabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEnabled.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29C14019248CD914001985DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		293001FD24D88A8C002DA5A0 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				29B8A7BF24D862F90034F21C /* AddEditSurveyView.swift */,
+				293001FE24D88A9B002DA5A0 /* AddEditSurveyViewModel.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		2930020024D88B7A002DA5A0 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				29B8A7C124D86BD30034F21C /* AddEditQuestionView.swift */,
+				2930020124D88BB1002DA5A0 /* AddEditQuestionViewModel.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		29A2A80B24D5B8BB00A4E5AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				29A2A80C24D5B8D000A4E5AD /* SurveyAppModel.swift */,
+				29C1401F248CD914001985DD /* SurveyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		29A2A81024D5BA1E00A4E5AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29A2A81124D5BA4C00A4E5AD /* TabbarName.swift */,
+				29A2A83024D7548A00A4E5AD /* ManageListMode.swift */,
+				29A2A82124D742FC00A4E5AD /* Survey.swift */,
+				29A2A82524D745C500A4E5AD /* Question.swift */,
+				29A2A82724D745DE00A4E5AD /* QuestionAnswerType.swift */,
+				29A2A82924D7460600A4E5AD /* QuestionAnswerChoice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29A2A81324D5BAA100A4E5AD /* WebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				29A2A81624D5BFBD00A4E5AD /* SurveyWebAPI.swift */,
+				29A2A81424D5BFAF00A4E5AD /* WebAPI.swift */,
+				29A2A81824D5C00600A4E5AD /* WebAPI.Endpoint.swift */,
+				29A2A81F24D72D2B00A4E5AD /* WebAPI.HTTPMethod.swift */,
+				29A2A82324D7443A00A4E5AD /* WebAPI.Empty.swift */,
+			);
+			path = WebAPI;
+			sourceTree = "<group>";
+		};
+		29A2A81C24D72B0100A4E5AD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				297C8C2924DEB349009910C9 /* Combine+VoidPublisher.swift */,
+				29A2A81D24D72B3100A4E5AD /* Combine+Error.swift */,
+				29D8993824DEAE6A009F9537 /* CombineEnabled.swift */,
+				297C8C2B24DEC7C6009910C9 /* Publisher+CombineEnabled.swift */,
+				297C8C2D24DEE098009910C9 /* CancellableBag.swift */,
+				297C8C2F24DEE0E5009910C9 /* AnyCancellable+CancellableBag.swift */,
+				297C8C3124DEE69E009910C9 /* PublisherResult.swift */,
+				293A0A6D24E04026008D0001 /* PublisherState+ErrorAlert.swift */,
+				292A999424E56D8300E6A91C /* Button.swift */,
+				29A784C725921F4F00E99500 /* Binding+Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		29A2A82B24D74B9100A4E5AD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				29A2A82C24D74BBD00A4E5AD /* SurveyRepository.swift */,
+				29A2A82E24D74BCE00A4E5AD /* QuestionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		29B8A7C324D86BED0034F21C /* QuestionList */ = {
+			isa = PBXGroup;
+			children = (
+				29B8A7C424D86BF80034F21C /* QuestionListView.swift */,
+				297C8C3524DF04A9009910C9 /* QuestionListViewModel.swift */,
+			);
+			path = QuestionList;
+			sourceTree = "<group>";
+		};
+		29C14013248CD914001985DD = {
+			isa = PBXGroup;
+			children = (
+				29C1401E248CD914001985DD /* SwiftUISurvey */,
+				29C1401D248CD914001985DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29C1401D248CD914001985DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29C1401C248CD914001985DD /* SwiftUISurvey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29C1401E248CD914001985DD /* SwiftUISurvey */ = {
+			isa = PBXGroup;
+			children = (
+				29D80CBB248CF7450086C314 /* Sources */,
+				29D80CBC248CF7620086C314 /* Resources */,
+			);
+			path = SwiftUISurvey;
+			sourceTree = "<group>";
+		};
+		29C14027248CD915001985DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				29C14028248CD915001985DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		29D80CBB248CF7450086C314 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29A2A81324D5BAA100A4E5AD /* WebAPI */,
+				29A2A81024D5BA1E00A4E5AD /* Models */,
+				29A2A82B24D74B9100A4E5AD /* Repositories */,
+				29D80CBD248D1AB10086C314 /* Modules */,
+				29A2A81C24D72B0100A4E5AD /* Utilities */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		29D80CBC248CF7620086C314 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29C14025248CD915001985DD /* Assets.xcassets */,
+				29C1402D248CD915001985DD /* Info.plist */,
+				29C14027248CD915001985DD /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29D80CBD248D1AB10086C314 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				29A2A80B24D5B8BB00A4E5AD /* App */,
+				29D80CBE248D1AB90086C314 /* Dashboard */,
+				29D80CC5248D222D0086C314 /* SurveysList */,
+				29B8A7C324D86BED0034F21C /* QuestionList */,
+				29D80CC4248D22230086C314 /* Manage */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		29D80CBE248D1AB90086C314 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				29C14023248CD914001985DD /* TabbarView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		29D80CC4248D22230086C314 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				29D8993624DD965E009F9537 /* ManageSurveyViewModel.swift */,
+				29D80CC6248D224C0086C314 /* ManageSurveyView.swift */,
+				2930020024D88B7A002DA5A0 /* Question */,
+				293001FD24D88A8C002DA5A0 /* Survey */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		29D80CC5248D222D0086C314 /* SurveysList */ = {
+			isa = PBXGroup;
+			children = (
+				29D80CC8248D225A0086C314 /* SurveyListView.swift */,
+				297C8C3324DF03A8009910C9 /* SurveyListViewModel.swift */,
+			);
+			path = SurveysList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C1401B248CD914001985DD /* SwiftUISurvey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C14030248CD915001985DD /* Build configuration list for PBXNativeTarget "SwiftUISurvey" */;
+			buildPhases = (
+				29C14018248CD914001985DD /* Sources */,
+				29C14019248CD914001985DD /* Frameworks */,
+				29C1401A248CD914001985DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUISurvey;
+			productName = SwiftUISurvey;
+			productReference = 29C1401C248CD914001985DD /* SwiftUISurvey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29C14014248CD914001985DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Amir Khorsandi";
+				TargetAttributes = {
+					29C1401B248CD914001985DD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 29C14017248CD914001985DD /* Build configuration list for PBXProject "SwiftUISurvey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29C14013248CD914001985DD;
+			productRefGroup = 29C1401D248CD914001985DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C1401B248CD914001985DD /* SwiftUISurvey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29C1401A248CD914001985DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C14029248CD915001985DD /* Preview Assets.xcassets in Resources */,
+				29C14026248CD915001985DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29C14018248CD914001985DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A2A82024D72D2B00A4E5AD /* WebAPI.HTTPMethod.swift in Sources */,
+				29A2A81724D5BFBD00A4E5AD /* SurveyWebAPI.swift in Sources */,
+				29B8A7C024D862F90034F21C /* AddEditSurveyView.swift in Sources */,
+				29A2A81224D5BA4C00A4E5AD /* TabbarName.swift in Sources */,
+				29A2A82624D745C500A4E5AD /* Question.swift in Sources */,
+				29A2A82424D7443A00A4E5AD /* WebAPI.Empty.swift in Sources */,
+				292A999524E56D8300E6A91C /* Button.swift in Sources */,
+				29D80CC7248D224C0086C314 /* ManageSurveyView.swift in Sources */,
+				29A2A80D24D5B8D000A4E5AD /* SurveyAppModel.swift in Sources */,
+				29D8993724DD965E009F9537 /* ManageSurveyViewModel.swift in Sources */,
+				29A2A82F24D74BCE00A4E5AD /* QuestionRepository.swift in Sources */,
+				297C8C3424DF03A8009910C9 /* SurveyListViewModel.swift in Sources */,
+				293001FF24D88A9B002DA5A0 /* AddEditSurveyViewModel.swift in Sources */,
+				29D8993924DEAE6A009F9537 /* CombineEnabled.swift in Sources */,
+				29C14020248CD914001985DD /* SurveyApp.swift in Sources */,
+				29A2A82A24D7460600A4E5AD /* QuestionAnswerChoice.swift in Sources */,
+				29A2A83124D7548A00A4E5AD /* ManageListMode.swift in Sources */,
+				29A2A82D24D74BBD00A4E5AD /* SurveyRepository.swift in Sources */,
+				297C8C3624DF04A9009910C9 /* QuestionListViewModel.swift in Sources */,
+				29D80CC9248D225A0086C314 /* SurveyListView.swift in Sources */,
+				29C14024248CD914001985DD /* TabbarView.swift in Sources */,
+				2930020224D88BB1002DA5A0 /* AddEditQuestionViewModel.swift in Sources */,
+				29A2A81524D5BFAF00A4E5AD /* WebAPI.swift in Sources */,
+				293A0A6E24E04026008D0001 /* PublisherState+ErrorAlert.swift in Sources */,
+				29B8A7C524D86BF80034F21C /* QuestionListView.swift in Sources */,
+				297C8C2A24DEB349009910C9 /* Combine+VoidPublisher.swift in Sources */,
+				29A784C825921F4F00E99500 /* Binding+Utilities.swift in Sources */,
+				297C8C2C24DEC7C6009910C9 /* Publisher+CombineEnabled.swift in Sources */,
+				29A2A82224D742FC00A4E5AD /* Survey.swift in Sources */,
+				29B8A7C224D86BD30034F21C /* AddEditQuestionView.swift in Sources */,
+				29A2A82824D745DE00A4E5AD /* QuestionAnswerType.swift in Sources */,
+				297C8C3024DEE0E5009910C9 /* AnyCancellable+CancellableBag.swift in Sources */,
+				297C8C3224DEE69E009910C9 /* PublisherResult.swift in Sources */,
+				29A2A81E24D72B3100A4E5AD /* Combine+Error.swift in Sources */,
+				29A2A81924D5C00600A4E5AD /* WebAPI.Endpoint.swift in Sources */,
+				297C8C2E24DEE098009910C9 /* CancellableBag.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		29C1402E248CD915001985DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29C1402F248CD915001985DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29C14031248CD915001985DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISurvey/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J5W7CJ2ZV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUISurvey/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amir.app.SwiftUISurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29C14032248CD915001985DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISurvey/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J5W7CJ2ZV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUISurvey/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amir.app.SwiftUISurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C14017248CD914001985DD /* Build configuration list for PBXProject "SwiftUISurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C1402E248CD915001985DD /* Debug */,
+				29C1402F248CD915001985DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C14030248CD915001985DD /* Build configuration list for PBXNativeTarget "SwiftUISurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C14031248CD915001985DD /* Debug */,
+				29C14032248CD915001985DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29C14014248CD914001985DD /* Project object */;
+}
