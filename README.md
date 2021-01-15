@@ -26,6 +26,31 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 ---
 
+## Navigation View
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 30) {
+                Text("You're going to flip a coin – do you want to choose heads or tails?")
+
+                NavigationLink(destination: ResultView(choice: "Heads")) {
+                    Text("Choose Heads")
+                }
+
+                NavigationLink(destination: ResultView(choice: "Tails")) {
+                    Text("Choose Tails")
+                }
+            }
+            .navigationBarTitle("Navigation")
+        }
+    }
+}
+```
+
+---
+
 ## Global Variables
 
 ```swift
