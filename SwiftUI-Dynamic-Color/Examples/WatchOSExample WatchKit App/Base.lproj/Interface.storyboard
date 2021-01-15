@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchOSExample_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="rl2-B8-dXL">
+                            <items>
+                                <tableRow identifier="ColorRow" id="JIx-cE-JCZ" customClass="RowController" customModule="WatchOSExample_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" radius="6" spacing="5" id="48e-7l-gJT">
+                                        <items>
+                                            <group width="20" height="100" alignment="left" id="8VR-86-oZ9">
+                                                <color key="backgroundColor" red="0.90821611881256104" green="0.13223616778850555" blue="0.2024713009595871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </group>
+                                            <label width="108" height="51.5" alignment="left" text="Label" textAlignment="left" id="GI9-RO-Ceq"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="colorNameLabel" destination="GI9-RO-Ceq" id="IQm-Ll-rUA"/>
+                                        <outlet property="colorView" destination="8VR-86-oZ9" id="6jJ-9s-j5M"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="rl2-B8-dXL" id="ewP-Gu-v2N"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="356"/>
+        </scene>
+    </scenes>
+</document>

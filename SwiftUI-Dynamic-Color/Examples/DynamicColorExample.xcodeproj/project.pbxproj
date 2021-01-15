@@ -1,0 +1,1444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE86888C1E2C163400207CAC /* DynamicColorMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CE86888A1E2C163400207CAC /* DynamicColorMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8688A71E2C1AB300207CAC /* DynamicColorTvOs.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8688A51E2C1AB300207CAC /* DynamicColorTvOs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8688AA1E2C1AB300207CAC /* DynamicColorTvOs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8688A31E2C1AB300207CAC /* DynamicColorTvOs.framework */; };
+		CE8688AB1E2C1AB300207CAC /* DynamicColorTvOs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE8688A31E2C1AB300207CAC /* DynamicColorTvOs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE8688C71E2C1B3000207CAC /* DynamicColorWatchOs.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8688C51E2C1B3000207CAC /* DynamicColorWatchOs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBD6FEE1D81CD9D00D75349 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE7E101D7DEBE700B27BAD /* HeaderView.swift */; };
+		CEBE7E111D7DEBE700B27BAD /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE7E101D7DEBE700B27BAD /* HeaderView.swift */; };
+		CECBCD861B2B6C5E0047E731 /* DynamicColor.h in Headers */ = {isa = PBXBuildFile; fileRef = CECBCD851B2B6C5E0047E731 /* DynamicColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECBCD981B2B6C5E0047E731 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECBCD811B2B6C5E0047E731 /* DynamicColor.framework */; };
+		CECBCD991B2B6C5E0047E731 /* DynamicColor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECBCD811B2B6C5E0047E731 /* DynamicColor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEEB28D21BE27340001A74E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB28D11BE27340001A74E8 /* AppDelegate.swift */; };
+		CEEB28D71BE27340001A74E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB28D51BE27340001A74E8 /* Main.storyboard */; };
+		CEEB28D91BE27340001A74E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB28D81BE27340001A74E8 /* Assets.xcassets */; };
+		CEEB28E01BE27401001A74E8 /* ColorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBDB181B1DE220000E6F30 /* ColorCellView.swift */; };
+		CEEB28E11BE27482001A74E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBDAE21B1CE38D000E6F30 /* ViewController.swift */; };
+		CEFBDAE11B1CE38D000E6F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBDAE01B1CE38D000E6F30 /* AppDelegate.swift */; };
+		CEFBDAE31B1CE38D000E6F30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBDAE21B1CE38D000E6F30 /* ViewController.swift */; };
+		CEFBDAE61B1CE38D000E6F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFBDAE41B1CE38D000E6F30 /* Main.storyboard */; };
+		CEFBDAE81B1CE38D000E6F30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFBDAE71B1CE38D000E6F30 /* Images.xcassets */; };
+		CEFBDAEB1B1CE38D000E6F30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFBDAE91B1CE38D000E6F30 /* LaunchScreen.xib */; };
+		CEFBDB191B1DE220000E6F30 /* ColorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBDB181B1DE220000E6F30 /* ColorCellView.swift */; };
+		F4CA186424C0546B00949E60 /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185124C0546B00949E60 /* DynamicColor+Lab.swift */; };
+		F4CA186524C0546B00949E60 /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185124C0546B00949E60 /* DynamicColor+Lab.swift */; };
+		F4CA186624C0546B00949E60 /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185124C0546B00949E60 /* DynamicColor+Lab.swift */; };
+		F4CA186724C0546B00949E60 /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185124C0546B00949E60 /* DynamicColor+Lab.swift */; };
+		F4CA186824C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185224C0546B00949E60 /* DynamicColor+Deriving.swift */; };
+		F4CA186924C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185224C0546B00949E60 /* DynamicColor+Deriving.swift */; };
+		F4CA186A24C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185224C0546B00949E60 /* DynamicColor+Deriving.swift */; };
+		F4CA186B24C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185224C0546B00949E60 /* DynamicColor+Deriving.swift */; };
+		F4CA186C24C0546B00949E60 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185324C0546B00949E60 /* Array.swift */; };
+		F4CA186D24C0546B00949E60 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185324C0546B00949E60 /* Array.swift */; };
+		F4CA186E24C0546B00949E60 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185324C0546B00949E60 /* Array.swift */; };
+		F4CA186F24C0546B00949E60 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185324C0546B00949E60 /* Array.swift */; };
+		F4CA187024C0546B00949E60 /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185424C0546B00949E60 /* DynamicGradient.swift */; };
+		F4CA187124C0546B00949E60 /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185424C0546B00949E60 /* DynamicGradient.swift */; };
+		F4CA187224C0546B00949E60 /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185424C0546B00949E60 /* DynamicGradient.swift */; };
+		F4CA187324C0546B00949E60 /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185424C0546B00949E60 /* DynamicGradient.swift */; };
+		F4CA187424C0546B00949E60 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185524C0546B00949E60 /* DynamicColor+HSL.swift */; };
+		F4CA187524C0546B00949E60 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185524C0546B00949E60 /* DynamicColor+HSL.swift */; };
+		F4CA187624C0546B00949E60 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185524C0546B00949E60 /* DynamicColor+HSL.swift */; };
+		F4CA187724C0546B00949E60 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185524C0546B00949E60 /* DynamicColor+HSL.swift */; };
+		F4CA187824C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185624C0546B00949E60 /* DynamicColor+XYZ.swift */; };
+		F4CA187924C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185624C0546B00949E60 /* DynamicColor+XYZ.swift */; };
+		F4CA187A24C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185624C0546B00949E60 /* DynamicColor+XYZ.swift */; };
+		F4CA187B24C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185624C0546B00949E60 /* DynamicColor+XYZ.swift */; };
+		F4CA187C24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185724C0546B00949E60 /* DynamicColor+HSB.swift */; };
+		F4CA187D24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185724C0546B00949E60 /* DynamicColor+HSB.swift */; };
+		F4CA187E24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185724C0546B00949E60 /* DynamicColor+HSB.swift */; };
+		F4CA187F24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185724C0546B00949E60 /* DynamicColor+HSB.swift */; };
+		F4CA188024C0546B00949E60 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185824C0546B00949E60 /* DynamicColor.swift */; };
+		F4CA188124C0546B00949E60 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185824C0546B00949E60 /* DynamicColor.swift */; };
+		F4CA188224C0546B00949E60 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185824C0546B00949E60 /* DynamicColor.swift */; };
+		F4CA188324C0546B00949E60 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185824C0546B00949E60 /* DynamicColor.swift */; };
+		F4CA188424C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185924C0546B00949E60 /* DynamicColor+Mixing.swift */; };
+		F4CA188524C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185924C0546B00949E60 /* DynamicColor+Mixing.swift */; };
+		F4CA188624C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185924C0546B00949E60 /* DynamicColor+Mixing.swift */; };
+		F4CA188724C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185924C0546B00949E60 /* DynamicColor+Mixing.swift */; };
+		F4CA188824C0546B00949E60 /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185A24C0546B00949E60 /* ContrastDisplayContext.swift */; };
+		F4CA188924C0546B00949E60 /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185A24C0546B00949E60 /* ContrastDisplayContext.swift */; };
+		F4CA188A24C0546B00949E60 /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185A24C0546B00949E60 /* ContrastDisplayContext.swift */; };
+		F4CA188B24C0546B00949E60 /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185A24C0546B00949E60 /* ContrastDisplayContext.swift */; };
+		F4CA188C24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185B24C0546B00949E60 /* DynamicColor+RGBA.swift */; };
+		F4CA188D24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185B24C0546B00949E60 /* DynamicColor+RGBA.swift */; };
+		F4CA188E24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185B24C0546B00949E60 /* DynamicColor+RGBA.swift */; };
+		F4CA188F24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185B24C0546B00949E60 /* DynamicColor+RGBA.swift */; };
+		F4CA189024C0546B00949E60 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185D24C0546B00949E60 /* HSL.swift */; };
+		F4CA189124C0546B00949E60 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185D24C0546B00949E60 /* HSL.swift */; };
+		F4CA189224C0546B00949E60 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185D24C0546B00949E60 /* HSL.swift */; };
+		F4CA189324C0546B00949E60 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185D24C0546B00949E60 /* HSL.swift */; };
+		F4CA189424C0546B00949E60 /* GrayscalingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185E24C0546B00949E60 /* GrayscalingMode.swift */; };
+		F4CA189524C0546B00949E60 /* GrayscalingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185E24C0546B00949E60 /* GrayscalingMode.swift */; };
+		F4CA189624C0546B00949E60 /* GrayscalingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185E24C0546B00949E60 /* GrayscalingMode.swift */; };
+		F4CA189724C0546B00949E60 /* GrayscalingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185E24C0546B00949E60 /* GrayscalingMode.swift */; };
+		F4CA189824C0546B00949E60 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185F24C0546B00949E60 /* Utils.swift */; };
+		F4CA189924C0546B00949E60 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185F24C0546B00949E60 /* Utils.swift */; };
+		F4CA189A24C0546B00949E60 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185F24C0546B00949E60 /* Utils.swift */; };
+		F4CA189B24C0546B00949E60 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA185F24C0546B00949E60 /* Utils.swift */; };
+		F4CA189C24C0546B00949E60 /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186024C0546B00949E60 /* DynamicColorSpace.swift */; };
+		F4CA189D24C0546B00949E60 /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186024C0546B00949E60 /* DynamicColorSpace.swift */; };
+		F4CA189E24C0546B00949E60 /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186024C0546B00949E60 /* DynamicColorSpace.swift */; };
+		F4CA189F24C0546B00949E60 /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186024C0546B00949E60 /* DynamicColorSpace.swift */; };
+		F4CA18A024C0546B00949E60 /* HSL+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186224C0546B00949E60 /* HSL+Color.swift */; };
+		F4CA18A124C0546B00949E60 /* HSL+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186224C0546B00949E60 /* HSL+Color.swift */; };
+		F4CA18A224C0546B00949E60 /* HSL+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186224C0546B00949E60 /* HSL+Color.swift */; };
+		F4CA18A324C0546B00949E60 /* HSL+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186224C0546B00949E60 /* HSL+Color.swift */; };
+		F4CA18A424C0546B00949E60 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186324C0546B00949E60 /* Color.swift */; };
+		F4CA18A524C0546B00949E60 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186324C0546B00949E60 /* Color.swift */; };
+		F4CA18A624C0546B00949E60 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186324C0546B00949E60 /* Color.swift */; };
+		F4CA18A724C0546B00949E60 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA186324C0546B00949E60 /* Color.swift */; };
+		F4CA18A924C05B0E00949E60 /* DynamicColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA18A824C05B0E00949E60 /* DynamicColor+Color.swift */; };
+		F4CA18AA24C05B0E00949E60 /* DynamicColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA18A824C05B0E00949E60 /* DynamicColor+Color.swift */; };
+		F4CA18AB24C05B0E00949E60 /* DynamicColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA18A824C05B0E00949E60 /* DynamicColor+Color.swift */; };
+		F4CA18AC24C05B0E00949E60 /* DynamicColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA18A824C05B0E00949E60 /* DynamicColor+Color.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE8688A81E2C1AB300207CAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFBDAD31B1CE38D000E6F30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8688A21E2C1AB300207CAC;
+			remoteInfo = DynamicColorTvOs;
+		};
+		F4CA17EF24C04C4900949E60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFBDAD31B1CE38D000E6F30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CECBCD801B2B6C5E0047E731;
+			remoteInfo = DynamicColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE8688AF1E2C1AB300207CAC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE8688AB1E2C1AB300207CAC /* DynamicColorTvOs.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECBCD9F1B2B6C5E0047E731 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CECBCD991B2B6C5E0047E731 /* DynamicColor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB28C61BE268A5001A74E8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE5D64B21D381980005DEE4E /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
+		CE8688881E2C163400207CAC /* DynamicColorMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicColorMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE86888A1E2C163400207CAC /* DynamicColorMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicColorMacOS.h; sourceTree = "<group>"; };
+		CE86888B1E2C163400207CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8688A31E2C1AB300207CAC /* DynamicColorTvOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicColorTvOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8688A51E2C1AB300207CAC /* DynamicColorTvOs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicColorTvOs.h; sourceTree = "<group>"; };
+		CE8688A61E2C1AB300207CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8688C31E2C1B3000207CAC /* DynamicColorWatchOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicColorWatchOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8688C51E2C1B3000207CAC /* DynamicColorWatchOs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicColorWatchOs.h; sourceTree = "<group>"; };
+		CE8688C61E2C1B3000207CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA4D1361D95642900B12DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA4D1481D95646800B12DAB /* DynamicColor+HSBTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+HSBTests.swift"; sourceTree = "<group>"; };
+		CEA4D1491D95646800B12DAB /* DynamicColor+HSLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+HSLTests.swift"; sourceTree = "<group>"; };
+		CEA4D14A1D95646800B12DAB /* DynamicColor+RGBATests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+RGBATests.swift"; sourceTree = "<group>"; };
+		CEA4D14B1D95646800B12DAB /* DynamicColor+XYZTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+XYZTests.swift"; sourceTree = "<group>"; };
+		CEA4D14C1D95646800B12DAB /* DynamicColorArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColorArrayTests.swift; sourceTree = "<group>"; };
+		CEA4D14D1D95646800B12DAB /* DynamicColorLabTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColorLabTests.swift; sourceTree = "<group>"; };
+		CEA4D14E1D95646800B12DAB /* DynamicColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColorTests.swift; sourceTree = "<group>"; };
+		CEA4D14F1D95646800B12DAB /* DynamicGradientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicGradientTests.swift; sourceTree = "<group>"; };
+		CEBE7E101D7DEBE700B27BAD /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CECBCD811B2B6C5E0047E731 /* DynamicColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECBCD841B2B6C5E0047E731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECBCD851B2B6C5E0047E731 /* DynamicColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicColor.h; sourceTree = "<group>"; };
+		CEE753CE1BF105E3001FF6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEB28CF1BE27340001A74E8 /* tvOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEB28D11BE27340001A74E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEEB28D61BE27340001A74E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEEB28D81BE27340001A74E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEB28DA1BE27340001A74E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFBDADB1B1CE38D000E6F30 /* DynamicColorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicColorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFBDADF1B1CE38D000E6F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFBDAE01B1CE38D000E6F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEFBDAE21B1CE38D000E6F30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEFBDAE51B1CE38D000E6F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEFBDAE71B1CE38D000E6F30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEFBDAEA1B1CE38D000E6F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CEFBDB181B1DE220000E6F30 /* ColorCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCellView.swift; sourceTree = "<group>"; };
+		F4CA185124C0546B00949E60 /* DynamicColor+Lab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+Lab.swift"; sourceTree = "<group>"; };
+		F4CA185224C0546B00949E60 /* DynamicColor+Deriving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+Deriving.swift"; sourceTree = "<group>"; };
+		F4CA185324C0546B00949E60 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F4CA185424C0546B00949E60 /* DynamicGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicGradient.swift; sourceTree = "<group>"; };
+		F4CA185524C0546B00949E60 /* DynamicColor+HSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+HSL.swift"; sourceTree = "<group>"; };
+		F4CA185624C0546B00949E60 /* DynamicColor+XYZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+XYZ.swift"; sourceTree = "<group>"; };
+		F4CA185724C0546B00949E60 /* DynamicColor+HSB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+HSB.swift"; sourceTree = "<group>"; };
+		F4CA185824C0546B00949E60 /* DynamicColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
+		F4CA185924C0546B00949E60 /* DynamicColor+Mixing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+Mixing.swift"; sourceTree = "<group>"; };
+		F4CA185A24C0546B00949E60 /* ContrastDisplayContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContrastDisplayContext.swift; sourceTree = "<group>"; };
+		F4CA185B24C0546B00949E60 /* DynamicColor+RGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DynamicColor+RGBA.swift"; sourceTree = "<group>"; };
+		F4CA185D24C0546B00949E60 /* HSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSL.swift; sourceTree = "<group>"; };
+		F4CA185E24C0546B00949E60 /* GrayscalingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrayscalingMode.swift; sourceTree = "<group>"; };
+		F4CA185F24C0546B00949E60 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F4CA186024C0546B00949E60 /* DynamicColorSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColorSpace.swift; sourceTree = "<group>"; };
+		F4CA186224C0546B00949E60 /* HSL+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSL+Color.swift"; sourceTree = "<group>"; };
+		F4CA186324C0546B00949E60 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F4CA18A824C05B0E00949E60 /* DynamicColor+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicColor+Color.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8688841E2C163400207CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE86889F1E2C1AB300207CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8688BF1E2C1B3000207CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECBCD7D1B2B6C5E0047E731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB28CC1BE27340001A74E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8688AA1E2C1AB300207CAC /* DynamicColorTvOs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFBDAD81B1CE38D000E6F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECBCD981B2B6C5E0047E731 /* DynamicColor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE6404032337DDD400B6239C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE8688891E2C163400207CAC /* DynamicColorMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE86888A1E2C163400207CAC /* DynamicColorMacOS.h */,
+				CE86888B1E2C163400207CAC /* Info.plist */,
+			);
+			path = DynamicColorMacOS;
+			sourceTree = "<group>";
+		};
+		CE8688A41E2C1AB300207CAC /* DynamicColorTvOs */ = {
+			isa = PBXGroup;
+			children = (
+				CE8688A51E2C1AB300207CAC /* DynamicColorTvOs.h */,
+				CE8688A61E2C1AB300207CAC /* Info.plist */,
+			);
+			path = DynamicColorTvOs;
+			sourceTree = "<group>";
+		};
+		CE8688C41E2C1B3000207CAC /* DynamicColorWatchOs */ = {
+			isa = PBXGroup;
+			children = (
+				CE8688C51E2C1B3000207CAC /* DynamicColorWatchOs.h */,
+				CE8688C61E2C1B3000207CAC /* Info.plist */,
+			);
+			path = DynamicColorWatchOs;
+			sourceTree = "<group>";
+		};
+		CEA4D1331D95642900B12DAB /* iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA4D1361D95642900B12DAB /* Info.plist */,
+			);
+			path = iOSTests;
+			sourceTree = "<group>";
+		};
+		CEA4D1471D95646800B12DAB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA4D1481D95646800B12DAB /* DynamicColor+HSBTests.swift */,
+				CEA4D1491D95646800B12DAB /* DynamicColor+HSLTests.swift */,
+				CEA4D14A1D95646800B12DAB /* DynamicColor+RGBATests.swift */,
+				CEA4D14B1D95646800B12DAB /* DynamicColor+XYZTests.swift */,
+				CEA4D14C1D95646800B12DAB /* DynamicColorArrayTests.swift */,
+				CEA4D14D1D95646800B12DAB /* DynamicColorLabTests.swift */,
+				CEA4D14E1D95646800B12DAB /* DynamicColorTests.swift */,
+				CEA4D14F1D95646800B12DAB /* DynamicGradientTests.swift */,
+			);
+			name = Tests;
+			path = ../Tests;
+			sourceTree = "<group>";
+		};
+		CECBCD821B2B6C5E0047E731 /* DynamicColorFramework */ = {
+			isa = PBXGroup;
+			children = (
+				CECBCD851B2B6C5E0047E731 /* DynamicColor.h */,
+				CECBCD831B2B6C5E0047E731 /* Supporting Files */,
+			);
+			name = DynamicColorFramework;
+			path = DynamicColor;
+			sourceTree = "<group>";
+		};
+		CECBCD831B2B6C5E0047E731 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CECBCD841B2B6C5E0047E731 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEE753CB1BF105E3001FF6ED /* OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE753CE1BF105E3001FF6ED /* Info.plist */,
+			);
+			path = OSXTests;
+			sourceTree = "<group>";
+		};
+		CEEB28D01BE27340001A74E8 /* tvOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB28D11BE27340001A74E8 /* AppDelegate.swift */,
+				CEEB28D51BE27340001A74E8 /* Main.storyboard */,
+				CEEB28D81BE27340001A74E8 /* Assets.xcassets */,
+				CEEB28DA1BE27340001A74E8 /* Info.plist */,
+			);
+			path = tvOSExample;
+			sourceTree = "<group>";
+		};
+		CEFBDAD21B1CE38D000E6F30 = {
+			isa = PBXGroup;
+			children = (
+				F4CA184F24C0546B00949E60 /* Sources */,
+				CEA4D1471D95646800B12DAB /* Tests */,
+				CEFBDADD1B1CE38D000E6F30 /* iOSExample */,
+				CEEB28D01BE27340001A74E8 /* tvOSExample */,
+				CECBCD821B2B6C5E0047E731 /* DynamicColorFramework */,
+				CEE753CB1BF105E3001FF6ED /* OSXTests */,
+				CEA4D1331D95642900B12DAB /* iOSTests */,
+				CE8688891E2C163400207CAC /* DynamicColorMacOS */,
+				CE8688A41E2C1AB300207CAC /* DynamicColorTvOs */,
+				CE8688C41E2C1B3000207CAC /* DynamicColorWatchOs */,
+				CEFBDADC1B1CE38D000E6F30 /* Products */,
+				CE6404032337DDD400B6239C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFBDADC1B1CE38D000E6F30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBDADB1B1CE38D000E6F30 /* DynamicColorExample.app */,
+				CECBCD811B2B6C5E0047E731 /* DynamicColor.framework */,
+				CEEB28CF1BE27340001A74E8 /* tvOSExample.app */,
+				CE8688881E2C163400207CAC /* DynamicColorMacOS.framework */,
+				CE8688A31E2C1AB300207CAC /* DynamicColorTvOs.framework */,
+				CE8688C31E2C1B3000207CAC /* DynamicColorWatchOs.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFBDADD1B1CE38D000E6F30 /* iOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D64B21D381980005DEE4E /* Example.playground */,
+				CEFBDAE01B1CE38D000E6F30 /* AppDelegate.swift */,
+				CEFBDAE21B1CE38D000E6F30 /* ViewController.swift */,
+				CEBE7E101D7DEBE700B27BAD /* HeaderView.swift */,
+				CEFBDB181B1DE220000E6F30 /* ColorCellView.swift */,
+				CEFBDAE41B1CE38D000E6F30 /* Main.storyboard */,
+				CEFBDAE71B1CE38D000E6F30 /* Images.xcassets */,
+				CEFBDAE91B1CE38D000E6F30 /* LaunchScreen.xib */,
+				CEFBDADE1B1CE38D000E6F30 /* Supporting Files */,
+			);
+			path = iOSExample;
+			sourceTree = "<group>";
+		};
+		CEFBDADE1B1CE38D000E6F30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBDADF1B1CE38D000E6F30 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4CA184F24C0546B00949E60 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA185024C0546B00949E60 /* Core */,
+				F4CA185C24C0546B00949E60 /* Shared */,
+				F4CA186124C0546B00949E60 /* SwiftUI */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		F4CA185024C0546B00949E60 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA185124C0546B00949E60 /* DynamicColor+Lab.swift */,
+				F4CA185224C0546B00949E60 /* DynamicColor+Deriving.swift */,
+				F4CA185324C0546B00949E60 /* Array.swift */,
+				F4CA185424C0546B00949E60 /* DynamicGradient.swift */,
+				F4CA185524C0546B00949E60 /* DynamicColor+HSL.swift */,
+				F4CA185624C0546B00949E60 /* DynamicColor+XYZ.swift */,
+				F4CA185724C0546B00949E60 /* DynamicColor+HSB.swift */,
+				F4CA185824C0546B00949E60 /* DynamicColor.swift */,
+				F4CA185924C0546B00949E60 /* DynamicColor+Mixing.swift */,
+				F4CA185A24C0546B00949E60 /* ContrastDisplayContext.swift */,
+				F4CA185B24C0546B00949E60 /* DynamicColor+RGBA.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F4CA185C24C0546B00949E60 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA185D24C0546B00949E60 /* HSL.swift */,
+				F4CA185E24C0546B00949E60 /* GrayscalingMode.swift */,
+				F4CA185F24C0546B00949E60 /* Utils.swift */,
+				F4CA186024C0546B00949E60 /* DynamicColorSpace.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F4CA186124C0546B00949E60 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA186224C0546B00949E60 /* HSL+Color.swift */,
+				F4CA186324C0546B00949E60 /* Color.swift */,
+				F4CA18A824C05B0E00949E60 /* DynamicColor+Color.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE8688851E2C163400207CAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE86888C1E2C163400207CAC /* DynamicColorMacOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8688A01E2C1AB300207CAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8688A71E2C1AB300207CAC /* DynamicColorTvOs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8688C01E2C1B3000207CAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8688C71E2C1B3000207CAC /* DynamicColorWatchOs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECBCD7E1B2B6C5E0047E731 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECBCD861B2B6C5E0047E731 /* DynamicColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE8688871E2C163400207CAC /* DynamicColorMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE86888F1E2C163400207CAC /* Build configuration list for PBXNativeTarget "DynamicColorMacOS" */;
+			buildPhases = (
+				CE8688831E2C163400207CAC /* Sources */,
+				CE8688841E2C163400207CAC /* Frameworks */,
+				CE8688851E2C163400207CAC /* Headers */,
+				CE8688861E2C163400207CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColorMacOS;
+			productName = DynamicColorMacOS;
+			productReference = CE8688881E2C163400207CAC /* DynamicColorMacOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE8688A21E2C1AB300207CAC /* DynamicColorTvOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8688AC1E2C1AB300207CAC /* Build configuration list for PBXNativeTarget "DynamicColorTvOs" */;
+			buildPhases = (
+				CE86889E1E2C1AB300207CAC /* Sources */,
+				CE86889F1E2C1AB300207CAC /* Frameworks */,
+				CE8688A01E2C1AB300207CAC /* Headers */,
+				CE8688A11E2C1AB300207CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColorTvOs;
+			productName = DynamicColorTvOs;
+			productReference = CE8688A31E2C1AB300207CAC /* DynamicColorTvOs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE8688C21E2C1B3000207CAC /* DynamicColorWatchOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8688C81E2C1B3000207CAC /* Build configuration list for PBXNativeTarget "DynamicColorWatchOs" */;
+			buildPhases = (
+				CE8688BE1E2C1B3000207CAC /* Sources */,
+				CE8688BF1E2C1B3000207CAC /* Frameworks */,
+				CE8688C01E2C1B3000207CAC /* Headers */,
+				CE8688C11E2C1B3000207CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColorWatchOs;
+			productName = DynamicColorWatchOs;
+			productReference = CE8688C31E2C1B3000207CAC /* DynamicColorWatchOs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CECBCD801B2B6C5E0047E731 /* DynamicColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECBCD9E1B2B6C5E0047E731 /* Build configuration list for PBXNativeTarget "DynamicColor" */;
+			buildPhases = (
+				CECBCD7C1B2B6C5E0047E731 /* Sources */,
+				CECBCD7D1B2B6C5E0047E731 /* Frameworks */,
+				CECBCD7E1B2B6C5E0047E731 /* Headers */,
+				CECBCD7F1B2B6C5E0047E731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColor;
+			productName = DynamicColor;
+			productReference = CECBCD811B2B6C5E0047E731 /* DynamicColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEEB28CE1BE27340001A74E8 /* tvOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEB28DB1BE27340001A74E8 /* Build configuration list for PBXNativeTarget "tvOSExample" */;
+			buildPhases = (
+				CEEB28CB1BE27340001A74E8 /* Sources */,
+				CEEB28CC1BE27340001A74E8 /* Frameworks */,
+				CEEB28CD1BE27340001A74E8 /* Resources */,
+				CE8688AF1E2C1AB300207CAC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8688A91E2C1AB300207CAC /* PBXTargetDependency */,
+			);
+			name = tvOSExample;
+			productName = TVExample;
+			productReference = CEEB28CF1BE27340001A74E8 /* tvOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEFBDADA1B1CE38D000E6F30 /* iOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFBDAFA1B1CE38D000E6F30 /* Build configuration list for PBXNativeTarget "iOSExample" */;
+			buildPhases = (
+				9B8573C41DEC5C040075BBA2 /* SwiftLint */,
+				CEFBDAD71B1CE38D000E6F30 /* Sources */,
+				CEFBDAD81B1CE38D000E6F30 /* Frameworks */,
+				CEFBDAD91B1CE38D000E6F30 /* Resources */,
+				CECBCD9F1B2B6C5E0047E731 /* Embed Frameworks */,
+				CEEB28C61BE268A5001A74E8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4CA17F024C04C4900949E60 /* PBXTargetDependency */,
+			);
+			name = iOSExample;
+			productName = DynamicColorExample;
+			productReference = CEFBDADB1B1CE38D000E6F30 /* DynamicColorExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFBDAD31B1CE38D000E6F30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Yannick LORIOT";
+				TargetAttributes = {
+					CE8688871E2C163400207CAC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					CE8688A21E2C1AB300207CAC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					CE8688C21E2C1B3000207CAC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					CECBCD801B2B6C5E0047E731 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 5SJ773RP6R;
+						DevelopmentTeamName = "Work And Play";
+						LastSwiftMigration = 1020;
+					};
+					CEEB28CE1BE27340001A74E8 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					CEFBDADA1B1CE38D000E6F30 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeamName = "Work And Play";
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = CEFBDAD61B1CE38D000E6F30 /* Build configuration list for PBXProject "DynamicColorExample" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEFBDAD21B1CE38D000E6F30;
+			productRefGroup = CEFBDADC1B1CE38D000E6F30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECBCD801B2B6C5E0047E731 /* DynamicColor */,
+				CE8688871E2C163400207CAC /* DynamicColorMacOS */,
+				CE8688A21E2C1AB300207CAC /* DynamicColorTvOs */,
+				CE8688C21E2C1B3000207CAC /* DynamicColorWatchOs */,
+				CEFBDADA1B1CE38D000E6F30 /* iOSExample */,
+				CEEB28CE1BE27340001A74E8 /* tvOSExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8688861E2C163400207CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8688A11E2C1AB300207CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8688C11E2C1B3000207CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECBCD7F1B2B6C5E0047E731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB28CD1BE27340001A74E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEB28D91BE27340001A74E8 /* Assets.xcassets in Resources */,
+				CEEB28D71BE27340001A74E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFBDAD91B1CE38D000E6F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFBDAE61B1CE38D000E6F30 /* Main.storyboard in Resources */,
+				CEFBDAEB1B1CE38D000E6F30 /* LaunchScreen.xib in Resources */,
+				CEFBDAE81B1CE38D000E6F30 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B8573C41DEC5C040075BBA2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --path ../Sources/ --config ../.swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8688831E2C163400207CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA186D24C0546B00949E60 /* Array.swift in Sources */,
+				F4CA188124C0546B00949E60 /* DynamicColor.swift in Sources */,
+				F4CA189524C0546B00949E60 /* GrayscalingMode.swift in Sources */,
+				F4CA189924C0546B00949E60 /* Utils.swift in Sources */,
+				F4CA18A524C0546B00949E60 /* Color.swift in Sources */,
+				F4CA188524C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */,
+				F4CA189124C0546B00949E60 /* HSL.swift in Sources */,
+				F4CA186524C0546B00949E60 /* DynamicColor+Lab.swift in Sources */,
+				F4CA188D24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */,
+				F4CA188924C0546B00949E60 /* ContrastDisplayContext.swift in Sources */,
+				F4CA187D24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */,
+				F4CA18AA24C05B0E00949E60 /* DynamicColor+Color.swift in Sources */,
+				F4CA189D24C0546B00949E60 /* DynamicColorSpace.swift in Sources */,
+				F4CA18A124C0546B00949E60 /* HSL+Color.swift in Sources */,
+				F4CA187524C0546B00949E60 /* DynamicColor+HSL.swift in Sources */,
+				F4CA187924C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */,
+				F4CA186924C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */,
+				F4CA187124C0546B00949E60 /* DynamicGradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE86889E1E2C1AB300207CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA186E24C0546B00949E60 /* Array.swift in Sources */,
+				F4CA188224C0546B00949E60 /* DynamicColor.swift in Sources */,
+				F4CA189624C0546B00949E60 /* GrayscalingMode.swift in Sources */,
+				F4CA189A24C0546B00949E60 /* Utils.swift in Sources */,
+				F4CA18A624C0546B00949E60 /* Color.swift in Sources */,
+				F4CA188624C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */,
+				F4CA189224C0546B00949E60 /* HSL.swift in Sources */,
+				F4CA186624C0546B00949E60 /* DynamicColor+Lab.swift in Sources */,
+				F4CA188E24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */,
+				F4CA188A24C0546B00949E60 /* ContrastDisplayContext.swift in Sources */,
+				F4CA187E24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */,
+				F4CA18AB24C05B0E00949E60 /* DynamicColor+Color.swift in Sources */,
+				F4CA189E24C0546B00949E60 /* DynamicColorSpace.swift in Sources */,
+				F4CA18A224C0546B00949E60 /* HSL+Color.swift in Sources */,
+				F4CA187624C0546B00949E60 /* DynamicColor+HSL.swift in Sources */,
+				F4CA187A24C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */,
+				F4CA186A24C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */,
+				F4CA187224C0546B00949E60 /* DynamicGradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8688BE1E2C1B3000207CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA186F24C0546B00949E60 /* Array.swift in Sources */,
+				F4CA188324C0546B00949E60 /* DynamicColor.swift in Sources */,
+				F4CA189724C0546B00949E60 /* GrayscalingMode.swift in Sources */,
+				F4CA189B24C0546B00949E60 /* Utils.swift in Sources */,
+				F4CA18A724C0546B00949E60 /* Color.swift in Sources */,
+				F4CA188724C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */,
+				F4CA189324C0546B00949E60 /* HSL.swift in Sources */,
+				F4CA186724C0546B00949E60 /* DynamicColor+Lab.swift in Sources */,
+				F4CA188F24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */,
+				F4CA188B24C0546B00949E60 /* ContrastDisplayContext.swift in Sources */,
+				F4CA187F24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */,
+				F4CA18AC24C05B0E00949E60 /* DynamicColor+Color.swift in Sources */,
+				F4CA189F24C0546B00949E60 /* DynamicColorSpace.swift in Sources */,
+				F4CA18A324C0546B00949E60 /* HSL+Color.swift in Sources */,
+				F4CA187724C0546B00949E60 /* DynamicColor+HSL.swift in Sources */,
+				F4CA187B24C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */,
+				F4CA186B24C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */,
+				F4CA187324C0546B00949E60 /* DynamicGradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECBCD7C1B2B6C5E0047E731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA186C24C0546B00949E60 /* Array.swift in Sources */,
+				F4CA188024C0546B00949E60 /* DynamicColor.swift in Sources */,
+				F4CA189424C0546B00949E60 /* GrayscalingMode.swift in Sources */,
+				F4CA189824C0546B00949E60 /* Utils.swift in Sources */,
+				F4CA18A424C0546B00949E60 /* Color.swift in Sources */,
+				F4CA188424C0546B00949E60 /* DynamicColor+Mixing.swift in Sources */,
+				F4CA189024C0546B00949E60 /* HSL.swift in Sources */,
+				F4CA186424C0546B00949E60 /* DynamicColor+Lab.swift in Sources */,
+				F4CA188C24C0546B00949E60 /* DynamicColor+RGBA.swift in Sources */,
+				F4CA188824C0546B00949E60 /* ContrastDisplayContext.swift in Sources */,
+				F4CA187C24C0546B00949E60 /* DynamicColor+HSB.swift in Sources */,
+				F4CA18A924C05B0E00949E60 /* DynamicColor+Color.swift in Sources */,
+				F4CA189C24C0546B00949E60 /* DynamicColorSpace.swift in Sources */,
+				F4CA18A024C0546B00949E60 /* HSL+Color.swift in Sources */,
+				F4CA187424C0546B00949E60 /* DynamicColor+HSL.swift in Sources */,
+				F4CA187824C0546B00949E60 /* DynamicColor+XYZ.swift in Sources */,
+				F4CA186824C0546B00949E60 /* DynamicColor+Deriving.swift in Sources */,
+				F4CA187024C0546B00949E60 /* DynamicGradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB28CB1BE27340001A74E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEB28E11BE27482001A74E8 /* ViewController.swift in Sources */,
+				CEEB28E01BE27401001A74E8 /* ColorCellView.swift in Sources */,
+				CEBD6FEE1D81CD9D00D75349 /* HeaderView.swift in Sources */,
+				CEEB28D21BE27340001A74E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFBDAD71B1CE38D000E6F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFBDB191B1DE220000E6F30 /* ColorCellView.swift in Sources */,
+				CEFBDAE31B1CE38D000E6F30 /* ViewController.swift in Sources */,
+				CEFBDAE11B1CE38D000E6F30 /* AppDelegate.swift in Sources */,
+				CEBE7E111D7DEBE700B27BAD /* HeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE8688A91E2C1AB300207CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8688A21E2C1AB300207CAC /* DynamicColorTvOs */;
+			targetProxy = CE8688A81E2C1AB300207CAC /* PBXContainerItemProxy */;
+		};
+		F4CA17F024C04C4900949E60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CECBCD801B2B6C5E0047E731 /* DynamicColor */;
+			targetProxy = F4CA17EF24C04C4900949E60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEB28D51BE27340001A74E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEB28D61BE27340001A74E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEFBDAE41B1CE38D000E6F30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFBDAE51B1CE38D000E6F30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEFBDAE91B1CE38D000E6F30 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFBDAEA1B1CE38D000E6F30 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE86888D1E2C163400207CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DynamicColorMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.DynamicColorMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE86888E1E2C163400207CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DynamicColorMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.DynamicColorMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE8688AD1E2C1AB300207CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicColorTvOs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.DynamicColorTvOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE8688AE1E2C1AB300207CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicColorTvOs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.DynamicColorTvOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE8688C91E2C1B3000207CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicColorWatchOs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.DynamicColorWatchOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		CE8688CA1E2C1B3000207CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicColorWatchOs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.DynamicColorWatchOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		CECBCD9A1B2B6C5E0047E731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 3.1.0;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DynamicColor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickloriot.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CECBCD9B1B2B6C5E0047E731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 3.1.0;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicColor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickloriot.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CEEB28DC1BE27340001A74E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "$(SRCROOT)/tvOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.TVExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		CEEB28DD1BE27340001A74E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/tvOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.TVExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		CEFBDAF81B1CE38D000E6F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEFBDAF91B1CE38D000E6F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEFBDAFB1B1CE38D000E6F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickloriot.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = DynamicColorExample;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CEFBDAFC1B1CE38D000E6F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickloriot.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = DynamicColorExample;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE86888F1E2C163400207CAC /* Build configuration list for PBXNativeTarget "DynamicColorMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE86888D1E2C163400207CAC /* Debug */,
+				CE86888E1E2C163400207CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8688AC1E2C1AB300207CAC /* Build configuration list for PBXNativeTarget "DynamicColorTvOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8688AD1E2C1AB300207CAC /* Debug */,
+				CE8688AE1E2C1AB300207CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8688C81E2C1B3000207CAC /* Build configuration list for PBXNativeTarget "DynamicColorWatchOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8688C91E2C1B3000207CAC /* Debug */,
+				CE8688CA1E2C1B3000207CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECBCD9E1B2B6C5E0047E731 /* Build configuration list for PBXNativeTarget "DynamicColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECBCD9A1B2B6C5E0047E731 /* Debug */,
+				CECBCD9B1B2B6C5E0047E731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEB28DB1BE27340001A74E8 /* Build configuration list for PBXNativeTarget "tvOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEB28DC1BE27340001A74E8 /* Debug */,
+				CEEB28DD1BE27340001A74E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFBDAD61B1CE38D000E6F30 /* Build configuration list for PBXProject "DynamicColorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFBDAF81B1CE38D000E6F30 /* Debug */,
+				CEFBDAF91B1CE38D000E6F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFBDAFA1B1CE38D000E6F30 /* Build configuration list for PBXNativeTarget "iOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFBDAFB1B1CE38D000E6F30 /* Debug */,
+				CEFBDAFC1B1CE38D000E6F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFBDAD31B1CE38D000E6F30 /* Project object */;
+}
