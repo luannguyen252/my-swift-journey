@@ -1,15 +1,7 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by Balaji on 19/12/20.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-   
         Rating()
     }
 }
@@ -20,42 +12,38 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Rating : View {
+struct Rating: View {
+    // Slider Value
+    @State var value: CGFloat = 0.5
     
-    // slider Value....
-    @State var value : CGFloat = 0.5
-    
-    var body: some View{
-        
-        VStack{
-            
-            Text("Do you like this conversation?")
+    var body: some View {
+        VStack {
+            Text("How are you feeling today?")
                 .font(.largeTitle)
-                .fontWeight(.semibold)
+                .fontWeight(.heavy)
                 .foregroundColor(.black)
-                .padding(.top,20)
+                .padding(.top, 16)
+                .multilineTextAlignment(.center)
             
             Spacer(minLength: 0)
             
-            // Eyes....
-            
-            HStack(spacing: 25){
-                
-                ForEach(1...2,id: \.self){_ in
-                    
+            // Eyes
+            HStack(spacing: 24) {
+                ForEach(1...2, id: \.self) { _ in
                     ZStack {
+                        // Eye Left
                         Eyes()
-                            .stroke(Color.black,lineWidth: 3)
+                            .stroke(Color.black, lineWidth: 3)
                             .frame(width: 100)
                         
+                        // Eye Right
                         Eyes(value: value)
-                            .stroke(Color.black,lineWidth: 3)
+                            .stroke(Color.black, lineWidth: 3)
                             .frame(width: 100)
                             .rotationEffect(.init(degrees: 180))
                             .offset(y: -100)
                         
-                        // Eye Dot...
-                        
+                        // Eye Dot
                         Circle()
                             .fill(Color.black)
                             .frame(width: 13, height: 13)
@@ -65,53 +53,44 @@ struct Rating : View {
                 }
             }
             
+            // Smile
             Smile(value: value)
-                .stroke(Color.black,lineWidth: 3)
+                .stroke(Color.black, lineWidth: 3)
                 .frame(height: 100)
-                .padding(.top,40)
+                .padding(.top, 40)
             
-            // Custom Slider.....
-            
-            GeometryReader{reader in
-                
+            // Custom Slider
+            GeometryReader { reader in
                 ZStack(alignment: Alignment(horizontal: .leading, vertical: .center), content: {
-                    
-                    Color.black
-                        .frame(height: 2)
-                    
-                    // Drag Point....
-                    
+                    // Point Bar
+                    Color.black.opacity(0.25)
+                        .frame(height: 1)
+                    // Drag Point
                     Image(systemName: "arrow.right")
                         .font(.title2)
                         .foregroundColor(.white)
-                        .frame(width: 45, height: 45)
+                        .frame(width: 48, height: 48)
                         .background(Color.black)
-                        .cornerRadius(5)
-                        // since drag point size is 45....
-                        .offset(x: value * (reader.frame(in: .global).width - 45))
+                        .cornerRadius(24)
+                        // Since drag point size is 48
+                        .offset(x: value * (reader.frame(in: .global).width - 48))
                         .gesture(DragGesture().onChanged({ (value) in
-                            
-                            let width = reader.frame(in: .global).width - 45
-                            // since horixontally padding = 30
+                            let width = reader.frame(in: .global).width - 48
+                            // Since horixontally padding = 30
                             let drag = value.location.x - 30
-                            
-                            // Limiting Drag...
-                            
-                            if drag > 0 && drag <= width{
-                            
+                            // Limiting drag
+                            if drag > 0 && drag <= width {
                                 self.value = drag / width
                             }
-                            
                         }))
                 })
             }
             .padding()
-            .frame(height: 45)
+            .frame(height: 48)
             
             Spacer(minLength: 0)
             
-            // Button...
-            
+            // Button
             Button(action: {}, label: {
                 Text("Done")
                     .fontWeight(.semibold)
@@ -119,34 +98,28 @@ struct Rating : View {
                     .foregroundColor(.white)
                     .padding(.vertical)
                     .frame(width: UIScreen.main.bounds.width / 2)
-                    .background(Color.black)
+                    .background(Capsule().fill(Color.black))
             })
             .padding(.bottom)
         }
+        .padding(8)
         .background(
-        
             (value <= 0.3 ? Color("Color1") : (value > 0.3 && value <= 0.7 ? Color("Color2") : Color("Color3")))
-            .ignoresSafeArea(.all, edges: .all)
+                .ignoresSafeArea(.all, edges: .all)
                 .animation(.easeInOut)
         )
     }
 }
 
-// Smile Shape....
-
+// Smile Shape
 struct Smile: Shape {
-    
     var value: CGFloat
     
     func path(in rect: CGRect) -> Path {
-        
-        return Path{path in
-            
+        return Path { path in
             let center = rect.width / 2
-            
-            // changing values for Up Curve and Down Curve...
-            
-            let downRadius : CGFloat = (115 * value) - 45
+            // Changing Values For Up Curve And Down Curve
+            let downRadius: CGFloat = (115 * value) - 45
             
             path.move(to: CGPoint(x: center - 150, y: 0))
             
@@ -164,21 +137,16 @@ struct Smile: Shape {
     }
 }
 
-// Eye Shape...
-
+// Eye Shape
 struct Eyes: Shape {
-    
-    // Optional Values For Only Changing Top Eye Curve Position....
+    // Optional Values For Only Changing Top Eye Curve Position
     var value: CGFloat?
     
     func path(in rect: CGRect) -> Path {
-        
-        return Path{path in
-            
+        return Path { path in
             let center = rect.width / 2
             
-            // changing values for Up Curve and Down Curve...
-            
+            // Changing Values For Up Curve And Down Curve
             let downRadius : CGFloat = 55 * (value ?? 1)
             
             path.move(to: CGPoint(x: center - 40, y: 0))
