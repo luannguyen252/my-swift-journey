@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PostTableViewCell" customModule="Lamstagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="575"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nZF-jD-Non">
+                    <rect key="frame" x="0.0" y="0.0" width="409" height="575"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wAe-Oh-ypG">
+                            <rect key="frame" x="0.0" y="52" width="409" height="58"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="llama" translatesAutoresizingMaskIntoConstraints="NO" id="g45-AJ-PP2">
+                                    <rect key="frame" x="8" y="4" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="BtB-Ef-zIy"/>
+                                        <constraint firstAttribute="width" secondItem="g45-AJ-PP2" secondAttribute="height" id="Owk-gP-xTH"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="LSN-m3-Flt">
+                                    <rect key="frame" x="74" y="8.5" width="327" height="41"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="barallama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-Kh-hiI">
+                                            <rect key="frame" x="0.0" y="0.0" width="78.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barack O. Llama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5P-NO-qoI">
+                                            <rect key="frame" x="0.0" y="20.5" width="111" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="8" bottom="0.0" trailing="8"/>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="llama" translatesAutoresizingMaskIntoConstraints="NO" id="Cms-nX-vke">
+                            <rect key="frame" x="0.0" y="118" width="409" height="409"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Cms-nX-vke" secondAttribute="height" id="LOj-ys-cXk"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="djl-it-CpP">
+                            <rect key="frame" x="0.0" y="535" width="409" height="24"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5tg-S5-p67">
+                                    <rect key="frame" x="8" y="1.5" width="24" height="21.5"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="Epy-ZY-jcc"/>
+                                        <constraint firstAttribute="width" secondItem="5tg-S5-p67" secondAttribute="height" id="u2q-5T-Gh5"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a5v-iK-fVM">
+                                    <rect key="frame" x="40" y="0.5" width="24" height="23.5"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CAd-sf-87k">
+                                    <rect key="frame" x="72" y="0.5" width="24" height="23.5"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8A8-NZ-TcP">
+                                    <rect key="frame" x="104" y="0.0" width="265" height="24"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AFP-YZ-dls">
+                                    <rect key="frame" x="377" y="0.0" width="24" height="24"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="a5v-iK-fVM" firstAttribute="height" secondItem="5tg-S5-p67" secondAttribute="height" id="0JK-aS-vhB"/>
+                                <constraint firstItem="CAd-sf-87k" firstAttribute="width" secondItem="5tg-S5-p67" secondAttribute="width" id="0p5-As-Ikq"/>
+                                <constraint firstItem="a5v-iK-fVM" firstAttribute="width" secondItem="5tg-S5-p67" secondAttribute="width" id="EbS-mD-n0c"/>
+                                <constraint firstItem="AFP-YZ-dls" firstAttribute="height" secondItem="5tg-S5-p67" secondAttribute="height" id="PPT-Yp-kNW"/>
+                                <constraint firstItem="AFP-YZ-dls" firstAttribute="width" secondItem="5tg-S5-p67" secondAttribute="width" id="QfA-og-OZr"/>
+                                <constraint firstItem="CAd-sf-87k" firstAttribute="height" secondItem="5tg-S5-p67" secondAttribute="height" id="dAx-qw-7wQ"/>
+                            </constraints>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="8" bottom="0.0" trailing="8"/>
+                        </stackView>
+                    </subviews>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="0.0" bottom="16" trailing="0.0"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="nZF-jD-Non" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="09Q-sy-u5m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nZF-jD-Non" secondAttribute="trailing" id="Clc-qf-LMm"/>
+                <constraint firstItem="nZF-jD-Non" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MpN-b5-rAt"/>
+                <constraint firstAttribute="bottom" secondItem="nZF-jD-Non" secondAttribute="bottom" id="g5A-rm-fO7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="photoImageView" destination="Cms-nX-vke" id="QKm-zN-iBD"/>
+                <outlet property="userNameLabel" destination="i5P-NO-qoI" id="cGO-tX-qrr"/>
+                <outlet property="userNicknameLabel" destination="hQ6-Kh-hiI" id="TeN-Fv-ApO"/>
+                <outlet property="userPhotoImageView" destination="g45-AJ-PP2" id="0qU-Js-MY5"/>
+            </connections>
+            <point key="canvasLocation" x="176.08695652173915" y="-65.959821428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="56" height="64"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="llama" width="300" height="300"/>
+        <image name="message" catalog="system" width="64" height="56"/>
+        <image name="paperplane" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
