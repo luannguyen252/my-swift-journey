@@ -19,7 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         // let contentView = LightSwitchView()
-        let contentView = LikeView()
+        // let contentView = LikeView()
+        // let contentView = RotatingLoaderView()
+        let contentView = LightSwitchView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

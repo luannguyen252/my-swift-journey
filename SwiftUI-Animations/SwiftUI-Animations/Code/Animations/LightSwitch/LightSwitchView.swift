@@ -22,22 +22,26 @@ struct LightSwitchView: View {
     // MARK: - Views
     var body: some View {
         ZStack {
-            Color.black
+            Color("dark")
             
             Circle()
-                .fill(Color.yellow)
+                .fill(Color("yellow"))
                 .scaleEffect(CGSize(width: xScale, height: yScale))
                 .offset(y: yOffset)
             
             VStack(alignment: .leading) {
-                HStack {
-                    Image(systemName: "arrow.left")
-                        .foregroundColor(isOff ? .white : .black)
-                        .font(.system(size: 24, weight: .semibold, design: .monospaced))
+                HStack(alignment: .center) {
+                    Button(action: {
+                        print("Go to Setting.")
+                    }) {
+                        Image(systemName: "gearshape.fill")
+                            .foregroundColor(isOff ? .white : .black)
+                            .font(.system(size: 24, weight: .semibold, design: .monospaced))
+                    }
                     Spacer()
-                    Text("Study Room")
-                        .font(.system(size: 32, weight: .bold, design: .monospaced))
-                        .foregroundColor(isOff ? .white : .black)
+                    Text("My Room")
+                        .font(.system(size: 32, weight: .heavy, design: .default))
+                        .foregroundColor(isOff ? Color("light") : Color("dark"))
                         .offset(x: -12)
                     Spacer()
                 }
@@ -47,6 +51,12 @@ struct LightSwitchView: View {
             }
             .offset(y: 32)
             .padding([.leading, .trailing], 24)
+            
+            ZStack {
+                Text(isOff ? "Good night!" : "Good morning!")
+                    .font(.system(size: 24, weight: .regular, design: .default))
+                    .foregroundColor(isOff ? Color("light") : Color("dark"))
+            }
             
             ZStack {
                 Capsule(style: .continuous)
@@ -74,6 +84,7 @@ struct LightSwitchView: View {
             .animation(Animation.spring(dampingFraction: 0.65).speed(1.25))
         }
         .edgesIgnoringSafeArea(.all)
+        .statusBar(hidden: true)
     }
     
     // MARK: - Functions
