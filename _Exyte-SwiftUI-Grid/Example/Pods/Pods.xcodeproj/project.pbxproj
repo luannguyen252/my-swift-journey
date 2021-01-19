@@ -1,0 +1,1220 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1591284E3ECB7B187A8101AE97979EBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */; };
+		17C6BF838DC60B6E91F11CD3338B3AC0 /* GridGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422378B8E310D443543C13841CDC9314 /* GridGroup.swift */; };
+		1A354321CD9E6F605C03C56086FD7071 /* CGRect+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501E8E048F748E60CFBA7EC6A9CB998 /* CGRect+Hashable.swift */; };
+		1C8E2E05AD183725CD53DD67A209AB61 /* ForEach+GridViewsContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A989006FE77CBDEA7E9423F6390574B /* ForEach+GridViewsContaining.swift */; };
+		1F3CA87315E22ED5B93BBCD64F06E586 /* Pods-Mac_Grid_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E848DD8889776D8316B554A4522847D9 /* Pods-Mac_Grid_Example-dummy.m */; };
+		2215C2084092A731770DC4BCC210F35F /* GridCacheMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83938565188853E77A45FA28D30BBB27 /* GridCacheMode.swift */; };
+		2D03C92EF13BF273ACD5E684BE404628 /* Grid+Inits_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA458AB3D45E82FD6B907AAA6A148B6 /* Grid+Inits_Data.swift */; };
+		2DB06A3843A00E937FABC31C66371E89 /* GridGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422378B8E310D443543C13841CDC9314 /* GridGroup.swift */; };
+		306509EB690115E084FE8314857783A0 /* View+GridPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC961C3318CBF48695D4D44DA1C9BEB /* View+GridPreferences.swift */; };
+		34048458C718CD7F5D48E980E7FD226C /* Pods-Grid_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E226571283FF615632F765644EA69C /* Pods-Grid_Example-dummy.m */; };
+		3C78CD915821980FDCF64DB966174759 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955C19B79D41E2ABD1B331DEAEB9ED99 /* View+If.swift */; };
+		437B9CCC2433D0A2DA1ADDAC48B92FCC /* GridBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA4A290F2C6F57D0EB5107A30683CF /* GridBuilder.swift */; };
+		47E842CBECCADDA7CFF55E520CF55025 /* GridGroup+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1511C0728EFF16DD24180903EE59A5F9 /* GridGroup+Init.swift */; };
+		49BC48914CD644F36DE332689000D742 /* LayoutArrangement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671499556385DBD978542EAC0B43CA8A /* LayoutArrangement.swift */; };
+		4A88B586647288D3FC83C019F9141D87 /* GridContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9055DB0EBCF1CB9258A037C0B65E8 /* GridContentMode.swift */; };
+		4F226989AC922983C5D752E8183638A9 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955C19B79D41E2ABD1B331DEAEB9ED99 /* View+If.swift */; };
+		51034ED0E09955D425796AB9B7FC8A8C /* View+GridPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC961C3318CBF48695D4D44DA1C9BEB /* View+GridPreferences.swift */; };
+		524C3A81A2CBBE3A856E9121FEFF0521 /* LayoutArrangement+description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A500651A64F42F6C56CAFA22C98B0C /* LayoutArrangement+description.swift */; };
+		53DE56EA59E48CF8A10D95CDE7CC93EE /* GridPacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFD4AAAA280BCC9EBD866C44DB78B4 /* GridPacking.swift */; };
+		54D59B8162E344EBD5873E17C915D9D4 /* LayoutArranging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF57C0BDD4D99BBC331F7691478FDC /* LayoutArranging.swift */; };
+		5D3B3E076104234662B4F13C101EA816 /* GridGroup+Inits_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52C6192AB7140A2A622693BB2BAC79 /* GridGroup+Inits_Data.swift */; };
+		5FE35E6D370194D3CE7221C649A9149B /* GridIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC1C8AAE2911C680D248AF54F691D8 /* GridIndex.swift */; };
+		64634FD218E43DB0FF30E75E371325CF /* GridOverlayPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DEFF510925F730F8C1CEFADD7DA59 /* GridOverlayPreference.swift */; };
+		653E0EB2AC6BF8ECFE1B73F42ECAF83B /* GridContentViewsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B1D7BCDF32C08EB45DFA291666039 /* GridContentViewsProtocols.swift */; };
+		6BD7717BA18682DD7C78F1367F505556 /* GridPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B32AE42993053515EE953D1D21F15E /* GridPreference.swift */; };
+		6BD798D5966B034792473DAF3BB23FC2 /* ExyteGrid-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 082A5FE583FACC1C3B672B09E285AECF /* ExyteGrid-iOS-dummy.m */; };
+		7131FB8D76EA304187AEA03B3C9494F6 /* GridAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C1206F7F14DB0390150B5F2B5CE9C /* GridAlignment.swift */; };
+		73048E21B424656E1EC87609A389FD2B /* ExyteGrid-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A894E8F6C51DD2161C1D7CFEE5A9E6DE /* ExyteGrid-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7689D577EC1AEDDE98CD25FD79DC8A1B /* LayoutPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21BE434AE9385B02E4F30082ABD01F /* LayoutPositioning.swift */; };
+		769EF8AB425B75D61A09A6840BA11C69 /* GridTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67056856AFB9010C0B2D6CB376F0079D /* GridTrack.swift */; };
+		78C76E7DB5356575933323EBFDA9D001 /* GridOverlayPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DEFF510925F730F8C1CEFADD7DA59 /* GridOverlayPreference.swift */; };
+		7AE34513DCDB8BAB388AE934612811DF /* Grid+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C403D9057E8D924D2A6B5FF87BAD2 /* Grid+Init.swift */; };
+		7C7505437AEB9A178F97597DA62E70CF /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC116554CE615BD8949D74372F26B32B /* Grid.swift */; };
+		7D5E9ED49AC705A57784F18A8D181054 /* GridGroup+Inits_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52C6192AB7140A2A622693BB2BAC79 /* GridGroup+Inits_Data.swift */; };
+		82F3B4A1F8FC916CFD5443F650C1B1C2 /* PositionedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DB26274AAE75088481BEF1FB8A88D /* PositionedItem.swift */; };
+		82F88F445DC0C7D3F3803B30A5ECBE81 /* View+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718D436FEF9B68CBDA2A10B7E825D85 /* View+Environment.swift */; };
+		834FDDA32C9EEC44455F658337B0F40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
+		865E26EAD03EA2528A9FA70109F5979A /* CGSize+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D213989AA2A93703002BE244D7319E8 /* CGSize+Hashable.swift */; };
+		86F4EBEA02736823D85F0B3F0D8CFCD8 /* GridGroup+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1511C0728EFF16DD24180903EE59A5F9 /* GridGroup+Init.swift */; };
+		873DBFB77D428E45CA8D4FFACE3A62D5 /* ArrangedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D805C7774292F3498C79E97214EFB61 /* ArrangedItem.swift */; };
+		88FC905B10059B1824A2955E8DC0979F /* GridSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCBD47EA22A7F317652CBC343A9893 /* GridSpacing.swift */; };
+		89E8414D80D09A91B859F621DCB3EDA2 /* GridCellPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A10A9D4CC2CDBBA923C9DDC8133DFB /* GridCellPreference.swift */; };
+		8C58BD56F2D13616C6D88C9F5A93A780 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141081C6067B2B7AFFA0DE41CE7A06F /* Constants.swift */; };
+		915CB194364F071EDF9C74D4A5999A0D /* ExyteGrid-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9A0A1DA6696A447E2D4CEB40ADB998 /* ExyteGrid-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917E8322CB167E0807AE2752B6E797A0 /* GridFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EF4142C17A774B2CB003158E16BB29 /* GridFlow.swift */; };
+		91A80AF71DC31B6A0FA13B062115F364 /* LayoutArranging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF57C0BDD4D99BBC331F7691478FDC /* LayoutArranging.swift */; };
+		92EA7FF93C5EC5170524DCFC08F7C772 /* GridStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D95353123209935FF174679D35A61 /* GridStart.swift */; };
+		92F07B1437E6A2282D257CE440E119D8 /* LayoutArrangement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671499556385DBD978542EAC0B43CA8A /* LayoutArrangement.swift */; };
+		93EA5389354E6D560B485231A9ABD2A8 /* ForEach+GridViewsContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A989006FE77CBDEA7E9423F6390574B /* ForEach+GridViewsContaining.swift */; };
+		99904D25EB7047F0BB37BE2A8A980394 /* GridBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA4A290F2C6F57D0EB5107A30683CF /* GridBuilder.swift */; };
+		99B023A86073E1FB20EF34C549D7E8B1 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC116554CE615BD8949D74372F26B32B /* Grid.swift */; };
+		9DC9EA254AF05DE8D6D07786423B2101 /* PositionedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DB26274AAE75088481BEF1FB8A88D /* PositionedItem.swift */; };
+		9F337A07330BB2950F299283151E7717 /* CGRect+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501E8E048F748E60CFBA7EC6A9CB998 /* CGRect+Hashable.swift */; };
+		9F9C30DAF927E6ABF0075B9A6A3D0946 /* CGSize+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D213989AA2A93703002BE244D7319E8 /* CGSize+Hashable.swift */; };
+		A001E71E2D377F841247E76A21AC4C3A /* GridSpan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168FE8D7E2E8175873E68CFC8E17A03 /* GridSpan.swift */; };
+		A2FE50A8C642866B31B234285469776C /* View+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718D436FEF9B68CBDA2A10B7E825D85 /* View+Environment.swift */; };
+		A396FDB3C8A9B3C2FBA005244FD5B7AF /* GridElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55C404E7120F04E3BB19EB37A8E5BE /* GridElement.swift */; };
+		A44E1D3EEE969992845D4BEE096039CF /* GridIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC1C8AAE2911C680D248AF54F691D8 /* GridIndex.swift */; };
+		AB8D50BDEF8BE35C566438D2C3DF2556 /* Grid+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C403D9057E8D924D2A6B5FF87BAD2 /* Grid+Init.swift */; };
+		AC225DB9903EBAD631DCABA9EFE2F42B /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F83095A4BF89F086D0380ACCAA69F /* Cache.swift */; };
+		AFB2673A1AA98030117BF76EE2C44FA4 /* GridPacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFD4AAAA280BCC9EBD866C44DB78B4 /* GridPacking.swift */; };
+		B309FAC144A96BECBD71EC8EC2EBA7DF /* ArrangedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D805C7774292F3498C79E97214EFB61 /* ArrangedItem.swift */; };
+		B45C1CD7162409618B8E8B99D8E5B617 /* GridElement+asGridElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41B1BF92A8F800A263D646AE9C5748 /* GridElement+asGridElements.swift */; };
+		B5A740535F6B0623223F14642C3F7F95 /* GridSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCBD47EA22A7F317652CBC343A9893 /* GridSpacing.swift */; };
+		B665D06281C266EDBDDCCC487DDB22CE /* GridCacheMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83938565188853E77A45FA28D30BBB27 /* GridCacheMode.swift */; };
+		BA52AD8F97BB69CC6AA3BA5008D31570 /* Pods-Mac_Grid_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF204EF4875A0D27BADC16C8E871C76 /* Pods-Mac_Grid_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE02FC8FA07C4AA02E416936AEEDA21 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */; };
+		BEBADD303116F81A4A901EF4FDC7B496 /* ExyteGrid-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AA59F8EE9F70F460601BEE90E45C55 /* ExyteGrid-macOS-dummy.m */; };
+		BFFD8DCDECA97F5E39ABE08F0B912797 /* GridElement+asGridElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41B1BF92A8F800A263D646AE9C5748 /* GridElement+asGridElements.swift */; };
+		C2ADE90D2D2E14E59903B53F488AD7A4 /* Grid+Inits_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA458AB3D45E82FD6B907AAA6A148B6 /* Grid+Inits_Data.swift */; };
+		C4590778B1177B0D7DB903053A514037 /* GridElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55C404E7120F04E3BB19EB37A8E5BE /* GridElement.swift */; };
+		C6F334837D99D27BBC959C0BFA875A82 /* GridAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C1206F7F14DB0390150B5F2B5CE9C /* GridAlignment.swift */; };
+		CA8797785B877A8C312986FCFF6A3D8A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F83095A4BF89F086D0380ACCAA69F /* Cache.swift */; };
+		CC6F139D560B06C9DCA1B23340175346 /* GridPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B32AE42993053515EE953D1D21F15E /* GridPreference.swift */; };
+		CFE0BDAD45D0D7FE1ED3412F39427EA3 /* GridStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D95353123209935FF174679D35A61 /* GridStart.swift */; };
+		D94F90C0B562808003C9DC0AA3EDCD94 /* Pods-Grid_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 572733802147571655A9A8462E95DEA5 /* Pods-Grid_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9C7F5E96F5B45952078543D084E26C4 /* GridBackgroundPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47BAB7AC1ECD2EDD90A9CC28E5ED00 /* GridBackgroundPreference.swift */; };
+		DC306E0CE62856867327BC9E81653AC9 /* GridContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9055DB0EBCF1CB9258A037C0B65E8 /* GridContentMode.swift */; };
+		DFDF5AC6934B7B184964FFA88272AFFB /* GridSpan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168FE8D7E2E8175873E68CFC8E17A03 /* GridSpan.swift */; };
+		E18C4D535BECE01A5959444B4D95C541 /* GridTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67056856AFB9010C0B2D6CB376F0079D /* GridTrack.swift */; };
+		E2252009979E642BB23FD7B4DE9A7D4B /* LayoutArrangement+description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A500651A64F42F6C56CAFA22C98B0C /* LayoutArrangement+description.swift */; };
+		E737BE22D4C2AA23A7A56F62BA6F45FF /* GridFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EF4142C17A774B2CB003158E16BB29 /* GridFlow.swift */; };
+		E7624C68CF12E519477E0AC630D6F142 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141081C6067B2B7AFFA0DE41CE7A06F /* Constants.swift */; };
+		F1BCEF1D5BED2256774A8FEBA047B09E /* GridCellPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A10A9D4CC2CDBBA923C9DDC8133DFB /* GridCellPreference.swift */; };
+		F531D6F2572734CC2AD5379AB253B428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
+		F7274A00CB475D5B812CFB74E7BD6083 /* LayoutPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21BE434AE9385B02E4F30082ABD01F /* LayoutPositioning.swift */; };
+		F84CB4AEFD25B20FAC43D683CD6559C7 /* GridContentViewsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B1D7BCDF32C08EB45DFA291666039 /* GridContentViewsProtocols.swift */; };
+		FE5FD7035DB51F007CC23641FAF5D1DF /* GridBackgroundPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47BAB7AC1ECD2EDD90A9CC28E5ED00 /* GridBackgroundPreference.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3200CE2A7ADF5F7A2F8A38ED0C526D2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C356B91F4DB21BA4D7016B70780A991;
+			remoteInfo = "ExyteGrid-macOS";
+		};
+		4AA3A12C964674E7944B197ED12AFB0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9601C4FEF5C40BDFEAB8FF5AAE84848D;
+			remoteInfo = "ExyteGrid-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		082A5FE583FACC1C3B672B09E285AECF /* ExyteGrid-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExyteGrid-iOS-dummy.m"; sourceTree = "<group>"; };
+		0D55C404E7120F04E3BB19EB37A8E5BE /* GridElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridElement.swift; sourceTree = "<group>"; };
+		12EF4142C17A774B2CB003158E16BB29 /* GridFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridFlow.swift; sourceTree = "<group>"; };
+		1511C0728EFF16DD24180903EE59A5F9 /* GridGroup+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridGroup+Init.swift"; sourceTree = "<group>"; };
+		160BC3436DEE6D8F17F6A26C72CAD955 /* ExyteGrid-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ExyteGrid-macOS.debug.xcconfig"; path = "../ExyteGrid-macOS/ExyteGrid-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		205F2A48C223EA3759C0A2DB11B27DA5 /* Pods-Grid_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Grid_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2BAF57C0BDD4D99BBC331F7691478FDC /* LayoutArranging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutArranging.swift; sourceTree = "<group>"; };
+		2BF204EF4875A0D27BADC16C8E871C76 /* Pods-Mac_Grid_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mac_Grid_Example-umbrella.h"; sourceTree = "<group>"; };
+		3077FEE1338FA2455A4DE80C480537BA /* Pods-Grid_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Grid_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3261E5A5395F45780622405F504B2804 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32B32AE42993053515EE953D1D21F15E /* GridPreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridPreference.swift; sourceTree = "<group>"; };
+		3590E5EE369AC789820DFC04F93D8FA4 /* Pods-Mac_Grid_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mac_Grid_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3ADB26B7E1AD895EAC0A9263B175EFAC /* Pods-Grid_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Grid_Example-Info.plist"; sourceTree = "<group>"; };
+		3D805C7774292F3498C79E97214EFB61 /* ArrangedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrangedItem.swift; sourceTree = "<group>"; };
+		3DA458AB3D45E82FD6B907AAA6A148B6 /* Grid+Inits_Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Grid+Inits_Data.swift"; sourceTree = "<group>"; };
+		3FBC1C8AAE2911C680D248AF54F691D8 /* GridIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridIndex.swift; sourceTree = "<group>"; };
+		421B1D7BCDF32C08EB45DFA291666039 /* GridContentViewsProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridContentViewsProtocols.swift; sourceTree = "<group>"; };
+		422378B8E310D443543C13841CDC9314 /* GridGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridGroup.swift; sourceTree = "<group>"; };
+		444491C7A0C8EC63246971CE58C5CD3D /* Pods-Mac_Grid_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mac_Grid_Example.release.xcconfig"; sourceTree = "<group>"; };
+		455F83095A4BF89F086D0380ACCAA69F /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		4E9A0A1DA6696A447E2D4CEB40ADB998 /* ExyteGrid-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExyteGrid-iOS-umbrella.h"; sourceTree = "<group>"; };
+		526DA46264BAE4DDF638A20E5F503CFD /* Pods-Grid_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Grid_Example.modulemap"; sourceTree = "<group>"; };
+		5501E8E048F748E60CFBA7EC6A9CB998 /* CGRect+Hashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Hashable.swift"; sourceTree = "<group>"; };
+		55A10A9D4CC2CDBBA923C9DDC8133DFB /* GridCellPreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCellPreference.swift; sourceTree = "<group>"; };
+		572733802147571655A9A8462E95DEA5 /* Pods-Grid_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Grid_Example-umbrella.h"; sourceTree = "<group>"; };
+		59B413362BFAA88CF1813289B0CD64DD /* Pods-Mac_Grid_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mac_Grid_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5B6C403D9057E8D924D2A6B5FF87BAD2 /* Grid+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Grid+Init.swift"; sourceTree = "<group>"; };
+		5C4AD5D9F6AB9CB2BFC9ABFE111B340B /* ExyteGrid-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ExyteGrid-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5D213989AA2A93703002BE244D7319E8 /* CGSize+Hashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGSize+Hashable.swift"; sourceTree = "<group>"; };
+		5D27DFCBD92708FC96547DBAB389D662 /* Pods-Mac_Grid_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Mac_Grid_Example.modulemap"; sourceTree = "<group>"; };
+		639D95353123209935FF174679D35A61 /* GridStart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridStart.swift; sourceTree = "<group>"; };
+		67056856AFB9010C0B2D6CB376F0079D /* GridTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridTrack.swift; sourceTree = "<group>"; };
+		671499556385DBD978542EAC0B43CA8A /* LayoutArrangement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutArrangement.swift; sourceTree = "<group>"; };
+		67F7AFB56CFED6D01DF49695E13A7587 /* ExyteGrid-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExyteGrid-iOS-prefix.pch"; sourceTree = "<group>"; };
+		6A989006FE77CBDEA7E9423F6390574B /* ForEach+GridViewsContaining.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ForEach+GridViewsContaining.swift"; sourceTree = "<group>"; };
+		7141081C6067B2B7AFFA0DE41CE7A06F /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74D290C4FEADB1DFE6A4325573B94357 /* ExyteGrid-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ExyteGrid-iOS.modulemap"; sourceTree = "<group>"; };
+		76F4011F6DA609C914396604E2C67296 /* Pods-Grid_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Grid_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7960224A7179E0805DC650789B1C7FEF /* ExyteGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExyteGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A500651A64F42F6C56CAFA22C98B0C /* LayoutArrangement+description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "LayoutArrangement+description.swift"; sourceTree = "<group>"; };
+		7E2E1EA7DAF5677AC910AB95E994CBDF /* ExyteGrid-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ExyteGrid-macOS.release.xcconfig"; path = "../ExyteGrid-macOS/ExyteGrid-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		80D0F54E4BA07AFBB6FE78BD0ED1CF76 /* Pods-Grid_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Grid_Example.release.xcconfig"; sourceTree = "<group>"; };
+		83938565188853E77A45FA28D30BBB27 /* GridCacheMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCacheMode.swift; sourceTree = "<group>"; };
+		85CA4A290F2C6F57D0EB5107A30683CF /* GridBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridBuilder.swift; sourceTree = "<group>"; };
+		955C19B79D41E2ABD1B331DEAEB9ED99 /* View+If.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
+		9718D436FEF9B68CBDA2A10B7E825D85 /* View+Environment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+Environment.swift"; sourceTree = "<group>"; };
+		9771B217172699240A2EDCA525E175B9 /* ExyteGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExyteGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D9055DB0EBCF1CB9258A037C0B65E8 /* GridContentMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridContentMode.swift; sourceTree = "<group>"; };
+		9D21BE434AE9385B02E4F30082ABD01F /* LayoutPositioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutPositioning.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F4E5AF2FCE62A892917A557D68C05C2 /* ExyteGrid-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ExyteGrid-macOS.modulemap"; path = "../ExyteGrid-macOS/ExyteGrid-macOS.modulemap"; sourceTree = "<group>"; };
+		A0EB48FA9B8E16019A7B43AAE3C9E80A /* ExyteGrid-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ExyteGrid-macOS-prefix.pch"; path = "../ExyteGrid-macOS/ExyteGrid-macOS-prefix.pch"; sourceTree = "<group>"; };
+		A640CBED7BA68834E1524FD8034CA875 /* Pods-Mac_Grid_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mac_Grid_Example-Info.plist"; sourceTree = "<group>"; };
+		A894E8F6C51DD2161C1D7CFEE5A9E6DE /* ExyteGrid-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ExyteGrid-macOS-umbrella.h"; path = "../ExyteGrid-macOS/ExyteGrid-macOS-umbrella.h"; sourceTree = "<group>"; };
+		AA0DB26274AAE75088481BEF1FB8A88D /* PositionedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PositionedItem.swift; sourceTree = "<group>"; };
+		AC116554CE615BD8949D74372F26B32B /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B0E226571283FF615632F765644EA69C /* Pods-Grid_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Grid_Example-dummy.m"; sourceTree = "<group>"; };
+		B55C375E0071BA5C1499A02B1782CDEE /* ExyteGrid-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ExyteGrid-iOS-Info.plist"; sourceTree = "<group>"; };
+		BB47BAB7AC1ECD2EDD90A9CC28E5ED00 /* GridBackgroundPreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridBackgroundPreference.swift; sourceTree = "<group>"; };
+		BC52C6192AB7140A2A622693BB2BAC79 /* GridGroup+Inits_Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridGroup+Inits_Data.swift"; sourceTree = "<group>"; };
+		BDC961C3318CBF48695D4D44DA1C9BEB /* View+GridPreferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+GridPreferences.swift"; sourceTree = "<group>"; };
+		C168FE8D7E2E8175873E68CFC8E17A03 /* GridSpan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridSpan.swift; sourceTree = "<group>"; };
+		C25C1206F7F14DB0390150B5F2B5CE9C /* GridAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridAlignment.swift; sourceTree = "<group>"; };
+		C83D876A75DCA3676F01CD957778E1CF /* ExyteGrid-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ExyteGrid-macOS-Info.plist"; path = "../ExyteGrid-macOS/ExyteGrid-macOS-Info.plist"; sourceTree = "<group>"; };
+		CE41B1BF92A8F800A263D646AE9C5748 /* GridElement+asGridElements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridElement+asGridElements.swift"; sourceTree = "<group>"; };
+		D135E17696D50BA7916CA4E9365BE8C1 /* Pods_Mac_Grid_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mac_Grid_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AA59F8EE9F70F460601BEE90E45C55 /* ExyteGrid-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ExyteGrid-macOS-dummy.m"; path = "../ExyteGrid-macOS/ExyteGrid-macOS-dummy.m"; sourceTree = "<group>"; };
+		DC85371301C58295B8C3FD69E708A3E0 /* Pods-Mac_Grid_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mac_Grid_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DCAF16A524BEC9A455C21CDFCE7B2F9E /* Pods-Grid_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Grid_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0928A77B9ECA624E6E0E655FE909843 /* Pods_Grid_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grid_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E312A8186750F4DFB74D454BC1B2DA83 /* ExyteGrid.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ExyteGrid.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E848DD8889776D8316B554A4522847D9 /* Pods-Mac_Grid_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mac_Grid_Example-dummy.m"; sourceTree = "<group>"; };
+		EBCCBD47EA22A7F317652CBC343A9893 /* GridSpacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridSpacing.swift; sourceTree = "<group>"; };
+		ED4DEFF510925F730F8C1CEFADD7DA59 /* GridOverlayPreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridOverlayPreference.swift; sourceTree = "<group>"; };
+		F29F46A8289FBDA003E1D09EB54B7FA0 /* ExyteGrid-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ExyteGrid-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E8466B54B4FEBB2A7B1A58A57A6BB7 /* Pods-Mac_Grid_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mac_Grid_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4CAAA4B8033C25E2A7E9EFBB811E8C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FACFD4AAAA280BCC9EBD866C44DB78B4 /* GridPacking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridPacking.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05BE7C6136BA1E74AB1CDF0E6C932BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834FDDA32C9EEC44455F658337B0F40B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376602E073D118A4345685CD193CEEDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE02FC8FA07C4AA02E416936AEEDA21 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0EAD41F74AD0F989A5F7120FACB3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1591284E3ECB7B187A8101AE97979EBD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB63128363F0C06A95819B07A553473E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F531D6F2572734CC2AD5379AB253B428 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11BB226654364BBE2D03742166BC5B53 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E312A8186750F4DFB74D454BC1B2DA83 /* ExyteGrid.podspec */,
+				F4CAAA4B8033C25E2A7E9EFBB811E8C4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1908A21C0A925D727D12F7F0708F0FFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC116554CE615BD8949D74372F26B32B /* Grid.swift */,
+				422378B8E310D443543C13841CDC9314 /* GridGroup.swift */,
+				9718D436FEF9B68CBDA2A10B7E825D85 /* View+Environment.swift */,
+				BDC961C3318CBF48695D4D44DA1C9BEB /* View+GridPreferences.swift */,
+				5E1690ECEA5AF7B8936263677330C052 /* Inits */,
+			);
+			name = View;
+			path = Sources/View;
+			sourceTree = "<group>";
+		};
+		24D9743F7CE5605B9E3461771DBD6796 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5501E8E048F748E60CFBA7EC6A9CB998 /* CGRect+Hashable.swift */,
+				5D213989AA2A93703002BE244D7319E8 /* CGSize+Hashable.swift */,
+				79A500651A64F42F6C56CAFA22C98B0C /* LayoutArrangement+description.swift */,
+				955C19B79D41E2ABD1B331DEAEB9ED99 /* View+If.swift */,
+			);
+			name = Extensions;
+			path = Sources/Extensions;
+			sourceTree = "<group>";
+		};
+		28837B5E69CF1ADC1276C6A516CABD71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D805C7774292F3498C79E97214EFB61 /* ArrangedItem.swift */,
+				C25C1206F7F14DB0390150B5F2B5CE9C /* GridAlignment.swift */,
+				97D9055DB0EBCF1CB9258A037C0B65E8 /* GridContentMode.swift */,
+				0D55C404E7120F04E3BB19EB37A8E5BE /* GridElement.swift */,
+				12EF4142C17A774B2CB003158E16BB29 /* GridFlow.swift */,
+				3FBC1C8AAE2911C680D248AF54F691D8 /* GridIndex.swift */,
+				FACFD4AAAA280BCC9EBD866C44DB78B4 /* GridPacking.swift */,
+				EBCCBD47EA22A7F317652CBC343A9893 /* GridSpacing.swift */,
+				C168FE8D7E2E8175873E68CFC8E17A03 /* GridSpan.swift */,
+				639D95353123209935FF174679D35A61 /* GridStart.swift */,
+				67056856AFB9010C0B2D6CB376F0079D /* GridTrack.swift */,
+				671499556385DBD978542EAC0B43CA8A /* LayoutArrangement.swift */,
+				AA0DB26274AAE75088481BEF1FB8A88D /* PositionedItem.swift */,
+				AD343B23DDF9126DA256CAB54B709180 /* Preferences */,
+			);
+			name = Models;
+			path = Sources/Models;
+			sourceTree = "<group>";
+		};
+		41C052635D3E21350AC08C5F316759F6 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		44BA269BC6CA6D18CE69A42776D3CD74 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EFD8DA9248ED7C8A7EF03ADC599B95F /* Pods-Grid_Example */,
+				CF07265177E8FCA8C9270C25558297FC /* Pods-Mac_Grid_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DABCD2AA1C1DFCD4E2578CE87BDFD93F /* iOS */,
+				41C052635D3E21350AC08C5F316759F6 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E1690ECEA5AF7B8936263677330C052 /* Inits */ = {
+			isa = PBXGroup;
+			children = (
+				6A989006FE77CBDEA7E9423F6390574B /* ForEach+GridViewsContaining.swift */,
+				5B6C403D9057E8D924D2A6B5FF87BAD2 /* Grid+Init.swift */,
+				3DA458AB3D45E82FD6B907AAA6A148B6 /* Grid+Inits_Data.swift */,
+				85CA4A290F2C6F57D0EB5107A30683CF /* GridBuilder.swift */,
+				421B1D7BCDF32C08EB45DFA291666039 /* GridContentViewsProtocols.swift */,
+				CE41B1BF92A8F800A263D646AE9C5748 /* GridElement+asGridElements.swift */,
+				1511C0728EFF16DD24180903EE59A5F9 /* GridGroup+Init.swift */,
+				BC52C6192AB7140A2A622693BB2BAC79 /* GridGroup+Inits_Data.swift */,
+			);
+			path = Inits;
+			sourceTree = "<group>";
+		};
+		5EFD8DA9248ED7C8A7EF03ADC599B95F /* Pods-Grid_Example */ = {
+			isa = PBXGroup;
+			children = (
+				526DA46264BAE4DDF638A20E5F503CFD /* Pods-Grid_Example.modulemap */,
+				3077FEE1338FA2455A4DE80C480537BA /* Pods-Grid_Example-acknowledgements.markdown */,
+				DCAF16A524BEC9A455C21CDFCE7B2F9E /* Pods-Grid_Example-acknowledgements.plist */,
+				B0E226571283FF615632F765644EA69C /* Pods-Grid_Example-dummy.m */,
+				205F2A48C223EA3759C0A2DB11B27DA5 /* Pods-Grid_Example-frameworks.sh */,
+				3ADB26B7E1AD895EAC0A9263B175EFAC /* Pods-Grid_Example-Info.plist */,
+				572733802147571655A9A8462E95DEA5 /* Pods-Grid_Example-umbrella.h */,
+				76F4011F6DA609C914396604E2C67296 /* Pods-Grid_Example.debug.xcconfig */,
+				80D0F54E4BA07AFBB6FE78BD0ED1CF76 /* Pods-Grid_Example.release.xcconfig */,
+			);
+			name = "Pods-Grid_Example";
+			path = "Target Support Files/Pods-Grid_Example";
+			sourceTree = "<group>";
+		};
+		68B4E71B3B0B5730957D93414D83430C /* ExyteGrid */ = {
+			isa = PBXGroup;
+			children = (
+				C728574473BDBBC89BB13ED126CDF77D /* Cache */,
+				E911B2E1EB52EE2BBD73B8EE0F79BC67 /* Configuration */,
+				24D9743F7CE5605B9E3461771DBD6796 /* Extensions */,
+				A52E6585C99D80FAA8E6BFD02D31F5A9 /* GridLayoutMath */,
+				28837B5E69CF1ADC1276C6A516CABD71 /* Models */,
+				11BB226654364BBE2D03742166BC5B53 /* Pod */,
+				A02E6F2E2A277596E0660997753A8DA7 /* Support Files */,
+				1908A21C0A925D727D12F7F0708F0FFE /* View */,
+			);
+			name = ExyteGrid;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7B3E637F5CA428EAC4FBFF897ED31E48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7960224A7179E0805DC650789B1C7FEF /* ExyteGrid.framework */,
+				9771B217172699240A2EDCA525E175B9 /* ExyteGrid.framework */,
+				E0928A77B9ECA624E6E0E655FE909843 /* Pods_Grid_Example.framework */,
+				D135E17696D50BA7916CA4E9365BE8C1 /* Pods_Mac_Grid_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A02E6F2E2A277596E0660997753A8DA7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74D290C4FEADB1DFE6A4325573B94357 /* ExyteGrid-iOS.modulemap */,
+				082A5FE583FACC1C3B672B09E285AECF /* ExyteGrid-iOS-dummy.m */,
+				B55C375E0071BA5C1499A02B1782CDEE /* ExyteGrid-iOS-Info.plist */,
+				67F7AFB56CFED6D01DF49695E13A7587 /* ExyteGrid-iOS-prefix.pch */,
+				4E9A0A1DA6696A447E2D4CEB40ADB998 /* ExyteGrid-iOS-umbrella.h */,
+				F29F46A8289FBDA003E1D09EB54B7FA0 /* ExyteGrid-iOS.debug.xcconfig */,
+				5C4AD5D9F6AB9CB2BFC9ABFE111B340B /* ExyteGrid-iOS.release.xcconfig */,
+				9F4E5AF2FCE62A892917A557D68C05C2 /* ExyteGrid-macOS.modulemap */,
+				D2AA59F8EE9F70F460601BEE90E45C55 /* ExyteGrid-macOS-dummy.m */,
+				C83D876A75DCA3676F01CD957778E1CF /* ExyteGrid-macOS-Info.plist */,
+				A0EB48FA9B8E16019A7B43AAE3C9E80A /* ExyteGrid-macOS-prefix.pch */,
+				A894E8F6C51DD2161C1D7CFEE5A9E6DE /* ExyteGrid-macOS-umbrella.h */,
+				160BC3436DEE6D8F17F6A26C72CAD955 /* ExyteGrid-macOS.debug.xcconfig */,
+				7E2E1EA7DAF5677AC910AB95E994CBDF /* ExyteGrid-macOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ExyteGrid-iOS";
+			sourceTree = "<group>";
+		};
+		A52E6585C99D80FAA8E6BFD02D31F5A9 /* GridLayoutMath */ = {
+			isa = PBXGroup;
+			children = (
+				2BAF57C0BDD4D99BBC331F7691478FDC /* LayoutArranging.swift */,
+				9D21BE434AE9385B02E4F30082ABD01F /* LayoutPositioning.swift */,
+			);
+			name = GridLayoutMath;
+			path = Sources/GridLayoutMath;
+			sourceTree = "<group>";
+		};
+		AD343B23DDF9126DA256CAB54B709180 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				BB47BAB7AC1ECD2EDD90A9CC28E5ED00 /* GridBackgroundPreference.swift */,
+				55A10A9D4CC2CDBBA923C9DDC8133DFB /* GridCellPreference.swift */,
+				ED4DEFF510925F730F8C1CEFADD7DA59 /* GridOverlayPreference.swift */,
+				32B32AE42993053515EE953D1D21F15E /* GridPreference.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		C728574473BDBBC89BB13ED126CDF77D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				455F83095A4BF89F086D0380ACCAA69F /* Cache.swift */,
+				83938565188853E77A45FA28D30BBB27 /* GridCacheMode.swift */,
+			);
+			name = Cache;
+			path = Sources/Cache;
+			sourceTree = "<group>";
+		};
+		CF07265177E8FCA8C9270C25558297FC /* Pods-Mac_Grid_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5D27DFCBD92708FC96547DBAB389D662 /* Pods-Mac_Grid_Example.modulemap */,
+				F2E8466B54B4FEBB2A7B1A58A57A6BB7 /* Pods-Mac_Grid_Example-acknowledgements.markdown */,
+				DC85371301C58295B8C3FD69E708A3E0 /* Pods-Mac_Grid_Example-acknowledgements.plist */,
+				E848DD8889776D8316B554A4522847D9 /* Pods-Mac_Grid_Example-dummy.m */,
+				59B413362BFAA88CF1813289B0CD64DD /* Pods-Mac_Grid_Example-frameworks.sh */,
+				A640CBED7BA68834E1524FD8034CA875 /* Pods-Mac_Grid_Example-Info.plist */,
+				2BF204EF4875A0D27BADC16C8E871C76 /* Pods-Mac_Grid_Example-umbrella.h */,
+				3590E5EE369AC789820DFC04F93D8FA4 /* Pods-Mac_Grid_Example.debug.xcconfig */,
+				444491C7A0C8EC63246971CE58C5CD3D /* Pods-Mac_Grid_Example.release.xcconfig */,
+			);
+			name = "Pods-Mac_Grid_Example";
+			path = "Target Support Files/Pods-Mac_Grid_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D88FCFE0AB8AE1B097F3DBEF4EE3458A /* Development Pods */,
+				4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */,
+				7B3E637F5CA428EAC4FBFF897ED31E48 /* Products */,
+				44BA269BC6CA6D18CE69A42776D3CD74 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D88FCFE0AB8AE1B097F3DBEF4EE3458A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68B4E71B3B0B5730957D93414D83430C /* ExyteGrid */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DABCD2AA1C1DFCD4E2578CE87BDFD93F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3261E5A5395F45780622405F504B2804 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E911B2E1EB52EE2BBD73B8EE0F79BC67 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7141081C6067B2B7AFFA0DE41CE7A06F /* Constants.swift */,
+			);
+			name = Configuration;
+			path = Sources/Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0CFFA393E2CC290F7CECFF362562CEB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94F90C0B562808003C9DC0AA3EDCD94 /* Pods-Grid_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C399C8524D8A370ECC0FD4B0F26879E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA52AD8F97BB69CC6AA3BA5008D31570 /* Pods-Mac_Grid_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B35A01C02BB788CC516384A888BDEF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915CB194364F071EDF9C74D4A5999A0D /* ExyteGrid-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86C2E479C1E22C3131580614D34BB85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73048E21B424656E1EC87609A389FD2B /* ExyteGrid-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8C356B91F4DB21BA4D7016B70780A991 /* ExyteGrid-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6379DCD800ECE6D8905038CD64BE59F /* Build configuration list for PBXNativeTarget "ExyteGrid-macOS" */;
+			buildPhases = (
+				A86C2E479C1E22C3131580614D34BB85 /* Headers */,
+				69A49DC9BCABF1221F7EAC5F74A9FC77 /* Sources */,
+				8F0EAD41F74AD0F989A5F7120FACB3D6 /* Frameworks */,
+				19818F8C29801655A2508923F0C6193B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ExyteGrid-macOS";
+			productName = "ExyteGrid-macOS";
+			productReference = 9771B217172699240A2EDCA525E175B9 /* ExyteGrid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94F08C7DE703F0A0DA1DF8F3574A97A8 /* Pods-Grid_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E3B1B341981AD21E46ED908FBCCBEC /* Build configuration list for PBXNativeTarget "Pods-Grid_Example" */;
+			buildPhases = (
+				0CFFA393E2CC290F7CECFF362562CEB1 /* Headers */,
+				7E8AFD2769CF4649FE02048092EA8BF8 /* Sources */,
+				DB63128363F0C06A95819B07A553473E /* Frameworks */,
+				CA6201E2A925BAA1F9BA6A46823B849C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25ED50964E84F260652D4ACF7AC07BCD /* PBXTargetDependency */,
+			);
+			name = "Pods-Grid_Example";
+			productName = "Pods-Grid_Example";
+			productReference = E0928A77B9ECA624E6E0E655FE909843 /* Pods_Grid_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9601C4FEF5C40BDFEAB8FF5AAE84848D /* ExyteGrid-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB03E273E11A994C4BB85CB58C93E439 /* Build configuration list for PBXNativeTarget "ExyteGrid-iOS" */;
+			buildPhases = (
+				4B35A01C02BB788CC516384A888BDEF5 /* Headers */,
+				1FF2A117E1104EE7D2C9DED487693C5B /* Sources */,
+				05BE7C6136BA1E74AB1CDF0E6C932BC7 /* Frameworks */,
+				395CDE8BE605D6246F830C3C8FD4A78F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ExyteGrid-iOS";
+			productName = "ExyteGrid-iOS";
+			productReference = 7960224A7179E0805DC650789B1C7FEF /* ExyteGrid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB1AA18E6DDC98779B50A8851B6C534C /* Pods-Mac_Grid_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C644D8DC323F967081CE278BE12128C /* Build configuration list for PBXNativeTarget "Pods-Mac_Grid_Example" */;
+			buildPhases = (
+				3C399C8524D8A370ECC0FD4B0F26879E /* Headers */,
+				2F7CF83F9D508D5BB29DE240CE699D3F /* Sources */,
+				376602E073D118A4345685CD193CEEDC /* Frameworks */,
+				EF40CEFA0591ED4C7CD58DC8FED891B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5524C30C617DA8416A9C923D767FA8AB /* PBXTargetDependency */,
+			);
+			name = "Pods-Mac_Grid_Example";
+			productName = "Pods-Mac_Grid_Example";
+			productReference = D135E17696D50BA7916CA4E9365BE8C1 /* Pods_Mac_Grid_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1220;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7B3E637F5CA428EAC4FBFF897ED31E48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9601C4FEF5C40BDFEAB8FF5AAE84848D /* ExyteGrid-iOS */,
+				8C356B91F4DB21BA4D7016B70780A991 /* ExyteGrid-macOS */,
+				94F08C7DE703F0A0DA1DF8F3574A97A8 /* Pods-Grid_Example */,
+				EB1AA18E6DDC98779B50A8851B6C534C /* Pods-Mac_Grid_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19818F8C29801655A2508923F0C6193B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395CDE8BE605D6246F830C3C8FD4A78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6201E2A925BAA1F9BA6A46823B849C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF40CEFA0591ED4C7CD58DC8FED891B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FF2A117E1104EE7D2C9DED487693C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B309FAC144A96BECBD71EC8EC2EBA7DF /* ArrangedItem.swift in Sources */,
+				AC225DB9903EBAD631DCABA9EFE2F42B /* Cache.swift in Sources */,
+				1A354321CD9E6F605C03C56086FD7071 /* CGRect+Hashable.swift in Sources */,
+				9F9C30DAF927E6ABF0075B9A6A3D0946 /* CGSize+Hashable.swift in Sources */,
+				8C58BD56F2D13616C6D88C9F5A93A780 /* Constants.swift in Sources */,
+				6BD798D5966B034792473DAF3BB23FC2 /* ExyteGrid-iOS-dummy.m in Sources */,
+				1C8E2E05AD183725CD53DD67A209AB61 /* ForEach+GridViewsContaining.swift in Sources */,
+				7AE34513DCDB8BAB388AE934612811DF /* Grid+Init.swift in Sources */,
+				C2ADE90D2D2E14E59903B53F488AD7A4 /* Grid+Inits_Data.swift in Sources */,
+				99B023A86073E1FB20EF34C549D7E8B1 /* Grid.swift in Sources */,
+				7131FB8D76EA304187AEA03B3C9494F6 /* GridAlignment.swift in Sources */,
+				D9C7F5E96F5B45952078543D084E26C4 /* GridBackgroundPreference.swift in Sources */,
+				437B9CCC2433D0A2DA1ADDAC48B92FCC /* GridBuilder.swift in Sources */,
+				B665D06281C266EDBDDCCC487DDB22CE /* GridCacheMode.swift in Sources */,
+				89E8414D80D09A91B859F621DCB3EDA2 /* GridCellPreference.swift in Sources */,
+				DC306E0CE62856867327BC9E81653AC9 /* GridContentMode.swift in Sources */,
+				F84CB4AEFD25B20FAC43D683CD6559C7 /* GridContentViewsProtocols.swift in Sources */,
+				BFFD8DCDECA97F5E39ABE08F0B912797 /* GridElement+asGridElements.swift in Sources */,
+				C4590778B1177B0D7DB903053A514037 /* GridElement.swift in Sources */,
+				917E8322CB167E0807AE2752B6E797A0 /* GridFlow.swift in Sources */,
+				86F4EBEA02736823D85F0B3F0D8CFCD8 /* GridGroup+Init.swift in Sources */,
+				7D5E9ED49AC705A57784F18A8D181054 /* GridGroup+Inits_Data.swift in Sources */,
+				17C6BF838DC60B6E91F11CD3338B3AC0 /* GridGroup.swift in Sources */,
+				A44E1D3EEE969992845D4BEE096039CF /* GridIndex.swift in Sources */,
+				64634FD218E43DB0FF30E75E371325CF /* GridOverlayPreference.swift in Sources */,
+				53DE56EA59E48CF8A10D95CDE7CC93EE /* GridPacking.swift in Sources */,
+				CC6F139D560B06C9DCA1B23340175346 /* GridPreference.swift in Sources */,
+				B5A740535F6B0623223F14642C3F7F95 /* GridSpacing.swift in Sources */,
+				A001E71E2D377F841247E76A21AC4C3A /* GridSpan.swift in Sources */,
+				92EA7FF93C5EC5170524DCFC08F7C772 /* GridStart.swift in Sources */,
+				E18C4D535BECE01A5959444B4D95C541 /* GridTrack.swift in Sources */,
+				524C3A81A2CBBE3A856E9121FEFF0521 /* LayoutArrangement+description.swift in Sources */,
+				49BC48914CD644F36DE332689000D742 /* LayoutArrangement.swift in Sources */,
+				54D59B8162E344EBD5873E17C915D9D4 /* LayoutArranging.swift in Sources */,
+				7689D577EC1AEDDE98CD25FD79DC8A1B /* LayoutPositioning.swift in Sources */,
+				82F3B4A1F8FC916CFD5443F650C1B1C2 /* PositionedItem.swift in Sources */,
+				A2FE50A8C642866B31B234285469776C /* View+Environment.swift in Sources */,
+				51034ED0E09955D425796AB9B7FC8A8C /* View+GridPreferences.swift in Sources */,
+				4F226989AC922983C5D752E8183638A9 /* View+If.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7CF83F9D508D5BB29DE240CE699D3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F3CA87315E22ED5B93BBCD64F06E586 /* Pods-Mac_Grid_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A49DC9BCABF1221F7EAC5F74A9FC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873DBFB77D428E45CA8D4FFACE3A62D5 /* ArrangedItem.swift in Sources */,
+				CA8797785B877A8C312986FCFF6A3D8A /* Cache.swift in Sources */,
+				9F337A07330BB2950F299283151E7717 /* CGRect+Hashable.swift in Sources */,
+				865E26EAD03EA2528A9FA70109F5979A /* CGSize+Hashable.swift in Sources */,
+				E7624C68CF12E519477E0AC630D6F142 /* Constants.swift in Sources */,
+				BEBADD303116F81A4A901EF4FDC7B496 /* ExyteGrid-macOS-dummy.m in Sources */,
+				93EA5389354E6D560B485231A9ABD2A8 /* ForEach+GridViewsContaining.swift in Sources */,
+				AB8D50BDEF8BE35C566438D2C3DF2556 /* Grid+Init.swift in Sources */,
+				2D03C92EF13BF273ACD5E684BE404628 /* Grid+Inits_Data.swift in Sources */,
+				7C7505437AEB9A178F97597DA62E70CF /* Grid.swift in Sources */,
+				C6F334837D99D27BBC959C0BFA875A82 /* GridAlignment.swift in Sources */,
+				FE5FD7035DB51F007CC23641FAF5D1DF /* GridBackgroundPreference.swift in Sources */,
+				99904D25EB7047F0BB37BE2A8A980394 /* GridBuilder.swift in Sources */,
+				2215C2084092A731770DC4BCC210F35F /* GridCacheMode.swift in Sources */,
+				F1BCEF1D5BED2256774A8FEBA047B09E /* GridCellPreference.swift in Sources */,
+				4A88B586647288D3FC83C019F9141D87 /* GridContentMode.swift in Sources */,
+				653E0EB2AC6BF8ECFE1B73F42ECAF83B /* GridContentViewsProtocols.swift in Sources */,
+				B45C1CD7162409618B8E8B99D8E5B617 /* GridElement+asGridElements.swift in Sources */,
+				A396FDB3C8A9B3C2FBA005244FD5B7AF /* GridElement.swift in Sources */,
+				E737BE22D4C2AA23A7A56F62BA6F45FF /* GridFlow.swift in Sources */,
+				47E842CBECCADDA7CFF55E520CF55025 /* GridGroup+Init.swift in Sources */,
+				5D3B3E076104234662B4F13C101EA816 /* GridGroup+Inits_Data.swift in Sources */,
+				2DB06A3843A00E937FABC31C66371E89 /* GridGroup.swift in Sources */,
+				5FE35E6D370194D3CE7221C649A9149B /* GridIndex.swift in Sources */,
+				78C76E7DB5356575933323EBFDA9D001 /* GridOverlayPreference.swift in Sources */,
+				AFB2673A1AA98030117BF76EE2C44FA4 /* GridPacking.swift in Sources */,
+				6BD7717BA18682DD7C78F1367F505556 /* GridPreference.swift in Sources */,
+				88FC905B10059B1824A2955E8DC0979F /* GridSpacing.swift in Sources */,
+				DFDF5AC6934B7B184964FFA88272AFFB /* GridSpan.swift in Sources */,
+				CFE0BDAD45D0D7FE1ED3412F39427EA3 /* GridStart.swift in Sources */,
+				769EF8AB425B75D61A09A6840BA11C69 /* GridTrack.swift in Sources */,
+				E2252009979E642BB23FD7B4DE9A7D4B /* LayoutArrangement+description.swift in Sources */,
+				92F07B1437E6A2282D257CE440E119D8 /* LayoutArrangement.swift in Sources */,
+				91A80AF71DC31B6A0FA13B062115F364 /* LayoutArranging.swift in Sources */,
+				F7274A00CB475D5B812CFB74E7BD6083 /* LayoutPositioning.swift in Sources */,
+				9DC9EA254AF05DE8D6D07786423B2101 /* PositionedItem.swift in Sources */,
+				82F88F445DC0C7D3F3803B30A5ECBE81 /* View+Environment.swift in Sources */,
+				306509EB690115E084FE8314857783A0 /* View+GridPreferences.swift in Sources */,
+				3C78CD915821980FDCF64DB966174759 /* View+If.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8AFD2769CF4649FE02048092EA8BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34048458C718CD7F5D48E980E7FD226C /* Pods-Grid_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25ED50964E84F260652D4ACF7AC07BCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ExyteGrid-iOS";
+			target = 9601C4FEF5C40BDFEAB8FF5AAE84848D /* ExyteGrid-iOS */;
+			targetProxy = 4AA3A12C964674E7944B197ED12AFB0F /* PBXContainerItemProxy */;
+		};
+		5524C30C617DA8416A9C923D767FA8AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ExyteGrid-macOS";
+			target = 8C356B91F4DB21BA4D7016B70780A991 /* ExyteGrid-macOS */;
+			targetProxy = 3200CE2A7ADF5F7A2F8A38ED0C526D2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19D515F5A0D241409542147B75015E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D0F54E4BA07AFBB6FE78BD0ED1CF76 /* Pods-Grid_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Grid_Example/Pods-Grid_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Grid_Example/Pods-Grid_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CE5283BF0E83D5FAED55F734CB99BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76F4011F6DA609C914396604E2C67296 /* Pods-Grid_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Grid_Example/Pods-Grid_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Grid_Example/Pods-Grid_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4433517E4760D0383FDBE976328F78F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3590E5EE369AC789820DFC04F93D8FA4 /* Pods-Mac_Grid_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Mac_Grid_Example/Pods-Mac_Grid_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Mac_Grid_Example/Pods-Mac_Grid_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D1FB49F25D7B52D76BEA873DB5AB8FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 160BC3436DEE6D8F17F6A26C72CAD955 /* ExyteGrid-macOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExyteGrid-macOS/ExyteGrid-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExyteGrid-macOS/ExyteGrid-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/ExyteGrid-macOS/ExyteGrid-macOS.modulemap";
+				PRODUCT_MODULE_NAME = ExyteGrid;
+				PRODUCT_NAME = ExyteGrid;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84FB270EB1DEC60311530FD8E52F5643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29F46A8289FBDA003E1D09EB54B7FA0 /* ExyteGrid-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExyteGrid-iOS/ExyteGrid-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExyteGrid-iOS/ExyteGrid-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ExyteGrid-iOS/ExyteGrid-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ExyteGrid;
+				PRODUCT_NAME = ExyteGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C2AA300DA47D6C8C8460607D3D709DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4AD5D9F6AB9CB2BFC9ABFE111B340B /* ExyteGrid-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExyteGrid-iOS/ExyteGrid-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExyteGrid-iOS/ExyteGrid-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ExyteGrid-iOS/ExyteGrid-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ExyteGrid;
+				PRODUCT_NAME = ExyteGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3883BCF7E03804B1FD43648E7A3A026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2E1EA7DAF5677AC910AB95E994CBDF /* ExyteGrid-macOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExyteGrid-macOS/ExyteGrid-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExyteGrid-macOS/ExyteGrid-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/ExyteGrid-macOS/ExyteGrid-macOS.modulemap";
+				PRODUCT_MODULE_NAME = ExyteGrid;
+				PRODUCT_NAME = ExyteGrid;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9B5667880DD90A128DFE3C7076BB7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CB1DD8FB87EE6BB90DE63526260615D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444491C7A0C8EC63246971CE58C5CD3D /* Pods-Mac_Grid_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Mac_Grid_Example/Pods-Mac_Grid_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Mac_Grid_Example/Pods-Mac_Grid_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFF4B36E469B07BC11060AB816ECC7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B5667880DD90A128DFE3C7076BB7A4 /* Debug */,
+				CFF4B36E469B07BC11060AB816ECC7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C644D8DC323F967081CE278BE12128C /* Build configuration list for PBXNativeTarget "Pods-Mac_Grid_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4433517E4760D0383FDBE976328F78F5 /* Debug */,
+				CB1DD8FB87EE6BB90DE63526260615D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E3B1B341981AD21E46ED908FBCCBEC /* Build configuration list for PBXNativeTarget "Pods-Grid_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE5283BF0E83D5FAED55F734CB99BE4 /* Debug */,
+				19D515F5A0D241409542147B75015E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB03E273E11A994C4BB85CB58C93E439 /* Build configuration list for PBXNativeTarget "ExyteGrid-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FB270EB1DEC60311530FD8E52F5643 /* Debug */,
+				8C2AA300DA47D6C8C8460607D3D709DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6379DCD800ECE6D8905038CD64BE59F /* Build configuration list for PBXNativeTarget "ExyteGrid-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1FB49F25D7B52D76BEA873DB5AB8FB /* Debug */,
+				B3883BCF7E03804B1FD43648E7A3A026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
