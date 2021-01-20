@@ -18,10 +18,10 @@ struct Home: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text("Kavsoft")
+                Text("Pull To Refresh")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(.purple)
+                    .foregroundColor(.orange)
                 
                 Spacer()
             }
@@ -30,7 +30,7 @@ struct Home: View {
             
             Divider()
             
-            KRefreshScrollView(progressTint: .purple, arrowTint: .purple) {
+            KRefreshScrollView(progressTint: .orange, arrowTint: .orange) {
                 VStack {
                     ForEach(arrayData,id: \.self) { value in
                         HStack {
