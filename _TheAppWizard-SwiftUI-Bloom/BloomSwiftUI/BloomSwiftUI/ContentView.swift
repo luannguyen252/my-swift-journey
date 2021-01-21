@@ -6,64 +6,60 @@ struct ContentView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             
             VStack {
+                Spacer()
+                
                 MainFlower()
+                
                 Image("leavespng")
                     .resizable()
                     .frame(width: 300, height: 100, alignment: .center)
                     .opacity(0.8)
                     .shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
                 
-                Text("SwiftUI Animation")
-                    .font(.headline)
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                    .opacity(0.8)
-                    .shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
+                Spacer()
                 
-                Text("Bloom Flower")
-                    .font(.caption)
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                    .opacity(0.8)
-                    .shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
+                VStack(spacing: 8) {
+                    Text("SwiftUI Animation")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.white)
+                        .opacity(0.8)
+                        .shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
+                    
+                    Text("Bloom Flower")
+                        .font(.title3)
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                        .opacity(0.8)
+                        .shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
+                }
+                .padding(.bottom, 16)
             }
         }
+        .statusBar(hidden: true)
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Main Flower
 struct MainFlower: View {
     @State private var rPetal = false
     @State private var lPetal = false
     @State private var mrPetal = false
     @State private var mlPetal = false
     @State private var customShadow = false
+    
     var body: some View {
         ZStack {
             ZStack {
                 Image("petal")
-                   .resizable()
+                    .resizable()
                     .frame(width: 90, height: 180, alignment: .center) // Middle
-                   .rotationEffect(.degrees(0), anchor: .bottom)
+                    .rotationEffect(.degrees(0), anchor: .bottom)
                
                 Image("petal")
                     .resizable()
                     .frame(width: 90, height: 180, alignment: .center)  // Middle left
+
                 Image("petal")
                     .resizable()
                     .frame(width: 90, height: 180, alignment: .center)  // Left
@@ -76,6 +72,7 @@ struct MainFlower: View {
                 Image("petal")
                     .resizable()
                     .frame(width: 90, height: 180, alignment: .center) // Middle right
+                
                 Image("petal")
                     .resizable()
                     .frame(width: 90, height: 180, alignment: .center)   // Right
@@ -102,15 +99,13 @@ struct MainFlower: View {
                     .onAppear {
                         rPetal.toggle()
                     }
-                
-            }.shadow(radius: customShadow ? 20 : 0)
-             .hueRotation(Angle(degrees: customShadow ? 0 : 165))
-             .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true))
-             .onAppear {
+            }
+            .shadow(radius: customShadow ? 20 : 0)
+            .hueRotation(Angle(degrees: customShadow ? 0 : 165))
+            .animation(Animation.easeInOut(duration: 2).delay(2).repeatForever(autoreverses: true))
+            .onAppear {
                 customShadow.toggle()
             }
-            
-           
         }
     }
 }
