@@ -306,9 +306,9 @@ struct DesignOne: View {
             LinearGradient(Color.darkStart, Color.darkEnd)
 
             VStack(spacing: 20) {
-                Text("Neumorphic Design : Design One")
-                    .font(.title3)
-                    .fontWeight(.thin)
+                Text("Neumorphic Design")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
                     .foregroundColor(Color.white).opacity(0.8)
                     .shadow(color: .black, radius: -10, x: 0.0, y: 0.0)
                 
@@ -389,9 +389,9 @@ struct DesignOne: View {
                 Spacer()
                     .frame(width: 100, height: 50, alignment: .center)
                 
-                Text("The App Wizard")
-                    .font(.title3)
-                    .fontWeight(.thin)
+                Text("SwiftUI Neumorphism")
+                    .font(.title2)
+                    .fontWeight(.regular)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .opacity(0.8)

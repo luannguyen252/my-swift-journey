@@ -5,6 +5,7 @@ struct ContentView: View {
         ZStack {
             DesignOne()
         }
+        .statusBar(hidden: true)
     }
 }
 
