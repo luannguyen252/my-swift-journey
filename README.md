@@ -53,6 +53,8 @@ struct ContentView: View {
 
 ## Global Variables
 
+1.
+
 ```swift
 // MARK: Colors
 let darkGray = Color(red: 41/255, green: 42/255, blue: 48/255)
@@ -63,6 +65,27 @@ let darkViolet = Color(red: 214/255, green: 189/255, blue: 251/255)
 
 ```swift
 .foregroundColor(darkBlue)
+```
+
+2.
+
+```swift
+// Colors
+extension Color {
+    static let darkStart = Color(red: 50 / 255, green: 60 / 255, blue: 65 / 255)
+    static let darkEnd = Color(red: 25 / 255, green: 25 / 255, blue: 30 / 255)
+}
+
+// Gradient
+extension LinearGradient {
+    init(_ colors: Color...) {
+        self.init(gradient: Gradient(colors: colors), startPoint: .topTrailing, endPoint: .bottomTrailing)
+    }
+}
+```
+
+```swift
+LinearGradient(Color.darkEnd, Color.darkStart)
 ```
 
 ---
