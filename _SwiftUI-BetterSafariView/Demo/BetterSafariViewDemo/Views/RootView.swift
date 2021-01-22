@@ -103,7 +103,7 @@ struct RootView: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("BetterSafariViewDemo")
+            .navigationTitle("Better Safari View")
             .navigationBarTitleDisplayMode(.inline)
         }
         .navigationViewStyle(StackNavigationViewStyle())
