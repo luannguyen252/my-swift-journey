@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A115D5D251E0AE400F60FF6 /* KeybordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A115D5C251E0AE400F60FF6 /* KeybordModel.swift */; };
+		2A467E472515C63300F92683 /* TimeManagementAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A467E462515C63300F92683 /* TimeManagementAppApp.swift */; };
+		2A467E4B2515C63300F92683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A467E4A2515C63300F92683 /* Assets.xcassets */; };
+		2A467E4E2515C63300F92683 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A467E4D2515C63300F92683 /* Preview Assets.xcassets */; };
+		2A467E532515C63300F92683 /* TimeManagementApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A467E512515C63300F92683 /* TimeManagementApp.xcdatamodeld */; };
+		2A7E83482515C82700A073FC /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E83472515C82700A073FC /* RecordViewModel.swift */; };
+		2A7E834C2515C86400A073FC /* TimeStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E834B2515C86400A073FC /* TimeStartView.swift */; };
+		2A7E834F2515C94500A073FC /* TimeRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E834E2515C94500A073FC /* TimeRecordView.swift */; };
+		2A7E83522515C9AA00A073FC /* TimePauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E83512515C9AA00A073FC /* TimePauseView.swift */; };
+		2A7E835A25165A4F00A073FC /* DataFomatterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E835925165A4E00A073FC /* DataFomatterViewModel.swift */; };
+		2ABF3D30251F705A002E89CB /* TimeRecordPersistenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF3D2F251F705A002E89CB /* TimeRecordPersistenceViewModel.swift */; };
+		2ABF3D33251F72E2002E89CB /* AddNewRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF3D32251F72E2002E89CB /* AddNewRecordModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A115D5C251E0AE400F60FF6 /* KeybordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeybordModel.swift; sourceTree = "<group>"; };
+		2A467E432515C63300F92683 /* TimeManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A467E462515C63300F92683 /* TimeManagementAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementAppApp.swift; sourceTree = "<group>"; };
+		2A467E4A2515C63300F92683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A467E4D2515C63300F92683 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A467E522515C63300F92683 /* TimeManagementApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeManagementApp.xcdatamodel; sourceTree = "<group>"; };
+		2A467E542515C63300F92683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7E83472515C82700A073FC /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		2A7E834B2515C86400A073FC /* TimeStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStartView.swift; sourceTree = "<group>"; };
+		2A7E834E2515C94500A073FC /* TimeRecordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRecordView.swift; sourceTree = "<group>"; };
+		2A7E83512515C9AA00A073FC /* TimePauseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePauseView.swift; sourceTree = "<group>"; };
+		2A7E835925165A4E00A073FC /* DataFomatterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFomatterViewModel.swift; sourceTree = "<group>"; };
+		2ABF3D2F251F705A002E89CB /* TimeRecordPersistenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRecordPersistenceViewModel.swift; sourceTree = "<group>"; };
+		2ABF3D32251F72E2002E89CB /* AddNewRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRecordModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A467E402515C63300F92683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A467E3A2515C63300F92683 = {
+			isa = PBXGroup;
+			children = (
+				2A467E452515C63300F92683 /* TimeManagementApp */,
+				2A467E442515C63300F92683 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A467E442515C63300F92683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A467E432515C63300F92683 /* TimeManagementApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A467E452515C63300F92683 /* TimeManagementApp */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E83462515C7EF00A073FC /* ViewModel */,
+				2A7E83452515C7C200A073FC /* View */,
+				2A7E83442515C7A900A073FC /* Model */,
+				2A467E462515C63300F92683 /* TimeManagementAppApp.swift */,
+				2A467E4A2515C63300F92683 /* Assets.xcassets */,
+				2A467E542515C63300F92683 /* Info.plist */,
+				2A467E512515C63300F92683 /* TimeManagementApp.xcdatamodeld */,
+				2A467E4C2515C63300F92683 /* Preview Content */,
+			);
+			path = TimeManagementApp;
+			sourceTree = "<group>";
+		};
+		2A467E4C2515C63300F92683 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A467E4D2515C63300F92683 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A7E83442515C7A900A073FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A115D5C251E0AE400F60FF6 /* KeybordModel.swift */,
+				2ABF3D32251F72E2002E89CB /* AddNewRecordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7E83452515C7C200A073FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E834B2515C86400A073FC /* TimeStartView.swift */,
+				2A7E834E2515C94500A073FC /* TimeRecordView.swift */,
+				2A7E83512515C9AA00A073FC /* TimePauseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7E83462515C7EF00A073FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E83472515C82700A073FC /* RecordViewModel.swift */,
+				2A7E835925165A4E00A073FC /* DataFomatterViewModel.swift */,
+				2ABF3D2F251F705A002E89CB /* TimeRecordPersistenceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A467E422515C63300F92683 /* TimeManagementApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A467E572515C63300F92683 /* Build configuration list for PBXNativeTarget "TimeManagementApp" */;
+			buildPhases = (
+				2A467E3F2515C63300F92683 /* Sources */,
+				2A467E402515C63300F92683 /* Frameworks */,
+				2A467E412515C63300F92683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeManagementApp;
+			productName = TimeManagementApp;
+			productReference = 2A467E432515C63300F92683 /* TimeManagementApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A467E3B2515C63300F92683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2A467E422515C63300F92683 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 2A467E3E2515C63300F92683 /* Build configuration list for PBXProject "TimeManagementApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A467E3A2515C63300F92683;
+			productRefGroup = 2A467E442515C63300F92683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A467E422515C63300F92683 /* TimeManagementApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A467E412515C63300F92683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A467E4E2515C63300F92683 /* Preview Assets.xcassets in Resources */,
+				2A467E4B2515C63300F92683 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A467E3F2515C63300F92683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7E835A25165A4F00A073FC /* DataFomatterViewModel.swift in Sources */,
+				2ABF3D33251F72E2002E89CB /* AddNewRecordModel.swift in Sources */,
+				2A7E834C2515C86400A073FC /* TimeStartView.swift in Sources */,
+				2A467E472515C63300F92683 /* TimeManagementAppApp.swift in Sources */,
+				2A115D5D251E0AE400F60FF6 /* KeybordModel.swift in Sources */,
+				2A7E83482515C82700A073FC /* RecordViewModel.swift in Sources */,
+				2A467E532515C63300F92683 /* TimeManagementApp.xcdatamodeld in Sources */,
+				2ABF3D30251F705A002E89CB /* TimeRecordPersistenceViewModel.swift in Sources */,
+				2A7E83522515C9AA00A073FC /* TimePauseView.swift in Sources */,
+				2A7E834F2515C94500A073FC /* TimeRecordView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2A467E552515C63300F92683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A467E562515C63300F92683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A467E582515C63300F92683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeManagementApp/Preview Content\"";
+				DEVELOPMENT_TEAM = PY3J24KKDZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeManagementApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "west18948-gmail.com.TimeManagementApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A467E592515C63300F92683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeManagementApp/Preview Content\"";
+				DEVELOPMENT_TEAM = PY3J24KKDZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeManagementApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "west18948-gmail.com.TimeManagementApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A467E3E2515C63300F92683 /* Build configuration list for PBXProject "TimeManagementApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A467E552515C63300F92683 /* Debug */,
+				2A467E562515C63300F92683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A467E572515C63300F92683 /* Build configuration list for PBXNativeTarget "TimeManagementApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A467E582515C63300F92683 /* Debug */,
+				2A467E592515C63300F92683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A467E512515C63300F92683 /* TimeManagementApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A467E522515C63300F92683 /* TimeManagementApp.xcdatamodel */,
+			);
+			currentVersion = 2A467E522515C63300F92683 /* TimeManagementApp.xcdatamodel */;
+			path = TimeManagementApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2A467E3B2515C63300F92683 /* Project object */;
+}
