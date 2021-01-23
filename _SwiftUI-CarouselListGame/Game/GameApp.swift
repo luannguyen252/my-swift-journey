@@ -1,10 +1,3 @@
-//
-//  GameApp.swift
-//  Game
-//
-//  Created by Balaji on 26/06/20.
-//
-
 import SwiftUI
 
 @main
