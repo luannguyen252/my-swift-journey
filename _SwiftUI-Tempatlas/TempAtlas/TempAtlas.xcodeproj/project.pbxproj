@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		371550C722B8162500AF930C /* ForecastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371550C622B8162500AF930C /* ForecastList.swift */; };
+		371550C922B818E400AF930C /* FavoriteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371550C822B818E400AF930C /* FavoriteRow.swift */; };
+		371F0C2222B3E1110091BA7C /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371F0C2122B3E1110091BA7C /* WeatherResponse.swift */; };
+		37594A2422B28F5400BA8F54 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594A2322B28F5400BA8F54 /* WeatherAPI.swift */; };
+		3775FBB422B16C9B00FDC5E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775FBB322B16C9B00FDC5E3 /* AppDelegate.swift */; };
+		3775FBB622B16C9B00FDC5E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775FBB522B16C9B00FDC5E3 /* SceneDelegate.swift */; };
+		3775FBB822B16C9B00FDC5E3 /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775FBB722B16C9B00FDC5E3 /* Landing.swift */; };
+		3775FBBA22B16C9D00FDC5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3775FBB922B16C9D00FDC5E3 /* Assets.xcassets */; };
+		3775FBBD22B16C9D00FDC5E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3775FBBC22B16C9D00FDC5E3 /* Preview Assets.xcassets */; };
+		3775FBC022B16C9D00FDC5E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3775FBBE22B16C9D00FDC5E3 /* LaunchScreen.storyboard */; };
+		3775FBCB22B16C9E00FDC5E3 /* TempAtlasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775FBCA22B16C9E00FDC5E3 /* TempAtlasTests.swift */; };
+		3775FBD622B16C9E00FDC5E3 /* TempAtlasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775FBD522B16C9E00FDC5E3 /* TempAtlasUITests.swift */; };
+		3775FBE422B16D0700FDC5E3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775FBE322B16D0700FDC5E3 /* MapView.swift */; };
+		3775FBE622B17CAE00FDC5E3 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775FBE522B17CAE00FDC5E3 /* ControlsView.swift */; };
+		378B2C9922B417C700C1BB0F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B2C9822B417C700C1BB0F /* InfoView.swift */; };
+		378B2C9B22B4198100C1BB0F /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B2C9A22B4198100C1BB0F /* InfoRow.swift */; };
+		378B2C9E22B4270D00C1BB0F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B2C9D22B4270D00C1BB0F /* SearchBar.swift */; };
+		378B2CA022B430A200C1BB0F /* WeatherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B2C9F22B430A200C1BB0F /* WeatherState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3775FBC722B16C9E00FDC5E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3775FBA822B16C9B00FDC5E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3775FBAF22B16C9B00FDC5E3;
+			remoteInfo = TempAtlas;
+		};
+		3775FBD222B16C9E00FDC5E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3775FBA822B16C9B00FDC5E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3775FBAF22B16C9B00FDC5E3;
+			remoteInfo = TempAtlas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		371550C622B8162500AF930C /* ForecastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastList.swift; sourceTree = "<group>"; };
+		371550C822B818E400AF930C /* FavoriteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRow.swift; sourceTree = "<group>"; };
+		371F0C2122B3E1110091BA7C /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		37594A2322B28F5400BA8F54 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		3775FBB022B16C9B00FDC5E3 /* TempAtlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempAtlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3775FBB322B16C9B00FDC5E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3775FBB522B16C9B00FDC5E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3775FBB722B16C9B00FDC5E3 /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
+		3775FBB922B16C9D00FDC5E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3775FBBC22B16C9D00FDC5E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3775FBBF22B16C9D00FDC5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3775FBC122B16C9D00FDC5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3775FBC622B16C9E00FDC5E3 /* TempAtlasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempAtlasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3775FBCA22B16C9E00FDC5E3 /* TempAtlasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempAtlasTests.swift; sourceTree = "<group>"; };
+		3775FBCC22B16C9E00FDC5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3775FBD122B16C9E00FDC5E3 /* TempAtlasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempAtlasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3775FBD522B16C9E00FDC5E3 /* TempAtlasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempAtlasUITests.swift; sourceTree = "<group>"; };
+		3775FBD722B16C9E00FDC5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3775FBE322B16D0700FDC5E3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3775FBE522B17CAE00FDC5E3 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		378B2C9822B417C700C1BB0F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		378B2C9A22B4198100C1BB0F /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		378B2C9D22B4270D00C1BB0F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		378B2C9F22B430A200C1BB0F /* WeatherState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3775FBAD22B16C9B00FDC5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3775FBC322B16C9E00FDC5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3775FBCE22B16C9E00FDC5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		374877CF22B93EED0038DA38 /* Modal Views */ = {
+			isa = PBXGroup;
+			children = (
+				371550C622B8162500AF930C /* ForecastList.swift */,
+				371550C822B818E400AF930C /* FavoriteRow.swift */,
+			);
+			path = "Modal Views";
+			sourceTree = "<group>";
+		};
+		37594A2222B28F3900BA8F54 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				37594A2322B28F5400BA8F54 /* WeatherAPI.swift */,
+				371F0C2122B3E1110091BA7C /* WeatherResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3775FBA722B16C9B00FDC5E3 = {
+			isa = PBXGroup;
+			children = (
+				3775FBB222B16C9B00FDC5E3 /* TempAtlas */,
+				3775FBC922B16C9E00FDC5E3 /* TempAtlasTests */,
+				3775FBD422B16C9E00FDC5E3 /* TempAtlasUITests */,
+				3775FBB122B16C9B00FDC5E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3775FBB122B16C9B00FDC5E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3775FBB022B16C9B00FDC5E3 /* TempAtlas.app */,
+				3775FBC622B16C9E00FDC5E3 /* TempAtlasTests.xctest */,
+				3775FBD122B16C9E00FDC5E3 /* TempAtlasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3775FBB222B16C9B00FDC5E3 /* TempAtlas */ = {
+			isa = PBXGroup;
+			children = (
+				378B2CA122B430AA00C1BB0F /* Models */,
+				37594A2222B28F3900BA8F54 /* API */,
+				378B2C9C22B426D600C1BB0F /* Forecast Views */,
+				374877CF22B93EED0038DA38 /* Modal Views */,
+				3775FBB722B16C9B00FDC5E3 /* Landing.swift */,
+				3775FBB322B16C9B00FDC5E3 /* AppDelegate.swift */,
+				3775FBB522B16C9B00FDC5E3 /* SceneDelegate.swift */,
+				3775FBB922B16C9D00FDC5E3 /* Assets.xcassets */,
+				3775FBBE22B16C9D00FDC5E3 /* LaunchScreen.storyboard */,
+				3775FBC122B16C9D00FDC5E3 /* Info.plist */,
+				3775FBBB22B16C9D00FDC5E3 /* Preview Content */,
+			);
+			path = TempAtlas;
+			sourceTree = "<group>";
+		};
+		3775FBBB22B16C9D00FDC5E3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3775FBBC22B16C9D00FDC5E3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3775FBC922B16C9E00FDC5E3 /* TempAtlasTests */ = {
+			isa = PBXGroup;
+			children = (
+				3775FBCA22B16C9E00FDC5E3 /* TempAtlasTests.swift */,
+				3775FBCC22B16C9E00FDC5E3 /* Info.plist */,
+			);
+			path = TempAtlasTests;
+			sourceTree = "<group>";
+		};
+		3775FBD422B16C9E00FDC5E3 /* TempAtlasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3775FBD522B16C9E00FDC5E3 /* TempAtlasUITests.swift */,
+				3775FBD722B16C9E00FDC5E3 /* Info.plist */,
+			);
+			path = TempAtlasUITests;
+			sourceTree = "<group>";
+		};
+		378B2C9C22B426D600C1BB0F /* Forecast Views */ = {
+			isa = PBXGroup;
+			children = (
+				3775FBE322B16D0700FDC5E3 /* MapView.swift */,
+				3775FBE522B17CAE00FDC5E3 /* ControlsView.swift */,
+				378B2C9822B417C700C1BB0F /* InfoView.swift */,
+				378B2C9A22B4198100C1BB0F /* InfoRow.swift */,
+				378B2C9D22B4270D00C1BB0F /* SearchBar.swift */,
+			);
+			path = "Forecast Views";
+			sourceTree = "<group>";
+		};
+		378B2CA122B430AA00C1BB0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				378B2C9F22B430A200C1BB0F /* WeatherState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3775FBAF22B16C9B00FDC5E3 /* TempAtlas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3775FBDA22B16C9E00FDC5E3 /* Build configuration list for PBXNativeTarget "TempAtlas" */;
+			buildPhases = (
+				3775FBAC22B16C9B00FDC5E3 /* Sources */,
+				3775FBAD22B16C9B00FDC5E3 /* Frameworks */,
+				3775FBAE22B16C9B00FDC5E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempAtlas;
+			productName = TempAtlas;
+			productReference = 3775FBB022B16C9B00FDC5E3 /* TempAtlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3775FBC522B16C9E00FDC5E3 /* TempAtlasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3775FBDD22B16C9E00FDC5E3 /* Build configuration list for PBXNativeTarget "TempAtlasTests" */;
+			buildPhases = (
+				3775FBC222B16C9E00FDC5E3 /* Sources */,
+				3775FBC322B16C9E00FDC5E3 /* Frameworks */,
+				3775FBC422B16C9E00FDC5E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3775FBC822B16C9E00FDC5E3 /* PBXTargetDependency */,
+			);
+			name = TempAtlasTests;
+			productName = TempAtlasTests;
+			productReference = 3775FBC622B16C9E00FDC5E3 /* TempAtlasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3775FBD022B16C9E00FDC5E3 /* TempAtlasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3775FBE022B16C9E00FDC5E3 /* Build configuration list for PBXNativeTarget "TempAtlasUITests" */;
+			buildPhases = (
+				3775FBCD22B16C9E00FDC5E3 /* Sources */,
+				3775FBCE22B16C9E00FDC5E3 /* Frameworks */,
+				3775FBCF22B16C9E00FDC5E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3775FBD322B16C9E00FDC5E3 /* PBXTargetDependency */,
+			);
+			name = TempAtlasUITests;
+			productName = TempAtlasUITests;
+			productReference = 3775FBD122B16C9E00FDC5E3 /* TempAtlasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3775FBA822B16C9B00FDC5E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Justin Hatin";
+				TargetAttributes = {
+					3775FBAF22B16C9B00FDC5E3 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					3775FBC522B16C9E00FDC5E3 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 3775FBAF22B16C9B00FDC5E3;
+					};
+					3775FBD022B16C9E00FDC5E3 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 3775FBAF22B16C9B00FDC5E3;
+					};
+				};
+			};
+			buildConfigurationList = 3775FBAB22B16C9B00FDC5E3 /* Build configuration list for PBXProject "TempAtlas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3775FBA722B16C9B00FDC5E3;
+			productRefGroup = 3775FBB122B16C9B00FDC5E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3775FBAF22B16C9B00FDC5E3 /* TempAtlas */,
+				3775FBC522B16C9E00FDC5E3 /* TempAtlasTests */,
+				3775FBD022B16C9E00FDC5E3 /* TempAtlasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3775FBAE22B16C9B00FDC5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3775FBC022B16C9D00FDC5E3 /* LaunchScreen.storyboard in Resources */,
+				3775FBBD22B16C9D00FDC5E3 /* Preview Assets.xcassets in Resources */,
+				3775FBBA22B16C9D00FDC5E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3775FBC422B16C9E00FDC5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3775FBCF22B16C9E00FDC5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3775FBAC22B16C9B00FDC5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378B2C9922B417C700C1BB0F /* InfoView.swift in Sources */,
+				371550C922B818E400AF930C /* FavoriteRow.swift in Sources */,
+				3775FBB422B16C9B00FDC5E3 /* AppDelegate.swift in Sources */,
+				3775FBE422B16D0700FDC5E3 /* MapView.swift in Sources */,
+				3775FBB622B16C9B00FDC5E3 /* SceneDelegate.swift in Sources */,
+				371550C722B8162500AF930C /* ForecastList.swift in Sources */,
+				378B2CA022B430A200C1BB0F /* WeatherState.swift in Sources */,
+				371F0C2222B3E1110091BA7C /* WeatherResponse.swift in Sources */,
+				37594A2422B28F5400BA8F54 /* WeatherAPI.swift in Sources */,
+				3775FBE622B17CAE00FDC5E3 /* ControlsView.swift in Sources */,
+				378B2C9E22B4270D00C1BB0F /* SearchBar.swift in Sources */,
+				3775FBB822B16C9B00FDC5E3 /* Landing.swift in Sources */,
+				378B2C9B22B4198100C1BB0F /* InfoRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3775FBC222B16C9E00FDC5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3775FBCB22B16C9E00FDC5E3 /* TempAtlasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3775FBCD22B16C9E00FDC5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3775FBD622B16C9E00FDC5E3 /* TempAtlasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3775FBC822B16C9E00FDC5E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3775FBAF22B16C9B00FDC5E3 /* TempAtlas */;
+			targetProxy = 3775FBC722B16C9E00FDC5E3 /* PBXContainerItemProxy */;
+		};
+		3775FBD322B16C9E00FDC5E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3775FBAF22B16C9B00FDC5E3 /* TempAtlas */;
+			targetProxy = 3775FBD222B16C9E00FDC5E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3775FBBE22B16C9D00FDC5E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3775FBBF22B16C9D00FDC5E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3775FBD822B16C9E00FDC5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3775FBD922B16C9E00FDC5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3775FBDB22B16C9E00FDC5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "TempAtlas/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TempAtlas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hatin.TempAtlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3775FBDC22B16C9E00FDC5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "TempAtlas/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TempAtlas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hatin.TempAtlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3775FBDE22B16C9E00FDC5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TempAtlasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hatin.TempAtlasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempAtlas.app/TempAtlas";
+			};
+			name = Debug;
+		};
+		3775FBDF22B16C9E00FDC5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TempAtlasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hatin.TempAtlasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempAtlas.app/TempAtlas";
+			};
+			name = Release;
+		};
+		3775FBE122B16C9E00FDC5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TempAtlasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hatin.TempAtlasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempAtlas;
+			};
+			name = Debug;
+		};
+		3775FBE222B16C9E00FDC5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TempAtlasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hatin.TempAtlasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempAtlas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3775FBAB22B16C9B00FDC5E3 /* Build configuration list for PBXProject "TempAtlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3775FBD822B16C9E00FDC5E3 /* Debug */,
+				3775FBD922B16C9E00FDC5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3775FBDA22B16C9E00FDC5E3 /* Build configuration list for PBXNativeTarget "TempAtlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3775FBDB22B16C9E00FDC5E3 /* Debug */,
+				3775FBDC22B16C9E00FDC5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3775FBDD22B16C9E00FDC5E3 /* Build configuration list for PBXNativeTarget "TempAtlasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3775FBDE22B16C9E00FDC5E3 /* Debug */,
+				3775FBDF22B16C9E00FDC5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3775FBE022B16C9E00FDC5E3 /* Build configuration list for PBXNativeTarget "TempAtlasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3775FBE122B16C9E00FDC5E3 /* Debug */,
+				3775FBE222B16C9E00FDC5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3775FBA822B16C9B00FDC5E3 /* Project object */;
+}
