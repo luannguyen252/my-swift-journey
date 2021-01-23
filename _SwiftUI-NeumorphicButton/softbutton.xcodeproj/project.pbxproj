@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		301B3E072405C70B00C53FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B3E062405C70B00C53FB2 /* AppDelegate.swift */; };
+		301B3E092405C70B00C53FB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B3E082405C70B00C53FB2 /* SceneDelegate.swift */; };
+		301B3E0B2405C70B00C53FB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B3E0A2405C70B00C53FB2 /* ContentView.swift */; };
+		301B3E0D2405C71000C53FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301B3E0C2405C71000C53FB2 /* Assets.xcassets */; };
+		301B3E102405C71000C53FB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301B3E0F2405C71000C53FB2 /* Preview Assets.xcassets */; };
+		301B3E132405C71000C53FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301B3E112405C71000C53FB2 /* LaunchScreen.storyboard */; };
+		301B3E1E2405C71000C53FB2 /* softbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B3E1D2405C71000C53FB2 /* softbuttonTests.swift */; };
+		301B3E292405C71000C53FB2 /* softbuttonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B3E282405C71000C53FB2 /* softbuttonUITests.swift */; };
+		3033620B247F28B300458CEF /* SoftSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3033620A247F28B300458CEF /* SoftSwitch.swift */; };
+		3033620D247F28F300458CEF /* SoftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3033620C247F28F300458CEF /* SoftButton.swift */; };
+		3033620F247F340A00458CEF /* TouchDownGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3033620E247F340A00458CEF /* TouchDownGesture.swift */; };
+		30E53DEB24063414006295F4 /* SoftToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E53DEA24063414006295F4 /* SoftToggleButton.swift */; };
+		30E53DED24063E72006295F4 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E53DEC24063E72006295F4 /* AudioPlayer.swift */; };
+		30E53DF124063FB0006295F4 /* clickin-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 30E53DEF24063FB0006295F4 /* clickin-1.wav */; };
+		30E53DF42406420A006295F4 /* clickout-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 30E53DF22406420A006295F4 /* clickout-2.wav */; };
+		30E53DF52406420A006295F4 /* clickout-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 30E53DF32406420A006295F4 /* clickout-1.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301B3E1A2405C71000C53FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301B3DFB2405C70B00C53FB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301B3E022405C70B00C53FB2;
+			remoteInfo = softbutton;
+		};
+		301B3E252405C71000C53FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301B3DFB2405C70B00C53FB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301B3E022405C70B00C53FB2;
+			remoteInfo = softbutton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		301B3E032405C70B00C53FB2 /* softbutton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = softbutton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		301B3E062405C70B00C53FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		301B3E082405C70B00C53FB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		301B3E0A2405C70B00C53FB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		301B3E0C2405C71000C53FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		301B3E0F2405C71000C53FB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		301B3E122405C71000C53FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		301B3E142405C71000C53FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301B3E192405C71000C53FB2 /* softbuttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = softbuttonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		301B3E1D2405C71000C53FB2 /* softbuttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = softbuttonTests.swift; sourceTree = "<group>"; };
+		301B3E1F2405C71000C53FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301B3E242405C71000C53FB2 /* softbuttonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = softbuttonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		301B3E282405C71000C53FB2 /* softbuttonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = softbuttonUITests.swift; sourceTree = "<group>"; };
+		301B3E2A2405C71000C53FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3033620A247F28B300458CEF /* SoftSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSwitch.swift; sourceTree = "<group>"; };
+		3033620C247F28F300458CEF /* SoftButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftButton.swift; sourceTree = "<group>"; };
+		3033620E247F340A00458CEF /* TouchDownGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownGesture.swift; sourceTree = "<group>"; };
+		30336210247F376800458CEF /* clickin-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clickin-2.wav"; sourceTree = "<group>"; };
+		30E53DEA24063414006295F4 /* SoftToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftToggleButton.swift; sourceTree = "<group>"; };
+		30E53DEC24063E72006295F4 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		30E53DEF24063FB0006295F4 /* clickin-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clickin-1.wav"; sourceTree = "<group>"; };
+		30E53DF22406420A006295F4 /* clickout-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clickout-2.wav"; sourceTree = "<group>"; };
+		30E53DF32406420A006295F4 /* clickout-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clickout-1.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		301B3E002405C70B00C53FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B3E162405C71000C53FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B3E212405C71000C53FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		301B3DFA2405C70B00C53FB2 = {
+			isa = PBXGroup;
+			children = (
+				301B3E052405C70B00C53FB2 /* softbutton */,
+				301B3E1C2405C71000C53FB2 /* softbuttonTests */,
+				301B3E272405C71000C53FB2 /* softbuttonUITests */,
+				301B3E042405C70B00C53FB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		301B3E042405C70B00C53FB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301B3E032405C70B00C53FB2 /* softbutton.app */,
+				301B3E192405C71000C53FB2 /* softbuttonTests.xctest */,
+				301B3E242405C71000C53FB2 /* softbuttonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		301B3E052405C70B00C53FB2 /* softbutton */ = {
+			isa = PBXGroup;
+			children = (
+				30E53DEF24063FB0006295F4 /* clickin-1.wav */,
+				30E53DF32406420A006295F4 /* clickout-1.wav */,
+				30336210247F376800458CEF /* clickin-2.wav */,
+				30E53DF22406420A006295F4 /* clickout-2.wav */,
+				301B3E062405C70B00C53FB2 /* AppDelegate.swift */,
+				301B3E082405C70B00C53FB2 /* SceneDelegate.swift */,
+				301B3E0A2405C70B00C53FB2 /* ContentView.swift */,
+				30E53DEC24063E72006295F4 /* AudioPlayer.swift */,
+				30E53DEA24063414006295F4 /* SoftToggleButton.swift */,
+				3033620E247F340A00458CEF /* TouchDownGesture.swift */,
+				3033620C247F28F300458CEF /* SoftButton.swift */,
+				3033620A247F28B300458CEF /* SoftSwitch.swift */,
+				301B3E0C2405C71000C53FB2 /* Assets.xcassets */,
+				301B3E112405C71000C53FB2 /* LaunchScreen.storyboard */,
+				301B3E142405C71000C53FB2 /* Info.plist */,
+				301B3E0E2405C71000C53FB2 /* Preview Content */,
+			);
+			path = softbutton;
+			sourceTree = "<group>";
+		};
+		301B3E0E2405C71000C53FB2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				301B3E0F2405C71000C53FB2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		301B3E1C2405C71000C53FB2 /* softbuttonTests */ = {
+			isa = PBXGroup;
+			children = (
+				301B3E1D2405C71000C53FB2 /* softbuttonTests.swift */,
+				301B3E1F2405C71000C53FB2 /* Info.plist */,
+			);
+			path = softbuttonTests;
+			sourceTree = "<group>";
+		};
+		301B3E272405C71000C53FB2 /* softbuttonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				301B3E282405C71000C53FB2 /* softbuttonUITests.swift */,
+				301B3E2A2405C71000C53FB2 /* Info.plist */,
+			);
+			path = softbuttonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		301B3E022405C70B00C53FB2 /* softbutton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301B3E2D2405C71000C53FB2 /* Build configuration list for PBXNativeTarget "softbutton" */;
+			buildPhases = (
+				301B3DFF2405C70B00C53FB2 /* Sources */,
+				301B3E002405C70B00C53FB2 /* Frameworks */,
+				301B3E012405C70B00C53FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = softbutton;
+			productName = softbutton;
+			productReference = 301B3E032405C70B00C53FB2 /* softbutton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		301B3E182405C71000C53FB2 /* softbuttonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301B3E302405C71000C53FB2 /* Build configuration list for PBXNativeTarget "softbuttonTests" */;
+			buildPhases = (
+				301B3E152405C71000C53FB2 /* Sources */,
+				301B3E162405C71000C53FB2 /* Frameworks */,
+				301B3E172405C71000C53FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301B3E1B2405C71000C53FB2 /* PBXTargetDependency */,
+			);
+			name = softbuttonTests;
+			productName = softbuttonTests;
+			productReference = 301B3E192405C71000C53FB2 /* softbuttonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		301B3E232405C71000C53FB2 /* softbuttonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301B3E332405C71000C53FB2 /* Build configuration list for PBXNativeTarget "softbuttonUITests" */;
+			buildPhases = (
+				301B3E202405C71000C53FB2 /* Sources */,
+				301B3E212405C71000C53FB2 /* Frameworks */,
+				301B3E222405C71000C53FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301B3E262405C71000C53FB2 /* PBXTargetDependency */,
+			);
+			name = softbuttonUITests;
+			productName = softbuttonUITests;
+			productReference = 301B3E242405C71000C53FB2 /* softbuttonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		301B3DFB2405C70B00C53FB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Christian Privitelli";
+				TargetAttributes = {
+					301B3E022405C70B00C53FB2 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					301B3E182405C71000C53FB2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 301B3E022405C70B00C53FB2;
+					};
+					301B3E232405C71000C53FB2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 301B3E022405C70B00C53FB2;
+					};
+				};
+			};
+			buildConfigurationList = 301B3DFE2405C70B00C53FB2 /* Build configuration list for PBXProject "softbutton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 301B3DFA2405C70B00C53FB2;
+			productRefGroup = 301B3E042405C70B00C53FB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				301B3E022405C70B00C53FB2 /* softbutton */,
+				301B3E182405C71000C53FB2 /* softbuttonTests */,
+				301B3E232405C71000C53FB2 /* softbuttonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		301B3E012405C70B00C53FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B3E132405C71000C53FB2 /* LaunchScreen.storyboard in Resources */,
+				30E53DF52406420A006295F4 /* clickout-1.wav in Resources */,
+				30E53DF42406420A006295F4 /* clickout-2.wav in Resources */,
+				301B3E102405C71000C53FB2 /* Preview Assets.xcassets in Resources */,
+				30E53DF124063FB0006295F4 /* clickin-1.wav in Resources */,
+				301B3E0D2405C71000C53FB2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B3E172405C71000C53FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B3E222405C71000C53FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		301B3DFF2405C70B00C53FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E53DEB24063414006295F4 /* SoftToggleButton.swift in Sources */,
+				301B3E072405C70B00C53FB2 /* AppDelegate.swift in Sources */,
+				3033620D247F28F300458CEF /* SoftButton.swift in Sources */,
+				3033620F247F340A00458CEF /* TouchDownGesture.swift in Sources */,
+				301B3E092405C70B00C53FB2 /* SceneDelegate.swift in Sources */,
+				301B3E0B2405C70B00C53FB2 /* ContentView.swift in Sources */,
+				30E53DED24063E72006295F4 /* AudioPlayer.swift in Sources */,
+				3033620B247F28B300458CEF /* SoftSwitch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B3E152405C71000C53FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B3E1E2405C71000C53FB2 /* softbuttonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B3E202405C71000C53FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B3E292405C71000C53FB2 /* softbuttonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301B3E1B2405C71000C53FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301B3E022405C70B00C53FB2 /* softbutton */;
+			targetProxy = 301B3E1A2405C71000C53FB2 /* PBXContainerItemProxy */;
+		};
+		301B3E262405C71000C53FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301B3E022405C70B00C53FB2 /* softbutton */;
+			targetProxy = 301B3E252405C71000C53FB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		301B3E112405C71000C53FB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301B3E122405C71000C53FB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		301B3E2B2405C71000C53FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		301B3E2C2405C71000C53FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		301B3E2E2405C71000C53FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"softbutton/Preview Content\"";
+				DEVELOPMENT_TEAM = 939BQQZ3GG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = softbutton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = priva28.softbutton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		301B3E2F2405C71000C53FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"softbutton/Preview Content\"";
+				DEVELOPMENT_TEAM = 939BQQZ3GG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = softbutton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = priva28.softbutton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		301B3E312405C71000C53FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 939BQQZ3GG;
+				INFOPLIST_FILE = softbuttonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = priva28.softbuttonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/softbutton.app/softbutton";
+			};
+			name = Debug;
+		};
+		301B3E322405C71000C53FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 939BQQZ3GG;
+				INFOPLIST_FILE = softbuttonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = priva28.softbuttonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/softbutton.app/softbutton";
+			};
+			name = Release;
+		};
+		301B3E342405C71000C53FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 939BQQZ3GG;
+				INFOPLIST_FILE = softbuttonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = priva28.softbuttonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = softbutton;
+			};
+			name = Debug;
+		};
+		301B3E352405C71000C53FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 939BQQZ3GG;
+				INFOPLIST_FILE = softbuttonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = priva28.softbuttonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = softbutton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		301B3DFE2405C70B00C53FB2 /* Build configuration list for PBXProject "softbutton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B3E2B2405C71000C53FB2 /* Debug */,
+				301B3E2C2405C71000C53FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301B3E2D2405C71000C53FB2 /* Build configuration list for PBXNativeTarget "softbutton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B3E2E2405C71000C53FB2 /* Debug */,
+				301B3E2F2405C71000C53FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301B3E302405C71000C53FB2 /* Build configuration list for PBXNativeTarget "softbuttonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B3E312405C71000C53FB2 /* Debug */,
+				301B3E322405C71000C53FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301B3E332405C71000C53FB2 /* Build configuration list for PBXNativeTarget "softbuttonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B3E342405C71000C53FB2 /* Debug */,
+				301B3E352405C71000C53FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 301B3DFB2405C70B00C53FB2 /* Project object */;
+}
