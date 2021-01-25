@@ -1,0 +1,18 @@
+strings:
+  inputs: Corona/Localization/Base.lproj
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift4
+      output: Corona/Generated/Strings.swift
+
+xcassets:
+  inputs: Corona/Resources/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: Corona/Generated/Assets.swift
+
+yaml:
+  inputs: Corona/Resources/ISO-Country.yml
+  outputs:
+    templateName: inline-swift4
+    output: Corona/Generated/ISO-Country.swift
