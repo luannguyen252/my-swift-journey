@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FCF7AA1C61C23868C0A8099CEB8CE3D /* BetterSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC335B9B38A41D84953A40B9F194A27E /* BetterSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2279178502776D8A1079EB9720294F31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		72C29BEA48A3227BC0D04F55312D2CFF /* BetterSheetSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6A956232885189C62DE0F8C065F632 /* BetterSheetSupport.swift */; };
+		804BCDFD2E660712E7553DA7A7CC7142 /* BetterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F3DB4A2EE0227AD72AB8A8DE2CA05B /* BetterSheet.swift */; };
+		83E2952B3C31787B7D8559A848EB89AE /* OnBetterSheetDidAttemptToDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6380EDD5308E7A641C4F4A8A71574E0 /* OnBetterSheetDidAttemptToDismiss.swift */; };
+		A4696B1553BA902DD226DCF1AFC75335 /* BetterSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9117AD14FBD249EF7C0EF2930A1C472 /* BetterSheet-dummy.m */; };
+		A8B5B284F1793ADC1F789C1ED4D96519 /* BetterSheetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361563962D06A3DF3A20C40ECD397B5 /* BetterSheetPreferenceKey.swift */; };
+		B619A97226AB24A79F504B5D79086282 /* BetterSheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0F291E4280B1DE2C2972130B9A927 /* BetterSheetCoordinator.swift */; };
+		B677377CE67C25C4226F5DE879E218B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CBDC1ABD6D62D84B34888B5451A396D5 /* UIHostingController+BetterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F97CC8E9D482E00B619C4625C061C7 /* UIHostingController+BetterSheet.swift */; };
+		DCA404946F66B8689097968696215B2B /* Pods-BetterSheetExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F1E6B9949E3E3A7A8B793C72AA4B9B /* Pods-BetterSheetExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E377D0DB8C12DABA5E3040D9E5600A96 /* BetterSheetIsModalInPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB08B1EE298474A22F196AD903622DC /* BetterSheetIsModalInPresentation.swift */; };
+		E768FA66060D93A9E4714919F387FC61 /* Pods-BetterSheetExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C44875727AA930002E8BF91C58EC8 /* Pods-BetterSheetExample-dummy.m */; };
+		EDACF40BBB2C54C9EAC1340B890DC78A /* BetterSheetPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BA06AE45A8F20677EA150C0368051 /* BetterSheetPresentationMode.swift */; };
+		F77AEBCADD6EBEF3F0045033B2888305 /* View+BetterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93FE06AFE077F3925A48B3F4B71F55 /* View+BetterSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23E9B8E4154FA4FE5C7ABB6E5D09C794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1783B568C542F88065F9BEA5DE86D4;
+			remoteInfo = BetterSheet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0007A5BEA074EE4DBCA2862067AD68F6 /* Pods-BetterSheetExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BetterSheetExample-Info.plist"; sourceTree = "<group>"; };
+		0D7085CFA348DC2E99284AB8045EA5D7 /* Pods-BetterSheetExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BetterSheetExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		2202A93FBAD5F0C898F3C9C134BBEACB /* BetterSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BetterSheet.debug.xcconfig; sourceTree = "<group>"; };
+		2549E157BE3E3BF91FF01820CEF062BF /* BetterSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BetterSheet-prefix.pch"; sourceTree = "<group>"; };
+		2DDED92A0CE93E492722F73E5B2209BF /* BetterSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BetterSheet-Info.plist"; sourceTree = "<group>"; };
+		354BA06AE45A8F20677EA150C0368051 /* BetterSheetPresentationMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BetterSheetPresentationMode.swift; path = Sources/BetterSheet/BetterSheetPresentationMode.swift; sourceTree = "<group>"; };
+		405F7A4181FB15982BFB3493C476A908 /* BetterSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BetterSheet.release.xcconfig; sourceTree = "<group>"; };
+		41E8511F0A044272DFD7B21CC086B42D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4361563962D06A3DF3A20C40ECD397B5 /* BetterSheetPreferenceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BetterSheetPreferenceKey.swift; path = Sources/BetterSheet/BetterSheetPreferenceKey.swift; sourceTree = "<group>"; };
+		4A99976580D245C5196D35CF9350486F /* Pods-BetterSheetExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BetterSheetExample-frameworks.sh"; sourceTree = "<group>"; };
+		50617664D3C84AB2DFF2A20355DD97C5 /* Pods-BetterSheetExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BetterSheetExample.debug.xcconfig"; sourceTree = "<group>"; };
+		5AB0F291E4280B1DE2C2972130B9A927 /* BetterSheetCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BetterSheetCoordinator.swift; path = Sources/BetterSheet/BetterSheetCoordinator.swift; sourceTree = "<group>"; };
+		70F97CC8E9D482E00B619C4625C061C7 /* UIHostingController+BetterSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIHostingController+BetterSheet.swift"; path = "Sources/BetterSheet/UIHostingController+BetterSheet.swift"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7AB08B1EE298474A22F196AD903622DC /* BetterSheetIsModalInPresentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BetterSheetIsModalInPresentation.swift; path = Sources/BetterSheet/BetterSheetIsModalInPresentation.swift; sourceTree = "<group>"; };
+		7BF2BEAE0A86FA45F54C3C96A0F927A9 /* BetterSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BetterSheet.framework; path = BetterSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E97F3A047CB3C8963EB3AA5F23B829E /* Pods-BetterSheetExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BetterSheetExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		864C44875727AA930002E8BF91C58EC8 /* Pods-BetterSheetExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BetterSheetExample-dummy.m"; sourceTree = "<group>"; };
+		8C4E6D8886407BDC625995686375C3ED /* Pods-BetterSheetExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BetterSheetExample.modulemap"; sourceTree = "<group>"; };
+		9B93FE06AFE077F3925A48B3F4B71F55 /* View+BetterSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+BetterSheet.swift"; path = "Sources/BetterSheet/View+BetterSheet.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9117AD14FBD249EF7C0EF2930A1C472 /* BetterSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BetterSheet-dummy.m"; sourceTree = "<group>"; };
+		ADDD520FBD34ECAF10270E4C66952645 /* Pods-BetterSheetExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BetterSheetExample.release.xcconfig"; sourceTree = "<group>"; };
+		B6380EDD5308E7A641C4F4A8A71574E0 /* OnBetterSheetDidAttemptToDismiss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnBetterSheetDidAttemptToDismiss.swift; path = Sources/BetterSheet/OnBetterSheetDidAttemptToDismiss.swift; sourceTree = "<group>"; };
+		B8F1E6B9949E3E3A7A8B793C72AA4B9B /* Pods-BetterSheetExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BetterSheetExample-umbrella.h"; sourceTree = "<group>"; };
+		B9F3DB4A2EE0227AD72AB8A8DE2CA05B /* BetterSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BetterSheet.swift; path = Sources/BetterSheet/BetterSheet.swift; sourceTree = "<group>"; };
+		DC335B9B38A41D84953A40B9F194A27E /* BetterSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BetterSheet-umbrella.h"; sourceTree = "<group>"; };
+		E5A6FC16152D43BD02CB5164F5FF14EB /* BetterSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BetterSheet.modulemap; sourceTree = "<group>"; };
+		E93B7A8A5507D8318F349906946F6C59 /* BetterSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BetterSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EF6A956232885189C62DE0F8C065F632 /* BetterSheetSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BetterSheetSupport.swift; path = Sources/BetterSheet/BetterSheetSupport.swift; sourceTree = "<group>"; };
+		F4CB90AE865425AFD43A646070CC332E /* Pods_BetterSheetExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BetterSheetExample.framework; path = "Pods-BetterSheetExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744B08C66FC38BEB5860D08CEFFC4A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B677377CE67C25C4226F5DE879E218B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A523DBC554FA772C77C004390B8F870D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2279178502776D8A1079EB9720294F31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B9ACAD528057434C1293D6298531C3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E93B7A8A5507D8318F349906946F6C59 /* BetterSheet.podspec */,
+				41E8511F0A044272DFD7B21CC086B42D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		232BF024F5BCED2473F48F4631616000 /* BetterSheet */ = {
+			isa = PBXGroup;
+			children = (
+				B9F3DB4A2EE0227AD72AB8A8DE2CA05B /* BetterSheet.swift */,
+				5AB0F291E4280B1DE2C2972130B9A927 /* BetterSheetCoordinator.swift */,
+				7AB08B1EE298474A22F196AD903622DC /* BetterSheetIsModalInPresentation.swift */,
+				4361563962D06A3DF3A20C40ECD397B5 /* BetterSheetPreferenceKey.swift */,
+				354BA06AE45A8F20677EA150C0368051 /* BetterSheetPresentationMode.swift */,
+				EF6A956232885189C62DE0F8C065F632 /* BetterSheetSupport.swift */,
+				B6380EDD5308E7A641C4F4A8A71574E0 /* OnBetterSheetDidAttemptToDismiss.swift */,
+				70F97CC8E9D482E00B619C4625C061C7 /* UIHostingController+BetterSheet.swift */,
+				9B93FE06AFE077F3925A48B3F4B71F55 /* View+BetterSheet.swift */,
+				13B9ACAD528057434C1293D6298531C3 /* Pod */,
+				8244EBB02E4FF2437CFF1F7B05476FB3 /* Support Files */,
+			);
+			name = BetterSheet;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3760FBA8925211D80D4715265D10E7CC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				232BF024F5BCED2473F48F4631616000 /* BetterSheet */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		725A3723AA846F7F4A7F1C179CB9D07B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF41071FBB6A6089A7F3C98DAD243114 /* Pods-BetterSheetExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8244EBB02E4FF2437CFF1F7B05476FB3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6FC16152D43BD02CB5164F5FF14EB /* BetterSheet.modulemap */,
+				A9117AD14FBD249EF7C0EF2930A1C472 /* BetterSheet-dummy.m */,
+				2DDED92A0CE93E492722F73E5B2209BF /* BetterSheet-Info.plist */,
+				2549E157BE3E3BF91FF01820CEF062BF /* BetterSheet-prefix.pch */,
+				DC335B9B38A41D84953A40B9F194A27E /* BetterSheet-umbrella.h */,
+				2202A93FBAD5F0C898F3C9C134BBEACB /* BetterSheet.debug.xcconfig */,
+				405F7A4181FB15982BFB3493C476A908 /* BetterSheet.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BetterSheet";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3760FBA8925211D80D4715265D10E7CC /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				CFD0C679F6C15020E76780372AC3A85E /* Products */,
+				725A3723AA846F7F4A7F1C179CB9D07B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF41071FBB6A6089A7F3C98DAD243114 /* Pods-BetterSheetExample */ = {
+			isa = PBXGroup;
+			children = (
+				8C4E6D8886407BDC625995686375C3ED /* Pods-BetterSheetExample.modulemap */,
+				7E97F3A047CB3C8963EB3AA5F23B829E /* Pods-BetterSheetExample-acknowledgements.markdown */,
+				0D7085CFA348DC2E99284AB8045EA5D7 /* Pods-BetterSheetExample-acknowledgements.plist */,
+				864C44875727AA930002E8BF91C58EC8 /* Pods-BetterSheetExample-dummy.m */,
+				4A99976580D245C5196D35CF9350486F /* Pods-BetterSheetExample-frameworks.sh */,
+				0007A5BEA074EE4DBCA2862067AD68F6 /* Pods-BetterSheetExample-Info.plist */,
+				B8F1E6B9949E3E3A7A8B793C72AA4B9B /* Pods-BetterSheetExample-umbrella.h */,
+				50617664D3C84AB2DFF2A20355DD97C5 /* Pods-BetterSheetExample.debug.xcconfig */,
+				ADDD520FBD34ECAF10270E4C66952645 /* Pods-BetterSheetExample.release.xcconfig */,
+			);
+			name = "Pods-BetterSheetExample";
+			path = "Target Support Files/Pods-BetterSheetExample";
+			sourceTree = "<group>";
+		};
+		CFD0C679F6C15020E76780372AC3A85E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BF2BEAE0A86FA45F54C3C96A0F927A9 /* BetterSheet.framework */,
+				F4CB90AE865425AFD43A646070CC332E /* Pods_BetterSheetExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A5AD78643AB22CF69A63AC5214E6430 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCF7AA1C61C23868C0A8099CEB8CE3D /* BetterSheet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD04F3AAAEE2ADAF3FC51EFD5658B54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA404946F66B8689097968696215B2B /* Pods-BetterSheetExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3EBEFADAE7BA33919661B0D112EFF1E4 /* Pods-BetterSheetExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D1ACC751A6EB366DC38E7D487962F4 /* Build configuration list for PBXNativeTarget "Pods-BetterSheetExample" */;
+			buildPhases = (
+				2BD04F3AAAEE2ADAF3FC51EFD5658B54 /* Headers */,
+				AC6400299AC9E501C52AFF70516F644D /* Sources */,
+				744B08C66FC38BEB5860D08CEFFC4A7A /* Frameworks */,
+				2CBDFACB82E0C75366C302E8DD97B548 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D20445A838AABCA7327456A97EACD3B /* PBXTargetDependency */,
+			);
+			name = "Pods-BetterSheetExample";
+			productName = "Pods-BetterSheetExample";
+			productReference = F4CB90AE865425AFD43A646070CC332E /* Pods_BetterSheetExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD1783B568C542F88065F9BEA5DE86D4 /* BetterSheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB42D096756CED4BFEDB40BA54F2AB0 /* Build configuration list for PBXNativeTarget "BetterSheet" */;
+			buildPhases = (
+				2A5AD78643AB22CF69A63AC5214E6430 /* Headers */,
+				10D72F84622BAFF6952E10F7D034CD88 /* Sources */,
+				A523DBC554FA772C77C004390B8F870D /* Frameworks */,
+				400EFF6DD8A1ACC22C8B1CDA5771F979 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterSheet;
+			productName = BetterSheet;
+			productReference = 7BF2BEAE0A86FA45F54C3C96A0F927A9 /* BetterSheet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CFD0C679F6C15020E76780372AC3A85E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD1783B568C542F88065F9BEA5DE86D4 /* BetterSheet */,
+				3EBEFADAE7BA33919661B0D112EFF1E4 /* Pods-BetterSheetExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CBDFACB82E0C75366C302E8DD97B548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400EFF6DD8A1ACC22C8B1CDA5771F979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10D72F84622BAFF6952E10F7D034CD88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4696B1553BA902DD226DCF1AFC75335 /* BetterSheet-dummy.m in Sources */,
+				804BCDFD2E660712E7553DA7A7CC7142 /* BetterSheet.swift in Sources */,
+				B619A97226AB24A79F504B5D79086282 /* BetterSheetCoordinator.swift in Sources */,
+				E377D0DB8C12DABA5E3040D9E5600A96 /* BetterSheetIsModalInPresentation.swift in Sources */,
+				A8B5B284F1793ADC1F789C1ED4D96519 /* BetterSheetPreferenceKey.swift in Sources */,
+				EDACF40BBB2C54C9EAC1340B890DC78A /* BetterSheetPresentationMode.swift in Sources */,
+				72C29BEA48A3227BC0D04F55312D2CFF /* BetterSheetSupport.swift in Sources */,
+				83E2952B3C31787B7D8559A848EB89AE /* OnBetterSheetDidAttemptToDismiss.swift in Sources */,
+				CBDC1ABD6D62D84B34888B5451A396D5 /* UIHostingController+BetterSheet.swift in Sources */,
+				F77AEBCADD6EBEF3F0045033B2888305 /* View+BetterSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6400299AC9E501C52AFF70516F644D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E768FA66060D93A9E4714919F387FC61 /* Pods-BetterSheetExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D20445A838AABCA7327456A97EACD3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BetterSheet;
+			target = AD1783B568C542F88065F9BEA5DE86D4 /* BetterSheet */;
+			targetProxy = 23E9B8E4154FA4FE5C7ABB6E5D09C794 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09A5906D686F4D9CA0572253A899530C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2202A93FBAD5F0C898F3C9C134BBEACB /* BetterSheet.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BetterSheet/BetterSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BetterSheet/BetterSheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BetterSheet/BetterSheet.modulemap";
+				PRODUCT_MODULE_NAME = BetterSheet;
+				PRODUCT_NAME = BetterSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B34A0F41770D0F538D883416E6A971B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 405F7A4181FB15982BFB3493C476A908 /* BetterSheet.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BetterSheet/BetterSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BetterSheet/BetterSheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BetterSheet/BetterSheet.modulemap";
+				PRODUCT_MODULE_NAME = BetterSheet;
+				PRODUCT_NAME = BetterSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FF94611948CB3B5D6AB7FA6EE759AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50617664D3C84AB2DFF2A20355DD97C5 /* Pods-BetterSheetExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BetterSheetExample/Pods-BetterSheetExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BetterSheetExample/Pods-BetterSheetExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AA1E30FB4D26F5635633C0F83D719455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDD520FBD34ECAF10270E4C66952645 /* Pods-BetterSheetExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BetterSheetExample/Pods-BetterSheetExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BetterSheetExample/Pods-BetterSheetExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB42D096756CED4BFEDB40BA54F2AB0 /* Build configuration list for PBXNativeTarget "BetterSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A5906D686F4D9CA0572253A899530C /* Debug */,
+				0B34A0F41770D0F538D883416E6A971B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D1ACC751A6EB366DC38E7D487962F4 /* Build configuration list for PBXNativeTarget "Pods-BetterSheetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF94611948CB3B5D6AB7FA6EE759AAD /* Debug */,
+				AA1E30FB4D26F5635633C0F83D719455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
