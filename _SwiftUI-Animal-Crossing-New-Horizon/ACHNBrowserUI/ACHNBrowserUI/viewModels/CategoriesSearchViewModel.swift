@@ -1,0 +1,49 @@
+//
+//  CategoriesSearchViewModel.swift
+//  ACHNBrowserUI
+//
+//  Created by Thomas Ricouard on 24/04/2020.
+//  Copyright © 2020 Thomas Ricouard. All rights reserved.
+//
+
+import Foundation
+import SwiftUI
+import Combine
+import Backend
+
+class CategoriesSearchViewModel: ObservableObject {
+    @Published var searchText = ""
+    @Published var searchResults: [Backend.Category: [Item]] = [:]
+    @Published var isLoadingData = false
+    
+    private var searchCancellable: AnyCancellable?
+    
+    init() {
+        searchCancellable = $searchText
+            .subscribe(on: DispatchQueue.global())
+            .handleEvents(receiveOutput: { [weak self] _ in
+                DispatchQueue.main.async {
+                    self?.isLoadingData = true
+                }
+            })
+            .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
+            .removeDuplicates()
+            .filter { !$0.isEmpty }
+            .map(itemsInCategory(with:))
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] in
+                guard let self = self else { return }
+                self.searchResults = $0
+                self.isLoadingData = false
+            })
+    }
+
+    private func itemsInCategory(with string: String) -> [Backend.Category: [Item]] {
+        Items.shared.categories
+            .mapValues({ $0.filter({
+                $0.localizedName.lowercased().contains(string.lowercased())
+            }) })
+            .filter { !$0.value.isEmpty }
+            .mapValues { Array($0.prefix(10)) }
+    }
+}
