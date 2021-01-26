@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA4A653224CEDEFC00D9D16E /* blurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A653124CEDEFC00D9D16E /* blurView.swift */; };
+		EA52B78424BF9FAB00475BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52B78324BF9FAB00475BF9 /* AppDelegate.swift */; };
+		EA52B78624BF9FAB00475BF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52B78524BF9FAB00475BF9 /* ContentView.swift */; };
+		EA52B78824BF9FAC00475BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA52B78724BF9FAC00475BF9 /* Assets.xcassets */; };
+		EA52B78B24BF9FAC00475BF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA52B78A24BF9FAC00475BF9 /* Preview Assets.xcassets */; };
+		EA52B78E24BF9FAC00475BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA52B78C24BF9FAC00475BF9 /* Main.storyboard */; };
+		EA52B79A24BF9FAC00475BF9 /* DatingAppMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52B79924BF9FAC00475BF9 /* DatingAppMacOSTests.swift */; };
+		EA52B7A524BF9FAC00475BF9 /* DatingAppMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52B7A424BF9FAC00475BF9 /* DatingAppMacOSUITests.swift */; };
+		EA86023924C6B6D600469F39 /* mockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86023824C6B6D600469F39 /* mockData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA52B79624BF9FAC00475BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA52B77824BF9FAB00475BF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA52B77F24BF9FAB00475BF9;
+			remoteInfo = DatingAppMacOS;
+		};
+		EA52B7A124BF9FAC00475BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA52B77824BF9FAB00475BF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA52B77F24BF9FAB00475BF9;
+			remoteInfo = DatingAppMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA4A653124CEDEFC00D9D16E /* blurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blurView.swift; sourceTree = "<group>"; };
+		EA52B78024BF9FAB00475BF9 /* DatingAppMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingAppMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA52B78324BF9FAB00475BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA52B78524BF9FAB00475BF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA52B78724BF9FAC00475BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA52B78A24BF9FAC00475BF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA52B78D24BF9FAC00475BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA52B78F24BF9FAC00475BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA52B79024BF9FAC00475BF9 /* DatingAppMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatingAppMacOS.entitlements; sourceTree = "<group>"; };
+		EA52B79524BF9FAC00475BF9 /* DatingAppMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatingAppMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA52B79924BF9FAC00475BF9 /* DatingAppMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingAppMacOSTests.swift; sourceTree = "<group>"; };
+		EA52B79B24BF9FAC00475BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA52B7A024BF9FAC00475BF9 /* DatingAppMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatingAppMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA52B7A424BF9FAC00475BF9 /* DatingAppMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingAppMacOSUITests.swift; sourceTree = "<group>"; };
+		EA52B7A624BF9FAC00475BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA86023824C6B6D600469F39 /* mockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA52B77D24BF9FAB00475BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52B79224BF9FAC00475BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52B79D24BF9FAC00475BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA52B77724BF9FAB00475BF9 = {
+			isa = PBXGroup;
+			children = (
+				EA52B78224BF9FAB00475BF9 /* DatingAppMacOS */,
+				EA52B79824BF9FAC00475BF9 /* DatingAppMacOSTests */,
+				EA52B7A324BF9FAC00475BF9 /* DatingAppMacOSUITests */,
+				EA52B78124BF9FAB00475BF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA52B78124BF9FAB00475BF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA52B78024BF9FAB00475BF9 /* DatingAppMacOS.app */,
+				EA52B79524BF9FAC00475BF9 /* DatingAppMacOSTests.xctest */,
+				EA52B7A024BF9FAC00475BF9 /* DatingAppMacOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA52B78224BF9FAB00475BF9 /* DatingAppMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA52B78324BF9FAB00475BF9 /* AppDelegate.swift */,
+				EA4A653124CEDEFC00D9D16E /* blurView.swift */,
+				EA52B78524BF9FAB00475BF9 /* ContentView.swift */,
+				EA52B78724BF9FAC00475BF9 /* Assets.xcassets */,
+				EA86023824C6B6D600469F39 /* mockData.swift */,
+				EA52B78C24BF9FAC00475BF9 /* Main.storyboard */,
+				EA52B78F24BF9FAC00475BF9 /* Info.plist */,
+				EA52B79024BF9FAC00475BF9 /* DatingAppMacOS.entitlements */,
+				EA52B78924BF9FAC00475BF9 /* Preview Content */,
+			);
+			path = DatingAppMacOS;
+			sourceTree = "<group>";
+		};
+		EA52B78924BF9FAC00475BF9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA52B78A24BF9FAC00475BF9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA52B79824BF9FAC00475BF9 /* DatingAppMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA52B79924BF9FAC00475BF9 /* DatingAppMacOSTests.swift */,
+				EA52B79B24BF9FAC00475BF9 /* Info.plist */,
+			);
+			path = DatingAppMacOSTests;
+			sourceTree = "<group>";
+		};
+		EA52B7A324BF9FAC00475BF9 /* DatingAppMacOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA52B7A424BF9FAC00475BF9 /* DatingAppMacOSUITests.swift */,
+				EA52B7A624BF9FAC00475BF9 /* Info.plist */,
+			);
+			path = DatingAppMacOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA52B77F24BF9FAB00475BF9 /* DatingAppMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA52B7A924BF9FAC00475BF9 /* Build configuration list for PBXNativeTarget "DatingAppMacOS" */;
+			buildPhases = (
+				EA52B77C24BF9FAB00475BF9 /* Sources */,
+				EA52B77D24BF9FAB00475BF9 /* Frameworks */,
+				EA52B77E24BF9FAB00475BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatingAppMacOS;
+			productName = DatingAppMacOS;
+			productReference = EA52B78024BF9FAB00475BF9 /* DatingAppMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA52B79424BF9FAC00475BF9 /* DatingAppMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA52B7AC24BF9FAC00475BF9 /* Build configuration list for PBXNativeTarget "DatingAppMacOSTests" */;
+			buildPhases = (
+				EA52B79124BF9FAC00475BF9 /* Sources */,
+				EA52B79224BF9FAC00475BF9 /* Frameworks */,
+				EA52B79324BF9FAC00475BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA52B79724BF9FAC00475BF9 /* PBXTargetDependency */,
+			);
+			name = DatingAppMacOSTests;
+			productName = DatingAppMacOSTests;
+			productReference = EA52B79524BF9FAC00475BF9 /* DatingAppMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA52B79F24BF9FAC00475BF9 /* DatingAppMacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA52B7AF24BF9FAC00475BF9 /* Build configuration list for PBXNativeTarget "DatingAppMacOSUITests" */;
+			buildPhases = (
+				EA52B79C24BF9FAC00475BF9 /* Sources */,
+				EA52B79D24BF9FAC00475BF9 /* Frameworks */,
+				EA52B79E24BF9FAC00475BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA52B7A224BF9FAC00475BF9 /* PBXTargetDependency */,
+			);
+			name = DatingAppMacOSUITests;
+			productName = DatingAppMacOSUITests;
+			productReference = EA52B7A024BF9FAC00475BF9 /* DatingAppMacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA52B77824BF9FAB00475BF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Tony Hajdini";
+				TargetAttributes = {
+					EA52B77F24BF9FAB00475BF9 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EA52B79424BF9FAC00475BF9 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EA52B77F24BF9FAB00475BF9;
+					};
+					EA52B79F24BF9FAC00475BF9 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EA52B77F24BF9FAB00475BF9;
+					};
+				};
+			};
+			buildConfigurationList = EA52B77B24BF9FAB00475BF9 /* Build configuration list for PBXProject "DatingAppMacOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA52B77724BF9FAB00475BF9;
+			productRefGroup = EA52B78124BF9FAB00475BF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA52B77F24BF9FAB00475BF9 /* DatingAppMacOS */,
+				EA52B79424BF9FAC00475BF9 /* DatingAppMacOSTests */,
+				EA52B79F24BF9FAC00475BF9 /* DatingAppMacOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA52B77E24BF9FAB00475BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52B78E24BF9FAC00475BF9 /* Main.storyboard in Resources */,
+				EA52B78B24BF9FAC00475BF9 /* Preview Assets.xcassets in Resources */,
+				EA52B78824BF9FAC00475BF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52B79324BF9FAC00475BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52B79E24BF9FAC00475BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA52B77C24BF9FAB00475BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA86023924C6B6D600469F39 /* mockData.swift in Sources */,
+				EA4A653224CEDEFC00D9D16E /* blurView.swift in Sources */,
+				EA52B78624BF9FAB00475BF9 /* ContentView.swift in Sources */,
+				EA52B78424BF9FAB00475BF9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52B79124BF9FAC00475BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52B79A24BF9FAC00475BF9 /* DatingAppMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52B79C24BF9FAC00475BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52B7A524BF9FAC00475BF9 /* DatingAppMacOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA52B79724BF9FAC00475BF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA52B77F24BF9FAB00475BF9 /* DatingAppMacOS */;
+			targetProxy = EA52B79624BF9FAC00475BF9 /* PBXContainerItemProxy */;
+		};
+		EA52B7A224BF9FAC00475BF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA52B77F24BF9FAB00475BF9 /* DatingAppMacOS */;
+			targetProxy = EA52B7A124BF9FAC00475BF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA52B78C24BF9FAC00475BF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA52B78D24BF9FAC00475BF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA52B7A724BF9FAC00475BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA52B7A824BF9FAC00475BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EA52B7AA24BF9FAC00475BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DatingAppMacOS/DatingAppMacOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DatingAppMacOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DatingAppMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.DatingAppMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA52B7AB24BF9FAC00475BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DatingAppMacOS/DatingAppMacOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DatingAppMacOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DatingAppMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.DatingAppMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA52B7AD24BF9FAC00475BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DatingAppMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.DatingAppMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DatingAppMacOS.app/Contents/MacOS/DatingAppMacOS";
+			};
+			name = Debug;
+		};
+		EA52B7AE24BF9FAC00475BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DatingAppMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.DatingAppMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DatingAppMacOS.app/Contents/MacOS/DatingAppMacOS";
+			};
+			name = Release;
+		};
+		EA52B7B024BF9FAC00475BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DatingAppMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.DatingAppMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DatingAppMacOS;
+			};
+			name = Debug;
+		};
+		EA52B7B124BF9FAC00475BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DatingAppMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.DatingAppMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DatingAppMacOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA52B77B24BF9FAB00475BF9 /* Build configuration list for PBXProject "DatingAppMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA52B7A724BF9FAC00475BF9 /* Debug */,
+				EA52B7A824BF9FAC00475BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA52B7A924BF9FAC00475BF9 /* Build configuration list for PBXNativeTarget "DatingAppMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA52B7AA24BF9FAC00475BF9 /* Debug */,
+				EA52B7AB24BF9FAC00475BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA52B7AC24BF9FAC00475BF9 /* Build configuration list for PBXNativeTarget "DatingAppMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA52B7AD24BF9FAC00475BF9 /* Debug */,
+				EA52B7AE24BF9FAC00475BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA52B7AF24BF9FAC00475BF9 /* Build configuration list for PBXNativeTarget "DatingAppMacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA52B7B024BF9FAC00475BF9 /* Debug */,
+				EA52B7B124BF9FAC00475BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA52B77824BF9FAB00475BF9 /* Project object */;
+}
