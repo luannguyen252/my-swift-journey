@@ -1,0 +1,19 @@
+# Tests the project
+
+name: UnitTesting
+
+on: [push]
+
+jobs:
+  Build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: Select latest Xcode
+      run: "sudo xcode-select -s /Applications/Xcode_12_beta.app"
+
+    - name: Run Tests
+      run: "xcodebuild -project 'Project SF.xcodeproj' -scheme 'Project SF' -destination platform='iOS Simulator',OS=14.0,name='iPhone 11 Pro' clean test | xcpretty && exit ${PIPESTATUS[0]}"
+     

