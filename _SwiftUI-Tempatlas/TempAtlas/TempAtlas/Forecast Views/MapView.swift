@@ -97,9 +97,9 @@ struct MapView : UIViewRepresentable {
 }
 
 #if DEBUG
-struct MapView_Previews : PreviewProvider {
+struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: .constant(CLLocationCoordinate2D(latitude: 43.08291577840266, longitude: -77.6772236820356)), state: .constant(nil))
+        MapView(coordinate: .constant(CLLocationCoordinate2D(latitude: 21.028511, longitude: 105.804817)), state: .constant(nil))
     }
 }
 #endif

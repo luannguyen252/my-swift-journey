@@ -18,7 +18,7 @@ struct FavoriteRow : View {
 #if DEBUG
 struct FavoriteRow_Previews : PreviewProvider {
     static var previews: some View {
-        FavoriteRow(favorite: Favorite(id: 0, coordinate: Coordinate(latitude: 43.08291577840266, longitude: -77.6772236820356), name: "RIT"))
+        FavoriteRow(favorite: Favorite(id: 0, coordinate: Coordinate(latitude: 21.028511, longitude: 105.804817), name: "RIT"))
             .previewLayout(.sizeThatFits)
     }
 }

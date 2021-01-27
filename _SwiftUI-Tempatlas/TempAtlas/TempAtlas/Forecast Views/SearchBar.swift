@@ -54,7 +54,7 @@ struct SearchBar : UIViewRepresentable {
 #if DEBUG
 struct SearchBar_Previews : PreviewProvider {
     static var previews: some View {
-        SearchBar(state: .constant(nil), coordinate: .constant(CLLocationCoordinate2D(latitude: 43.08291577840266, longitude: -77.6772236820356)))
+        SearchBar(state: .constant(nil), coordinate: .constant(CLLocationCoordinate2D(latitude: 21.028511, longitude: 105.804817)))
     }
 }
 #endif
