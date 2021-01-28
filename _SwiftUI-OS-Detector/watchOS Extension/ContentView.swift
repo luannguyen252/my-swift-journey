@@ -1,12 +1,12 @@
 import SwiftUI
 
-struct Nagivation: View {
+struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationWatchOS
     }
 }
 
-var NavigationMacOS: some View {
+var NavigationWatchOS: some View {
     NavigationView {
         List(Menu) { m in
             NavigationLink(
@@ -14,13 +14,12 @@ var NavigationMacOS: some View {
                 Label(m.name, systemImage: m.icon)
             }
         }
-        .listStyle(SidebarListStyle())
     }
-    .navigationTitle("macOS Navigation")
+    .navigationTitle("watchOS Navigation")
 }
 
-struct Nagivation_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Nagivation()
+        ContentView()
     }
 }

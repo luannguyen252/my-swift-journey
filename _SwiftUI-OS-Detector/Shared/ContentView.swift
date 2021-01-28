@@ -1,18 +1,20 @@
-
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         #if os(iOS)
-        iphoneNavView
-        #else
+        NavigationIOS
+        #elseif os(macOS)
         NavigationMacOS
+        #elseif os(watchOS)
+        NavigationWatchOS
+        #elseif os(tvOS)
+        // NavigationTVOS
         #endif
     }
 }
 
-var iphoneNavView: some View {
+var NavigationIOS: some View {
     TabView {
         ForEach(Menu) { m in
         Text(m.name)
@@ -22,7 +24,7 @@ var iphoneNavView: some View {
             }
         }
     }
-    .navigationTitle("Test")
+    .navigationTitle("iOS Navigation")
 }
 
 struct ContentView_Previews: PreviewProvider {

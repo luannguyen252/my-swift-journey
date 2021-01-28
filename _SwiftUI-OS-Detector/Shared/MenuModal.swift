@@ -1,5 +1,3 @@
-
-
 import Foundation
 
 struct MenuModel: Identifiable {
@@ -15,5 +13,3 @@ var Menu = [
     MenuModel(icon: "heart.fill", name: "Favourites"),
     MenuModel(icon: "person.fill", name: "My Profile"),
 ]
-
-
