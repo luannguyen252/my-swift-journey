@@ -64,7 +64,6 @@ struct ScrollingHStackModifier: ViewModifier {
                     withAnimation {
                         scrollOffset = newOffset
                     }
-                    
                 })
             )
     }
