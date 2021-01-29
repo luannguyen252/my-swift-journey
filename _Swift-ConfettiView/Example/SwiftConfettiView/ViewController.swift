@@ -1,19 +1,11 @@
-//
-//  ViewController.swift
-//  SwiftConfettiView
-//
-//  Created by Uğur Ethem AYDIN on 04/11/2019.
-//  Copyright (c) 2019 Uğur Ethem AYDIN. All rights reserved.
-//
-
 import UIKit
 import SwiftConfettiView
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
     var confettiView: SwiftConfettiView!
     var isRainingConfetti = false
-    
     @IBOutlet weak var confettiStatus: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         confettiView = SwiftConfettiView(frame: self.view.bounds)
@@ -37,22 +29,23 @@ class ViewController: UIViewController {
         // Add subview
         view.addSubview(confettiView)
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (isRainingConfetti) {
             // Stop confetti
             confettiView.stopConfetti()
-            confettiStatus.text = "it's not raining confetti 🙁"
+            confettiStatus.text = "Nobody Here 💨"
         } else {
             // Start confetti
             confettiView.startConfetti()
-            confettiStatus.text = "it's raining confetti 🙂"
+            confettiStatus.text = "Time To Party 💃🕺"
         }
+        
         isRainingConfetti = !isRainingConfetti
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
-
