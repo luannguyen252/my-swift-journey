@@ -149,9 +149,57 @@ Use: `.foregroundColor(Color(0x111111))`
 
 ---
 
-# For phones having lesser screen size
+## For phones having lesser screen size
 
 `ScrollView(UIScreen.main.bounds.height < 750 ? .vertical : .init(), showsIndicators: false) { ... }`
+
+---
+
+## @State and @Binding
+
+```swift
+struct ContentView: View {
+    @State var show = false
+
+    var body: some View {
+        ZStack {
+            Text("View Transition")
+                .font(.system(size: 18))
+                .fontWeight(.bold)
+                .foregroundColor(Color("dark"))
+                .padding()
+                .background(Capsule().fill(Color("pink2")))
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        show.toggle()
+                    }
+                }
+
+            if show {
+                NewView(show: $show)
+                    .transition(.move(edge: .bottom)) // .bottom, .top, .leading, .trailing
+                    .zIndex(1)
+            }
+        }
+        .statusBar(hidden: true)
+    }
+}
+
+struct NewView: View {
+    @Binding var show: Bool
+
+    var body: some View {
+        RoundedRectangle(cornerRadius: 16)
+            .fill(Color("pink2"))
+            .padding()
+            .onTapGesture {
+                withAnimation(.easeOut) {
+                    show.toggle()
+                }
+            }
+    }
+}
+```
 
 ---
 
