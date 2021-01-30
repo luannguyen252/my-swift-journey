@@ -225,7 +225,7 @@ struct ContentView: View {
 
 ---
 
-## Detec Devices
+## Detect Devices
 
 ```swift
 struct ContentView: View {
@@ -239,6 +239,31 @@ struct ContentView: View {
         #elseif os(tvOS)
         // NavigationTVOS
         #endif
+    }
+}
+```
+
+---
+
+## Gradient Text
+
+```swift
+struct ContentView: View {
+    let text = Text("SwiftUI is a good tool for Designers")
+        .font(Font.largeTitle.bold())
+
+    var body: some View {
+        text
+            .foregroundColor(.clear)
+            .overlay(
+                LinearGradient(
+                    gradient: Gradient(colors: [.orange, .red, .purple, .blue]),
+                    startPoint: .trailing,
+                    endPoint: .leading
+                )
+                .mask(text))
+            .padding(16)
+
     }
 }
 ```
