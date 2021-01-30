@@ -225,6 +225,26 @@ struct ContentView: View {
 
 ---
 
+## Detec Devices
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        #if os(iOS)
+        NavigationIOS
+        #elseif os(macOS)
+        NavigationMacOS
+        #elseif os(watchOS)
+        NavigationWatchOS
+        #elseif os(tvOS)
+        // NavigationTVOS
+        #endif
+    }
+}
+```
+
+---
+
 - Take a design-first approach
 - Effortlessly share model code
 - Be judicious when sharing new code
