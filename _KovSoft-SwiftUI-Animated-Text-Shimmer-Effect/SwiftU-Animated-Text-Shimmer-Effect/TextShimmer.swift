@@ -9,19 +9,19 @@ struct TextShimmer: View {
         ZStack {
             Text(text)
                 .font(.system(size: 56, weight: .heavy, design: .default))
-                .foregroundColor(Color(.white).opacity(0.25))
+                .foregroundColor(Color("light").opacity(0.25))
                 
             HStack(spacing: 0) {
                 ForEach(0 ..< text.count, id: \.self) { index in
                     Text(String(text[text.index(text.startIndex, offsetBy: index)]))
                         .font(.system(size: 56, weight: .heavy, design: .default))
-                         .foregroundColor(multiColors ? randomColor() : Color.white)
+                         .foregroundColor(multiColors ? randomColor() : Color("light"))
                 }
             }
             .mask(
                 Rectangle()
                     .fill(
-                        LinearGradient(gradient: .init(colors: [Color.white.opacity(0.5), Color.white.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+                        LinearGradient(gradient: .init(colors: [Color.white.opacity(1.0), Color.white.opacity(1.0)]), startPoint: .top, endPoint: .bottom)
                     )
                     .rotationEffect(.init(degrees: 70))
                     .padding(16)
