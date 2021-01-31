@@ -1,0 +1,23 @@
+#
+# .swiftlint.yml
+# Created by Felix Mau (https://felix.hamburg)
+#
+# Based on:
+#  - https://gist.github.com/tweetjay/1b7f00b6f312a5a2cf7b5676420b9b0c
+#  - https://github.com/brandenr/swiftlintconfig
+#
+
+opt_in_rules:
+  - file_header
+
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/  SWIFTLINT_CURRENT_FILENAME
+                    \/\/  (MapWidgetExample|MapWidgetExampleTests|MapWidget)
+                    \/\/
+                    \/\/  Created by .*? on \d{2}\.\d{2}\.\d{2}\.
+                    \/\/  Copyright © \d{4} .*?\. All rights reserved\.
+                    \/\/
+
+parent_config: Pods/SwiftConfigurationFiles/.swiftlint.yml
