@@ -309,6 +309,7 @@ struct ContentView: View {
         .sheet(isPresented: $isShowingInfoView, content: {
             InfoView()
         })
+        .statusBar(hidden: true)
     }
 }
 
