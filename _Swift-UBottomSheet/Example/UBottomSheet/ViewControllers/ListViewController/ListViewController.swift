@@ -1,11 +1,3 @@
-//
-//  ListViewController.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 2.05.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 import UBottomSheet
 
@@ -38,8 +30,7 @@ extension ListViewController: Draggable{
     }
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource{
-    
+extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -87,4 +78,3 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
         }
     }
 }
-

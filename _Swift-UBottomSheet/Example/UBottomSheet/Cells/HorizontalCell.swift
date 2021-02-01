@@ -1,11 +1,3 @@
-//
-//  HorizontalCell.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 1.05.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 
 struct HorizontalCellViewModel {
@@ -27,5 +19,4 @@ class HorizontalCell: UICollectionViewCell {
         button.setImage(model.image, for: .normal)
         lbl.text = model.title
     }
-
 }

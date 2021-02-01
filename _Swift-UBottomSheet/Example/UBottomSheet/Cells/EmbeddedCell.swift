@@ -1,11 +1,3 @@
-//
-//  EmbeddedCell.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 27.04.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 
 class EmbeddedCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -49,5 +41,4 @@ class EmbeddedCell: UITableViewCell, UICollectionViewDataSource, UICollectionVie
         cell.configure(with: items[indexPath.item])
         return cell
     }
-
 }

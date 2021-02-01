@@ -1,11 +1,3 @@
-//
-//  MapsViewController.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 1.05.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 import UBottomSheet
 
@@ -47,8 +39,7 @@ class MapsViewController: UIViewController {
     }
 }
 
-extension MapsViewController: UBottomSheetCoordinatorDelegate{
-    
+extension MapsViewController: UBottomSheetCoordinatorDelegate {
     func bottomSheet(_ container: UIView?, didPresent state: SheetTranslationState) {
 //        self.addBackDimmingBackView(below: container!)
         self.sheetCoordinator.addDropShadowIfNotExist()

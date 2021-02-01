@@ -51,7 +51,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     //MARK: Actions
-    
     func appleMapsAction(_ item: MainItem){
         let vc = MapsViewController()
         vc.title = item.title
@@ -78,5 +77,4 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         vc.dataSource = MyDataSource()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }

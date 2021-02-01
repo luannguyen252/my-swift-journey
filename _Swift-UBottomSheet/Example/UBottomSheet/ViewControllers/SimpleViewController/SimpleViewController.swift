@@ -1,17 +1,8 @@
-//
-//  SimpleViewController.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 1.05.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 import UBottomSheet
 
 class SimpleViewController: UIViewController {
     var sheetCoordinator: UBottomSheetCoordinator!
-    
     var sheetVC: DraggableItem!
     var useNavController = false
     var dataSource: UBottomSheetCoordinatorDataSource?
@@ -43,5 +34,4 @@ class SimpleViewController: UIViewController {
             container.roundCorners(corners: [.topLeft, .topRight], radius: 10, rect: rect)
         })
     }    
-
 }

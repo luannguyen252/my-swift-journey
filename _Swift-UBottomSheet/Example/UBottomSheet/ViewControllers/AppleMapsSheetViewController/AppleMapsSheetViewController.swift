@@ -1,11 +1,3 @@
-//
-//  AppleMapsSheetViewController.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 1.05.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 import UBottomSheet
 
@@ -111,6 +103,5 @@ extension AppleMapsSheetViewController: UITableViewDelegate, UITableViewDataSour
         default:
             title = "No Action"
         }
-        
     }
 }

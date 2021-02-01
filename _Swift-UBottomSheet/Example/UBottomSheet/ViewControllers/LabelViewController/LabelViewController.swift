@@ -1,11 +1,3 @@
-//
-//  LabelViewController.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 27.04.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 import UBottomSheet
 
@@ -26,11 +18,11 @@ class LabelViewController: UIViewController, Draggable {
         
     }
     
-    @IBAction func dismissAction(){
+    @IBAction func dismissAction() {
         sheetCoordinator?.removeSheetChild(item: self)
     }
     
-    @objc func addAction(_ sender: Any){
+    @objc func addAction(_ sender: Any) {
         let vc = LabelViewController()
         vc.sheetCoordinator = sheetCoordinator
         if sheetCoordinator?.usesNavigationController ?? false{
@@ -39,5 +31,4 @@ class LabelViewController: UIViewController, Draggable {
             sheetCoordinator?.addSheetChild(vc)
         }
     }
-
 }

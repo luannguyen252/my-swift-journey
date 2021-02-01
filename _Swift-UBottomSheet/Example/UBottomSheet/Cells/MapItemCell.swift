@@ -1,11 +1,3 @@
-//
-//  MapItemCell.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 1.05.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 
 struct MapItemCellViewModel {
@@ -15,7 +7,6 @@ struct MapItemCellViewModel {
 }
 
 class MapItemCell: UITableViewCell {
-
     @IBOutlet weak var leftImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -31,6 +22,4 @@ class MapItemCell: UITableViewCell {
         descriptionLabel.text = model.subtitle
 //        leftImageView.image = model.image
     }
-
-
 }

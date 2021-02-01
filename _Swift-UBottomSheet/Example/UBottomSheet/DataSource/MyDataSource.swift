@@ -1,11 +1,3 @@
-//
-//  MyDataSource.swift
-//  UBottomSheet_Example
-//
-//  Created by ugur on 2.05.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
-//
-
 import UIKit
 import UBottomSheet
 
