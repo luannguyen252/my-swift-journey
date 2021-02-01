@@ -38,18 +38,37 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack(spacing: 30) {
-                Text("You're going to flip a coin – do you want to choose heads or tails?")
-
-                NavigationLink(destination: ResultView(choice: "Heads")) {
-                    Text("Choose Heads")
+            VStack(spacing: 16) {
+                NavigationLink(destination: FirstScreen()) {
+                    Text("First Screen")
                 }
 
-                NavigationLink(destination: ResultView(choice: "Tails")) {
-                    Text("Choose Tails")
+                NavigationLink(destination: SecondScreen()) {
+                    Text("Second Screen")
                 }
             }
             .navigationBarTitle("Navigation")
+        }
+    }
+}
+```
+
+## Navigation View with List
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            List {
+                NavigationLink(destination: FirstScreen()) {
+                    Text("First Screen")
+                }
+
+                NavigationLink(destination: SecondScreen()) {
+                    Text("Second Screen")
+                }
+            }
+            .navigationBarTitle("Menu")
         }
     }
 }
