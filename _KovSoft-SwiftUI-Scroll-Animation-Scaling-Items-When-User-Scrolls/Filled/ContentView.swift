@@ -1,15 +1,7 @@
-//
-//  ContentView.swift
-//  Filled
-//
-//  Created by Balaji on 20/07/20.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
         Home()
     }
 }
@@ -20,14 +12,10 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Home : View {
-    
-    var body: some View{
-        
-        VStack(spacing: 0){
-            
-            HStack{
-                
+struct Home: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
                 Text("Album Songs")
                     .font(.system(size: 40))
                     .fontWeight(.bold)
@@ -36,36 +24,26 @@ struct Home : View {
                 Spacer(minLength: 0)
             }
             .padding()
-            // since top edge is ignored....
+            // Since top edge is ignored
             .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
             .background(Color.white.shadow(color: Color.black.opacity(0.18), radius: 5, x: 0, y: 5))
             .zIndex(0)
-            // moving view in stack for shadow effect...
-            
-            // Scaling Effect....
-            
-            GeometryReader{mainView in
-                
-                ScrollView{
-                    
-                    VStack(spacing: 15){
-                        
-                        // setting name as id...
-                        
-                        ForEach(albums,id: \.album_name){album in
-                            
-                            // Album View....
-                            
-                            GeometryReader{item in
-                                
+            // Moving view in stack for shadow effect, scaling effect
+            GeometryReader { mainView in
+                ScrollView {
+                    VStack(spacing: 16) {
+                        // Setting name as id
+                        ForEach(albums, id: \.album_name) { album in
+                            // Album View
+                            GeometryReader { item in
                                 AlbumView(album: album)
-                                    // scaling effect from bottom....
+                                    // Scaling effect from bottom
                                     .scaleEffect(scaleValue(mainFrame: mainView.frame(in: .global).minY, minY: item.frame(in: .global).minY),anchor: .bottom)
-                                // adding opacity effect...
+                                    // Adding opacity effect
                                     .opacity(Double(scaleValue(mainFrame: mainView.frame(in: .global).minY, minY: item.frame(in: .global).minY)))
                             }
-                            // setting default frame height...
-                            // since each card height is 100...
+                            // Setting default frame height
+                            // Since each card height is 100
                             .frame(height: 100)
                         }
                     }
@@ -79,15 +57,11 @@ struct Home : View {
         .edgesIgnoringSafeArea(.top)
     }
     
-    // Simple Calculation for scaling Effect...
-    
-    func scaleValue(mainFrame : CGFloat,minY : CGFloat)-> CGFloat{
-        
-        // adding animation...
-        
-        withAnimation(.easeOut){
-            
-            // reducing top padding value...
+    // Simple calculation for scaling effect
+    func scaleValue(mainFrame: CGFloat, minY: CGFloat) -> CGFloat {
+        // Adding animation
+        withAnimation(.easeOut) {
+            // Reducing top padding value
             
             let scale = (minY - 25) / mainFrame
             
