@@ -1,0 +1,42 @@
+{
+  "configurations" : [
+    {
+      "id" : "DF3909B0-F503-49B6-9215-81CE700A7DC2",
+      "name" : "English (United States)",
+      "options" : {
+        "language" : "en",
+        "region" : "US"
+      }
+    },
+    {
+      "id" : "5B604D58-696C-4DAF-85C3-EA89D4360AAB",
+      "name" : "French (France)",
+      "options" : {
+        "language" : "fr",
+        "region" : "FR"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MemoArt.xcodeproj",
+        "identifier" : "4C5089DF25A3B1BD00BC5E11",
+        "name" : "UITests iOS"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MemoArt.xcodeproj",
+        "identifier" : "4C5089F225A3B1D300BC5E11",
+        "name" : "UITests macOS"
+      }
+    }
+  ],
+  "version" : 1
+}
