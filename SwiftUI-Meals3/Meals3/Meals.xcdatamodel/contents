@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Brand" representedClassName=".Brand" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Food" inverseName="brand" inverseEntity="Food"/>
+    </entity>
+    <entity name="Dealer" representedClassName=".Dealer" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Food" inverseName="dealer" inverseEntity="Food"/>
+    </entity>
+    <entity name="Detail" representedClassName=".Detail" syncable="YES">
+        <attribute name="detailType" optional="YES" attributeType="String"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameEnglish" optional="YES" attributeType="String"/>
+        <attribute name="subGroupKeysString" optional="YES" attributeType="String"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Food" inverseName="detail" inverseEntity="Food"/>
+    </entity>
+    <entity name="Event" representedClassName=".Event">
+        <attribute name="basalDosis" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="bloodSugar" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="bloodSugarGoal" optional="YES" attributeType="Double" defaultValueString="84" usesScalarValueType="NO"/>
+        <attribute name="carb" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="chu" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="chuBolus" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="chuFactor" optional="YES" attributeType="Double" defaultValueString="1" usesScalarValueType="NO"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="correctionBolus" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="correctionDivisor" optional="YES" attributeType="Double" defaultValueString="40" usesScalarValueType="NO"/>
+        <attribute name="dayString" optional="YES" transient="YES" attributeType="String"/>
+        <attribute name="energy" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="fat" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="fpu" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="fpuBolus" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="fpuFactor" optional="YES" attributeType="Double" defaultValueString="1" usesScalarValueType="NO"/>
+        <attribute name="protein" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="shortBolus" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="useBreadUnits" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO"/>
+        <attribute name="weight" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <userInfo/>
+    </entity>
+    <entity name="Favorite" representedClassName=".Favorite" syncable="YES">
+        <relationship name="food" maxCount="1" deletionRule="Nullify" destinationEntity="Food" inverseName="favoriteListItem" inverseEntity="Food"/>
+    </entity>
+    <entity name="Food" representedClassName=".Food" syncable="YES">
+        <attribute name="aminoAcidAlanine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidArginine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidAsparticAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidCysteine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidEssentialAminoAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidGlutamicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidGlycine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidHistidine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidIsoleucine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidLeucine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidLysine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidMethionine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidNonEssentialAminoAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidPhenylalanine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidProline" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidPurine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidSerine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidThreonine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidTryptophan" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidTyrosine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidUricAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="aminoAcidValine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbCellulose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbDisaccharide" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbFructose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbGalactose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbGlucose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbGlycogen" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbLactose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbLignin" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbMaltose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbMannitol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbMonosaccharide" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbOligosaccharideNonResorbable" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbOligosaccharideResorbable" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbPolyHexose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbPolyPentose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbPolysaccharide" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbPolyUronicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbSorbitol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbStarch" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbSucrose" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbSugar" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbSugarAlcohol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbWaterInsolubleDietaryFiber" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbWaterSolubleDietaryFiber" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="carbXylitol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="consecutiveNumberAsString" optional="YES" attributeType="String"/>
+        <attribute name="dateOfCreation" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateOfLastModification" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="elementCopper" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="elementFluorine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="elementIodine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="elementIron" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="elementManganese" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="elementZinc" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidButyricAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidCholesterol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDecanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDocosadienoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDocosahexaenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDocosanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDocosapentaenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDocosatetraenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDocosatrienoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDocosenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidDodecanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidEicosadienoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidEicosanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidEicosapentaeonoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidEicosatetraenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidEicosatrienoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidEicosenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidGlycerin" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidHeptadecanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidHeptadecenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidHexadecadieonicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidHexadecanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidHexadecatetraenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidHexadecenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidHexanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidLongChainFattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidMediumChainFattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidMonounsaturatedFattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidNonadecatrienoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOctadecadienoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOctadecanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOctadecatetraenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOctadecatrienoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOctadecenoidAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOctanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOmega3FattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidOmega6FattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidPentadecanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidPentadecenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidPolyunsaturatedFattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidSaturatedFattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidShortChainFattyAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidTetracosanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidTetracosenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidTetradecanoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="fattyAcidTetradecenoicAcid" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="glycemicIndex" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="glycemicLoad" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="mineralCalcium" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="mineralChlorine" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="mineralMagnesium" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="mineralPhosphorus" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="mineralPotassium" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="mineralSodium" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="mineralSulphur" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameEnglish" optional="YES" attributeType="String"/>
+        <attribute name="totalAlcohol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalCarb" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalDietaryFiber" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalEnergyCals" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalEnergyJoule" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalEnergyWithFiberCals" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalEnergyWithFiberJoule" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalFat" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalMineralsInRawAsh" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalOrganicAcids" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalProtein" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalSalt" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="totalWater" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminA" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminABetaCarotene" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminARetinol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB1" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB2" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB3" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB3Niacin" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB5" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB6" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB7" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB9" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminB12" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminC" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminD" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminE" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminETocopherol" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="vitaminK" optional="YES" attributeType="Float" usesScalarValueType="NO"/>
+        <relationship name="brand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Brand" inverseName="foods" inverseEntity="Brand"/>
+        <relationship name="dealer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dealer" inverseName="foods" inverseEntity="Dealer"/>
+        <relationship name="detail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Detail" inverseName="foods" inverseEntity="Detail"/>
+        <relationship name="favoriteListItem" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Favorite" inverseName="food" inverseEntity="Favorite"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="foods" inverseEntity="Group"/>
+        <relationship name="mealIngredients" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MealIngredient" inverseName="food" inverseEntity="MealIngredient"/>
+        <relationship name="preparation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Preparation" inverseName="foods" inverseEntity="Preparation"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Recipe" inverseName="food" inverseEntity="Recipe"/>
+        <relationship name="recipeIngredients" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeIngredient" inverseName="food" inverseEntity="RecipeIngredient"/>
+        <relationship name="referenceWeight" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ReferenceWeight" inverseName="foods" inverseEntity="ReferenceWeight"/>
+        <relationship name="servingSizes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ServingSize" inverseName="food" inverseEntity="ServingSize"/>
+        <relationship name="source" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Source" inverseName="foods" inverseEntity="Source"/>
+        <relationship name="subGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SubGroup" inverseName="foods" inverseEntity="SubGroup"/>
+        <fetchIndex name="byConsecutiveNumberAsStringIndex">
+            <fetchIndexElement property="consecutiveNumberAsString" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byDateOfCreationIndex">
+            <fetchIndexElement property="dateOfCreation" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byDateOfLastModificationIndex">
+            <fetchIndexElement property="dateOfLastModification" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byKeyIndex">
+            <fetchIndexElement property="key" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byNameIndex">
+            <fetchIndexElement property="name" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="GeoLocation" representedClassName=".GeoLocation" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Group" representedClassName=".Group" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameEnglish" optional="YES" attributeType="String"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Food" inverseName="group" inverseEntity="Food"/>
+        <fetchIndex name="byKeyIndex">
+            <fetchIndexElement property="key" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="Meal" representedClassName=".Meal" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="dateOfCreation" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateOfCreationAsString" optional="YES" transient="YES" attributeType="String"/>
+        <attribute name="dateOfLastModification" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MealIngredient" inverseName="meal" inverseEntity="MealIngredient"/>
+    </entity>
+    <entity name="MealIngredient" representedClassName=".MealIngredient" syncable="YES">
+        <attribute name="amount" attributeType="Float" usesScalarValueType="NO"/>
+        <relationship name="food" maxCount="1" deletionRule="Nullify" destinationEntity="Food" inverseName="mealIngredients" inverseEntity="Food"/>
+        <relationship name="meal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Meal" inverseName="ingredients" inverseEntity="Meal"/>
+    </entity>
+    <entity name="Nutrient" representedClassName=".Nutrient" syncable="YES">
+        <attribute name="dispUnit" optional="YES" attributeType="String"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="keyOriginalBLS" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameEnglish" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="typeEnglish" optional="YES" attributeType="String"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+        <fetchIndex name="byKeyIndex">
+            <fetchIndexElement property="key" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="Preparation" representedClassName=".Preparation" syncable="YES">
+        <attribute name="groupKeysString" optional="YES" attributeType="String"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameEnglish" optional="YES" attributeType="String"/>
+        <attribute name="preparationType" optional="YES" attributeType="String"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Food" inverseName="preparation" inverseEntity="Food"/>
+        <fetchIndex name="byKeyIndex">
+            <fetchIndexElement property="key" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="Recipe" representedClassName=".Recipe" syncable="YES">
+        <attribute name="amount" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="dateOfCreation" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateOfLastModification" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="food" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Food" inverseName="recipe" inverseEntity="Food"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeIngredient" inverseName="recipe" inverseEntity="RecipeIngredient"/>
+    </entity>
+    <entity name="RecipeIngredient" representedClassName=".RecipeIngredient" syncable="YES">
+        <attribute name="amount" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <relationship name="food" maxCount="1" deletionRule="Nullify" destinationEntity="Food" inverseName="recipeIngredients" inverseEntity="Food"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredients" inverseEntity="Recipe"/>
+    </entity>
+    <entity name="ReferenceWeight" representedClassName=".ReferenceWeight" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameEnglish" optional="YES" attributeType="String"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Food" inverseName="referenceWeight" inverseEntity="Food"/>
+    </entity>
+    <entity name="ServingSize" representedClassName=".ServingSize" syncable="YES">
+        <attribute name="amount" attributeType="Float" usesScalarValueType="NO"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <relationship name="food" maxCount="1" deletionRule="Nullify" destinationEntity="Food" inverseName="servingSizes" inverseEntity="Food"/>
+    </entity>
+    <entity name="Source" representedClassName=".Source" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Food" inverseName="source" inverseEntity="Food"/>
+    </entity>
+    <entity name="SubGroup" representedClassName=".SubGroup" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nameEnglish" optional="YES" attributeType="String"/>
+        <attribute name="subGroupKey" optional="YES" attributeType="Integer 16" usesScalarValueType="NO"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Food" inverseName="subGroup" inverseEntity="Food"/>
+        <fetchIndex name="byKeyIndex">
+            <fetchIndexElement property="key" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="bySubGroupKeyIndex">
+            <fetchIndexElement property="subGroupKey" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <elements>
+        <element name="Brand" positionX="-2880" positionY="198" width="128" height="75"/>
+        <element name="Dealer" positionX="-2819" positionY="315" width="128" height="75"/>
+        <element name="Detail" positionX="-2657" positionY="291" width="128" height="133"/>
+        <element name="Event" positionX="-3510" positionY="90" width="128" height="358"/>
+        <element name="Favorite" positionX="-3357" positionY="603" width="128" height="60"/>
+        <element name="Food" positionX="-3089" positionY="-1563" width="128" height="2415"/>
+        <element name="GeoLocation" positionX="-3240" positionY="152" width="128" height="75"/>
+        <element name="Group" positionX="-2619" positionY="464" width="128" height="105"/>
+        <element name="Meal" positionX="-3348" positionY="746" width="128" height="120"/>
+        <element name="MealIngredient" positionX="-3582" positionY="614" width="128" height="90"/>
+        <element name="Nutrient" positionX="-2862" positionY="-468" width="128" height="165"/>
+        <element name="Preparation" positionX="-2466" positionY="477" width="128" height="135"/>
+        <element name="Recipe" positionX="-3296" positionY="891" width="128" height="135"/>
+        <element name="RecipeIngredient" positionX="-3078" positionY="1044" width="128" height="88"/>
+        <element name="ReferenceWeight" positionX="-2423" positionY="626" width="128" height="105"/>
+        <element name="ServingSize" positionX="-2511" positionY="776" width="128" height="90"/>
+        <element name="Source" positionX="-2549" positionY="920" width="128" height="75"/>
+        <element name="SubGroup" positionX="-2673" positionY="1035" width="128" height="120"/>
+    </elements>
+</model>
