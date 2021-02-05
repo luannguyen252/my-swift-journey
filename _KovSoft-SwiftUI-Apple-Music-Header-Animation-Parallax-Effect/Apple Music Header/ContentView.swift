@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Apple Music Header
-//
-//  Created by Balaji on 26/08/20.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -19,89 +12,70 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Home : View {
-    
+struct Home: View {
     var edges = UIApplication.shared.windows.first?.safeAreaInsets
-    @State var opacity : Double = 0
+    @State var opacity: Double = 0
     
-    var body: some View{
-        
+    var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .top)) {
+            Color("dark").ignoresSafeArea(.all, edges: .all)
             
             ScrollView(.vertical, showsIndicators: false) {
-                
-                VStack{
-                    
-                    // First Parallax Scroll...
-                    
-                    GeometryReader{reader in
-                        
-                        VStack{
-                            
-                            Image("p1")
+                VStack {
+                    // First parallax scroll
+                    GeometryReader { reader in
+                        VStack {
+                            Image("avatar6")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                // default widht...
+                                // Default width
                                 .frame(width: UIScreen.main.bounds.width, height: reader.frame(in: .global).minY > 0 ? reader.frame(in: .global).minY + (UIScreen.main.bounds.height / 2.2) : UIScreen.main.bounds.height / 2.2)
-                            // adjusting view postion when scrolls...
+                                // Adjusting view postion when scrolls
                                 .offset(y: -reader.frame(in: .global).minY)
                             
-                            // NavBar Change....
-                                .onChange(of: reader.frame(in: .global).minY){value in
-                                    
-                                    // Checking if top is reached...
-                                    
+                                // NavBar change
+                                .onChange(of: reader.frame(in: .global).minY) { value in
+                                    // Checking if top is reached
                                     let offset = value + (UIScreen.main.bounds.height / 2.2)
                                     
-                                    if offset < 80{
-                                        
-                                        // ranging from 0 - 80...
-                                        
-                                        if offset > 0{
-                                            
-                                            // calcluating opacity....
-                                            
+                                    if offset < 80 {
+                                        // Ranging from 0 - 80
+                                        if offset > 0 {
+                                            // Calcluating opacity
                                             let opacity_value = (80 - offset) / 80
-                                            
                                             self.opacity = Double(opacity_value)
-                                            
                                             return
                                         }
-                                        
-                                        // else means full opactiy..
-                                        
+                                        // Else means full opactiy
                                         self.opacity = 1
-                                    }
-                                    else{
+                                    } else {
                                         
                                         self.opacity = 0
                                     }
                                 }
                         }
                     }
-                    // setting default height...
+                    // Setting default height
                     .frame(height: UIScreen.main.bounds.height / 2.2)
                     
-                    // List Of Songs...
-                    
-                    VStack(spacing: 10){
-                        
-                        ForEach(albums,id: \.album_name){album in
-                            
-                            HStack(spacing: 15){
-                                
+                    // List of songs
+                    VStack(spacing: 16) {
+                        ForEach(albums,id: \.album_name) { album in
+                            HStack(spacing: 16) {
                                 Image("\(album.album_cover)")
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
-                                    .frame(width: 55, height: 55)
-                                    .cornerRadius(15)
+                                    .frame(width: 56, height: 56)
+                                    .cornerRadius(16)
                                 
-                                VStack(alignment: .leading, spacing: 5) {
-                                    
+                                VStack(alignment: .leading, spacing: 4) {
                                     Text("\(album.album_name)")
+                                        .font(.custom("TTFirsNeue-Bold", size: 18))
+                                        .foregroundColor(Color("light"))
                                     
                                     Text("\(album.album_author)")
-                                        .font(.caption)
+                                        .font(.custom("TTFirsNeue-Regular", size: 14))
+                                        .foregroundColor(Color("dark4"))
                                 }
                                 
                                 Spacer(minLength: 0)
@@ -110,70 +84,62 @@ struct Home : View {
                         }
                     }
                     .padding(.vertical)
-                    .background(Color.white)
+                    .background(Color("dark"))
                 }
             }
             
-            HStack{
-                
-                Button(action: {}) {
-                    
-                    HStack(spacing: 8){
-                        
+            HStack {
+                Button(action: {
+                    print("Home is pressed.")
+                }) {
+                    HStack(spacing: 8) {
                         Image(systemName: "chevron.left")
-                            .font(.system(size: 22, weight: .bold))
+                            .font(.system(size: 24))
+                            .foregroundColor(Color("light"))
                         
-                        Text("Search")
-                            .fontWeight(.semibold)
+                        Text("Home")
+                            .font(.custom("TTFirsNeue-Bold", size: 18))
+                            .foregroundColor(Color("light"))
                     }
                 }
                 
                 Spacer(minLength: 0)
-                
-                Button(action: {}) {
-                    
-                    Image("menu")
-                        .resizable()
-                        .renderingMode(.template)
-                        .frame(width: 22, height: 22)
-                        .rotationEffect(.init(degrees: 90))
-                }
             }
             .padding()
-            .foregroundColor(opacity > 0.6 ? .black : .white)
-            // since top edge is ignored...
-            .padding(.top,edges!.top)
-            .background(Color.white.opacity(opacity))
-            .shadow(color: Color.black.opacity(opacity > 0.8 ? 0.1 : 0), radius: 5, x: 0, y: 5)
+            // .foregroundColor(opacity > 0.6 ? Color("dark") : Color("light"))
+            // Since top edge is ignored
+            .padding(.top, edges!.top)
+            .background(Color("purple2").opacity(opacity))
+            .shadow(color: Color("purple2").opacity(opacity > 0.5 ? 0.1 : 0), radius: 5, x: 0, y: 5)
         }
         .ignoresSafeArea(.all, edges: .top)
+        .statusBar(hidden: true)
     }
 }
 
-// Sample Data...
-
-struct Album{
-
-    var album_name : String
-    var album_author : String
-    var album_cover : String
+// Album Data Model
+struct Album {
+    var album_name: String
+    var album_author: String
+    var album_cover: String
 }
 
+// Album Data
 var albums = [
-
-    //Album(album_name: "Let Her Go", album_author: "Passenger", album_cover: "p1"),
-    Album(album_name: "Bad Blood", album_author: "Taylor Swift", album_cover: "p2"),
-    Album(album_name: "Believer", album_author: "Kurt Hugo Schneider", album_cover: "p3"),
-    Album(album_name: "Let Me Love You", album_author: "DJ Snake", album_cover: "p4"),
-    Album(album_name: "Shape Of You", album_author: "Ed Sherran", album_cover: "p5"),
-    Album(album_name: "Blank Space", album_author: "Taylor Swift", album_cover: "p6"),
-    Album(album_name: "Havana", album_author: "Camila Cabello", album_cover: "p7"),
-    Album(album_name: "Red", album_author: "Taylor Swift", album_cover: "p8"),
-    Album(album_name: "I Like It", album_author: "J Balvin", album_cover: "p9"),
-    Album(album_name: "Lover", album_author: "Taylor Swift", album_cover: "p10"),
-    Album(album_name: "7/27 Harmony", album_author: "Camila Cabello", album_cover: "p11"),
-    Album(album_name: "Joanne", album_author: "Lady Gaga", album_cover: "p12"),
-    Album(album_name: "Roar", album_author: "Kay Perry", album_cover: "p13"),
-    Album(album_name: "My Church", album_author: "Maren Morris", album_cover: "p14"),
-    Album(album_name: "Part Of Me", album_author: "Katy Perry", album_cover: "p15"),
+    Album(album_name: "SwiftUI for Designers 1", album_author: "Luan Nguyen", album_cover: "avatar1"),
+    Album(album_name: "SwiftUI for Designers 2", album_author: "Luan Nguyen", album_cover: "avatar2"),
+    Album(album_name: "SwiftUI for Designers 3", album_author: "Luan Nguyen", album_cover: "avatar3"),
+    Album(album_name: "SwiftUI for Designers 4", album_author: "Luan Nguyen", album_cover: "avatar4"),
+    Album(album_name: "SwiftUI for Designers 5", album_author: "Luan Nguyen", album_cover: "avatar5"),
+    Album(album_name: "SwiftUI for Designers 6", album_author: "Luan Nguyen", album_cover: "avatar6"),
+    Album(album_name: "SwiftUI for Designers 7", album_author: "Luan Nguyen", album_cover: "avatar7"),
+    Album(album_name: "SwiftUI for Designers 8", album_author: "Luan Nguyen", album_cover: "avatar8"),
+    Album(album_name: "SwiftUI for Designers 9", album_author: "Luan Nguyen", album_cover: "avatar1"),
+    Album(album_name: "SwiftUI for Designers 10", album_author: "Luan Nguyen", album_cover: "avatar2"),
+    Album(album_name: "SwiftUI for Designers 11", album_author: "Luan Nguyen", album_cover: "avatar3"),
+    Album(album_name: "SwiftUI for Designers 12", album_author: "Luan Nguyen", album_cover: "avatar4"),
+    Album(album_name: "SwiftUI for Designers 13", album_author: "Luan Nguyen", album_cover: "avatar5"),
+    Album(album_name: "SwiftUI for Designers 14", album_author: "Luan Nguyen", album_cover: "avatar6"),
+    Album(album_name: "SwiftUI for Designers 15", album_author: "Luan Nguyen", album_cover: "avatar7"),
+    Album(album_name: "SwiftUI for Designers 16", album_author: "Luan Nguyen", album_cover: "avatar8"),
 ]
