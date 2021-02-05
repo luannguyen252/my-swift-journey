@@ -1,0 +1,33 @@
+default_platform(:ios)
+
+desc "Updates the project build number in the main project and in the examples."
+lane :increment_all_build_numbers do
+  increment_build_number(xcodeproj: "./SheetPresentation.xcodeproj")
+end
+
+desc "Updates the project version number in the main project and its examples. Specify a `bump_type` of `major`, `minor`, or `patch` (the default)."
+lane :increment_all_version_numbers do |options|
+  increment_version_number(
+    bump_type: options[:bump_type],
+    xcodeproj: "./SheetPresentation.xcodeproj",
+  )
+
+  version = get_version_number(
+    xcodeproj: "./SheetPresentation.xcodeproj",
+    target: "SheetPresentation"
+  )
+
+  version_bump_podspec(version_number: version)
+end
+
+desc "Generates documentation."
+lane :documentation do
+  jazzy(config: "./.jazzy.yaml")
+end
+
+desc "Prepares a release: bumps the version numbers and generates documentation."
+lane :prepare_release do |options|
+  increment_all_version_numbers(options)
+  increment_all_build_numbers
+  documentation
+end
