@@ -1,0 +1,51 @@
+//
+//  MockTableView.swift
+//  SheeeeeeeeetTests
+//
+//  Created by Daniel Saidi on 2018-10-17.
+//  Copyright © 2018 Daniel Saidi. All rights reserved.
+//
+
+import Sheeeeeeeeet
+import UIKit
+
+/**
+ `TODO` Convert to real mock.
+ */
+class MockItemTableView: ActionSheetItemTableView {
+
+    var deselectRowInvokeCount = 0
+    var deselectRowInvokePaths = [IndexPath]()
+    var deselectRowInvokeAnimated = [Bool]()
+    var reloadDataInvokeCount = 0
+    
+    override func deselectRow(at indexPath: IndexPath, animated: Bool) {
+        deselectRowInvokeCount += 1
+        deselectRowInvokePaths.append(indexPath)
+        deselectRowInvokeAnimated.append(animated)
+    }
+    
+    override func reloadData() {
+        super.reloadData()
+        reloadDataInvokeCount += 1
+    }
+}
+
+class MockButtonTableView: ActionSheetButtonTableView {
+    
+    var deselectRowInvokeCount = 0
+    var deselectRowInvokePaths = [IndexPath]()
+    var deselectRowInvokeAnimated = [Bool]()
+    var reloadDataInvokeCount = 0
+    
+    override func deselectRow(at indexPath: IndexPath, animated: Bool) {
+        deselectRowInvokeCount += 1
+        deselectRowInvokePaths.append(indexPath)
+        deselectRowInvokeAnimated.append(animated)
+    }
+    
+    override func reloadData() {
+        super.reloadData()
+        reloadDataInvokeCount += 1
+    }
+}

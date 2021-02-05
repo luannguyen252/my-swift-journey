@@ -1,0 +1,55 @@
+//
+//  AppDelegate+Appearance.swift
+//  SheeeeeeeeetExample
+//
+//  Created by Daniel Saidi on 2018-10-08.
+//  Copyright © 2018 Daniel Saidi. All rights reserved.
+//
+
+import Sheeeeeeeeet
+import UIKit
+
+extension ActionSheetAppearance {
+    
+    /**
+     Get an instance of the demo appearance.
+    */
+    static var demo: ActionSheetAppearance {
+        DemoAppearance()
+    }
+}
+
+/**
+ This is a demo-specific action sheet appearance. It applies
+ app-specific icons for pre-iOS 13 devices.
+ 
+ If you use Sheeeeeeeeet in apps with a deployment target of
+ iOS 12 and below, you must provide Sheeeeeeeeet with custom
+ icon, like below. In iOS 13 and above, Sheeeeeeeeet applies
+ standard SF Symbols icons (which you also can override).
+ */
+class DemoAppearance: ActionSheetAppearance {
+    
+    override func apply() {
+        super.apply()
+        applyPopoverWidth()
+        
+        DemoMultilineItemCell.appearance().height = 100
+        
+        UITabBar.appearance().tintColor = .sheetColor(.text)
+        UINavigationBar.appearance().tintColor = .sheetColor(.text)
+    }
+    
+    override func applyIcons() {
+        super.applyIcons()
+        secondaryAction.secondaryActionIcon = UIImage(named: "ic_thumbs_up")
+        if #available(iOS 13.0, *) { return }
+        link.linkIcon = UIImage(named: "ic_arrow_right")
+        selectItem.selectedIcon = UIImage(named: "ic_checkmark")
+        selectItem.unselectedIcon = UIImage(named: "ic_empty")
+    }
+    
+    func applyPopoverWidth() {
+        //ActionSheet.preferredPopoverWidth = 700
+    }
+}
