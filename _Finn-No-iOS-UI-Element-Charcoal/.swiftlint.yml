@@ -1,0 +1,37 @@
+force_cast: warning
+force_try: warning
+force_unwrapping: error
+type_name:
+  min_length: 2
+identifier_name:
+  min_length: 2
+  max_length: 80
+  excluded:
+    - x
+    - y
+    - a
+    - r
+    - g
+    - b
+    - i
+cyclomatic_complexity:
+  ignores_case_statements: true
+conditional_returns_on_newline: warning
+
+disabled_rules:
+  - line_length
+  - type_body_length
+  - function_body_length
+  - weak_delegate
+  - trailing_comma
+  - file_length
+
+included:
+  - Sources
+  - Demo
+  - UnitTests
+  - UITests
+
+analyzer_rules:
+  - unused_import
+  - unused_private_declaration
