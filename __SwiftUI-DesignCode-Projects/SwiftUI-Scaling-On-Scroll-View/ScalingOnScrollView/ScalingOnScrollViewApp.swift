@@ -1,10 +1,3 @@
-//
-//  ScalingOnScrollViewApp.swift
-//  ScalingOnScrollView
-//
-//  Created by Liu Chuan on 2020/11/12.
-//
-
 import SwiftUI
 
 @main

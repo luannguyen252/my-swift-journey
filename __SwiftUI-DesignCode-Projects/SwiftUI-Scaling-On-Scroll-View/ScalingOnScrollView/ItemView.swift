@@ -1,33 +1,30 @@
-//
-//  ItemView.swift
-//  ScalingOnScrollView
-//
-//  Created by Liu Chuan on 2020/11/12.
-//
-
 import SwiftUI
 
 struct ItemView: View {
-    
     var item: Item
     
     var body: some View {
-        HStack{
+        HStack {
             Image(item.image)
                 .resizable()
-                .frame(width: 100, height: 100)
-                .cornerRadius(15)
+                .frame(width: 144, height: 144)
+                .cornerRadius(16)
             
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 8) {
                 Text(item.name)
-                    .fontWeight(.bold)
+                    .font(.custom("TTFirsNeue-Bold", size: 18))
+                    .foregroundColor(Color("light"))
                 Text(item.description)
+                    .font(.custom("TTFirsNeue-Regular", size: 14))
+                    .foregroundColor(Color("dark4"))
             }
-            .padding(.leading,10)
+            .padding(.vertical, 16)
+            .padding(.horizontal, 16)
+            
             Spacer(minLength: 0)
         }
-        .background(Color.white.shadow(color: Color.black.opacity(0.12), radius: 5, x: 0, y: 4))
-        .cornerRadius(15)
+        .background(Color("dark").shadow(color: Color("light").opacity(0.05), radius: 5, x: 0, y: 4))
+        .cornerRadius(16)
     }
 }
 
@@ -38,18 +35,18 @@ struct Item {
 }
 
 var items: [Item] = [
-    Item(name: "Minecraft", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", image: "1"),
-    Item(name: "Video games", description: "At auctor urna nunc id cursus metus aliquam. ", image: "2"),
-    Item(name: "Marvel-Inspired Games", description: "Lorem ipsum dolor sit amet", image: "3"),
-    Item(name: "Blast off! Rocketship Games", description: "Ultricies tristique nulla aliquet enim tortor at.", image: "4"),
+    Item(name: "SwiftUI for Designers 1", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar1"),
+    Item(name: "SwiftUI for Designers 2", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar2"),
+    Item(name: "SwiftUI for Designers 3", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar3"),
+    Item(name: "SwiftUI for Designers 4", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar4"),
         
-    Item(name: "Minecraft", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", image: "1"),
-    Item(name: "Video games", description: "At auctor urna nunc id cursus metus aliquam. ", image: "2"),
-    Item(name: "Marvel-Inspired Games", description: "Lorem ipsum dolor sit amet", image: "3"),
-    Item(name: "Blast off! Rocketship Games", description: "Ultricies tristique nulla aliquet enim tortor at.", image: "4"),
+    Item(name: "SwiftUI for Designers 5", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar5"),
+    Item(name: "SwiftUI for Designers 6", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar6"),
+    Item(name: "SwiftUI for Designers 7", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar7"),
+    Item(name: "SwiftUI for Designers 8", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar8"),
     
-    Item(name: "Minecraft", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", image: "1"),
-    Item(name: "Video games", description: "At auctor urna nunc id cursus metus aliquam. ", image: "2"),
-    Item(name: "Marvel-Inspired Games", description: "Lorem ipsum dolor sit amet", image: "3"),
-    Item(name: "Blast off! Rocketship Games", description: "Ultricies tristique nulla aliquet enim tortor at.", image: "4"),
+    Item(name: "SwiftUI for Designers 9", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar1"),
+    Item(name: "SwiftUI for Designers 10", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar2"),
+    Item(name: "SwiftUI for Designers 11", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar3"),
+    Item(name: "SwiftUI for Designers 12", description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.", image: "avatar4"),
 ]
