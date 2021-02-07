@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C23DA5662468F50300EEE245 /* GuessTheNumber WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C23DA5652468F50300EEE245 /* GuessTheNumber WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C23DA56C2468F50300EEE245 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23DA56A2468F50300EEE245 /* Interface.storyboard */; };
+		C23DA56E2468F50400EEE245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23DA56D2468F50400EEE245 /* Assets.xcassets */; };
+		C23DA5752468F50400EEE245 /* GuessTheNumber WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C23DA5742468F50400EEE245 /* GuessTheNumber WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C23DA57A2468F50400EEE245 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DA5792468F50400EEE245 /* ContentView.swift */; };
+		C23DA57C2468F50400EEE245 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DA57B2468F50400EEE245 /* HostingController.swift */; };
+		C23DA57E2468F50400EEE245 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DA57D2468F50400EEE245 /* ExtensionDelegate.swift */; };
+		C23DA5842468F50400EEE245 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DA5832468F50400EEE245 /* ComplicationController.swift */; };
+		C23DA5862468F50400EEE245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23DA5852468F50400EEE245 /* Assets.xcassets */; };
+		C23DA5892468F50400EEE245 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23DA5882468F50400EEE245 /* Preview Assets.xcassets */; };
+		C2820E702478FF5A0027B6EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2820E6E2478FF5A0027B6EE /* InfoPlist.strings */; };
+		C2820E772478FF9A0027B6EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2820E752478FF9A0027B6EE /* Localizable.strings */; };
+		C2820E7E2478FFCF0027B6EE /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = C2820E7C2478FFCF0027B6EE /* Localizable.stringsdict */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C23DA5672468F50300EEE245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23DA55B2468F50300EEE245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23DA5642468F50300EEE245;
+			remoteInfo = "GuessTheNumber WatchKit App";
+		};
+		C23DA5762468F50400EEE245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23DA55B2468F50300EEE245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23DA5732468F50400EEE245;
+			remoteInfo = "GuessTheNumber WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C23DA5912468F50400EEE245 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C23DA5752468F50400EEE245 /* GuessTheNumber WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23DA5952468F50400EEE245 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C23DA5662468F50300EEE245 /* GuessTheNumber WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C23DA5612468F50300EEE245 /* GuessTheNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23DA5652468F50300EEE245 /* GuessTheNumber WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuessTheNumber WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23DA56B2468F50300EEE245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C23DA56D2468F50400EEE245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C23DA56F2468F50400EEE245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C23DA5742468F50400EEE245 /* GuessTheNumber WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GuessTheNumber WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23DA5792468F50400EEE245 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C23DA57B2468F50400EEE245 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		C23DA57D2468F50400EEE245 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C23DA5832468F50400EEE245 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C23DA5852468F50400EEE245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C23DA5882468F50400EEE245 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C23DA58A2468F50400EEE245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2820E6F2478FF5A0027B6EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2820E712478FF630027B6EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C2820E722478FF6C0027B6EE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C2820E732478FF7D0027B6EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2820E742478FF850027B6EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2820E762478FF9A0027B6EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C2820E782478FFA40027B6EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C2820E792478FFAF0027B6EE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C2820E7A2478FFB70027B6EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C2820E7B2478FFBF0027B6EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C2820E7D2478FFCF0027B6EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		C2820E7F2478FFDA0027B6EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		C2820E802478FFE30027B6EE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		C2820E812478FFEC0027B6EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ja; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		C2820E822478FFF40027B6EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23DA5712468F50400EEE245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C23DA55A2468F50300EEE245 = {
+			isa = PBXGroup;
+			children = (
+				C23DA5692468F50300EEE245 /* GuessTheNumber WatchKit App */,
+				C23DA5782468F50400EEE245 /* GuessTheNumber WatchKit Extension */,
+				C23DA5622468F50300EEE245 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23DA5622468F50300EEE245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23DA5612468F50300EEE245 /* GuessTheNumber.app */,
+				C23DA5652468F50300EEE245 /* GuessTheNumber WatchKit App.app */,
+				C23DA5742468F50400EEE245 /* GuessTheNumber WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23DA5692468F50300EEE245 /* GuessTheNumber WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C23DA56A2468F50300EEE245 /* Interface.storyboard */,
+				C23DA56D2468F50400EEE245 /* Assets.xcassets */,
+				C23DA56F2468F50400EEE245 /* Info.plist */,
+				C2820E6E2478FF5A0027B6EE /* InfoPlist.strings */,
+			);
+			path = "GuessTheNumber WatchKit App";
+			sourceTree = "<group>";
+		};
+		C23DA5782468F50400EEE245 /* GuessTheNumber WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C23DA5792468F50400EEE245 /* ContentView.swift */,
+				C23DA57B2468F50400EEE245 /* HostingController.swift */,
+				C23DA57D2468F50400EEE245 /* ExtensionDelegate.swift */,
+				C23DA5832468F50400EEE245 /* ComplicationController.swift */,
+				C2820E752478FF9A0027B6EE /* Localizable.strings */,
+				C2820E7C2478FFCF0027B6EE /* Localizable.stringsdict */,
+				C23DA5852468F50400EEE245 /* Assets.xcassets */,
+				C23DA58A2468F50400EEE245 /* Info.plist */,
+				C23DA5872468F50400EEE245 /* Preview Content */,
+			);
+			path = "GuessTheNumber WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C23DA5872468F50400EEE245 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C23DA5882468F50400EEE245 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C23DA5602468F50300EEE245 /* GuessTheNumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23DA5962468F50400EEE245 /* Build configuration list for PBXNativeTarget "GuessTheNumber" */;
+			buildPhases = (
+				C23DA55F2468F50300EEE245 /* Resources */,
+				C23DA5952468F50400EEE245 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C23DA5682468F50300EEE245 /* PBXTargetDependency */,
+			);
+			name = GuessTheNumber;
+			productName = GuessTheNumber;
+			productReference = C23DA5612468F50300EEE245 /* GuessTheNumber.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C23DA5642468F50300EEE245 /* GuessTheNumber WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23DA5922468F50400EEE245 /* Build configuration list for PBXNativeTarget "GuessTheNumber WatchKit App" */;
+			buildPhases = (
+				C23DA5632468F50300EEE245 /* Resources */,
+				C23DA5912468F50400EEE245 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C23DA5772468F50400EEE245 /* PBXTargetDependency */,
+			);
+			name = "GuessTheNumber WatchKit App";
+			productName = "GuessTheNumber WatchKit App";
+			productReference = C23DA5652468F50300EEE245 /* GuessTheNumber WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C23DA5732468F50400EEE245 /* GuessTheNumber WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23DA58E2468F50400EEE245 /* Build configuration list for PBXNativeTarget "GuessTheNumber WatchKit Extension" */;
+			buildPhases = (
+				C23DA5702468F50400EEE245 /* Sources */,
+				C23DA5712468F50400EEE245 /* Frameworks */,
+				C23DA5722468F50400EEE245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GuessTheNumber WatchKit Extension";
+			productName = "GuessTheNumber WatchKit Extension";
+			productReference = C23DA5742468F50400EEE245 /* GuessTheNumber WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23DA55B2468F50300EEE245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "McCoy Zhu";
+				TargetAttributes = {
+					C23DA5602468F50300EEE245 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					C23DA5642468F50300EEE245 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					C23DA5732468F50400EEE245 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C23DA55E2468F50300EEE245 /* Build configuration list for PBXProject "GuessTheNumber" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				ja,
+				ru,
+				"zh-Hant",
+			);
+			mainGroup = C23DA55A2468F50300EEE245;
+			productRefGroup = C23DA5622468F50300EEE245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23DA5602468F50300EEE245 /* GuessTheNumber */,
+				C23DA5642468F50300EEE245 /* GuessTheNumber WatchKit App */,
+				C23DA5732468F50400EEE245 /* GuessTheNumber WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C23DA55F2468F50300EEE245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23DA5632468F50300EEE245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23DA56E2468F50400EEE245 /* Assets.xcassets in Resources */,
+				C2820E702478FF5A0027B6EE /* InfoPlist.strings in Resources */,
+				C23DA56C2468F50300EEE245 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23DA5722468F50400EEE245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23DA5892468F50400EEE245 /* Preview Assets.xcassets in Resources */,
+				C2820E7E2478FFCF0027B6EE /* Localizable.stringsdict in Resources */,
+				C2820E772478FF9A0027B6EE /* Localizable.strings in Resources */,
+				C23DA5862468F50400EEE245 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23DA5702468F50400EEE245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23DA57C2468F50400EEE245 /* HostingController.swift in Sources */,
+				C23DA57A2468F50400EEE245 /* ContentView.swift in Sources */,
+				C23DA57E2468F50400EEE245 /* ExtensionDelegate.swift in Sources */,
+				C23DA5842468F50400EEE245 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C23DA5682468F50300EEE245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C23DA5642468F50300EEE245 /* GuessTheNumber WatchKit App */;
+			targetProxy = C23DA5672468F50300EEE245 /* PBXContainerItemProxy */;
+		};
+		C23DA5772468F50400EEE245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C23DA5732468F50400EEE245 /* GuessTheNumber WatchKit Extension */;
+			targetProxy = C23DA5762468F50400EEE245 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C23DA56A2468F50300EEE245 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23DA56B2468F50300EEE245 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		C2820E6E2478FF5A0027B6EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2820E6F2478FF5A0027B6EE /* en */,
+				C2820E712478FF630027B6EE /* zh-Hans */,
+				C2820E722478FF6C0027B6EE /* zh-Hant */,
+				C2820E732478FF7D0027B6EE /* ja */,
+				C2820E742478FF850027B6EE /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C2820E752478FF9A0027B6EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2820E762478FF9A0027B6EE /* en */,
+				C2820E782478FFA40027B6EE /* zh-Hans */,
+				C2820E792478FFAF0027B6EE /* zh-Hant */,
+				C2820E7A2478FFB70027B6EE /* ja */,
+				C2820E7B2478FFBF0027B6EE /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C2820E7C2478FFCF0027B6EE /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2820E7D2478FFCF0027B6EE /* en */,
+				C2820E7F2478FFDA0027B6EE /* zh-Hans */,
+				C2820E802478FFE30027B6EE /* zh-Hant */,
+				C2820E812478FFEC0027B6EE /* ja */,
+				C2820E822478FFF40027B6EE /* ru */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C23DA58C2468F50400EEE245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C23DA58D2468F50400EEE245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23DA58F2468F50400EEE245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"GuessTheNumber WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MGM7CAKZL4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "GuessTheNumber WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = mccoyzhu.GuessTheNumber.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		C23DA5902468F50400EEE245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"GuessTheNumber WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MGM7CAKZL4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "GuessTheNumber WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = mccoyzhu.GuessTheNumber.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		C23DA5932468F50400EEE245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = MGM7CAKZL4;
+				IBSC_MODULE = GuessTheNumber_WatchKit_Extension;
+				INFOPLIST_FILE = "GuessTheNumber WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = mccoyzhu.GuessTheNumber.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		C23DA5942468F50400EEE245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = MGM7CAKZL4;
+				IBSC_MODULE = GuessTheNumber_WatchKit_Extension;
+				INFOPLIST_FILE = "GuessTheNumber WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = mccoyzhu.GuessTheNumber.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		C23DA5972468F50400EEE245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = MGM7CAKZL4;
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = mccoyzhu.GuessTheNumber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C23DA5982468F50400EEE245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = MGM7CAKZL4;
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = mccoyzhu.GuessTheNumber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23DA55E2468F50300EEE245 /* Build configuration list for PBXProject "GuessTheNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23DA58C2468F50400EEE245 /* Debug */,
+				C23DA58D2468F50400EEE245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23DA58E2468F50400EEE245 /* Build configuration list for PBXNativeTarget "GuessTheNumber WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23DA58F2468F50400EEE245 /* Debug */,
+				C23DA5902468F50400EEE245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23DA5922468F50400EEE245 /* Build configuration list for PBXNativeTarget "GuessTheNumber WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23DA5932468F50400EEE245 /* Debug */,
+				C23DA5942468F50400EEE245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23DA5962468F50400EEE245 /* Build configuration list for PBXNativeTarget "GuessTheNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23DA5972468F50400EEE245 /* Debug */,
+				C23DA5982468F50400EEE245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23DA55B2468F50300EEE245 /* Project object */;
+}
