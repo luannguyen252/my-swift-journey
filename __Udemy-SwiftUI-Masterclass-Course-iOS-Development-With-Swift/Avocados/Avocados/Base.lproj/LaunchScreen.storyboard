@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SS4-Th-lP4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="cwj-z2-Wmi">
+                                <rect key="frame" x="87" y="293" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="JiV-gp-8Z2"/>
+                                    <constraint firstAttribute="height" constant="240" id="LDk-F1-hyd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVOCADOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvs-9f-Nd3">
+                                <rect key="frame" x="96" y="545" width="222" height="52"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SS4-Th-lP4" secondAttribute="bottom" id="3A0-9m-4Tf"/>
+                            <constraint firstItem="cwj-z2-Wmi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dgz-HI-ejD"/>
+                            <constraint firstItem="cwj-z2-Wmi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-35" id="RjT-pM-9Cb"/>
+                            <constraint firstItem="Rvs-9f-Nd3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cOW-Sh-LY9"/>
+                            <constraint firstItem="Rvs-9f-Nd3" firstAttribute="top" secondItem="cwj-z2-Wmi" secondAttribute="bottom" constant="12" id="cfx-wj-1wP"/>
+                            <constraint firstItem="SS4-Th-lP4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fmD-Wu-k1x"/>
+                            <constraint firstItem="SS4-Th-lP4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ieb-Sd-pQh"/>
+                            <constraint firstAttribute="trailing" secondItem="SS4-Th-lP4" secondAttribute="trailing" id="uas-BO-7Op"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avocado" width="883" height="862"/>
+        <image name="background" width="1194" height="834"/>
+    </resources>
+</document>
