@@ -1,53 +1,50 @@
-//
-//  ContentView.swift
-//  SwiftUIinSceneKit
-//
-//  Created by Toshihiro Goto on 2019/06/16.
-//  Copyright © 2019 Toshihiro Goto. All rights reserved.
-//
-
 import SwiftUI
 import SceneKit
 import Combine
 
 final class CameraInfo: ObservableObject  {
-    @Published var cameraNumber:UInt = 0
+    @Published var cameraNumber: UInt = 0
 }
 
-struct ContentView : View {
+struct ContentView: View {
     @EnvironmentObject var cameraInfo: CameraInfo
     
     var body: some View {
-        VStack(alignment: .leading) {
-
-            // SceneKit
-            SceneView(cameraNumber: $cameraInfo.cameraNumber)
-                .frame(height: 300)
-            
-            // TableView
-            List(0...2, id:\.self){ (i) in
-                Button(action: {
-                    self.cameraInfo.cameraNumber = UInt(i)
-                }) {
-                    TableRow(number: i)
-                }
-
+        ZStack {
+            if #available(iOS 14.0, *) {
+                Color("dark").ignoresSafeArea(.all, edges: .all)
+            } else {
+                // Fallback on earlier versions
             }
-
+            
+            VStack(alignment: .leading) {
+                SceneView(cameraNumber: $cameraInfo.cameraNumber)
+                    .frame(height: UIScreen.main.bounds.size.height / 2)
+                
+                List(0...2, id: \.self) { (i) in
+                    Button(action: {
+                        self.cameraInfo.cameraNumber = UInt(i)
+                    }) {
+                        TableRow(number: i)
+                    }
+                }
+            }
         }
+        .statusBar(hidden: true)
     }
 }
 
-
 struct TableRow: View {
-    var number:Int
+    var number: Int
     
     var body: some View {
         VStack(alignment: .leading) {
             Text("Camera: \(number)")
-                .font(.title)
-            Text("description: !!!!!!!")
-                .font(.subheadline)
+                .font(.custom("TTFirsNeue-Bold", size: 24))
+                .foregroundColor(Color("dark"))
+            Text("SwiftUI + SceneKit")
+                .font(.custom("TTFirsNeue-Regular", size: 16))
+                .foregroundColor(Color("dark4"))
         }
         .padding(8)
     }
@@ -67,7 +64,7 @@ struct SceneView: UIViewRepresentable {
     }
     
     func updateUIView(_ view: SCNView, context: Context) {
-        let camera = view.scene?.rootNode.childNode(withName: "Camera\( cameraNumber)", recursively: true)!
+        let camera = view.scene?.rootNode.childNode(withName: "Camera\(cameraNumber)", recursively: true)!
         
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 1.0
@@ -75,7 +72,6 @@ struct SceneView: UIViewRepresentable {
         view.pointOfView = camera
         
         SCNTransaction.commit()
-        
     }
 }
 

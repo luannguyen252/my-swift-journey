@@ -1,16 +1,7 @@
-//
-//  ViewController.swift
-//  3DEarth
-//
-//  Created by Bao Vu on 2/13/20.
-//  Copyright © 2020 Bao Vu. All rights reserved.
-//
-
 import UIKit
 import SceneKit
 
 class GameViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         let scene = SCNScene()
@@ -36,6 +27,4 @@ class GameViewController: UIViewController {
         sceneView.backgroundColor = UIColor.black
         sceneView.allowsCameraControl = true
     }
-
-
 }
