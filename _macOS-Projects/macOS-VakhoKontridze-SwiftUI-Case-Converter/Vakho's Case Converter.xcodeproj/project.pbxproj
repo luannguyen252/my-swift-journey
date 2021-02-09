@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87529EFA250B90C40056C74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529EF9250B90C40056C74A /* AppDelegate.swift */; };
+		87529EFE250B90C60056C74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87529EFD250B90C60056C74A /* Assets.xcassets */; };
+		87529F01250B90C60056C74A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87529F00250B90C60056C74A /* Preview Assets.xcassets */; };
+		87529F31250CBAC50056C74A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F30250CBAC50056C74A /* main.swift */; };
+		87529F34250CBB450056C74A /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F33250CBB450056C74A /* MainWindow.swift */; };
+		87529F37250CBB5B0056C74A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F36250CBB5B0056C74A /* MainView.swift */; };
+		87529F3F250DFB5F0056C74A /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F3E250DFB5F0056C74A /* SectionView.swift */; };
+		87529F42250DFBCA0056C74A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F41250DFBCA0056C74A /* Color.swift */; };
+		87529F44250DFD490056C74A /* ChecBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F43250DFD490056C74A /* ChecBoxView.swift */; };
+		87529F46250DFF930056C74A /* NumberPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F45250DFF930056C74A /* NumberPickerView.swift */; };
+		87529F49250DFFB70056C74A /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F47250DFFB70056C74A /* Binding.swift */; };
+		87529F4A250DFFB70056C74A /* ClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F48250DFFB70056C74A /* ClosedRange.swift */; };
+		87529F4E250E0E070056C74A /* WordsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F4D250E0E070056C74A /* WordsGridView.swift */; };
+		87529F50250E0EC20056C74A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F4F250E0EC20056C74A /* Array.swift */; };
+		87529F53250E1AA30056C74A /* SpecialWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F52250E1AA30056C74A /* SpecialWordsView.swift */; };
+		87529F5B250E1C330056C74A /* SpecialWordsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87529F5A250E1C330056C74A /* SpecialWordsWindow.swift */; };
+		87556ECE2518F8B400791AA7 /* CustomWordsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87556ECD2518F8B400791AA7 /* CustomWordsWindow.swift */; };
+		87556ED22518F91F00791AA7 /* CustomWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87556ED12518F91F00791AA7 /* CustomWordsView.swift */; };
+		87556ED62518FB3A00791AA7 /* WordsEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87556ED52518FB3A00791AA7 /* WordsEditView.swift */; };
+		87556EDC2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87556EDA2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodeld */; };
+		87556EDF2518FC8F00791AA7 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87556EDE2518FC8F00791AA7 /* Word.swift */; };
+		876F2A0525175B1900DAD3F3 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F2A0425175B1900DAD3F3 /* AppMenu.swift */; };
+		877353D42514D17D001EE704 /* CaseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877353D32514D17D001EE704 /* CaseConverter.swift */; };
+		8797A82A250E20C5001DE255 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A829250E20C5001DE255 /* SettingsViewModel.swift */; };
+		8797A82D250E2102001DE255 /* WordGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A82C250E2102001DE255 /* WordGroup.swift */; };
+		8797A82F250E2130001DE255 /* SpecialWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A82E250E2130001DE255 /* SpecialWords.swift */; };
+		8797A836250E22CF001DE255 /* SpecialWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 8797A835250E22CF001DE255 /* SpecialWords.json */; };
+		8797A867250FCB41001DE255 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A866250FCB41001DE255 /* View.swift */; };
+		8797A87325100979001DE255 /* WindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A87225100979001DE255 /* WindowFactory.swift */; };
+		8797A87525109D87001DE255 /* SpecialWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A87425109D87001DE255 /* SpecialWord.swift */; };
+		8797A8772510ACC8001DE255 /* Charaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A8762510ACC8001DE255 /* Charaters.swift */; };
+		8797A8792510B57A001DE255 /* ConversionCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A8782510B57A001DE255 /* ConversionCase.swift */; };
+		87AA7C9625169BD20042971D /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA7C9525169BD20042971D /* Tokenizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87529EF6250B90C40056C74A /* Vakho's Case Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vakho's Case Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87529EF9250B90C40056C74A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87529EFD250B90C60056C74A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87529F00250B90C60056C74A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87529F05250B90C60056C74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87529F06250B90C60056C74A /* Vakho_s_Case_Converter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vakho_s_Case_Converter.entitlements; sourceTree = "<group>"; };
+		87529F30250CBAC50056C74A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		87529F33250CBB450056C74A /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		87529F36250CBB5B0056C74A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		87529F3E250DFB5F0056C74A /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		87529F41250DFBCA0056C74A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		87529F43250DFD490056C74A /* ChecBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecBoxView.swift; sourceTree = "<group>"; };
+		87529F45250DFF930056C74A /* NumberPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerView.swift; sourceTree = "<group>"; };
+		87529F47250DFFB70056C74A /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		87529F48250DFFB70056C74A /* ClosedRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedRange.swift; sourceTree = "<group>"; };
+		87529F4D250E0E070056C74A /* WordsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsGridView.swift; sourceTree = "<group>"; };
+		87529F4F250E0EC20056C74A /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		87529F52250E1AA30056C74A /* SpecialWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialWordsView.swift; sourceTree = "<group>"; };
+		87529F5A250E1C330056C74A /* SpecialWordsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialWordsWindow.swift; sourceTree = "<group>"; };
+		87556ECD2518F8B400791AA7 /* CustomWordsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordsWindow.swift; sourceTree = "<group>"; };
+		87556ED12518F91F00791AA7 /* CustomWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordsView.swift; sourceTree = "<group>"; };
+		87556ED52518FB3A00791AA7 /* WordsEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsEditView.swift; sourceTree = "<group>"; };
+		87556EDB2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vakho_s_Case_Converter.xcdatamodel; sourceTree = "<group>"; };
+		87556EDE2518FC8F00791AA7 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		876F2A0425175B1900DAD3F3 /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		877353D32514D17D001EE704 /* CaseConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseConverter.swift; sourceTree = "<group>"; };
+		8797A829250E20C5001DE255 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		8797A82C250E2102001DE255 /* WordGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGroup.swift; sourceTree = "<group>"; };
+		8797A82E250E2130001DE255 /* SpecialWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialWords.swift; sourceTree = "<group>"; };
+		8797A835250E22CF001DE255 /* SpecialWords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SpecialWords.json; sourceTree = "<group>"; };
+		8797A866250FCB41001DE255 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		8797A87225100979001DE255 /* WindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFactory.swift; sourceTree = "<group>"; };
+		8797A87425109D87001DE255 /* SpecialWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialWord.swift; sourceTree = "<group>"; };
+		8797A8762510ACC8001DE255 /* Charaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charaters.swift; sourceTree = "<group>"; };
+		8797A8782510B57A001DE255 /* ConversionCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionCase.swift; sourceTree = "<group>"; };
+		87AA7C9525169BD20042971D /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87529EF3250B90C40056C74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87529EED250B90C30056C74A = {
+			isa = PBXGroup;
+			children = (
+				87529EF8250B90C40056C74A /* Vakho's Case Converter */,
+				87529EF7250B90C40056C74A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87529EF7250B90C40056C74A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87529EF6250B90C40056C74A /* Vakho's Case Converter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87529EF8250B90C40056C74A /* Vakho's Case Converter */ = {
+			isa = PBXGroup;
+			children = (
+				87529F2C250CBA7D0056C74A /* App Info */,
+				87529F2D250CBA870056C74A /* App Control */,
+				87529F2F250CBA9D0056C74A /* Windows and Views */,
+				8797A828250E20B4001DE255 /* ViewModels */,
+				8797A87125100969001DE255 /* Services */,
+				8797A82B250E20F7001DE255 /* Models */,
+				87529F40250DFBBF0056C74A /* Extensions */,
+				87529F2E250CBA8F0056C74A /* Resources */,
+				87529EFF250B90C60056C74A /* Preview Content */,
+			);
+			path = "Vakho's Case Converter";
+			sourceTree = "<group>";
+		};
+		87529EFF250B90C60056C74A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				87529F00250B90C60056C74A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		87529F2C250CBA7D0056C74A /* App Info */ = {
+			isa = PBXGroup;
+			children = (
+				87529F05250B90C60056C74A /* Info.plist */,
+				87529F06250B90C60056C74A /* Vakho_s_Case_Converter.entitlements */,
+			);
+			name = "App Info";
+			sourceTree = "<group>";
+		};
+		87529F2D250CBA870056C74A /* App Control */ = {
+			isa = PBXGroup;
+			children = (
+				87529F30250CBAC50056C74A /* main.swift */,
+				87529EF9250B90C40056C74A /* AppDelegate.swift */,
+			);
+			path = "App Control";
+			sourceTree = "<group>";
+		};
+		87529F2E250CBA8F0056C74A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87529EFD250B90C60056C74A /* Assets.xcassets */,
+				8797A835250E22CF001DE255 /* SpecialWords.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87529F2F250CBA9D0056C74A /* Windows and Views */ = {
+			isa = PBXGroup;
+			children = (
+				876F2A0325175B0D00DAD3F3 /* App Menu */,
+				87529F32250CBB3B0056C74A /* Main */,
+				87529F59250E1B7E0056C74A /* Special Words */,
+				87556ECB2518F7B100791AA7 /* Custom Words */,
+				87529F3D250DFB550056C74A /* Components */,
+			);
+			path = "Windows and Views";
+			sourceTree = "<group>";
+		};
+		87529F32250CBB3B0056C74A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				87529F33250CBB450056C74A /* MainWindow.swift */,
+				87529F36250CBB5B0056C74A /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		87529F3D250DFB550056C74A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				87556ED52518FB3A00791AA7 /* WordsEditView.swift */,
+				87529F3E250DFB5F0056C74A /* SectionView.swift */,
+				87529F4D250E0E070056C74A /* WordsGridView.swift */,
+				87529F43250DFD490056C74A /* ChecBoxView.swift */,
+				87529F45250DFF930056C74A /* NumberPickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		87529F40250DFBBF0056C74A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87529F4F250E0EC20056C74A /* Array.swift */,
+				87529F48250DFFB70056C74A /* ClosedRange.swift */,
+				8797A866250FCB41001DE255 /* View.swift */,
+				87529F47250DFFB70056C74A /* Binding.swift */,
+				87529F41250DFBCA0056C74A /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87529F59250E1B7E0056C74A /* Special Words */ = {
+			isa = PBXGroup;
+			children = (
+				87529F5A250E1C330056C74A /* SpecialWordsWindow.swift */,
+				87529F52250E1AA30056C74A /* SpecialWordsView.swift */,
+			);
+			path = "Special Words";
+			sourceTree = "<group>";
+		};
+		87556ECB2518F7B100791AA7 /* Custom Words */ = {
+			isa = PBXGroup;
+			children = (
+				87556ECD2518F8B400791AA7 /* CustomWordsWindow.swift */,
+				87556ED12518F91F00791AA7 /* CustomWordsView.swift */,
+			);
+			path = "Custom Words";
+			sourceTree = "<group>";
+		};
+		87556ED92518FC1B00791AA7 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				87556EDA2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodeld */,
+				87556EDE2518FC8F00791AA7 /* Word.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		876F2A0325175B0D00DAD3F3 /* App Menu */ = {
+			isa = PBXGroup;
+			children = (
+				876F2A0425175B1900DAD3F3 /* AppMenu.swift */,
+			);
+			path = "App Menu";
+			sourceTree = "<group>";
+		};
+		8797A828250E20B4001DE255 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8797A829250E20C5001DE255 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8797A82B250E20F7001DE255 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87556ED92518FC1B00791AA7 /* Persistent */,
+				8797A8782510B57A001DE255 /* ConversionCase.swift */,
+				8797A82C250E2102001DE255 /* WordGroup.swift */,
+				8797A87425109D87001DE255 /* SpecialWord.swift */,
+				8797A82E250E2130001DE255 /* SpecialWords.swift */,
+				8797A8762510ACC8001DE255 /* Charaters.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8797A87125100969001DE255 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				877353D32514D17D001EE704 /* CaseConverter.swift */,
+				87AA7C9525169BD20042971D /* Tokenizer.swift */,
+				8797A87225100979001DE255 /* WindowFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87529EF5250B90C40056C74A /* Vakho's Case Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87529F09250B90C60056C74A /* Build configuration list for PBXNativeTarget "Vakho's Case Converter" */;
+			buildPhases = (
+				87529EF2250B90C40056C74A /* Sources */,
+				87529EF3250B90C40056C74A /* Frameworks */,
+				87529EF4250B90C40056C74A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vakho's Case Converter";
+			productName = "Vakho's Case Converter";
+			productReference = 87529EF6250B90C40056C74A /* Vakho's Case Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87529EEE250B90C30056C74A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Vakhtang Kontridze";
+				TargetAttributes = {
+					87529EF5250B90C40056C74A = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 87529EF1250B90C30056C74A /* Build configuration list for PBXProject "Vakho's Case Converter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87529EED250B90C30056C74A;
+			productRefGroup = 87529EF7250B90C40056C74A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87529EF5250B90C40056C74A /* Vakho's Case Converter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87529EF4250B90C40056C74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87529F01250B90C60056C74A /* Preview Assets.xcassets in Resources */,
+				8797A836250E22CF001DE255 /* SpecialWords.json in Resources */,
+				87529EFE250B90C60056C74A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87529EF2250B90C40056C74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87556EDC2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodeld in Sources */,
+				87529F34250CBB450056C74A /* MainWindow.swift in Sources */,
+				87529F53250E1AA30056C74A /* SpecialWordsView.swift in Sources */,
+				8797A82D250E2102001DE255 /* WordGroup.swift in Sources */,
+				87556ED62518FB3A00791AA7 /* WordsEditView.swift in Sources */,
+				876F2A0525175B1900DAD3F3 /* AppMenu.swift in Sources */,
+				87529F5B250E1C330056C74A /* SpecialWordsWindow.swift in Sources */,
+				8797A87325100979001DE255 /* WindowFactory.swift in Sources */,
+				87556ECE2518F8B400791AA7 /* CustomWordsWindow.swift in Sources */,
+				87529F4E250E0E070056C74A /* WordsGridView.swift in Sources */,
+				87529F46250DFF930056C74A /* NumberPickerView.swift in Sources */,
+				8797A8792510B57A001DE255 /* ConversionCase.swift in Sources */,
+				8797A82F250E2130001DE255 /* SpecialWords.swift in Sources */,
+				87529F42250DFBCA0056C74A /* Color.swift in Sources */,
+				8797A87525109D87001DE255 /* SpecialWord.swift in Sources */,
+				8797A82A250E20C5001DE255 /* SettingsViewModel.swift in Sources */,
+				87529F44250DFD490056C74A /* ChecBoxView.swift in Sources */,
+				87AA7C9625169BD20042971D /* Tokenizer.swift in Sources */,
+				8797A867250FCB41001DE255 /* View.swift in Sources */,
+				87529F3F250DFB5F0056C74A /* SectionView.swift in Sources */,
+				87529F4A250DFFB70056C74A /* ClosedRange.swift in Sources */,
+				87556EDF2518FC8F00791AA7 /* Word.swift in Sources */,
+				87529EFA250B90C40056C74A /* AppDelegate.swift in Sources */,
+				87529F50250E0EC20056C74A /* Array.swift in Sources */,
+				87556ED22518F91F00791AA7 /* CustomWordsView.swift in Sources */,
+				8797A8772510ACC8001DE255 /* Charaters.swift in Sources */,
+				87529F37250CBB5B0056C74A /* MainView.swift in Sources */,
+				87529F31250CBAC50056C74A /* main.swift in Sources */,
+				877353D42514D17D001EE704 /* CaseConverter.swift in Sources */,
+				87529F49250DFFB70056C74A /* Binding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		87529F07250B90C60056C74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87529F08250B90C60056C74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		87529F0A250B90C60056C74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Vakho's Case Converter/Vakho_s_Case_Converter.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vakho's Case Converter/Preview Content\"";
+				DEVELOPMENT_TEAM = XRWP42VX24;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Vakho's Case Converter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vakhtang-kontridze.Vakho-s-Case-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87529F0B250B90C60056C74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Vakho's Case Converter/Vakho_s_Case_Converter.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vakho's Case Converter/Preview Content\"";
+				DEVELOPMENT_TEAM = XRWP42VX24;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Vakho's Case Converter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vakhtang-kontridze.Vakho-s-Case-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87529EF1250B90C30056C74A /* Build configuration list for PBXProject "Vakho's Case Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87529F07250B90C60056C74A /* Debug */,
+				87529F08250B90C60056C74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87529F09250B90C60056C74A /* Build configuration list for PBXNativeTarget "Vakho's Case Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87529F0A250B90C60056C74A /* Debug */,
+				87529F0B250B90C60056C74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		87556EDA2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				87556EDB2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodel */,
+			);
+			currentVersion = 87556EDB2518FC6300791AA7 /* Vakho_s_Case_Converter.xcdatamodel */;
+			path = Vakho_s_Case_Converter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 87529EEE250B90C30056C74A /* Project object */;
+}
