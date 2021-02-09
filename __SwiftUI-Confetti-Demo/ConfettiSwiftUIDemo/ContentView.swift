@@ -26,7 +26,7 @@ struct ContentView: View {
                 Text("🎊")
                     .font(.system(size: 50))
                     .onTapGesture() { counter2 += 1 }
-                ConfettiCannon(counter: $counter2, colors: [.red, .black], confettiSize: 20)
+                ConfettiCannon(counter: $counter2, colors: [.red, .pink, .green, .orange], confettiSize: 20)
             }
             .tabItem {
                 Image(systemName: "eyedropper")
