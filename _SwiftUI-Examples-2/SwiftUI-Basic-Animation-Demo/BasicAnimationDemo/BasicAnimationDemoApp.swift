@@ -1,5 +1,3 @@
-// BasicAnimationDemoApp.swift
-
 import SwiftUI
 
 @main
