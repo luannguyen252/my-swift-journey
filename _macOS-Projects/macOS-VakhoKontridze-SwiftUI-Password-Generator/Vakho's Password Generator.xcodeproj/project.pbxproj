@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		870DFD2D24FA59D600FFA87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870DFD2C24FA59D600FFA87F /* Assets.xcassets */; };
+		870DFD3024FA59D600FFA87F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870DFD2F24FA59D600FFA87F /* Preview Assets.xcassets */; };
+		870DFD4824FA5A1000FFA87F /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD3D24FA5A1000FFA87F /* Characters.swift */; };
+		870DFD4924FA5A1000FFA87F /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD4024FA5A1000FFA87F /* CheckBoxView.swift */; };
+		870DFD4A24FA5A1000FFA87F /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD4224FA5A1000FFA87F /* MainWindow.swift */; };
+		870DFD4C24FA5A1000FFA87F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD4424FA5A1000FFA87F /* MainView.swift */; };
+		870DFD4D24FA5A1000FFA87F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD4624FA5A1000FFA87F /* AppDelegate.swift */; };
+		870DFD4E24FA5A1000FFA87F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD4724FA5A1000FFA87F /* main.swift */; };
+		870DFD5224FA5A6C00FFA87F /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD5124FA5A6C00FFA87F /* Texts.swift */; };
+		870DFD5724FA5CFC00FFA87F /* PasswordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD5624FA5CFC00FFA87F /* PasswordType.swift */; };
+		870DFD5924FA5D9900FFA87F /* AdditionalSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD5824FA5D9900FFA87F /* AdditionalSetting.swift */; };
+		870DFD5B24FA5ED300FFA87F /* Readability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD5A24FA5ED300FFA87F /* Readability.swift */; };
+		870DFD6124FA6C6E00FFA87F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD6024FA6C6E00FFA87F /* SettingsViewModel.swift */; };
+		870DFD6524FA74A900FFA87F /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD6424FA74A900FFA87F /* Separator.swift */; };
+		870DFD6724FA756600FFA87F /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD6624FA756600FFA87F /* SectionView.swift */; };
+		870DFD6924FA76A600FFA87F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DFD6824FA76A600FFA87F /* Colors.swift */; };
+		8723360E24FC3335004F868D /* WorldEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723360D24FC3335004F868D /* WorldEditView.swift */; };
+		873415F324FA921A00B6DB46 /* RandomizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873415F224FA921A00B6DB46 /* RandomizedView.swift */; };
+		873415F524FAA7AF00B6DB46 /* RandomPasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873415F424FAA7AF00B6DB46 /* RandomPasswordGenerator.swift */; };
+		876DECD924FE624700462D6E /* ClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DECD824FE624700462D6E /* ClosedRange.swift */; };
+		876F2A1225176B8C00DAD3F3 /* WindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F2A1125176B8C00DAD3F3 /* WindowFactory.swift */; };
+		87731FA82508A94500CBCCBF /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87731FA72508A94500CBCCBF /* AppMenu.swift */; };
+		878061B724FE6F950036177D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878061B624FE6F950036177D /* Binding.swift */; };
+		8797A865250FCAA4001DE255 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8797A864250FCAA4001DE255 /* View.swift */; };
+		879E6CC924FCCD6A0052A661 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879E6CC824FCCD6A0052A661 /* Array.swift */; };
+		879E6CCE24FCDDDD0052A661 /* Vakho_s_Password_Generator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 879E6CCC24FCDDDD0052A661 /* Vakho_s_Password_Generator.xcdatamodeld */; };
+		879ED84024FAD376000C4856 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED83F24FAD376000C4856 /* String.swift */; };
+		879ED84224FAD37C000C4856 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED84124FAD37C000C4856 /* Character.swift */; };
+		879ED84424FAD9CC000C4856 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED84324FAD9CC000C4856 /* Int.swift */; };
+		879ED84624FAE889000C4856 /* NumberPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED84524FAE889000C4856 /* NumberPickerView.swift */; };
+		879ED84824FB8FAD000C4856 /* LogarithmicSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED84724FB8FAD000C4856 /* LogarithmicSliderView.swift */; };
+		879ED84A24FBC1F8000C4856 /* PasswordGeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED84924FBC1F8000C4856 /* PasswordGeneratorController.swift */; };
+		879ED85124FBE02F000C4856 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED85024FBE02F000C4856 /* ResultsView.swift */; };
+		879ED85524FBE304000C4856 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED85424FBE304000C4856 /* Collection.swift */; };
+		879ED85824FC02D9000C4856 /* Words7Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 879ED85724FC02D9000C4856 /* Words7Characters.json */; };
+		879ED86224FC21FF000C4856 /* VerbalPasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED86124FC21FF000C4856 /* VerbalPasswordGenerator.swift */; };
+		879ED86624FC27C8000C4856 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED86524FC27C8000C4856 /* Words.swift */; };
+		879ED86724FC296D000C4856 /* Words3Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 879ED85924FC02E5000C4856 /* Words3Characters.json */; };
+		879ED86824FC296D000C4856 /* Words4Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 879ED85A24FC02E6000C4856 /* Words4Characters.json */; };
+		879ED86924FC296D000C4856 /* Words5Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 879ED85B24FC02E8000C4856 /* Words5Characters.json */; };
+		879ED86A24FC296D000C4856 /* Words6Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 879ED85C24FC02E9000C4856 /* Words6Characters.json */; };
+		879ED86B24FC296D000C4856 /* Words8Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 879ED85D24FC031E000C4856 /* Words8Characters.json */; };
+		879ED87024FC2E0D000C4856 /* VerbalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879ED86F24FC2E0D000C4856 /* VerbalView.swift */; };
+		87F2369A24FCED6B00B28E11 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2369624FCED6B00B28E11 /* Word.swift */; };
+		87F236D524FD762800B28E11 /* RandomSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F236D424FD762800B28E11 /* RandomSettingsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		870DFD2524FA59D400FFA87F /* Vakho's Password Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vakho's Password Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		870DFD2C24FA59D600FFA87F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		870DFD2F24FA59D600FFA87F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		870DFD3424FA59D600FFA87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870DFD3524FA59D600FFA87F /* Vakho_s_Password_Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vakho_s_Password_Generator.entitlements; sourceTree = "<group>"; };
+		870DFD3D24FA5A1000FFA87F /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		870DFD4024FA5A1000FFA87F /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		870DFD4224FA5A1000FFA87F /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		870DFD4424FA5A1000FFA87F /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		870DFD4624FA5A1000FFA87F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		870DFD4724FA5A1000FFA87F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		870DFD5124FA5A6C00FFA87F /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		870DFD5624FA5CFC00FFA87F /* PasswordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordType.swift; sourceTree = "<group>"; };
+		870DFD5824FA5D9900FFA87F /* AdditionalSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalSetting.swift; sourceTree = "<group>"; };
+		870DFD5A24FA5ED300FFA87F /* Readability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readability.swift; sourceTree = "<group>"; };
+		870DFD6024FA6C6E00FFA87F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		870DFD6424FA74A900FFA87F /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		870DFD6624FA756600FFA87F /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		870DFD6824FA76A600FFA87F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8723360D24FC3335004F868D /* WorldEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldEditView.swift; sourceTree = "<group>"; };
+		873415F224FA921A00B6DB46 /* RandomizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizedView.swift; sourceTree = "<group>"; };
+		873415F424FAA7AF00B6DB46 /* RandomPasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomPasswordGenerator.swift; path = "Vakho's Password Generator/Services/Generators/RandomPasswordGenerator.swift"; sourceTree = SOURCE_ROOT; };
+		876DECD824FE624700462D6E /* ClosedRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRange.swift; sourceTree = "<group>"; };
+		876F2A1125176B8C00DAD3F3 /* WindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFactory.swift; sourceTree = "<group>"; };
+		87731FA72508A94500CBCCBF /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		878061B624FE6F950036177D /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		8797A864250FCAA4001DE255 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		879E6CC824FCCD6A0052A661 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		879E6CCD24FCDDDD0052A661 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		879ED83F24FAD376000C4856 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		879ED84124FAD37C000C4856 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		879ED84324FAD9CC000C4856 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		879ED84524FAE889000C4856 /* NumberPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerView.swift; sourceTree = "<group>"; };
+		879ED84724FB8FAD000C4856 /* LogarithmicSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogarithmicSliderView.swift; sourceTree = "<group>"; };
+		879ED84924FBC1F8000C4856 /* PasswordGeneratorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorController.swift; sourceTree = "<group>"; };
+		879ED85024FBE02F000C4856 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		879ED85424FBE304000C4856 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		879ED85724FC02D9000C4856 /* Words7Characters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Words7Characters.json; sourceTree = "<group>"; };
+		879ED85924FC02E5000C4856 /* Words3Characters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Words3Characters.json; sourceTree = "<group>"; };
+		879ED85A24FC02E6000C4856 /* Words4Characters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Words4Characters.json; sourceTree = "<group>"; };
+		879ED85B24FC02E8000C4856 /* Words5Characters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Words5Characters.json; sourceTree = "<group>"; };
+		879ED85C24FC02E9000C4856 /* Words6Characters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Words6Characters.json; sourceTree = "<group>"; };
+		879ED85D24FC031E000C4856 /* Words8Characters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Words8Characters.json; sourceTree = "<group>"; };
+		879ED86124FC21FF000C4856 /* VerbalPasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbalPasswordGenerator.swift; sourceTree = "<group>"; };
+		879ED86524FC27C8000C4856 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		879ED86F24FC2E0D000C4856 /* VerbalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbalView.swift; sourceTree = "<group>"; };
+		87F2369624FCED6B00B28E11 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		87F236D424FD762800B28E11 /* RandomSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSettingsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		870DFD2224FA59D400FFA87F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		870DFD1C24FA59D300FFA87F = {
+			isa = PBXGroup;
+			children = (
+				870DFD2724FA59D400FFA87F /* Vakho's Password Generator */,
+				870DFD2624FA59D400FFA87F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		870DFD2624FA59D400FFA87F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD2524FA59D400FFA87F /* Vakho's Password Generator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		870DFD2724FA59D400FFA87F /* Vakho's Password Generator */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD5E24FA68AA00FFA87F /* App Info */,
+				870DFD4524FA5A1000FFA87F /* App Control */,
+				870DFD3E24FA5A1000FFA87F /* Windows and Views */,
+				870DFD5324FA5B4500FFA87F /* ViewModels */,
+				879ED83E24FABC39000C4856 /* Services */,
+				870DFD3C24FA5A1000FFA87F /* Models */,
+				873415F824FAAB6A00B6DB46 /* Extensions */,
+				870DFD4F24FA5A5B00FFA87F /* Resources */,
+				870DFD2E24FA59D600FFA87F /* Preview Content */,
+			);
+			path = "Vakho's Password Generator";
+			sourceTree = "<group>";
+		};
+		870DFD2E24FA59D600FFA87F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD2F24FA59D600FFA87F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		870DFD3C24FA5A1000FFA87F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				879E6CCB24FCDDBE0052A661 /* Persistent */,
+				870DFD5624FA5CFC00FFA87F /* PasswordType.swift */,
+				870DFD3D24FA5A1000FFA87F /* Characters.swift */,
+				870DFD5824FA5D9900FFA87F /* AdditionalSetting.swift */,
+				870DFD5A24FA5ED300FFA87F /* Readability.swift */,
+				870DFD6424FA74A900FFA87F /* Separator.swift */,
+				879ED86524FC27C8000C4856 /* Words.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		870DFD3E24FA5A1000FFA87F /* Windows and Views */ = {
+			isa = PBXGroup;
+			children = (
+				87529F3A250CBCEC0056C74A /* AppMenu */,
+				87529F3B250CC5390056C74A /* MainWindow */,
+				879ED84F24FBE021000C4856 /* ResultsWindow */,
+				870DFD3F24FA5A1000FFA87F /* Components */,
+			);
+			path = "Windows and Views";
+			sourceTree = "<group>";
+		};
+		870DFD3F24FA5A1000FFA87F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD6624FA756600FFA87F /* SectionView.swift */,
+				8723360D24FC3335004F868D /* WorldEditView.swift */,
+				870DFD4024FA5A1000FFA87F /* CheckBoxView.swift */,
+				879ED84524FAE889000C4856 /* NumberPickerView.swift */,
+				879ED84724FB8FAD000C4856 /* LogarithmicSliderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		870DFD4524FA5A1000FFA87F /* App Control */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD4724FA5A1000FFA87F /* main.swift */,
+				870DFD4624FA5A1000FFA87F /* AppDelegate.swift */,
+			);
+			path = "App Control";
+			sourceTree = "<group>";
+		};
+		870DFD4F24FA5A5B00FFA87F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD2C24FA59D600FFA87F /* Assets.xcassets */,
+				870DFD5124FA5A6C00FFA87F /* Texts.swift */,
+				879ED85624FC02B9000C4856 /* Words */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		870DFD5324FA5B4500FFA87F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD6024FA6C6E00FFA87F /* SettingsViewModel.swift */,
+				87F236D424FD762800B28E11 /* RandomSettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		870DFD5E24FA68AA00FFA87F /* App Info */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD3424FA59D600FFA87F /* Info.plist */,
+				870DFD3524FA59D600FFA87F /* Vakho_s_Password_Generator.entitlements */,
+			);
+			name = "App Info";
+			sourceTree = "<group>";
+		};
+		873415F824FAAB6A00B6DB46 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				879ED84324FAD9CC000C4856 /* Int.swift */,
+				879ED83F24FAD376000C4856 /* String.swift */,
+				879ED84124FAD37C000C4856 /* Character.swift */,
+				879E6CC824FCCD6A0052A661 /* Array.swift */,
+				879ED85424FBE304000C4856 /* Collection.swift */,
+				876DECD824FE624700462D6E /* ClosedRange.swift */,
+				8797A864250FCAA4001DE255 /* View.swift */,
+				878061B624FE6F950036177D /* Binding.swift */,
+				870DFD6824FA76A600FFA87F /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87529F3A250CBCEC0056C74A /* AppMenu */ = {
+			isa = PBXGroup;
+			children = (
+				87731FA72508A94500CBCCBF /* AppMenu.swift */,
+			);
+			path = AppMenu;
+			sourceTree = "<group>";
+		};
+		87529F3B250CC5390056C74A /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				870DFD4224FA5A1000FFA87F /* MainWindow.swift */,
+				870DFD4424FA5A1000FFA87F /* MainView.swift */,
+				873415F224FA921A00B6DB46 /* RandomizedView.swift */,
+				879ED86F24FC2E0D000C4856 /* VerbalView.swift */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		876F2A1525176B9800DAD3F3 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				879ED84924FBC1F8000C4856 /* PasswordGeneratorController.swift */,
+				873415F424FAA7AF00B6DB46 /* RandomPasswordGenerator.swift */,
+				879ED86124FC21FF000C4856 /* VerbalPasswordGenerator.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		879E6CCB24FCDDBE0052A661 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				879E6CCC24FCDDDD0052A661 /* Vakho_s_Password_Generator.xcdatamodeld */,
+				87F2369624FCED6B00B28E11 /* Word.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		879ED83E24FABC39000C4856 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				876F2A1125176B8C00DAD3F3 /* WindowFactory.swift */,
+				876F2A1525176B9800DAD3F3 /* Generators */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		879ED84F24FBE021000C4856 /* ResultsWindow */ = {
+			isa = PBXGroup;
+			children = (
+				879ED85024FBE02F000C4856 /* ResultsView.swift */,
+			);
+			path = ResultsWindow;
+			sourceTree = "<group>";
+		};
+		879ED85624FC02B9000C4856 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				879ED85924FC02E5000C4856 /* Words3Characters.json */,
+				879ED85A24FC02E6000C4856 /* Words4Characters.json */,
+				879ED85B24FC02E8000C4856 /* Words5Characters.json */,
+				879ED85C24FC02E9000C4856 /* Words6Characters.json */,
+				879ED85724FC02D9000C4856 /* Words7Characters.json */,
+				879ED85D24FC031E000C4856 /* Words8Characters.json */,
+			);
+			path = Words;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		870DFD2424FA59D400FFA87F /* Vakho's Password Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870DFD3824FA59D600FFA87F /* Build configuration list for PBXNativeTarget "Vakho's Password Generator" */;
+			buildPhases = (
+				870DFD2124FA59D400FFA87F /* Sources */,
+				870DFD2224FA59D400FFA87F /* Frameworks */,
+				870DFD2324FA59D400FFA87F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vakho's Password Generator";
+			productName = "Vakho's Password Generator";
+			productReference = 870DFD2524FA59D400FFA87F /* Vakho's Password Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		870DFD1D24FA59D300FFA87F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Vakhtang Kontridze";
+				TargetAttributes = {
+					870DFD2424FA59D400FFA87F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 870DFD2024FA59D300FFA87F /* Build configuration list for PBXProject "Vakho's Password Generator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 870DFD1C24FA59D300FFA87F;
+			productRefGroup = 870DFD2624FA59D400FFA87F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				870DFD2424FA59D400FFA87F /* Vakho's Password Generator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		870DFD2324FA59D400FFA87F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879ED86724FC296D000C4856 /* Words3Characters.json in Resources */,
+				879ED86824FC296D000C4856 /* Words4Characters.json in Resources */,
+				879ED86924FC296D000C4856 /* Words5Characters.json in Resources */,
+				879ED86A24FC296D000C4856 /* Words6Characters.json in Resources */,
+				879ED86B24FC296D000C4856 /* Words8Characters.json in Resources */,
+				879ED85824FC02D9000C4856 /* Words7Characters.json in Resources */,
+				870DFD3024FA59D600FFA87F /* Preview Assets.xcassets in Resources */,
+				870DFD2D24FA59D600FFA87F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		870DFD2124FA59D400FFA87F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870DFD6124FA6C6E00FFA87F /* SettingsViewModel.swift in Sources */,
+				870DFD6924FA76A600FFA87F /* Colors.swift in Sources */,
+				879ED87024FC2E0D000C4856 /* VerbalView.swift in Sources */,
+				879E6CC924FCCD6A0052A661 /* Array.swift in Sources */,
+				879ED84024FAD376000C4856 /* String.swift in Sources */,
+				879ED86224FC21FF000C4856 /* VerbalPasswordGenerator.swift in Sources */,
+				87F236D524FD762800B28E11 /* RandomSettingsViewModel.swift in Sources */,
+				879ED84A24FBC1F8000C4856 /* PasswordGeneratorController.swift in Sources */,
+				870DFD4D24FA5A1000FFA87F /* AppDelegate.swift in Sources */,
+				8723360E24FC3335004F868D /* WorldEditView.swift in Sources */,
+				870DFD4E24FA5A1000FFA87F /* main.swift in Sources */,
+				870DFD4824FA5A1000FFA87F /* Characters.swift in Sources */,
+				870DFD4A24FA5A1000FFA87F /* MainWindow.swift in Sources */,
+				87731FA82508A94500CBCCBF /* AppMenu.swift in Sources */,
+				879ED86624FC27C8000C4856 /* Words.swift in Sources */,
+				873415F324FA921A00B6DB46 /* RandomizedView.swift in Sources */,
+				870DFD4924FA5A1000FFA87F /* CheckBoxView.swift in Sources */,
+				870DFD4C24FA5A1000FFA87F /* MainView.swift in Sources */,
+				876DECD924FE624700462D6E /* ClosedRange.swift in Sources */,
+				870DFD5224FA5A6C00FFA87F /* Texts.swift in Sources */,
+				870DFD5724FA5CFC00FFA87F /* PasswordType.swift in Sources */,
+				879ED84224FAD37C000C4856 /* Character.swift in Sources */,
+				879ED84624FAE889000C4856 /* NumberPickerView.swift in Sources */,
+				879ED85124FBE02F000C4856 /* ResultsView.swift in Sources */,
+				879ED84824FB8FAD000C4856 /* LogarithmicSliderView.swift in Sources */,
+				876F2A1225176B8C00DAD3F3 /* WindowFactory.swift in Sources */,
+				87F2369A24FCED6B00B28E11 /* Word.swift in Sources */,
+				873415F524FAA7AF00B6DB46 /* RandomPasswordGenerator.swift in Sources */,
+				879ED85524FBE304000C4856 /* Collection.swift in Sources */,
+				879E6CCE24FCDDDD0052A661 /* Vakho_s_Password_Generator.xcdatamodeld in Sources */,
+				878061B724FE6F950036177D /* Binding.swift in Sources */,
+				8797A865250FCAA4001DE255 /* View.swift in Sources */,
+				870DFD6524FA74A900FFA87F /* Separator.swift in Sources */,
+				870DFD5924FA5D9900FFA87F /* AdditionalSetting.swift in Sources */,
+				870DFD5B24FA5ED300FFA87F /* Readability.swift in Sources */,
+				879ED84424FAD9CC000C4856 /* Int.swift in Sources */,
+				870DFD6724FA756600FFA87F /* SectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		870DFD3624FA59D600FFA87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		870DFD3724FA59D600FFA87F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		870DFD3924FA59D600FFA87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Vakho's Password Generator/Vakho_s_Password_Generator.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vakho's Password Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = XRWP42VX24;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Vakho's Password Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vakhtang-kontridze.Vakho-s-Password-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		870DFD3A24FA59D600FFA87F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Vakho's Password Generator/Vakho_s_Password_Generator.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vakho's Password Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = XRWP42VX24;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Vakho's Password Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vakhtang-kontridze.Vakho-s-Password-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		870DFD2024FA59D300FFA87F /* Build configuration list for PBXProject "Vakho's Password Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870DFD3624FA59D600FFA87F /* Debug */,
+				870DFD3724FA59D600FFA87F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870DFD3824FA59D600FFA87F /* Build configuration list for PBXNativeTarget "Vakho's Password Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870DFD3924FA59D600FFA87F /* Debug */,
+				870DFD3A24FA59D600FFA87F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		879E6CCC24FCDDDD0052A661 /* Vakho_s_Password_Generator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				879E6CCD24FCDDDD0052A661 /* Model.xcdatamodel */,
+			);
+			currentVersion = 879E6CCD24FCDDDD0052A661 /* Model.xcdatamodel */;
+			path = Vakho_s_Password_Generator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 870DFD1D24FA59D300FFA87F /* Project object */;
+}
