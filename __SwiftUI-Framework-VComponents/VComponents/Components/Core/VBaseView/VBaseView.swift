@@ -1,0 +1,292 @@
+//
+//  VBaseView.swift
+//  VComponents
+//
+//  Created by Vakhtang Kontridze on 12/22/20.
+//
+
+import SwiftUI
+
+// MARK:- V Base View
+/// Core component that is used throughout the framework as SwiftUI's equivalent of UIViewController
+///
+/// Model, and leading and trailing items can be passed as parameters
+///
+/// # Usage Example #
+/// 
+/// ```
+/// var body: some View {
+///     VNavigationView(content: {
+///         VBaseView(
+///             title: "Lorem ipsum dolor sit amet",
+///             trailingItem: trailingItem,
+///             content: {
+///                 ZStack(alignment: .top, content: {
+///                     ColorBook.canvas.edgesIgnoringSafeArea(.all)
+///
+///                     VSheet()
+///                 })
+///             }
+///         )
+///     })
+/// }
+///
+/// var trailingItem: some View {
+///     VPlainButton(
+///         action: { print("Pressed") },
+///         title: "Lorem"
+///     )
+/// }
+/// ```
+///
+public struct VBaseView<NavBarLeadingItemContent, NavBarTitleContent, NavBarTrailingItemContent, Content>: View
+    where
+        NavBarLeadingItemContent: View,
+        NavBarTitleContent: View,
+        NavBarTrailingItemContent: View,
+        Content: View
+{
+    // MARK: Properties
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    @Environment(\.vNavigationViewBackButtonHidden) private var vNavigationViewBackButtonHidden: Bool
+    
+    private let model: VBaseViewModel
+    
+    private let navBarLeadingItemContent: (() -> NavBarLeadingItemContent)?
+    private let navBarTitleContent: () -> NavBarTitleContent
+    private let navBarTrailingItemContent: (() -> NavBarTrailingItemContent)?
+    
+    private let content: () -> Content
+    
+    // MARK: Initializers: Leading and Trailing
+    public init(
+        model: VBaseViewModel = .init(),
+        @ViewBuilder titleContent navBarTitleContent: @escaping () -> NavBarTitleContent,
+        @ViewBuilder leadingItem navBarLeadingItemContent: @escaping () -> NavBarLeadingItemContent,
+        @ViewBuilder trailingItem navBarTrailingItemContent: @escaping () -> NavBarTrailingItemContent,
+        @ViewBuilder content: @escaping () -> Content
+    ) {
+        self.model = model
+        self.navBarTitleContent = navBarTitleContent
+        self.navBarLeadingItemContent = navBarLeadingItemContent
+        self.navBarTrailingItemContent = navBarTrailingItemContent
+        self.content = content
+    }
+    
+    public init(
+        model: VBaseViewModel = .init(),
+        title navBarTitleContent: String,
+        @ViewBuilder leadingItem navBarLeadingItemContent: @escaping () -> NavBarLeadingItemContent,
+        @ViewBuilder trailingItem navBarTrailingItemContent: @escaping () -> NavBarTrailingItemContent,
+        @ViewBuilder content: @escaping () -> Content
+    )
+        where NavBarTitleContent == VBaseHeaderFooter
+    {
+        self.init(
+            model: model,
+            titleContent: {
+                VBaseHeaderFooter(
+                    frameType: .fixed,
+                    font: model.fonts.title,
+                    color: model.colors.titleText,
+                    title: navBarTitleContent
+                )
+            },
+            leadingItem: navBarLeadingItemContent,
+            trailingItem: navBarTrailingItemContent,
+            content: content
+        )
+    }
+
+    // MARK: Initializers: Leading
+    public init(
+        model: VBaseViewModel = .init(),
+        @ViewBuilder titleContent navBarTitleContent: @escaping () -> NavBarTitleContent,
+        @ViewBuilder leadingItem navBarLeadingItemContent: @escaping () -> NavBarLeadingItemContent,
+        @ViewBuilder content: @escaping () -> Content
+    )
+        where NavBarTrailingItemContent == Never
+    {
+        self.model = model
+        self.navBarTitleContent = navBarTitleContent
+        self.navBarLeadingItemContent = navBarLeadingItemContent
+        self.navBarTrailingItemContent = nil
+        self.content = content
+    }
+    
+    public init(
+        model: VBaseViewModel = .init(),
+        title navBarTitleContent: String,
+        @ViewBuilder leadingItem navBarLeadingItemContent: @escaping () -> NavBarLeadingItemContent,
+        @ViewBuilder content: @escaping () -> Content
+    )
+        where
+            NavBarTitleContent == VBaseHeaderFooter,
+            NavBarTrailingItemContent == Never
+    {
+        self.init(
+            model: model,
+            titleContent: {
+                VBaseHeaderFooter(
+                    frameType: .fixed,
+                    font: model.fonts.title,
+                    color: model.colors.titleText,
+                    title: navBarTitleContent
+                )
+            },
+            leadingItem: navBarLeadingItemContent,
+            content: content
+        )
+    }
+    // MARK: Initializers: Trailing
+    public init(
+        model: VBaseViewModel = .init(),
+        @ViewBuilder titleContent navBarTitleContent: @escaping () -> NavBarTitleContent,
+        @ViewBuilder trailingItem navBarTrailingItemContent: @escaping () -> NavBarTrailingItemContent,
+        @ViewBuilder content: @escaping () -> Content
+    )
+        where NavBarLeadingItemContent == Never
+    {
+        self.model = model
+        self.navBarTitleContent = navBarTitleContent
+        self.navBarLeadingItemContent = nil
+        self.navBarTrailingItemContent = navBarTrailingItemContent
+        self.content = content
+    }
+    
+    public init(
+        model: VBaseViewModel = .init(),
+        title navBarTitleContent: String,
+        @ViewBuilder trailingItem navBarTrailingItemContent: @escaping () -> NavBarTrailingItemContent,
+        @ViewBuilder content: @escaping () -> Content
+    )
+        where
+            NavBarLeadingItemContent == Never,
+            NavBarTitleContent == VBaseHeaderFooter
+    {
+        self.init(
+            model: model,
+            titleContent: {
+                VBaseHeaderFooter(
+                    frameType: .fixed,
+                    font: model.fonts.title,
+                    color: model.colors.titleText,
+                    title: navBarTitleContent
+                )
+            },
+            trailingItem: navBarTrailingItemContent,
+            content: content
+        )
+    }
+
+    // MARK: Initializers: _
+    public init(
+        model: VBaseViewModel = .init(),
+        @ViewBuilder titleContent navBarTitleContent: @escaping () -> NavBarTitleContent,
+        @ViewBuilder content: @escaping () -> Content
+    )
+        where
+            NavBarLeadingItemContent == Never,
+            NavBarTrailingItemContent == Never
+    {
+        self.model = model
+        self.navBarTitleContent = navBarTitleContent
+        self.navBarLeadingItemContent = nil
+        self.navBarTrailingItemContent = nil
+        self.content = content
+    }
+    
+    public init(
+        model: VBaseViewModel = .init(),
+        title navBarTitleContent: String,
+        @ViewBuilder content: @escaping () -> Content
+    )
+        where
+            NavBarLeadingItemContent == Never,
+            NavBarTitleContent == VBaseHeaderFooter,
+            NavBarTrailingItemContent == Never
+    {
+        self.init(
+            model: model,
+            titleContent: {
+                VBaseHeaderFooter(
+                    frameType: .fixed,
+                    font: model.fonts.title,
+                    color: model.colors.titleText,
+                    title: navBarTitleContent
+                )
+            },
+            content: content
+        )
+    }
+}
+
+// MARK:- Body
+extension VBaseView {
+    @ViewBuilder public var body: some View {
+        switch model.layout.titlePosition {
+        case .center:
+            baseViewFrame
+                .setUpBaseViewNavigationBarCenter(
+                    model: model,
+                    titleContent: navBarTitleContent,
+                    leadingItemContent: navBarLeadingItemContent,
+                    trailingItemContent: navBarTrailingItemContent,
+                    showBackButton: !vNavigationViewBackButtonHidden,
+                    onBack: back
+                )
+            
+        case .leading:
+            baseViewFrame
+                .setUpBaseViewNavigationBarLeading(
+                    model: model,
+                    titleContent: navBarTitleContent,
+                    leadingItemContent: navBarLeadingItemContent,
+                    trailingItemContent: navBarTrailingItemContent,
+                    showBackButton: !vNavigationViewBackButtonHidden,
+                    onBack: back
+                )
+        }
+    }
+    
+    private var baseViewFrame: some View {
+        content()
+            .navigationBarBackButtonHidden(true)
+            .environment(\.vNavigationViewBackButtonHidden, true)
+            .addNavigationBarSwipeGesture(completion: back)
+    }
+}
+
+// MARK:- Back
+private extension VBaseView {
+    func back() {
+        presentationMode.wrappedValue.dismiss()
+    }
+}
+
+// MARK:- Preview
+struct VBaseView_Previews: PreviewProvider {
+    static var previews: some View {
+        VNavigationView(content: {
+            VBaseView(
+                title: "Home",
+                trailingItem: { Button("Search", action: {}) },
+                content: {
+                    ZStack(content: {
+                        Color.pink.edgesIgnoringSafeArea(.bottom)
+                        
+                        VNavigationLink(destination: Destination(), label: { Text("Go to Details") })
+                    }
+                )
+            })
+        })
+    }
+    
+    private struct Destination: View {
+        var body: some View {
+            VBaseView(title: "Details", content: {
+                Color.blue.edgesIgnoringSafeArea(.bottom)
+            })
+        }
+    }
+}
