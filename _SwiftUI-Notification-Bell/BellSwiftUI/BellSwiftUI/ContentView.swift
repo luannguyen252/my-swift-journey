@@ -9,18 +9,19 @@ struct ContentView: View {
             ArrowView()
             
             BellView()
-                .offset( y: -65)
+                .offset(y: -65)
             
             CountView()
-                .offset(x : 30 , y: -85)
+                .offset(x: 40, y: -96)
            
             VStack {
                 Spacer()
-                    .frame( height: 300, alignment: .center)
+                    .frame(height: 300, alignment: .center)
                 
                 Text("Notification Bell")
                     .font(.custom("TTFirsNeue-Bold", size: 40))
                     .foregroundColor(Color("light"))
+                    .padding(.top, 48)
             }
         }
         .statusBar(hidden: true)
@@ -54,11 +55,11 @@ struct ArrowView: View {
                         )
                         .foregroundColor(Color("light"))
                 )
-            
+
             Image(systemName: "location.north.fill")
                 .resizable()
                 .foregroundColor(Color("red"))
-                .offset( x : 100 )
+                .offset(x: 100)
                 .shadow(color: .black, radius: 1, x: 0.0, y: 0.0)
                 .frame(width: 40, height: 40, alignment: .center)
                 .rotationEffect(.degrees(arrowname ? -360 : 0))
@@ -80,19 +81,19 @@ struct BellView: View {
         ZStack {
             Image("innerb")
                 .resizable()
-                .shadow(color: .black, radius: 5, x: 0.0, y: 0.0)
+                .shadow(color: Color("dark"), radius: 8, x: 0, y: 0)
                 .frame(width: 200, height: 200, alignment: .center)
                 .offset(x: clap ? -7 : -10, y: clap ? 20 : 20)
                 .animation(Animation.interpolatingSpring(stiffness: 170, damping: 5).repeatCount(1).delay(4))
                 .onAppear() {
                     self.clap.toggle()
                 }
-                .offset(x : 5 ,y : -30)
+                .offset(x: 5 , y: -30)
             
             Image("body")
                 .resizable()
                 .frame(width: 200, height: 200, alignment: .center)
-                .shadow(color: .black, radius: 5, x: 0.0, y: 0.0)
+                .shadow(color: Color("dark"), radius: 8, x: 0, y: 0)
                 .rotationEffect(.degrees(bodyAnim ? 0 : 10))
                 .animation(Animation.interpolatingSpring(stiffness: 150, damping: 5).repeatCount(1).delay(4))
                     .onAppear() {
@@ -109,7 +110,7 @@ struct CountView: View {
     var body: some View {
         ZStack {
             Circle()
-                .frame(width: 50, height: 50, alignment: .center)
+                .frame(width: 48, height: 48, alignment: .center)
                 .foregroundColor(Color("red"))
 
             Text("99")
