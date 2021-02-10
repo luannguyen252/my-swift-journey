@@ -49,16 +49,19 @@ struct ContentView: View {
                         }
                     }
                     .tabViewStyle(PageTabViewStyle())
+                    .padding(.bottom, 16)
                 }
-                .frame(height: 400)
+                .frame(height: UIScreen.main.bounds.size.height / 2)
             }
             .edgesIgnoringSafeArea(.all)
         }
     }
 }
 
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+#endif
