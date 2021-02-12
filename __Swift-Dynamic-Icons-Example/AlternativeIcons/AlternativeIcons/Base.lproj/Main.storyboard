@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlternativeIcons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="0c3-Xq-M1C">
+                                <rect key="frame" x="147" y="192.5" width="120" height="511"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cNa-d7-QPu">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="150.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4d-FF-RRq">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-4d-kE8" userLabel="Default">
+                                                <rect key="frame" x="0.0" y="30.5" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="RpL-IW-qJW"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="mainIcon"/>
+                                                <connections>
+                                                    <action selector="defaultIconTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PaG-li-fC4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SV7-0w-Azf">
+                                        <rect key="frame" x="0.0" y="195.5" width="120" height="150.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alternatives" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BQ-3e-EPx">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peq-s1-dwm" userLabel="ButtonPika">
+                                                <rect key="frame" x="0.0" y="30.5" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="Dmo-s4-TcL"/>
+                                                    <constraint firstAttribute="width" constant="120" id="gHG-KC-ywt"/>
+                                                </constraints>
+                                                <state key="normal" image="pikachu.png"/>
+                                                <connections>
+                                                    <action selector="pikachuTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9Q-Eu-NOU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzr-is-ye3" userLabel="ButtonChar">
+                                        <rect key="frame" x="0.0" y="391" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="6y0-xm-x1G"/>
+                                            <constraint firstAttribute="width" constant="120" id="fNr-pm-imt"/>
+                                        </constraints>
+                                        <state key="normal" image="charmander.png"/>
+                                        <connections>
+                                            <action selector="charmanderTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EP0-MS-oAe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0c3-Xq-M1C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7vx-wb-2Ik"/>
+                            <constraint firstItem="0c3-Xq-M1C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j4L-8e-uwb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="charmanderIcon" destination="Wzr-is-ye3" id="ODp-kn-AB2"/>
+                        <outlet property="defaultIcon" destination="OKg-4d-kE8" id="kS0-pX-tUA"/>
+                        <outlet property="pikachuIcon" destination="peq-s1-dwm" id="pqj-7V-oer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.463768115942031" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="charmander.png" width="60" height="60"/>
+        <image name="mainIcon" width="120" height="120"/>
+        <image name="pikachu.png" width="60" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
