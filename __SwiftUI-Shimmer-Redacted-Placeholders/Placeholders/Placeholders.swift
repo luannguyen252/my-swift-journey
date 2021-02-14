@@ -22,8 +22,8 @@ struct Redactable: ViewModifier {
 }
 
 struct Placeholder: ViewModifier {
-
     @State private var condition: Bool = false
+    
     func body(content: Content) -> some View {
         content
             .accessibility(label: Text("Placeholder"))
@@ -37,8 +37,8 @@ struct Placeholder: ViewModifier {
 }
 
 struct Scaled: ViewModifier {
-
     @State private var condition: Bool = false
+    
     func body(content: Content) -> some View {
         content
             .accessibility(label: Text("Scaled"))
@@ -52,8 +52,8 @@ struct Scaled: ViewModifier {
 }
 
 struct Blurred: ViewModifier {
-
     @State private var condition: Bool = false
+    
     func body(content: Content) -> some View {
         content
             .accessibility(label: Text("Blurred"))

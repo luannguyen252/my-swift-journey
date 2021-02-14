@@ -1,19 +1,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    var viewModel = ViewModel()
-    @State var article: Article
-    @State var isLoading = true
+    var viewModel           = ViewModel()
+    @State var article      : Article
+    @State var isLoading    = true
     
     var body: some View {
-
         HStack {
             VStack {
                 Image(systemName: article.imageName)
                     .resizable()
-                    .frame(width: 44, height: 44)
-                    .foregroundColor(.blue)
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(Color("pink2"))
             }
             .frame(width: 60, height: 100, alignment: .center)
 
@@ -21,7 +19,7 @@ struct ContentView: View {
                 Text(article.title)
                     .font(.title)
                     .foregroundColor(.primary)
-                    .padding(.bottom, 5)
+                    .padding(.bottom, 4)
 
                 Text(article.body)
                     .font(.body)
@@ -43,6 +41,7 @@ struct ContentView: View {
 
 extension View {
     @ViewBuilder
+    
     func redacted(when condition: Bool, redactionType: RedactionType) -> some View {
         if !condition {
             unredacted()
