@@ -18,12 +18,12 @@ struct ToastView: View {
             VStack(alignment: .center) {
                 Text(title)
                     .lineLimit(1)
-                    .font(.headline)
+                    .font(.custom("TTFirsNeue-DemiBold", size: 18))
                 
                 if subtitle != nil {
                     Text(subtitle!)
                         .lineLimit(1)
-                        .font(.subheadline)
+                        .font(.custom("TTFirsNeue-Regular", size: 14))
                         .foregroundColor(.secondary)
                 }
             }

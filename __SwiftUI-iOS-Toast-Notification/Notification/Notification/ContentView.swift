@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var notificationIsVisible = false
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         ZStack {
@@ -20,7 +21,12 @@ struct ContentView: View {
             
             Button(action: toggleVisibility) {
                 Text(notificationIsVisible ? "Hide" : "Show")
-                    .foregroundColor(.primary)
+                    .font(.custom("TTFirsNeue-Bold", size: 24))
+                    .padding(.vertical, 16)
+                    .padding(.horizontal, 32)
+                    .frame(width: 144, height: 56, alignment: .center)
+                    .foregroundColor(Color("white"))
+                    .background(Capsule().fill(Color(colorScheme == .dark ? UIColor.secondarySystemBackground : .black)))
             }
         }
     }
