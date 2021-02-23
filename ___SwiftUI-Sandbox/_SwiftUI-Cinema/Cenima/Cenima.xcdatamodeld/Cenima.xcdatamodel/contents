@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Movie" representedClassName="Movie" syncable="YES"/>
+    <entity name="MovieCast" representedClassName="MovieCast" syncable="YES"/>
+    <entity name="MovieCredit" representedClassName="MovieCredit" syncable="YES"/>
+    <entity name="MovieCrew" representedClassName="MovieCrew" syncable="YES"/>
+    <entity name="MovieGenre" representedClassName="MovieGenre" syncable="YES"/>
+    <entity name="NowPlaying" representedClassName="NowPlaying" syncable="YES">
+        <attribute name="nowPlayingMovie" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[CustomObject]"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Popular" representedClassName="Popular" syncable="YES">
+        <attribute name="popularMovie" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[CustomObject]"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="TopRated" representedClassName="TopRated" syncable="YES">
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="topRatedMovie" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[CustomObject]"/>
+    </entity>
+    <entity name="Upcoming" representedClassName="Upcoming" syncable="YES">
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="upcomingMovie" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[CustomObject]"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Movie" positionX="9" positionY="81" width="128" height="43"/>
+        <element name="MovieCast" positionX="-27" positionY="36" width="128" height="43"/>
+        <element name="MovieCredit" positionX="-54" positionY="0" width="128" height="43"/>
+        <element name="MovieCrew" positionX="-9" positionY="45" width="128" height="43"/>
+        <element name="MovieGenre" positionX="-63" positionY="-9" width="128" height="43"/>
+        <element name="NowPlaying" positionX="-9" positionY="117" width="128" height="59"/>
+        <element name="Popular" positionX="-18" positionY="108" width="128" height="59"/>
+        <element name="TopRated" positionX="27" positionY="162" width="128" height="59"/>
+        <element name="Upcoming" positionX="0" positionY="126" width="128" height="59"/>
+    </elements>
+</model>
