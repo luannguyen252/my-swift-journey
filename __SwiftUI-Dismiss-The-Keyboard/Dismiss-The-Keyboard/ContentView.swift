@@ -1,16 +1,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var receiptAmount = "0.0"
+    @State private var number   = ""
+    @State private var note     = ""
+    @State private var email    = ""
+    @State private var phone    = ""
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Receipt amount", text: $receiptAmount)
+                    TextField("Decimal Pad Keyboard", text: $number)
                         .keyboardType(.decimalPad)
+                    
+                    TextField("Alphabet Keyboard", text: $note)
+                        .keyboardType(.alphabet)
+                    
+                    TextField("Email Address Keyboard", text: $email)
+                        .keyboardType(.emailAddress)
+                    
+                    TextField("Phone Pab Keyboard", text: $phone)
+                        .keyboardType(.phonePad)
                 }
             }
+            .navigationTitle("Dismiss Keyboard")
         }
     }
 }
@@ -19,6 +32,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
 #endif
