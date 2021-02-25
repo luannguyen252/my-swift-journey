@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="brf-q4-CUc">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="8Dt-aD-Ejr">
+            <objects>
+                <viewController id="brf-q4-CUc" userLabel="Menu View Controller" customClass="MenuViewController" customModule="PirateHandbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L1R-nN-lSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Cel-zu-11z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Please do not pirate the Pirate Handbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O79-oY-OmI">
+                                <rect key="frame" x="16" y="749.66666666666663" width="343" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FbH-dO-HoT">
+                                <rect key="frame" x="16" y="328" width="343" height="166"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp8-v7-e0T">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tiQ-cG-gnb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="Treasure Map" backgroundImage="button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbS-sT-NiL">
+                                        <rect key="frame" x="0.0" y="58" width="343" height="50"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="Weather Forecast" backgroundImage="button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-ls-hkY">
+                                        <rect key="frame" x="0.0" y="116" width="343" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coF-HF-Bcv">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="50"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                <state key="normal" title="Privacy Policy" backgroundImage="button">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HD1-6l-sew">
+                                                <rect key="frame" x="175.66666666666663" y="0.0" width="167.33333333333337" height="50"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                <state key="normal" title="FAQs" backgroundImage="button">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="coF-HF-Bcv" firstAttribute="height" secondItem="Jp8-v7-e0T" secondAttribute="height" id="O1Y-5e-ygh"/>
+                                    <constraint firstItem="HD1-6l-sew" firstAttribute="height" secondItem="Jp8-v7-e0T" secondAttribute="height" id="V24-9k-08P"/>
+                                    <constraint firstItem="hbS-sT-NiL" firstAttribute="height" secondItem="Jp8-v7-e0T" secondAttribute="height" id="cC3-AJ-NxQ"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather-cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="LMj-j5-7sa">
+                                <rect key="frame" x="127.66666666666669" y="64" width="120" height="120"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FbH-dO-HoT" secondAttribute="trailing" id="3Hm-RR-XW4"/>
+                            <constraint firstItem="LMj-j5-7sa" firstAttribute="top" secondItem="Okd-sF-Cyd" secondAttribute="top" constant="20" id="Ceh-Jb-ZEu"/>
+                            <constraint firstItem="FbH-dO-HoT" firstAttribute="leading" secondItem="L1R-nN-lSh" secondAttribute="leadingMargin" id="GOT-xE-8EW"/>
+                            <constraint firstItem="O79-oY-OmI" firstAttribute="leading" secondItem="L1R-nN-lSh" secondAttribute="leadingMargin" id="Jg8-hl-uRK"/>
+                            <constraint firstItem="O79-oY-OmI" firstAttribute="trailing" secondItem="L1R-nN-lSh" secondAttribute="trailingMargin" id="Kxv-m7-8Z1"/>
+                            <constraint firstItem="LMj-j5-7sa" firstAttribute="centerX" secondItem="L1R-nN-lSh" secondAttribute="centerX" id="O3h-k2-gd0"/>
+                            <constraint firstItem="FbH-dO-HoT" firstAttribute="centerY" secondItem="Okd-sF-Cyd" secondAttribute="centerY" id="Xmn-jY-Mbr"/>
+                            <constraint firstItem="Okd-sF-Cyd" firstAttribute="bottom" secondItem="O79-oY-OmI" secondAttribute="bottom" constant="8" id="jWC-KP-2O5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Okd-sF-Cyd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVS-U5-5xY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.8" y="62.068965517241381"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1366" height="1366"/>
+        <image name="button" width="45" height="43"/>
+        <image name="weather-cloudy" width="120" height="120"/>
+    </resources>
+</document>
