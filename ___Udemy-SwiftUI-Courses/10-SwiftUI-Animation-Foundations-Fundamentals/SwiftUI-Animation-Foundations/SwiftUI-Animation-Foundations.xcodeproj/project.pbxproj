@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3E55A9325D9F84500978DD5 /* SwiftUI_Animation_FoundationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55A9225D9F84500978DD5 /* SwiftUI_Animation_FoundationsApp.swift */; };
+		B3E55A9525D9F84500978DD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55A9425D9F84500978DD5 /* ContentView.swift */; };
+		B3E55A9725D9F84900978DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E55A9625D9F84900978DD5 /* Assets.xcassets */; };
+		B3E55A9A25D9F84900978DD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E55A9925D9F84900978DD5 /* Preview Assets.xcassets */; };
+		B3E55AA425D9F8C300978DD5 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AA325D9F8C300978DD5 /* Introduction.swift */; };
+		B3E55AAB25D9F8EC00978DD5 /* TTFirsNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3E55AA825D9F8EC00978DD5 /* TTFirsNeue-Regular.ttf */; };
+		B3E55AAC25D9F8EC00978DD5 /* TTFirsNeue-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3E55AA925D9F8EC00978DD5 /* TTFirsNeue-Bold.ttf */; };
+		B3E55AAD25D9F8EC00978DD5 /* TTFirsNeue-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3E55AAA25D9F8EC00978DD5 /* TTFirsNeue-DemiBold.ttf */; };
+		B3E55ABD25D9FCBA00978DD5 /* HowToAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55ABC25D9FCBA00978DD5 /* HowToAnimate.swift */; };
+		B3E55AC025DA006600978DD5 /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55ABF25DA006600978DD5 /* CountUpTimer.swift */; };
+		B3E55AC325DA04E600978DD5 /* AnimateObjectRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AC225DA04E600978DD5 /* AnimateObjectRotation.swift */; };
+		B3E55AC625DA05B300978DD5 /* AnimateObjectScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AC525DA05B300978DD5 /* AnimateObjectScale.swift */; };
+		B3E55AC925DA062700978DD5 /* AnimateObjectMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AC825DA062700978DD5 /* AnimateObjectMove.swift */; };
+		B3E55ACC25DA076400978DD5 /* AnimateObjectColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55ACB25DA076400978DD5 /* AnimateObjectColor.swift */; };
+		B3E55ACF25DA081600978DD5 /* PulsatingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55ACE25DA081600978DD5 /* PulsatingAnimation.swift */; };
+		B3E55AD225DA0AC600978DD5 /* AnimateObjectTransparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AD125DA0AC600978DD5 /* AnimateObjectTransparency.swift */; };
+		B3E55AD525DA0B2600978DD5 /* AnimateObjectCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AD425DA0B2600978DD5 /* AnimateObjectCorner.swift */; };
+		B3E55ADC25DA0C0600978DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E55ADB25DA0C0600978DD5 /* Assets.xcassets */; };
+		B3E55AE325DA0C0600978DD5 /* Breath Animation Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B3E55AE225DA0C0600978DD5 /* Breath Animation Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B3E55AE825DA0C0600978DD5 /* SwiftUI_Animation_FoundationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AE725DA0C0600978DD5 /* SwiftUI_Animation_FoundationsApp.swift */; };
+		B3E55AEA25DA0C0600978DD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AE925DA0C0600978DD5 /* ContentView.swift */; };
+		B3E55AEC25DA0C0600978DD5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AEB25DA0C0600978DD5 /* NotificationController.swift */; };
+		B3E55AEE25DA0C0600978DD5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AED25DA0C0600978DD5 /* NotificationView.swift */; };
+		B3E55AF025DA0C0600978DD5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55AEF25DA0C0600978DD5 /* ComplicationController.swift */; };
+		B3E55AF225DA0C0800978DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E55AF125DA0C0800978DD5 /* Assets.xcassets */; };
+		B3E55AF525DA0C0800978DD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E55AF425DA0C0800978DD5 /* Preview Assets.xcassets */; };
+		B3E55AFA25DA0C0800978DD5 /* Breath Animation.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B3E55AD925DA0C0400978DD5 /* Breath Animation.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B3E55B0725DA0E0F00978DD5 /* BreathAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B0625DA0E0F00978DD5 /* BreathAnimation.swift */; };
+		B3E55B1625DA110B00978DD5 /* GlowingLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B1525DA110B00978DD5 /* GlowingLoader.swift */; };
+		B3E55B1B25DA121D00978DD5 /* HueRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B1A25DA121D00978DD5 /* HueRotation.swift */; };
+		B3E55B2025DA137D00978DD5 /* HueRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B1F25DA137D00978DD5 /* HueRotation.swift */; };
+		B3E55B2825DA139300978DD5 /* BreathAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B2725DA139300978DD5 /* BreathAnimation.swift */; };
+		B3E55B3025DA188800978DD5 /* OrientOnPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B2F25DA188800978DD5 /* OrientOnPath.swift */; };
+		B3E55B3825DA1A1A00978DD5 /* OrientOnPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B3725DA1A1A00978DD5 /* OrientOnPath.swift */; };
+		B3E55B3D25DA254900978DD5 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B3C25DA254900978DD5 /* CustomShape.swift */; };
+		B3E55B4225DA266400978DD5 /* CustomShape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B4125DA266400978DD5 /* CustomShape2.swift */; };
+		B3E55B4725DA277E00978DD5 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B4625DA277E00978DD5 /* SpringAnimation.swift */; };
+		B3E55B4F25DA28DF00978DD5 /* InteractiveSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B4E25DA28DF00978DD5 /* InteractiveSpringAnimation.swift */; };
+		B3E55B5425DA297400978DD5 /* InterpolatingSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B5325DA297400978DD5 /* InterpolatingSpringAnimation.swift */; };
+		B3E55B5925DA2A3900978DD5 /* SpringAnimationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B5825DA2A3900978DD5 /* SpringAnimationParameters.swift */; };
+		B3E55B5E25DA2CF100978DD5 /* MassSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B5D25DA2CF100978DD5 /* MassSpringAnimation.swift */; };
+		B3E55B6625DA2D4A00978DD5 /* StiffnessSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B6525DA2D4A00978DD5 /* StiffnessSpringAnimation.swift */; };
+		B3E55B6B25DA2E2D00978DD5 /* DampingSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B6A25DA2E2D00978DD5 /* DampingSpringAnimation.swift */; };
+		B3E55B7025DA2E7700978DD5 /* InitialVelocitySpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B6F25DA2E7700978DD5 /* InitialVelocitySpringAnimation.swift */; };
+		B3E55B7525DA2F4D00978DD5 /* SpringParameterResponseDampingFractionBlendDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B7425DA2F4D00978DD5 /* SpringParameterResponseDampingFractionBlendDuration.swift */; };
+		B3E55B7A25DA302700978DD5 /* BouncingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B7925DA302700978DD5 /* BouncingAnimation.swift */; };
+		B3E55B7F25DA316C00978DD5 /* WiFiConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B7E25DA316C00978DD5 /* WiFiConnection.swift */; };
+		B3E55B8425DA339300978DD5 /* LongPressGestureTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B8325DA339300978DD5 /* LongPressGestureTouchID.swift */; };
+		B3E55B8925DA34AE00978DD5 /* AudioMetering.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B8825DA34AE00978DD5 /* AudioMetering.swift */; };
+		B3E55B8E25DA364700978DD5 /* Animating3DRotationXYAxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B8D25DA364700978DD5 /* Animating3DRotationXYAxes.swift */; };
+		B3E55B9325DA37FD00978DD5 /* BreathAnchorInCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B9225DA37FD00978DD5 /* BreathAnchorInCenter.swift */; };
+		B3E55B9825DA3C5600978DD5 /* JustBreath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B9725DA3C5600978DD5 /* JustBreath.swift */; };
+		B3E55B9D25DA3D8500978DD5 /* FlowerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55B9C25DA3D8500978DD5 /* FlowerAnimation.swift */; };
+		B3E55BA225DA3E5400978DD5 /* FacebookLiveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55BA125DA3E5400978DD5 /* FacebookLiveAnimation.swift */; };
+		B3E55C1D25DAA2D100978DD5 /* ProceedWithTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55C1C25DAA2D100978DD5 /* ProceedWithTouchID.swift */; };
+		B3E55C2425DAA3DB00978DD5 /* MovingComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55C2125DAA3DB00978DD5 /* MovingComments.swift */; };
+		B3E55C2525DAA3DB00978DD5 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55C2225DAA3DB00978DD5 /* Comments.swift */; };
+		B3E55C2E25DB4E4800978DD5 /* FlowerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E55C2D25DB4E4800978DD5 /* FlowerAnimation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3E55AE425DA0C0600978DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E55A8725D9F84500978DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E55AE125DA0C0600978DD5;
+			remoteInfo = "Breath Animation Extension";
+		};
+		B3E55AF825DA0C0800978DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E55A8725D9F84500978DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E55AD825DA0C0400978DD5;
+			remoteInfo = "Breath Animation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3E55AFE25DA0C0800978DD5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B3E55AE325DA0C0600978DD5 /* Breath Animation Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E55B0225DA0C0800978DD5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B3E55AFA25DA0C0800978DD5 /* Breath Animation.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B3E55A8F25D9F84500978DD5 /* SwiftUI-Animation-Foundations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animation-Foundations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E55A9225D9F84500978DD5 /* SwiftUI_Animation_FoundationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Animation_FoundationsApp.swift; sourceTree = "<group>"; };
+		B3E55A9425D9F84500978DD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3E55A9625D9F84900978DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E55A9925D9F84900978DD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3E55A9B25D9F84900978DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E55AA325D9F8C300978DD5 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
+		B3E55AA825D9F8EC00978DD5 /* TTFirsNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTFirsNeue-Regular.ttf"; sourceTree = "<group>"; };
+		B3E55AA925D9F8EC00978DD5 /* TTFirsNeue-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTFirsNeue-Bold.ttf"; sourceTree = "<group>"; };
+		B3E55AAA25D9F8EC00978DD5 /* TTFirsNeue-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTFirsNeue-DemiBold.ttf"; sourceTree = "<group>"; };
+		B3E55ABC25D9FCBA00978DD5 /* HowToAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToAnimate.swift; sourceTree = "<group>"; };
+		B3E55ABF25DA006600978DD5 /* CountUpTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountUpTimer.swift; sourceTree = "<group>"; };
+		B3E55AC225DA04E600978DD5 /* AnimateObjectRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateObjectRotation.swift; sourceTree = "<group>"; };
+		B3E55AC525DA05B300978DD5 /* AnimateObjectScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateObjectScale.swift; sourceTree = "<group>"; };
+		B3E55AC825DA062700978DD5 /* AnimateObjectMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateObjectMove.swift; sourceTree = "<group>"; };
+		B3E55ACB25DA076400978DD5 /* AnimateObjectColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateObjectColor.swift; sourceTree = "<group>"; };
+		B3E55ACE25DA081600978DD5 /* PulsatingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingAnimation.swift; sourceTree = "<group>"; };
+		B3E55AD125DA0AC600978DD5 /* AnimateObjectTransparency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateObjectTransparency.swift; sourceTree = "<group>"; };
+		B3E55AD425DA0B2600978DD5 /* AnimateObjectCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateObjectCorner.swift; sourceTree = "<group>"; };
+		B3E55AD925DA0C0400978DD5 /* Breath Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breath Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E55ADB25DA0C0600978DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E55ADD25DA0C0600978DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E55AE225DA0C0600978DD5 /* Breath Animation Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Breath Animation Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E55AE725DA0C0600978DD5 /* SwiftUI_Animation_FoundationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Animation_FoundationsApp.swift; sourceTree = "<group>"; };
+		B3E55AE925DA0C0600978DD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3E55AEB25DA0C0600978DD5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B3E55AED25DA0C0600978DD5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B3E55AEF25DA0C0600978DD5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B3E55AF125DA0C0800978DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E55AF425DA0C0800978DD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3E55AF625DA0C0800978DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E55AF725DA0C0800978DD5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B3E55B0625DA0E0F00978DD5 /* BreathAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathAnimation.swift; sourceTree = "<group>"; };
+		B3E55B1525DA110B00978DD5 /* GlowingLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingLoader.swift; sourceTree = "<group>"; };
+		B3E55B1A25DA121D00978DD5 /* HueRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRotation.swift; sourceTree = "<group>"; };
+		B3E55B1F25DA137D00978DD5 /* HueRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRotation.swift; sourceTree = "<group>"; };
+		B3E55B2725DA139300978DD5 /* BreathAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathAnimation.swift; sourceTree = "<group>"; };
+		B3E55B2F25DA188800978DD5 /* OrientOnPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientOnPath.swift; sourceTree = "<group>"; };
+		B3E55B3725DA1A1A00978DD5 /* OrientOnPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientOnPath.swift; sourceTree = "<group>"; };
+		B3E55B3C25DA254900978DD5 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		B3E55B4125DA266400978DD5 /* CustomShape2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape2.swift; sourceTree = "<group>"; };
+		B3E55B4625DA277E00978DD5 /* SpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		B3E55B4E25DA28DF00978DD5 /* InteractiveSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveSpringAnimation.swift; sourceTree = "<group>"; };
+		B3E55B5325DA297400978DD5 /* InterpolatingSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatingSpringAnimation.swift; sourceTree = "<group>"; };
+		B3E55B5825DA2A3900978DD5 /* SpringAnimationParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationParameters.swift; sourceTree = "<group>"; };
+		B3E55B5D25DA2CF100978DD5 /* MassSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassSpringAnimation.swift; sourceTree = "<group>"; };
+		B3E55B6525DA2D4A00978DD5 /* StiffnessSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiffnessSpringAnimation.swift; sourceTree = "<group>"; };
+		B3E55B6A25DA2E2D00978DD5 /* DampingSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DampingSpringAnimation.swift; sourceTree = "<group>"; };
+		B3E55B6F25DA2E7700978DD5 /* InitialVelocitySpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVelocitySpringAnimation.swift; sourceTree = "<group>"; };
+		B3E55B7425DA2F4D00978DD5 /* SpringParameterResponseDampingFractionBlendDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringParameterResponseDampingFractionBlendDuration.swift; sourceTree = "<group>"; };
+		B3E55B7925DA302700978DD5 /* BouncingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingAnimation.swift; sourceTree = "<group>"; };
+		B3E55B7E25DA316C00978DD5 /* WiFiConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiConnection.swift; sourceTree = "<group>"; };
+		B3E55B8325DA339300978DD5 /* LongPressGestureTouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureTouchID.swift; sourceTree = "<group>"; };
+		B3E55B8825DA34AE00978DD5 /* AudioMetering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMetering.swift; sourceTree = "<group>"; };
+		B3E55B8D25DA364700978DD5 /* Animating3DRotationXYAxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animating3DRotationXYAxes.swift; sourceTree = "<group>"; };
+		B3E55B9225DA37FD00978DD5 /* BreathAnchorInCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathAnchorInCenter.swift; sourceTree = "<group>"; };
+		B3E55B9725DA3C5600978DD5 /* JustBreath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustBreath.swift; sourceTree = "<group>"; };
+		B3E55B9C25DA3D8500978DD5 /* FlowerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerAnimation.swift; sourceTree = "<group>"; };
+		B3E55BA125DA3E5400978DD5 /* FacebookLiveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLiveAnimation.swift; sourceTree = "<group>"; };
+		B3E55C1C25DAA2D100978DD5 /* ProceedWithTouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedWithTouchID.swift; sourceTree = "<group>"; };
+		B3E55C2125DAA3DB00978DD5 /* MovingComments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingComments.swift; sourceTree = "<group>"; };
+		B3E55C2225DAA3DB00978DD5 /* Comments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		B3E55C2D25DB4E4800978DD5 /* FlowerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerAnimation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3E55A8C25D9F84500978DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E55ADF25DA0C0600978DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3E55A8625D9F84500978DD5 = {
+			isa = PBXGroup;
+			children = (
+				B3E55A9125D9F84500978DD5 /* SwiftUI-Animation-Foundations */,
+				B3E55ADA25DA0C0400978DD5 /* Breath Animation */,
+				B3E55AE625DA0C0600978DD5 /* Breath Animation Extension */,
+				B3E55A9025D9F84500978DD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3E55A9025D9F84500978DD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55A8F25D9F84500978DD5 /* SwiftUI-Animation-Foundations.app */,
+				B3E55AD925DA0C0400978DD5 /* Breath Animation.app */,
+				B3E55AE225DA0C0600978DD5 /* Breath Animation Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E55A9125D9F84500978DD5 /* SwiftUI-Animation-Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55AA725D9F8DF00978DD5 /* Fonts */,
+				B3E55A9625D9F84900978DD5 /* Assets.xcassets */,
+				B3E55A9B25D9F84900978DD5 /* Info.plist */,
+				B3E55A9825D9F84900978DD5 /* Preview Content */,
+				B3E55A9225D9F84500978DD5 /* SwiftUI_Animation_FoundationsApp.swift */,
+				B3E55A9425D9F84500978DD5 /* ContentView.swift */,
+				B3E55AA225D9F8B100978DD5 /* Section1 */,
+				B3E55AAF25D9FAF600978DD5 /* Section2 */,
+				B3E55AB025D9FB1E00978DD5 /* Section3 */,
+				B3E55AB125D9FB2A00978DD5 /* Section4 */,
+				B3E55AB225D9FB3800978DD5 /* Section5 */,
+				B3E55AB325D9FB4300978DD5 /* Section6 */,
+				B3E55AB425D9FB4D00978DD5 /* Section7 */,
+				B3E55AB525D9FB5E00978DD5 /* Section8 */,
+				B3E55AB625D9FB6700978DD5 /* Section9 */,
+				B3E55AB725D9FB7100978DD5 /* Section10 */,
+				B3E55AB925D9FB8700978DD5 /* Section11 */,
+				B3E55ABA25D9FB9400978DD5 /* Section12 */,
+			);
+			path = "SwiftUI-Animation-Foundations";
+			sourceTree = "<group>";
+		};
+		B3E55A9825D9F84900978DD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55A9925D9F84900978DD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3E55AA225D9F8B100978DD5 /* Section1 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55AA325D9F8C300978DD5 /* Introduction.swift */,
+			);
+			path = Section1;
+			sourceTree = "<group>";
+		};
+		B3E55AA725D9F8DF00978DD5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55AA925D9F8EC00978DD5 /* TTFirsNeue-Bold.ttf */,
+				B3E55AAA25D9F8EC00978DD5 /* TTFirsNeue-DemiBold.ttf */,
+				B3E55AA825D9F8EC00978DD5 /* TTFirsNeue-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B3E55AAF25D9FAF600978DD5 /* Section2 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55ABC25D9FCBA00978DD5 /* HowToAnimate.swift */,
+				B3E55ABF25DA006600978DD5 /* CountUpTimer.swift */,
+			);
+			path = Section2;
+			sourceTree = "<group>";
+		};
+		B3E55AB025D9FB1E00978DD5 /* Section3 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55AC225DA04E600978DD5 /* AnimateObjectRotation.swift */,
+				B3E55AC525DA05B300978DD5 /* AnimateObjectScale.swift */,
+				B3E55AC825DA062700978DD5 /* AnimateObjectMove.swift */,
+				B3E55ACB25DA076400978DD5 /* AnimateObjectColor.swift */,
+				B3E55ACE25DA081600978DD5 /* PulsatingAnimation.swift */,
+				B3E55AD125DA0AC600978DD5 /* AnimateObjectTransparency.swift */,
+				B3E55AD425DA0B2600978DD5 /* AnimateObjectCorner.swift */,
+			);
+			path = Section3;
+			sourceTree = "<group>";
+		};
+		B3E55AB125D9FB2A00978DD5 /* Section4 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55B0625DA0E0F00978DD5 /* BreathAnimation.swift */,
+				B3E55B1525DA110B00978DD5 /* GlowingLoader.swift */,
+				B3E55B1A25DA121D00978DD5 /* HueRotation.swift */,
+				B3E55B3725DA1A1A00978DD5 /* OrientOnPath.swift */,
+				B3E55C1C25DAA2D100978DD5 /* ProceedWithTouchID.swift */,
+			);
+			path = Section4;
+			sourceTree = "<group>";
+		};
+		B3E55AB225D9FB3800978DD5 /* Section5 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55B3C25DA254900978DD5 /* CustomShape.swift */,
+				B3E55B4125DA266400978DD5 /* CustomShape2.swift */,
+			);
+			path = Section5;
+			sourceTree = "<group>";
+		};
+		B3E55AB325D9FB4300978DD5 /* Section6 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55B4625DA277E00978DD5 /* SpringAnimation.swift */,
+				B3E55B4E25DA28DF00978DD5 /* InteractiveSpringAnimation.swift */,
+				B3E55B5325DA297400978DD5 /* InterpolatingSpringAnimation.swift */,
+				B3E55B5825DA2A3900978DD5 /* SpringAnimationParameters.swift */,
+				B3E55B5D25DA2CF100978DD5 /* MassSpringAnimation.swift */,
+				B3E55B6525DA2D4A00978DD5 /* StiffnessSpringAnimation.swift */,
+				B3E55B6A25DA2E2D00978DD5 /* DampingSpringAnimation.swift */,
+				B3E55B6F25DA2E7700978DD5 /* InitialVelocitySpringAnimation.swift */,
+				B3E55B7425DA2F4D00978DD5 /* SpringParameterResponseDampingFractionBlendDuration.swift */,
+				B3E55B7925DA302700978DD5 /* BouncingAnimation.swift */,
+			);
+			path = Section6;
+			sourceTree = "<group>";
+		};
+		B3E55AB425D9FB4D00978DD5 /* Section7 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55B7E25DA316C00978DD5 /* WiFiConnection.swift */,
+			);
+			path = Section7;
+			sourceTree = "<group>";
+		};
+		B3E55AB525D9FB5E00978DD5 /* Section8 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55B8325DA339300978DD5 /* LongPressGestureTouchID.swift */,
+				B3E55B8825DA34AE00978DD5 /* AudioMetering.swift */,
+			);
+			path = Section8;
+			sourceTree = "<group>";
+		};
+		B3E55AB625D9FB6700978DD5 /* Section9 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Section9;
+			sourceTree = "<group>";
+		};
+		B3E55AB725D9FB7100978DD5 /* Section10 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55B8D25DA364700978DD5 /* Animating3DRotationXYAxes.swift */,
+			);
+			path = Section10;
+			sourceTree = "<group>";
+		};
+		B3E55AB925D9FB8700978DD5 /* Section11 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55B9225DA37FD00978DD5 /* BreathAnchorInCenter.swift */,
+				B3E55B9725DA3C5600978DD5 /* JustBreath.swift */,
+				B3E55B9C25DA3D8500978DD5 /* FlowerAnimation.swift */,
+			);
+			path = Section11;
+			sourceTree = "<group>";
+		};
+		B3E55ABA25D9FB9400978DD5 /* Section12 */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55C2225DAA3DB00978DD5 /* Comments.swift */,
+				B3E55C2125DAA3DB00978DD5 /* MovingComments.swift */,
+				B3E55BA125DA3E5400978DD5 /* FacebookLiveAnimation.swift */,
+			);
+			path = Section12;
+			sourceTree = "<group>";
+		};
+		B3E55ADA25DA0C0400978DD5 /* Breath Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55ADB25DA0C0600978DD5 /* Assets.xcassets */,
+				B3E55ADD25DA0C0600978DD5 /* Info.plist */,
+			);
+			path = "Breath Animation";
+			sourceTree = "<group>";
+		};
+		B3E55AE625DA0C0600978DD5 /* Breath Animation Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55AF125DA0C0800978DD5 /* Assets.xcassets */,
+				B3E55AF625DA0C0800978DD5 /* Info.plist */,
+				B3E55AF725DA0C0800978DD5 /* PushNotificationPayload.apns */,
+				B3E55AF325DA0C0800978DD5 /* Preview Content */,
+				B3E55AE725DA0C0600978DD5 /* SwiftUI_Animation_FoundationsApp.swift */,
+				B3E55AE925DA0C0600978DD5 /* ContentView.swift */,
+				B3E55B2725DA139300978DD5 /* BreathAnimation.swift */,
+				B3E55B1F25DA137D00978DD5 /* HueRotation.swift */,
+				B3E55B2F25DA188800978DD5 /* OrientOnPath.swift */,
+				B3E55C2D25DB4E4800978DD5 /* FlowerAnimation.swift */,
+				B3E55AEB25DA0C0600978DD5 /* NotificationController.swift */,
+				B3E55AED25DA0C0600978DD5 /* NotificationView.swift */,
+				B3E55AEF25DA0C0600978DD5 /* ComplicationController.swift */,
+			);
+			path = "Breath Animation Extension";
+			sourceTree = "<group>";
+		};
+		B3E55AF325DA0C0800978DD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3E55AF425DA0C0800978DD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3E55A8E25D9F84500978DD5 /* SwiftUI-Animation-Foundations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E55A9E25D9F84900978DD5 /* Build configuration list for PBXNativeTarget "SwiftUI-Animation-Foundations" */;
+			buildPhases = (
+				B3E55A8B25D9F84500978DD5 /* Sources */,
+				B3E55A8C25D9F84500978DD5 /* Frameworks */,
+				B3E55A8D25D9F84500978DD5 /* Resources */,
+				B3E55B0225DA0C0800978DD5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E55AF925DA0C0800978DD5 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-Animation-Foundations";
+			productName = "SwiftUI-Animation-Foundations";
+			productReference = B3E55A8F25D9F84500978DD5 /* SwiftUI-Animation-Foundations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3E55AD825DA0C0400978DD5 /* Breath Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E55AFF25DA0C0800978DD5 /* Build configuration list for PBXNativeTarget "Breath Animation" */;
+			buildPhases = (
+				B3E55AD725DA0C0400978DD5 /* Resources */,
+				B3E55AFE25DA0C0800978DD5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E55AE525DA0C0600978DD5 /* PBXTargetDependency */,
+			);
+			name = "Breath Animation";
+			productName = "Breath Animation";
+			productReference = B3E55AD925DA0C0400978DD5 /* Breath Animation.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B3E55AE125DA0C0600978DD5 /* Breath Animation Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E55AFB25DA0C0800978DD5 /* Build configuration list for PBXNativeTarget "Breath Animation Extension" */;
+			buildPhases = (
+				B3E55ADE25DA0C0600978DD5 /* Sources */,
+				B3E55ADF25DA0C0600978DD5 /* Frameworks */,
+				B3E55AE025DA0C0600978DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Breath Animation Extension";
+			productName = "Breath Animation Extension";
+			productReference = B3E55AE225DA0C0600978DD5 /* Breath Animation Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3E55A8725D9F84500978DD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B3E55A8E25D9F84500978DD5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B3E55AD825DA0C0400978DD5 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					B3E55AE125DA0C0600978DD5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = B3E55A8A25D9F84500978DD5 /* Build configuration list for PBXProject "SwiftUI-Animation-Foundations" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3E55A8625D9F84500978DD5;
+			productRefGroup = B3E55A9025D9F84500978DD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3E55A8E25D9F84500978DD5 /* SwiftUI-Animation-Foundations */,
+				B3E55AD825DA0C0400978DD5 /* Breath Animation */,
+				B3E55AE125DA0C0600978DD5 /* Breath Animation Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3E55A8D25D9F84500978DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E55AAB25D9F8EC00978DD5 /* TTFirsNeue-Regular.ttf in Resources */,
+				B3E55A9A25D9F84900978DD5 /* Preview Assets.xcassets in Resources */,
+				B3E55AAD25D9F8EC00978DD5 /* TTFirsNeue-DemiBold.ttf in Resources */,
+				B3E55AAC25D9F8EC00978DD5 /* TTFirsNeue-Bold.ttf in Resources */,
+				B3E55A9725D9F84900978DD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E55AD725DA0C0400978DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E55ADC25DA0C0600978DD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E55AE025DA0C0600978DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E55AF525DA0C0800978DD5 /* Preview Assets.xcassets in Resources */,
+				B3E55AF225DA0C0800978DD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3E55A8B25D9F84500978DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E55B0725DA0E0F00978DD5 /* BreathAnimation.swift in Sources */,
+				B3E55C2425DAA3DB00978DD5 /* MovingComments.swift in Sources */,
+				B3E55ACC25DA076400978DD5 /* AnimateObjectColor.swift in Sources */,
+				B3E55B3D25DA254900978DD5 /* CustomShape.swift in Sources */,
+				B3E55B9825DA3C5600978DD5 /* JustBreath.swift in Sources */,
+				B3E55C2525DAA3DB00978DD5 /* Comments.swift in Sources */,
+				B3E55B9325DA37FD00978DD5 /* BreathAnchorInCenter.swift in Sources */,
+				B3E55B9D25DA3D8500978DD5 /* FlowerAnimation.swift in Sources */,
+				B3E55B7F25DA316C00978DD5 /* WiFiConnection.swift in Sources */,
+				B3E55B7A25DA302700978DD5 /* BouncingAnimation.swift in Sources */,
+				B3E55B7525DA2F4D00978DD5 /* SpringParameterResponseDampingFractionBlendDuration.swift in Sources */,
+				B3E55A9525D9F84500978DD5 /* ContentView.swift in Sources */,
+				B3E55B5E25DA2CF100978DD5 /* MassSpringAnimation.swift in Sources */,
+				B3E55ABD25D9FCBA00978DD5 /* HowToAnimate.swift in Sources */,
+				B3E55AA425D9F8C300978DD5 /* Introduction.swift in Sources */,
+				B3E55B7025DA2E7700978DD5 /* InitialVelocitySpringAnimation.swift in Sources */,
+				B3E55A9325D9F84500978DD5 /* SwiftUI_Animation_FoundationsApp.swift in Sources */,
+				B3E55AC325DA04E600978DD5 /* AnimateObjectRotation.swift in Sources */,
+				B3E55B6B25DA2E2D00978DD5 /* DampingSpringAnimation.swift in Sources */,
+				B3E55AD225DA0AC600978DD5 /* AnimateObjectTransparency.swift in Sources */,
+				B3E55B5925DA2A3900978DD5 /* SpringAnimationParameters.swift in Sources */,
+				B3E55B3825DA1A1A00978DD5 /* OrientOnPath.swift in Sources */,
+				B3E55BA225DA3E5400978DD5 /* FacebookLiveAnimation.swift in Sources */,
+				B3E55B1B25DA121D00978DD5 /* HueRotation.swift in Sources */,
+				B3E55AD525DA0B2600978DD5 /* AnimateObjectCorner.swift in Sources */,
+				B3E55B8925DA34AE00978DD5 /* AudioMetering.swift in Sources */,
+				B3E55B5425DA297400978DD5 /* InterpolatingSpringAnimation.swift in Sources */,
+				B3E55B4F25DA28DF00978DD5 /* InteractiveSpringAnimation.swift in Sources */,
+				B3E55AC025DA006600978DD5 /* CountUpTimer.swift in Sources */,
+				B3E55C1D25DAA2D100978DD5 /* ProceedWithTouchID.swift in Sources */,
+				B3E55B8425DA339300978DD5 /* LongPressGestureTouchID.swift in Sources */,
+				B3E55B6625DA2D4A00978DD5 /* StiffnessSpringAnimation.swift in Sources */,
+				B3E55B4225DA266400978DD5 /* CustomShape2.swift in Sources */,
+				B3E55B1625DA110B00978DD5 /* GlowingLoader.swift in Sources */,
+				B3E55B8E25DA364700978DD5 /* Animating3DRotationXYAxes.swift in Sources */,
+				B3E55AC625DA05B300978DD5 /* AnimateObjectScale.swift in Sources */,
+				B3E55ACF25DA081600978DD5 /* PulsatingAnimation.swift in Sources */,
+				B3E55B4725DA277E00978DD5 /* SpringAnimation.swift in Sources */,
+				B3E55AC925DA062700978DD5 /* AnimateObjectMove.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E55ADE25DA0C0600978DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E55B3025DA188800978DD5 /* OrientOnPath.swift in Sources */,
+				B3E55AEC25DA0C0600978DD5 /* NotificationController.swift in Sources */,
+				B3E55AEA25DA0C0600978DD5 /* ContentView.swift in Sources */,
+				B3E55B2025DA137D00978DD5 /* HueRotation.swift in Sources */,
+				B3E55AF025DA0C0600978DD5 /* ComplicationController.swift in Sources */,
+				B3E55C2E25DB4E4800978DD5 /* FlowerAnimation.swift in Sources */,
+				B3E55AE825DA0C0600978DD5 /* SwiftUI_Animation_FoundationsApp.swift in Sources */,
+				B3E55AEE25DA0C0600978DD5 /* NotificationView.swift in Sources */,
+				B3E55B2825DA139300978DD5 /* BreathAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3E55AE525DA0C0600978DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3E55AE125DA0C0600978DD5 /* Breath Animation Extension */;
+			targetProxy = B3E55AE425DA0C0600978DD5 /* PBXContainerItemProxy */;
+		};
+		B3E55AF925DA0C0800978DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3E55AD825DA0C0400978DD5 /* Breath Animation */;
+			targetProxy = B3E55AF825DA0C0800978DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3E55A9C25D9F84900978DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3E55A9D25D9F84900978DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3E55A9F25D9F84900978DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Animation-Foundations/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Animation-Foundations/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.luannguyen.SwiftUI-Animation-Foundations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3E55AA025D9F84900978DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Animation-Foundations/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Animation-Foundations/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.luannguyen.SwiftUI-Animation-Foundations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3E55AFC25DA0C0800978DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Breath Animation Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Breath Animation Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.luannguyen.SwiftUI-Animation-Foundations.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		B3E55AFD25DA0C0800978DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Breath Animation Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Breath Animation Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.luannguyen.SwiftUI-Animation-Foundations.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		B3E55B0025DA0C0800978DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				IBSC_MODULE = Breath_Animation_Extension;
+				INFOPLIST_FILE = "Breath Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.luannguyen.SwiftUI-Animation-Foundations.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftUI-Animation-Foundations/Section4/Breath Animation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		B3E55B0125DA0C0800978DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WWX4FV258;
+				IBSC_MODULE = Breath_Animation_Extension;
+				INFOPLIST_FILE = "Breath Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.luannguyen.SwiftUI-Animation-Foundations.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftUI-Animation-Foundations/Section4/Breath Animation-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3E55A8A25D9F84500978DD5 /* Build configuration list for PBXProject "SwiftUI-Animation-Foundations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E55A9C25D9F84900978DD5 /* Debug */,
+				B3E55A9D25D9F84900978DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E55A9E25D9F84900978DD5 /* Build configuration list for PBXNativeTarget "SwiftUI-Animation-Foundations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E55A9F25D9F84900978DD5 /* Debug */,
+				B3E55AA025D9F84900978DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E55AFB25DA0C0800978DD5 /* Build configuration list for PBXNativeTarget "Breath Animation Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E55AFC25DA0C0800978DD5 /* Debug */,
+				B3E55AFD25DA0C0800978DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E55AFF25DA0C0800978DD5 /* Build configuration list for PBXNativeTarget "Breath Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E55B0025DA0C0800978DD5 /* Debug */,
+				B3E55B0125DA0C0800978DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3E55A8725D9F84500978DD5 /* Project object */;
+}
