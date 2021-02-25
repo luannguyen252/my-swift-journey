@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD75860924D739CA001FAA03 /* PencilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD75860824D739CA001FAA03 /* PencilApp.swift */; };
+		AD75860B24D739CA001FAA03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD75860A24D739CA001FAA03 /* ContentView.swift */; };
+		AD75860D24D739CF001FAA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD75860C24D739CF001FAA03 /* Assets.xcassets */; };
+		AD75861024D739CF001FAA03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD75860F24D739CF001FAA03 /* Preview Assets.xcassets */; };
+		AD75861B24D739CF001FAA03 /* PencilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD75861A24D739CF001FAA03 /* PencilTests.swift */; };
+		AD75862624D739CF001FAA03 /* PencilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD75862524D739CF001FAA03 /* PencilUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD75861724D739CF001FAA03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD7585FD24D739CA001FAA03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD75860424D739CA001FAA03;
+			remoteInfo = Pencil;
+		};
+		AD75862224D739CF001FAA03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD7585FD24D739CA001FAA03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD75860424D739CA001FAA03;
+			remoteInfo = Pencil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD75860524D739CA001FAA03 /* Pencil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pencil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD75860824D739CA001FAA03 /* PencilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilApp.swift; sourceTree = "<group>"; };
+		AD75860A24D739CA001FAA03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD75860C24D739CF001FAA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD75860F24D739CF001FAA03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD75861124D739CF001FAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD75861624D739CF001FAA03 /* PencilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PencilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD75861A24D739CF001FAA03 /* PencilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilTests.swift; sourceTree = "<group>"; };
+		AD75861C24D739CF001FAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD75862124D739CF001FAA03 /* PencilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PencilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD75862524D739CF001FAA03 /* PencilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilUITests.swift; sourceTree = "<group>"; };
+		AD75862724D739CF001FAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD75860224D739CA001FAA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75861324D739CF001FAA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75861E24D739CF001FAA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD7585FC24D739CA001FAA03 = {
+			isa = PBXGroup;
+			children = (
+				AD75860724D739CA001FAA03 /* Pencil */,
+				AD75861924D739CF001FAA03 /* PencilTests */,
+				AD75862424D739CF001FAA03 /* PencilUITests */,
+				AD75860624D739CA001FAA03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD75860624D739CA001FAA03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD75860524D739CA001FAA03 /* Pencil.app */,
+				AD75861624D739CF001FAA03 /* PencilTests.xctest */,
+				AD75862124D739CF001FAA03 /* PencilUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD75860724D739CA001FAA03 /* Pencil */ = {
+			isa = PBXGroup;
+			children = (
+				AD75860824D739CA001FAA03 /* PencilApp.swift */,
+				AD75860A24D739CA001FAA03 /* ContentView.swift */,
+				AD75860C24D739CF001FAA03 /* Assets.xcassets */,
+				AD75861124D739CF001FAA03 /* Info.plist */,
+				AD75860E24D739CF001FAA03 /* Preview Content */,
+			);
+			path = Pencil;
+			sourceTree = "<group>";
+		};
+		AD75860E24D739CF001FAA03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD75860F24D739CF001FAA03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD75861924D739CF001FAA03 /* PencilTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD75861A24D739CF001FAA03 /* PencilTests.swift */,
+				AD75861C24D739CF001FAA03 /* Info.plist */,
+			);
+			path = PencilTests;
+			sourceTree = "<group>";
+		};
+		AD75862424D739CF001FAA03 /* PencilUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD75862524D739CF001FAA03 /* PencilUITests.swift */,
+				AD75862724D739CF001FAA03 /* Info.plist */,
+			);
+			path = PencilUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD75860424D739CA001FAA03 /* Pencil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD75862A24D739CF001FAA03 /* Build configuration list for PBXNativeTarget "Pencil" */;
+			buildPhases = (
+				AD75860124D739CA001FAA03 /* Sources */,
+				AD75860224D739CA001FAA03 /* Frameworks */,
+				AD75860324D739CA001FAA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pencil;
+			productName = Pencil;
+			productReference = AD75860524D739CA001FAA03 /* Pencil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD75861524D739CF001FAA03 /* PencilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD75862D24D739CF001FAA03 /* Build configuration list for PBXNativeTarget "PencilTests" */;
+			buildPhases = (
+				AD75861224D739CF001FAA03 /* Sources */,
+				AD75861324D739CF001FAA03 /* Frameworks */,
+				AD75861424D739CF001FAA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD75861824D739CF001FAA03 /* PBXTargetDependency */,
+			);
+			name = PencilTests;
+			productName = PencilTests;
+			productReference = AD75861624D739CF001FAA03 /* PencilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD75862024D739CF001FAA03 /* PencilUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD75863024D739CF001FAA03 /* Build configuration list for PBXNativeTarget "PencilUITests" */;
+			buildPhases = (
+				AD75861D24D739CF001FAA03 /* Sources */,
+				AD75861E24D739CF001FAA03 /* Frameworks */,
+				AD75861F24D739CF001FAA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD75862324D739CF001FAA03 /* PBXTargetDependency */,
+			);
+			name = PencilUITests;
+			productName = PencilUITests;
+			productReference = AD75862124D739CF001FAA03 /* PencilUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD7585FD24D739CA001FAA03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					AD75860424D739CA001FAA03 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					AD75861524D739CF001FAA03 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = AD75860424D739CA001FAA03;
+					};
+					AD75862024D739CF001FAA03 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = AD75860424D739CA001FAA03;
+					};
+				};
+			};
+			buildConfigurationList = AD75860024D739CA001FAA03 /* Build configuration list for PBXProject "Pencil" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD7585FC24D739CA001FAA03;
+			productRefGroup = AD75860624D739CA001FAA03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD75860424D739CA001FAA03 /* Pencil */,
+				AD75861524D739CF001FAA03 /* PencilTests */,
+				AD75862024D739CF001FAA03 /* PencilUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD75860324D739CA001FAA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75861024D739CF001FAA03 /* Preview Assets.xcassets in Resources */,
+				AD75860D24D739CF001FAA03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75861424D739CF001FAA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75861F24D739CF001FAA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD75860124D739CA001FAA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75860B24D739CA001FAA03 /* ContentView.swift in Sources */,
+				AD75860924D739CA001FAA03 /* PencilApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75861224D739CF001FAA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75861B24D739CF001FAA03 /* PencilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75861D24D739CF001FAA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75862624D739CF001FAA03 /* PencilUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD75861824D739CF001FAA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD75860424D739CA001FAA03 /* Pencil */;
+			targetProxy = AD75861724D739CF001FAA03 /* PBXContainerItemProxy */;
+		};
+		AD75862324D739CF001FAA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD75860424D739CA001FAA03 /* Pencil */;
+			targetProxy = AD75862224D739CF001FAA03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD75862824D739CF001FAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD75862924D739CF001FAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD75862B24D739CF001FAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pencil/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Pencil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Pencil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD75862C24D739CF001FAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pencil/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Pencil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Pencil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD75862E24D739CF001FAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PencilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.PencilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pencil.app/Pencil";
+			};
+			name = Debug;
+		};
+		AD75862F24D739CF001FAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PencilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.PencilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pencil.app/Pencil";
+			};
+			name = Release;
+		};
+		AD75863124D739CF001FAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PencilUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.PencilUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pencil;
+			};
+			name = Debug;
+		};
+		AD75863224D739CF001FAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PencilUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.PencilUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pencil;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD75860024D739CA001FAA03 /* Build configuration list for PBXProject "Pencil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD75862824D739CF001FAA03 /* Debug */,
+				AD75862924D739CF001FAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD75862A24D739CF001FAA03 /* Build configuration list for PBXNativeTarget "Pencil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD75862B24D739CF001FAA03 /* Debug */,
+				AD75862C24D739CF001FAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD75862D24D739CF001FAA03 /* Build configuration list for PBXNativeTarget "PencilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD75862E24D739CF001FAA03 /* Debug */,
+				AD75862F24D739CF001FAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD75863024D739CF001FAA03 /* Build configuration list for PBXNativeTarget "PencilUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD75863124D739CF001FAA03 /* Debug */,
+				AD75863224D739CF001FAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD7585FD24D739CA001FAA03 /* Project object */;
+}
