@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17189" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fireball" representedClassName="Fireball" syncable="YES" codeGenerationType="class">
+        <attribute name="altitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="dateTimeStamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="impactEnergy" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="radiatedEnergy" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="velocity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FireballGroup" inverseName="fireballs" inverseEntity="FireballGroup"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="dateTimeStamp"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="FireballGroup" representedClassName="FireballGroup" syncable="YES" codeGenerationType="class">
+        <attribute name="fireballCount" optional="YES" attributeType="Integer 64" derived="YES" derivationExpression="fireballs.@count" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="fireballs" toMany="YES" deletionRule="Nullify" destinationEntity="Fireball" inverseName="groups" inverseEntity="Fireball"/>
+    </entity>
+    <elements>
+        <element name="Fireball" positionX="-324.51953125" positionY="-56.5546875" width="128" height="163"/>
+        <element name="FireballGroup" positionX="-63" positionY="63" width="128" height="103"/>
+    </elements>
+</model>
