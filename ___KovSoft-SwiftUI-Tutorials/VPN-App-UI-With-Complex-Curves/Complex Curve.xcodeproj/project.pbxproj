@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD65B26C2556C6C60096521F /* Complex_CurveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65B26B2556C6C60096521F /* Complex_CurveApp.swift */; };
+		AD65B26E2556C6C60096521F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65B26D2556C6C60096521F /* ContentView.swift */; };
+		AD65B2702556C6C90096521F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD65B26F2556C6C90096521F /* Assets.xcassets */; };
+		AD65B2732556C6C90096521F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD65B2722556C6C90096521F /* Preview Assets.xcassets */; };
+		AD65B27E2556C6C90096521F /* Complex_CurveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65B27D2556C6C90096521F /* Complex_CurveTests.swift */; };
+		AD65B2892556C6C90096521F /* Complex_CurveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65B2882556C6C90096521F /* Complex_CurveUITests.swift */; };
+		ADDC82372556DB8D00A2CE82 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC82362556DB8D00A2CE82 /* Home.swift */; };
+		ADDC823C2556DEE600A2CE82 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC823B2556DEE600A2CE82 /* CustomShape.swift */; };
+		ADDC82412556E43000A2CE82 /* ServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC82402556E43000A2CE82 /* ServerViewModel.swift */; };
+		ADDC82462556E44F00A2CE82 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC82452556E44F00A2CE82 /* Server.swift */; };
+		ADDC824B2556E57500A2CE82 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC824A2556E57500A2CE82 /* CardView.swift */; };
+		ADDC82502556E61E00A2CE82 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC824F2556E61E00A2CE82 /* BlurView.swift */; };
+		ADDC82552556E8D800A2CE82 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC82542556E8D800A2CE82 /* BottomSheet.swift */; };
+		ADDC825A2556EA6500A2CE82 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC82592556EA6500A2CE82 /* CustomCorner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD65B27A2556C6C90096521F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD65B2602556C6C50096521F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD65B2672556C6C60096521F;
+			remoteInfo = "Complex Curve";
+		};
+		AD65B2852556C6C90096521F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD65B2602556C6C50096521F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD65B2672556C6C60096521F;
+			remoteInfo = "Complex Curve";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD65B2682556C6C60096521F /* Complex Curve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Complex Curve.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD65B26B2556C6C60096521F /* Complex_CurveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complex_CurveApp.swift; sourceTree = "<group>"; };
+		AD65B26D2556C6C60096521F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD65B26F2556C6C90096521F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD65B2722556C6C90096521F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD65B2742556C6C90096521F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD65B2792556C6C90096521F /* Complex CurveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Complex CurveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD65B27D2556C6C90096521F /* Complex_CurveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complex_CurveTests.swift; sourceTree = "<group>"; };
+		AD65B27F2556C6C90096521F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD65B2842556C6C90096521F /* Complex CurveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Complex CurveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD65B2882556C6C90096521F /* Complex_CurveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complex_CurveUITests.swift; sourceTree = "<group>"; };
+		AD65B28A2556C6C90096521F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADDC82362556DB8D00A2CE82 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		ADDC823B2556DEE600A2CE82 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		ADDC82402556E43000A2CE82 /* ServerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewModel.swift; sourceTree = "<group>"; };
+		ADDC82452556E44F00A2CE82 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		ADDC824A2556E57500A2CE82 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		ADDC824F2556E61E00A2CE82 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		ADDC82542556E8D800A2CE82 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		ADDC82592556EA6500A2CE82 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD65B2652556C6C60096521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD65B2762556C6C90096521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD65B2812556C6C90096521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD65B25F2556C6C50096521F = {
+			isa = PBXGroup;
+			children = (
+				AD65B26A2556C6C60096521F /* Complex Curve */,
+				AD65B27C2556C6C90096521F /* Complex CurveTests */,
+				AD65B2872556C6C90096521F /* Complex CurveUITests */,
+				AD65B2692556C6C60096521F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD65B2692556C6C60096521F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD65B2682556C6C60096521F /* Complex Curve.app */,
+				AD65B2792556C6C90096521F /* Complex CurveTests.xctest */,
+				AD65B2842556C6C90096521F /* Complex CurveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD65B26A2556C6C60096521F /* Complex Curve */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC82352556DB8500A2CE82 /* Model */,
+				ADDC82342556DB7F00A2CE82 /* ViewModel */,
+				ADDC82332556DB7B00A2CE82 /* View */,
+				AD65B26B2556C6C60096521F /* Complex_CurveApp.swift */,
+				AD65B26D2556C6C60096521F /* ContentView.swift */,
+				AD65B26F2556C6C90096521F /* Assets.xcassets */,
+				AD65B2742556C6C90096521F /* Info.plist */,
+				AD65B2712556C6C90096521F /* Preview Content */,
+			);
+			path = "Complex Curve";
+			sourceTree = "<group>";
+		};
+		AD65B2712556C6C90096521F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD65B2722556C6C90096521F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD65B27C2556C6C90096521F /* Complex CurveTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD65B27D2556C6C90096521F /* Complex_CurveTests.swift */,
+				AD65B27F2556C6C90096521F /* Info.plist */,
+			);
+			path = "Complex CurveTests";
+			sourceTree = "<group>";
+		};
+		AD65B2872556C6C90096521F /* Complex CurveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD65B2882556C6C90096521F /* Complex_CurveUITests.swift */,
+				AD65B28A2556C6C90096521F /* Info.plist */,
+			);
+			path = "Complex CurveUITests";
+			sourceTree = "<group>";
+		};
+		ADDC82332556DB7B00A2CE82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC82362556DB8D00A2CE82 /* Home.swift */,
+				ADDC823B2556DEE600A2CE82 /* CustomShape.swift */,
+				ADDC824A2556E57500A2CE82 /* CardView.swift */,
+				ADDC824F2556E61E00A2CE82 /* BlurView.swift */,
+				ADDC82542556E8D800A2CE82 /* BottomSheet.swift */,
+				ADDC82592556EA6500A2CE82 /* CustomCorner.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADDC82342556DB7F00A2CE82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC82402556E43000A2CE82 /* ServerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADDC82352556DB8500A2CE82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC82452556E44F00A2CE82 /* Server.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD65B2672556C6C60096521F /* Complex Curve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD65B28D2556C6C90096521F /* Build configuration list for PBXNativeTarget "Complex Curve" */;
+			buildPhases = (
+				AD65B2642556C6C60096521F /* Sources */,
+				AD65B2652556C6C60096521F /* Frameworks */,
+				AD65B2662556C6C60096521F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Complex Curve";
+			productName = "Complex Curve";
+			productReference = AD65B2682556C6C60096521F /* Complex Curve.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD65B2782556C6C90096521F /* Complex CurveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD65B2902556C6C90096521F /* Build configuration list for PBXNativeTarget "Complex CurveTests" */;
+			buildPhases = (
+				AD65B2752556C6C90096521F /* Sources */,
+				AD65B2762556C6C90096521F /* Frameworks */,
+				AD65B2772556C6C90096521F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD65B27B2556C6C90096521F /* PBXTargetDependency */,
+			);
+			name = "Complex CurveTests";
+			productName = "Complex CurveTests";
+			productReference = AD65B2792556C6C90096521F /* Complex CurveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD65B2832556C6C90096521F /* Complex CurveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD65B2932556C6C90096521F /* Build configuration list for PBXNativeTarget "Complex CurveUITests" */;
+			buildPhases = (
+				AD65B2802556C6C90096521F /* Sources */,
+				AD65B2812556C6C90096521F /* Frameworks */,
+				AD65B2822556C6C90096521F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD65B2862556C6C90096521F /* PBXTargetDependency */,
+			);
+			name = "Complex CurveUITests";
+			productName = "Complex CurveUITests";
+			productReference = AD65B2842556C6C90096521F /* Complex CurveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD65B2602556C6C50096521F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					AD65B2672556C6C60096521F = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					AD65B2782556C6C90096521F = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = AD65B2672556C6C60096521F;
+					};
+					AD65B2832556C6C90096521F = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = AD65B2672556C6C60096521F;
+					};
+				};
+			};
+			buildConfigurationList = AD65B2632556C6C60096521F /* Build configuration list for PBXProject "Complex Curve" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD65B25F2556C6C50096521F;
+			productRefGroup = AD65B2692556C6C60096521F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD65B2672556C6C60096521F /* Complex Curve */,
+				AD65B2782556C6C90096521F /* Complex CurveTests */,
+				AD65B2832556C6C90096521F /* Complex CurveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD65B2662556C6C60096521F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD65B2732556C6C90096521F /* Preview Assets.xcassets in Resources */,
+				AD65B2702556C6C90096521F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD65B2772556C6C90096521F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD65B2822556C6C90096521F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD65B2642556C6C60096521F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDC824B2556E57500A2CE82 /* CardView.swift in Sources */,
+				ADDC825A2556EA6500A2CE82 /* CustomCorner.swift in Sources */,
+				ADDC82552556E8D800A2CE82 /* BottomSheet.swift in Sources */,
+				ADDC82502556E61E00A2CE82 /* BlurView.swift in Sources */,
+				ADDC823C2556DEE600A2CE82 /* CustomShape.swift in Sources */,
+				AD65B26E2556C6C60096521F /* ContentView.swift in Sources */,
+				ADDC82372556DB8D00A2CE82 /* Home.swift in Sources */,
+				ADDC82412556E43000A2CE82 /* ServerViewModel.swift in Sources */,
+				ADDC82462556E44F00A2CE82 /* Server.swift in Sources */,
+				AD65B26C2556C6C60096521F /* Complex_CurveApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD65B2752556C6C90096521F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD65B27E2556C6C90096521F /* Complex_CurveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD65B2802556C6C90096521F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD65B2892556C6C90096521F /* Complex_CurveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD65B27B2556C6C90096521F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD65B2672556C6C60096521F /* Complex Curve */;
+			targetProxy = AD65B27A2556C6C90096521F /* PBXContainerItemProxy */;
+		};
+		AD65B2862556C6C90096521F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD65B2672556C6C60096521F /* Complex Curve */;
+			targetProxy = AD65B2852556C6C90096521F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD65B28B2556C6C90096521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD65B28C2556C6C90096521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD65B28E2556C6C90096521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Complex Curve/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Complex Curve/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Complex-Curve";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD65B28F2556C6C90096521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Complex Curve/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Complex Curve/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Complex-Curve";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD65B2912556C6C90096521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Complex CurveTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Complex-CurveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Complex Curve.app/Complex Curve";
+			};
+			name = Debug;
+		};
+		AD65B2922556C6C90096521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Complex CurveTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Complex-CurveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Complex Curve.app/Complex Curve";
+			};
+			name = Release;
+		};
+		AD65B2942556C6C90096521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Complex CurveUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Complex-CurveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Complex Curve";
+			};
+			name = Debug;
+		};
+		AD65B2952556C6C90096521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Complex CurveUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Complex-CurveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Complex Curve";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD65B2632556C6C60096521F /* Build configuration list for PBXProject "Complex Curve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD65B28B2556C6C90096521F /* Debug */,
+				AD65B28C2556C6C90096521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD65B28D2556C6C90096521F /* Build configuration list for PBXNativeTarget "Complex Curve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD65B28E2556C6C90096521F /* Debug */,
+				AD65B28F2556C6C90096521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD65B2902556C6C90096521F /* Build configuration list for PBXNativeTarget "Complex CurveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD65B2912556C6C90096521F /* Debug */,
+				AD65B2922556C6C90096521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD65B2932556C6C90096521F /* Build configuration list for PBXNativeTarget "Complex CurveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD65B2942556C6C90096521F /* Debug */,
+				AD65B2952556C6C90096521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD65B2602556C6C50096521F /* Project object */;
+}

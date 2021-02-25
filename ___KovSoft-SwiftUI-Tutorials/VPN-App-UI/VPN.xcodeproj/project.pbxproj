@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD5D4AC32591C258009521DB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D4AC22591C258009521DB /* Home.swift */; };
+		AD5D4ACD2591C26E009521DB /* Rings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D4ACC2591C26E009521DB /* Rings.swift */; };
+		AD5D4AD32591C298009521DB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D4AD22591C298009521DB /* Server.swift */; };
+		ADED1A92259094AC00741A9A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1A91259094AC00741A9A /* Tests_iOS.swift */; };
+		ADED1A9D259094AC00741A9A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1A9C259094AC00741A9A /* Tests_macOS.swift */; };
+		ADED1A9F259094AC00741A9A /* VPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1A76259094AC00741A9A /* VPNApp.swift */; };
+		ADED1AA0259094AC00741A9A /* VPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1A76259094AC00741A9A /* VPNApp.swift */; };
+		ADED1AA1259094AC00741A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1A77259094AC00741A9A /* ContentView.swift */; };
+		ADED1AA2259094AC00741A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1A77259094AC00741A9A /* ContentView.swift */; };
+		ADED1AA3259094AC00741A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADED1A78259094AC00741A9A /* Assets.xcassets */; };
+		ADED1AA4259094AC00741A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADED1A78259094AC00741A9A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADED1A8E259094AC00741A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADED1A71259094AC00741A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADED1A7C259094AC00741A9A;
+			remoteInfo = "VPN (iOS)";
+		};
+		ADED1A99259094AC00741A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADED1A71259094AC00741A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADED1A84259094AC00741A9A;
+			remoteInfo = "VPN (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD5D4AC22591C258009521DB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AD5D4ACC2591C26E009521DB /* Rings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rings.swift; sourceTree = "<group>"; };
+		AD5D4AD22591C298009521DB /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		ADED1A76259094AC00741A9A /* VPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNApp.swift; sourceTree = "<group>"; };
+		ADED1A77259094AC00741A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADED1A78259094AC00741A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADED1A7D259094AC00741A9A /* VPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADED1A80259094AC00741A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADED1A85259094AC00741A9A /* VPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADED1A87259094AC00741A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADED1A88259094AC00741A9A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		ADED1A8D259094AC00741A9A /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADED1A91259094AC00741A9A /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		ADED1A93259094AC00741A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADED1A98259094AC00741A9A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADED1A9C259094AC00741A9A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		ADED1A9E259094AC00741A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADED1A7A259094AC00741A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A82259094AC00741A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A8A259094AC00741A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A95259094AC00741A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD5D4AC02591C245009521DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D4AC22591C258009521DB /* Home.swift */,
+				AD5D4ACC2591C26E009521DB /* Rings.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD5D4AC12591C24B009521DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D4AD22591C298009521DB /* Server.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADED1A70259094AC00741A9A = {
+			isa = PBXGroup;
+			children = (
+				ADED1A75259094AC00741A9A /* Shared */,
+				ADED1A7F259094AC00741A9A /* iOS */,
+				ADED1A86259094AC00741A9A /* macOS */,
+				ADED1A90259094AC00741A9A /* Tests iOS */,
+				ADED1A9B259094AC00741A9A /* Tests macOS */,
+				ADED1A7E259094AC00741A9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADED1A75259094AC00741A9A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D4AC12591C24B009521DB /* Model */,
+				AD5D4AC02591C245009521DB /* View */,
+				ADED1A76259094AC00741A9A /* VPNApp.swift */,
+				ADED1A77259094AC00741A9A /* ContentView.swift */,
+				ADED1A78259094AC00741A9A /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ADED1A7E259094AC00741A9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1A7D259094AC00741A9A /* VPN.app */,
+				ADED1A85259094AC00741A9A /* VPN.app */,
+				ADED1A8D259094AC00741A9A /* Tests iOS.xctest */,
+				ADED1A98259094AC00741A9A /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADED1A7F259094AC00741A9A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1A80259094AC00741A9A /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		ADED1A86259094AC00741A9A /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1A87259094AC00741A9A /* Info.plist */,
+				ADED1A88259094AC00741A9A /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		ADED1A90259094AC00741A9A /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1A91259094AC00741A9A /* Tests_iOS.swift */,
+				ADED1A93259094AC00741A9A /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		ADED1A9B259094AC00741A9A /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1A9C259094AC00741A9A /* Tests_macOS.swift */,
+				ADED1A9E259094AC00741A9A /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADED1A7C259094AC00741A9A /* VPN (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADED1AA7259094AC00741A9A /* Build configuration list for PBXNativeTarget "VPN (iOS)" */;
+			buildPhases = (
+				ADED1A79259094AC00741A9A /* Sources */,
+				ADED1A7A259094AC00741A9A /* Frameworks */,
+				ADED1A7B259094AC00741A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VPN (iOS)";
+			productName = "VPN (iOS)";
+			productReference = ADED1A7D259094AC00741A9A /* VPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADED1A84259094AC00741A9A /* VPN (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADED1AAA259094AC00741A9A /* Build configuration list for PBXNativeTarget "VPN (macOS)" */;
+			buildPhases = (
+				ADED1A81259094AC00741A9A /* Sources */,
+				ADED1A82259094AC00741A9A /* Frameworks */,
+				ADED1A83259094AC00741A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VPN (macOS)";
+			productName = "VPN (macOS)";
+			productReference = ADED1A85259094AC00741A9A /* VPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADED1A8C259094AC00741A9A /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADED1AAD259094AC00741A9A /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				ADED1A89259094AC00741A9A /* Sources */,
+				ADED1A8A259094AC00741A9A /* Frameworks */,
+				ADED1A8B259094AC00741A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADED1A8F259094AC00741A9A /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = ADED1A8D259094AC00741A9A /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ADED1A97259094AC00741A9A /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADED1AB0259094AC00741A9A /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				ADED1A94259094AC00741A9A /* Sources */,
+				ADED1A95259094AC00741A9A /* Frameworks */,
+				ADED1A96259094AC00741A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADED1A9A259094AC00741A9A /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = ADED1A98259094AC00741A9A /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADED1A71259094AC00741A9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					ADED1A7C259094AC00741A9A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					ADED1A84259094AC00741A9A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					ADED1A8C259094AC00741A9A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ADED1A7C259094AC00741A9A;
+					};
+					ADED1A97259094AC00741A9A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ADED1A84259094AC00741A9A;
+					};
+				};
+			};
+			buildConfigurationList = ADED1A74259094AC00741A9A /* Build configuration list for PBXProject "VPN" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADED1A70259094AC00741A9A;
+			productRefGroup = ADED1A7E259094AC00741A9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADED1A7C259094AC00741A9A /* VPN (iOS) */,
+				ADED1A84259094AC00741A9A /* VPN (macOS) */,
+				ADED1A8C259094AC00741A9A /* Tests iOS */,
+				ADED1A97259094AC00741A9A /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADED1A7B259094AC00741A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED1AA3259094AC00741A9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A83259094AC00741A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED1AA4259094AC00741A9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A8B259094AC00741A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A96259094AC00741A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADED1A79259094AC00741A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5D4AD32591C298009521DB /* Server.swift in Sources */,
+				ADED1AA1259094AC00741A9A /* ContentView.swift in Sources */,
+				AD5D4ACD2591C26E009521DB /* Rings.swift in Sources */,
+				AD5D4AC32591C258009521DB /* Home.swift in Sources */,
+				ADED1A9F259094AC00741A9A /* VPNApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A81259094AC00741A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED1AA2259094AC00741A9A /* ContentView.swift in Sources */,
+				ADED1AA0259094AC00741A9A /* VPNApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A89259094AC00741A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED1A92259094AC00741A9A /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADED1A94259094AC00741A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED1A9D259094AC00741A9A /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADED1A8F259094AC00741A9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADED1A7C259094AC00741A9A /* VPN (iOS) */;
+			targetProxy = ADED1A8E259094AC00741A9A /* PBXContainerItemProxy */;
+		};
+		ADED1A9A259094AC00741A9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADED1A84259094AC00741A9A /* VPN (macOS) */;
+			targetProxy = ADED1A99259094AC00741A9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADED1AA5259094AC00741A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADED1AA6259094AC00741A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ADED1AA8259094AC00741A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.VPN;
+				PRODUCT_NAME = VPN;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADED1AA9259094AC00741A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.VPN;
+				PRODUCT_NAME = VPN;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADED1AAB259094AC00741A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.VPN;
+				PRODUCT_NAME = VPN;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ADED1AAC259094AC00741A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.VPN;
+				PRODUCT_NAME = VPN;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ADED1AAE259094AC00741A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VPN (iOS)";
+			};
+			name = Debug;
+		};
+		ADED1AAF259094AC00741A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VPN (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADED1AB1259094AC00741A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "VPN (macOS)";
+			};
+			name = Debug;
+		};
+		ADED1AB2259094AC00741A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "VPN (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADED1A74259094AC00741A9A /* Build configuration list for PBXProject "VPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADED1AA5259094AC00741A9A /* Debug */,
+				ADED1AA6259094AC00741A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADED1AA7259094AC00741A9A /* Build configuration list for PBXNativeTarget "VPN (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADED1AA8259094AC00741A9A /* Debug */,
+				ADED1AA9259094AC00741A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADED1AAA259094AC00741A9A /* Build configuration list for PBXNativeTarget "VPN (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADED1AAB259094AC00741A9A /* Debug */,
+				ADED1AAC259094AC00741A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADED1AAD259094AC00741A9A /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADED1AAE259094AC00741A9A /* Debug */,
+				ADED1AAF259094AC00741A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADED1AB0259094AC00741A9A /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADED1AB1259094AC00741A9A /* Debug */,
+				ADED1AB2259094AC00741A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADED1A71259094AC00741A9A /* Project object */;
+}
