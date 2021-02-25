@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD05416025B1819600F57049 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05415F25B1819600F57049 /* Tests_iOS.swift */; };
+		AD05416B25B1819600F57049 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05416A25B1819600F57049 /* Tests_macOS.swift */; };
+		AD05416D25B1819600F57049 /* SnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05414425B1819600F57049 /* SnapApp.swift */; };
+		AD05416E25B1819600F57049 /* SnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05414425B1819600F57049 /* SnapApp.swift */; };
+		AD05416F25B1819600F57049 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05414525B1819600F57049 /* ContentView.swift */; };
+		AD05417025B1819600F57049 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05414525B1819600F57049 /* ContentView.swift */; };
+		AD05417125B1819600F57049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD05414625B1819600F57049 /* Assets.xcassets */; };
+		AD05417225B1819600F57049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD05414625B1819600F57049 /* Assets.xcassets */; };
+		AD0541AC25B1FA7900F57049 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0541AB25B1FA7900F57049 /* Video.swift */; };
+		AD0541B725B1FB0100F57049 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0541B625B1FB0100F57049 /* Home.swift */; };
+		AD0541C125B1FC3000F57049 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0541C025B1FC3000F57049 /* VideoPlayerView.swift */; };
+		AD0541C825B1FCD000F57049 /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0541C725B1FCD000F57049 /* VideoPlayerViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD05415C25B1819600F57049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD05413F25B1819600F57049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD05414A25B1819600F57049;
+			remoteInfo = "Snap (iOS)";
+		};
+		AD05416725B1819600F57049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD05413F25B1819600F57049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD05415225B1819600F57049;
+			remoteInfo = "Snap (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD05414425B1819600F57049 /* SnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapApp.swift; sourceTree = "<group>"; };
+		AD05414525B1819600F57049 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD05414625B1819600F57049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD05414B25B1819600F57049 /* Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD05414E25B1819600F57049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD05415325B1819600F57049 /* Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD05415525B1819600F57049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD05415625B1819600F57049 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		AD05415B25B1819600F57049 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD05415F25B1819600F57049 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		AD05416125B1819600F57049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD05416625B1819600F57049 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD05416A25B1819600F57049 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		AD05416C25B1819600F57049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0541AB25B1FA7900F57049 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		AD0541B625B1FB0100F57049 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AD0541C025B1FC3000F57049 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		AD0541C725B1FCD000F57049 /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD05414825B1819600F57049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05415025B1819600F57049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05415825B1819600F57049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05416325B1819600F57049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD05413E25B1819600F57049 = {
+			isa = PBXGroup;
+			children = (
+				AD05414325B1819600F57049 /* Shared */,
+				AD05414D25B1819600F57049 /* iOS */,
+				AD05415425B1819600F57049 /* macOS */,
+				AD05415E25B1819600F57049 /* Tests iOS */,
+				AD05416925B1819600F57049 /* Tests macOS */,
+				AD05414C25B1819600F57049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD05414325B1819600F57049 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AD0541C625B1FCC800F57049 /* ViewModel */,
+				AD0541B525B1FAFC00F57049 /* View */,
+				AD0541AA25B1FA7400F57049 /* Model */,
+				AD05418F25B1E6BF00F57049 /* Videos */,
+				AD05414425B1819600F57049 /* SnapApp.swift */,
+				AD05414525B1819600F57049 /* ContentView.swift */,
+				AD05414625B1819600F57049 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AD05414C25B1819600F57049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD05414B25B1819600F57049 /* Snap.app */,
+				AD05415325B1819600F57049 /* Snap.app */,
+				AD05415B25B1819600F57049 /* Tests iOS.xctest */,
+				AD05416625B1819600F57049 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD05414D25B1819600F57049 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD05414E25B1819600F57049 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		AD05415425B1819600F57049 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD05415525B1819600F57049 /* Info.plist */,
+				AD05415625B1819600F57049 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		AD05415E25B1819600F57049 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD05415F25B1819600F57049 /* Tests_iOS.swift */,
+				AD05416125B1819600F57049 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		AD05416925B1819600F57049 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD05416A25B1819600F57049 /* Tests_macOS.swift */,
+				AD05416C25B1819600F57049 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		AD05418F25B1E6BF00F57049 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		AD0541AA25B1FA7400F57049 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD0541AB25B1FA7900F57049 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD0541B525B1FAFC00F57049 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD0541B625B1FB0100F57049 /* Home.swift */,
+				AD0541C025B1FC3000F57049 /* VideoPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD0541C625B1FCC800F57049 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD0541C725B1FCD000F57049 /* VideoPlayerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD05414A25B1819600F57049 /* Snap (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD05417525B1819600F57049 /* Build configuration list for PBXNativeTarget "Snap (iOS)" */;
+			buildPhases = (
+				AD05414725B1819600F57049 /* Sources */,
+				AD05414825B1819600F57049 /* Frameworks */,
+				AD05414925B1819600F57049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snap (iOS)";
+			productName = "Snap (iOS)";
+			productReference = AD05414B25B1819600F57049 /* Snap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD05415225B1819600F57049 /* Snap (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD05417825B1819600F57049 /* Build configuration list for PBXNativeTarget "Snap (macOS)" */;
+			buildPhases = (
+				AD05414F25B1819600F57049 /* Sources */,
+				AD05415025B1819600F57049 /* Frameworks */,
+				AD05415125B1819600F57049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snap (macOS)";
+			productName = "Snap (macOS)";
+			productReference = AD05415325B1819600F57049 /* Snap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD05415A25B1819600F57049 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD05417B25B1819600F57049 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				AD05415725B1819600F57049 /* Sources */,
+				AD05415825B1819600F57049 /* Frameworks */,
+				AD05415925B1819600F57049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD05415D25B1819600F57049 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = AD05415B25B1819600F57049 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AD05416525B1819600F57049 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD05417E25B1819600F57049 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				AD05416225B1819600F57049 /* Sources */,
+				AD05416325B1819600F57049 /* Frameworks */,
+				AD05416425B1819600F57049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD05416825B1819600F57049 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = AD05416625B1819600F57049 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD05413F25B1819600F57049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AD05414A25B1819600F57049 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AD05415225B1819600F57049 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AD05415A25B1819600F57049 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AD05414A25B1819600F57049;
+					};
+					AD05416525B1819600F57049 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AD05415225B1819600F57049;
+					};
+				};
+			};
+			buildConfigurationList = AD05414225B1819600F57049 /* Build configuration list for PBXProject "Snap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD05413E25B1819600F57049;
+			productRefGroup = AD05414C25B1819600F57049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD05414A25B1819600F57049 /* Snap (iOS) */,
+				AD05415225B1819600F57049 /* Snap (macOS) */,
+				AD05415A25B1819600F57049 /* Tests iOS */,
+				AD05416525B1819600F57049 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD05414925B1819600F57049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD05417125B1819600F57049 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05415125B1819600F57049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD05417225B1819600F57049 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05415925B1819600F57049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05416425B1819600F57049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD05414725B1819600F57049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD05416F25B1819600F57049 /* ContentView.swift in Sources */,
+				AD0541AC25B1FA7900F57049 /* Video.swift in Sources */,
+				AD0541B725B1FB0100F57049 /* Home.swift in Sources */,
+				AD0541C825B1FCD000F57049 /* VideoPlayerViewModel.swift in Sources */,
+				AD05416D25B1819600F57049 /* SnapApp.swift in Sources */,
+				AD0541C125B1FC3000F57049 /* VideoPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05414F25B1819600F57049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD05417025B1819600F57049 /* ContentView.swift in Sources */,
+				AD05416E25B1819600F57049 /* SnapApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05415725B1819600F57049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD05416025B1819600F57049 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD05416225B1819600F57049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD05416B25B1819600F57049 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD05415D25B1819600F57049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD05414A25B1819600F57049 /* Snap (iOS) */;
+			targetProxy = AD05415C25B1819600F57049 /* PBXContainerItemProxy */;
+		};
+		AD05416825B1819600F57049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD05415225B1819600F57049 /* Snap (macOS) */;
+			targetProxy = AD05416725B1819600F57049 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD05417325B1819600F57049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD05417425B1819600F57049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AD05417625B1819600F57049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Snap;
+				PRODUCT_NAME = Snap;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD05417725B1819600F57049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Snap;
+				PRODUCT_NAME = Snap;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD05417925B1819600F57049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Snap;
+				PRODUCT_NAME = Snap;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AD05417A25B1819600F57049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Snap;
+				PRODUCT_NAME = Snap;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AD05417C25B1819600F57049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Snap (iOS)";
+			};
+			name = Debug;
+		};
+		AD05417D25B1819600F57049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Snap (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD05417F25B1819600F57049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Snap (macOS)";
+			};
+			name = Debug;
+		};
+		AD05418025B1819600F57049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Snap (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD05414225B1819600F57049 /* Build configuration list for PBXProject "Snap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD05417325B1819600F57049 /* Debug */,
+				AD05417425B1819600F57049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD05417525B1819600F57049 /* Build configuration list for PBXNativeTarget "Snap (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD05417625B1819600F57049 /* Debug */,
+				AD05417725B1819600F57049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD05417825B1819600F57049 /* Build configuration list for PBXNativeTarget "Snap (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD05417925B1819600F57049 /* Debug */,
+				AD05417A25B1819600F57049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD05417B25B1819600F57049 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD05417C25B1819600F57049 /* Debug */,
+				AD05417D25B1819600F57049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD05417E25B1819600F57049 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD05417F25B1819600F57049 /* Debug */,
+				AD05418025B1819600F57049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD05413F25B1819600F57049 /* Project object */;
+}
