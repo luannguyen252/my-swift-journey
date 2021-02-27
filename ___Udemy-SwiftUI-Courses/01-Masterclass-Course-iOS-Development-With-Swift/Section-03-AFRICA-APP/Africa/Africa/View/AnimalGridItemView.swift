@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct AnimalGridItemView: View {
   // MARK: - PROPERTIES
-  
   let animal: Animal
 
   // MARK: - BODY
-
   var body: some View {
     Image(animal.image)
       .resizable()
@@ -22,7 +14,7 @@ struct AnimalGridItemView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct AnimalGridItemView_Previews: PreviewProvider {
   static let animals: [Animal] = Bundle.main.decode("animals.json")
   
@@ -32,3 +24,4 @@ struct AnimalGridItemView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

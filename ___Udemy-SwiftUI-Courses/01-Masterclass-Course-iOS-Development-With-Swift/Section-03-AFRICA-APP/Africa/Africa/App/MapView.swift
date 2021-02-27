@@ -1,19 +1,12 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 import MapKit
 
 struct MapView: View {
   // MARK: - PROPERTIES
-  
   @State private var region: MKCoordinateRegion = {
-    var mapCoordinates = CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599)
-    var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 70.0, longitudeDelta: 70.0)
-    var mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
+    var mapCoordinates  = CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599)
+    var mapZoomLevel    = MKCoordinateSpan(latitudeDelta: 70.0, longitudeDelta: 70.0)
+    var mapRegion       = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
     
     return mapRegion
   }()
@@ -21,7 +14,6 @@ struct MapView: View {
   let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
   
   // MARK: - BODY
-  
   var body: some View {
     // MARK: - No1 BASIC MAP
     // Map(coordinateRegion: $region)
@@ -87,17 +79,17 @@ struct MapView: View {
           .cornerRadius(8)
           .opacity(0.6)
       )
-      .padding()
-      , alignment: .top
+      .padding(), alignment: .top
     )
   }
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct MapView_Previews: PreviewProvider {
   static var previews: some View {
     MapView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

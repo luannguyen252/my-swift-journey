@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct AnimalDetailView: View {
   // MARK: - PROPERTIES
-  
   let animal: Animal
 
   // MARK: - BODY
-
   var body: some View {
     ScrollView(.vertical, showsIndicators: false) {
       VStack(alignment: .center, spacing: 20) {
@@ -89,7 +81,7 @@ struct AnimalDetailView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct AnimalDetailView_Previews: PreviewProvider {
   static let animals: [Animal] = Bundle.main.decode("animals.json")
   
@@ -97,6 +89,7 @@ struct AnimalDetailView_Previews: PreviewProvider {
     NavigationView {
       AnimalDetailView(animal: animals[0])
     }
-    .previewDevice("iPhone 12 Pro")
+    .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

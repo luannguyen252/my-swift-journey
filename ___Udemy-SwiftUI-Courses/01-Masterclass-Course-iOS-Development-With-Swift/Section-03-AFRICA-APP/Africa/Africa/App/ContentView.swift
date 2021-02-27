@@ -1,25 +1,15 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct ContentView: View {
   // MARK: - PROPERTIES
-  
-  let animals: [Animal] = Bundle.main.decode("animals.json")
-  let haptics = UIImpactFeedbackGenerator(style: .medium)
-  
+  let animals: [Animal]                     = Bundle.main.decode("animals.json")
+  let haptics                               = UIImpactFeedbackGenerator(style: .medium)
   @State private var isGridViewActive: Bool = false
-  
   @State private var gridLayout: [GridItem] = [ GridItem(.flexible()) ]
-  @State private var gridColumn: Int = 1
-  @State private var toolbarIcon: String = "square.grid.2x2"
+  @State private var gridColumn: Int        = 1
+  @State private var toolbarIcon: String    = "square.grid.2x2"
   
   //: MARK - FUNCTIONS
-  
   func gridSwitch() {
     gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
     gridColumn = gridLayout.count
@@ -39,9 +29,7 @@ struct ContentView: View {
   }
 
   var body: some View {
-
     // MARK: - BODY
-    
     NavigationView {
       Group {
         if !isGridViewActive {
@@ -107,10 +95,11 @@ struct ContentView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct InsetGalleryView: View {
   // MARK: - PROPERTIES
-  
   let animal: Animal
   
   // MARK: - BODY
-
   var body: some View {
     ScrollView(.horizontal, showsIndicators: false) {
       HStack(alignment: .center, spacing: 15) {
@@ -29,7 +21,7 @@ struct InsetGalleryView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct InsetGalleryView_Previews: PreviewProvider {
   static let animals: [Animal] = Bundle.main.decode("animals.json")
   
@@ -39,3 +31,4 @@ struct InsetGalleryView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

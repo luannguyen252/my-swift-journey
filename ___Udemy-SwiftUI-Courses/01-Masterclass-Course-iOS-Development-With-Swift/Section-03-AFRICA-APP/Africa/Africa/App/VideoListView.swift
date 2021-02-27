@@ -1,20 +1,11 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct VideoListView: View {
   // MARK: - PROPERTIES
-  
-  @State var videos: [Video] = Bundle.main.decode("videos.json")
-  
-  let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
+  @State var videos: [Video]    = Bundle.main.decode("videos.json")
+  let hapticImpact              = UIImpactFeedbackGenerator(style: .medium)
 
   // MARK: - BODY
-
   var body: some View {
     NavigationView {
       List {
@@ -43,10 +34,11 @@ struct VideoListView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct VideoListView_Previews: PreviewProvider {
   static var previews: some View {
     VideoListView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct InsetFactView: View {
   // MARK: - PROPERTIES
-  
   let animal: Animal
 
   // MARK: - BODY
-
   var body: some View {
     GroupBox {
       TabView {
@@ -27,7 +19,7 @@ struct InsetFactView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct InsetFactView_Previews: PreviewProvider {
   static let animals: [Animal] = Bundle.main.decode("animals.json")
   
@@ -37,3 +29,4 @@ struct InsetFactView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

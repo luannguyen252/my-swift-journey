@@ -1,19 +1,11 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct MotionAnimationView: View {
   // MARK: - PROPERTIES
-  
-  @State private var randomCircle = Int.random(in: 12...16)
-  @State private var isAnimating: Bool = false
+  @State private var randomCircle       = Int.random(in: 12...16)
+  @State private var isAnimating: Bool  = false
   
   // MARK: - FUNCTIONS
-  
   // 1. RANDOM COORDINATE
   func randomCoordinate(max: CGFloat) -> CGFloat {
     return CGFloat.random(in: 0...max)
@@ -40,7 +32,6 @@ struct MotionAnimationView: View {
   }
   
   // MARK: - BODY
-
   var body: some View {
     GeometryReader { geometry in
       ZStack {
@@ -71,10 +62,11 @@ struct MotionAnimationView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct MotionAnimationView_Previews: PreviewProvider {
   static var previews: some View {
     MotionAnimationView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

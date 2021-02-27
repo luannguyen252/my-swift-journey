@@ -1,19 +1,11 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct MapAnnotationView: View {
   // MARK: - PROPERTIES
-  
   var location: NationalParkLocation
   @State private var animation: Double = 0.0
   
   // MARK: - BODY
-
   var body: some View {
     ZStack {
       Circle()
@@ -41,7 +33,7 @@ struct MapAnnotationView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct MapAnnotationView_Previews: PreviewProvider {
   static var locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
   
@@ -51,3 +43,4 @@ struct MapAnnotationView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

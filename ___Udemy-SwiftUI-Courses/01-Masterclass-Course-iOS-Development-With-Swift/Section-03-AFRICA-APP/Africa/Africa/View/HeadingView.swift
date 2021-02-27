@@ -1,19 +1,11 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct HeadingView: View {
   // MARK: - PROPERTIES
-  
   var headingImage: String
   var headingText: String
   
   // MARK: - BODY
-
   var body: some View {
     HStack {
       Image(systemName: headingImage)
@@ -29,7 +21,7 @@ struct HeadingView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct HeadingView_Previews: PreviewProvider {
   static var previews: some View {
     HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
@@ -37,3 +29,4 @@ struct HeadingView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

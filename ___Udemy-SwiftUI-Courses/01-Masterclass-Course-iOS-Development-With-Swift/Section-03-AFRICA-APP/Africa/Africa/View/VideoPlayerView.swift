@@ -1,20 +1,12 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 import AVKit
 
 struct VideoPlayerView: View {
   // MARK: - PROPERTIES
-  
   var videoSelected: String
   var videoTitle: String
 
   // MARK: - BODY
-
   var body: some View {
     VStack {
       VideoPlayer(player: playVideo(fileName: videoSelected, fileFormat: "mp4")) {
@@ -36,7 +28,7 @@ struct VideoPlayerView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct VideoPlayerView_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
@@ -44,3 +36,4 @@ struct VideoPlayerView_Previews: PreviewProvider {
     }
   }
 }
+#endif

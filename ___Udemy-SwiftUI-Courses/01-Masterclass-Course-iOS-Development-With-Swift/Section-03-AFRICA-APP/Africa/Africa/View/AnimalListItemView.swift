@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct AnimalListItemView: View {
   // MARK: - PROPERTIES
-  
   let animal: Animal
 
   // MARK: - BODY
-
   var body: some View {
     HStack(alignment: .center, spacing: 16) {
       Image(animal.image)
@@ -40,7 +32,7 @@ struct AnimalListItemView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct AnimalListItemView_Previews: PreviewProvider {
   static let animals: [Animal] = Bundle.main.decode("animals.json")
   
@@ -50,3 +42,4 @@ struct AnimalListItemView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

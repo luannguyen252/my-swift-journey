@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct VideoListItemView: View {
   // MARK: - PROPERTIES
-  
   let video: Video
 
   // MARK: - BODY
-
   var body: some View {
     HStack(spacing: 10) {
       ZStack {
@@ -45,7 +37,7 @@ struct VideoListItemView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct VideoListItem_Previews: PreviewProvider {
   static let videos: [Video] = Bundle.main.decode("videos.json")
   
@@ -55,3 +47,4 @@ struct VideoListItem_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif
