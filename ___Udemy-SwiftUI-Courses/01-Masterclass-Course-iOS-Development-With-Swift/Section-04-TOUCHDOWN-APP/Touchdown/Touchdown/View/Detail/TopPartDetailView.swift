@@ -1,19 +1,11 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct TopPartDetailView: View {
   // MARK: - PROPERTY
-  
   @EnvironmentObject var shop: Shop
   @State private var isAnimating: Bool = false
   
   // MARK: - BODY
-  
   var body: some View {
     HStack(alignment: .center, spacing: 6, content: {
       // PRICE
@@ -45,7 +37,7 @@ struct TopPartDetailView: View {
 }
 
 // MARK: - BODY
-
+#if DEBUG
 struct TopPartDetailView_Previews: PreviewProvider {
   static var previews: some View {
     TopPartDetailView()
@@ -54,3 +46,4 @@ struct TopPartDetailView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct AddToCartDetailView: View {
   // MARK: - PROPERTY
-  
   @EnvironmentObject var shop: Shop
   
   // MARK: - BODY
-  
   var body: some View {
     Button(action: {
       feedback.impactOccurred()
@@ -37,7 +29,7 @@ struct AddToCartDetailView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct AddToCartDetailView_Previews: PreviewProvider {
   static var previews: some View {
     AddToCartDetailView()
@@ -46,3 +38,4 @@ struct AddToCartDetailView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

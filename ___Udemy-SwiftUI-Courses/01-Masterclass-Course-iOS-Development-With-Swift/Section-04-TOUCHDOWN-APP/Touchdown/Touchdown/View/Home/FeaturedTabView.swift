@@ -1,24 +1,24 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct FeaturedTabView: View {
-  var body: some View {
-    TabView {
-      ForEach(players) { player in
-        FeaturedItemView(player: player)
-          .padding(.top, 10)
-          .padding(.horizontal, 15)
-      }
-    } //: TAB
-    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-  }
+    // MARK: - PROPERTY
+    
+    // MARK: - BODY
+    var body: some View {
+        TabView {
+            ForEach(players) { player in
+                FeaturedItemView(player: player)
+                    .padding(.vertical, 0)
+                    .padding(.horizontal, 15)
+            }
+        } //: TAB
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        .frame(height: 200)
+    }
 }
 
+// MARK: - PREVIEWS
+#if DEBUG
 struct FeaturedTabView_Previews: PreviewProvider {
   static var previews: some View {
     FeaturedTabView()
@@ -26,3 +26,4 @@ struct FeaturedTabView_Previews: PreviewProvider {
       .background(Color.gray)
   }
 }
+#endif

@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct ProductItemView: View {
   // MARK: - PROPERTY
-  
   let product: Product
   
   // MARK: - BODY
-  
   var body: some View {
     VStack(alignment: .leading, spacing: 6, content: {
       // PHOTO
@@ -39,7 +31,7 @@ struct ProductItemView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct ProductItemView_Previews: PreviewProvider {
   static var previews: some View {
     ProductItemView(product: products[0])
@@ -48,3 +40,4 @@ struct ProductItemView_Previews: PreviewProvider {
       .background(colorBackground)
   }
 }
+#endif

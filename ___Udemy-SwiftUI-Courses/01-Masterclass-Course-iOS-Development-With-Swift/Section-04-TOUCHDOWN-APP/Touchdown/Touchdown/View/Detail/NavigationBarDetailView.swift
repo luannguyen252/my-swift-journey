@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct NavigationBarDetailView: View {
   // MARK: - PROPERTY
-  
   @EnvironmentObject var shop: Shop
     
   // MARK: - BODY
-  
   var body: some View {
     HStack {
       Button(action: {
@@ -39,7 +31,7 @@ struct NavigationBarDetailView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct NavigationBarDetailView_Previews: PreviewProvider {
   static var previews: some View {
     NavigationBarDetailView()
@@ -49,3 +41,4 @@ struct NavigationBarDetailView_Previews: PreviewProvider {
       .background(Color.gray)
   }
 }
+#endif

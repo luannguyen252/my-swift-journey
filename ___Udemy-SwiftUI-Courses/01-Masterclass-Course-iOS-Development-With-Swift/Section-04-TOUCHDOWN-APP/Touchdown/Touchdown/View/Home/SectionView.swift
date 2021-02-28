@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct SectionView: View {
   // MARK: - PROPERTY
-  
   @State var rotateClockwise: Bool
   
   // MARK: - BODY
-  
   var body: some View {
     VStack(spacing: 0) {
       Spacer()
@@ -31,7 +23,7 @@ struct SectionView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct SectionView_Previews: PreviewProvider {
   static var previews: some View {
     SectionView(rotateClockwise: true)
@@ -40,3 +32,4 @@ struct SectionView_Previews: PreviewProvider {
       .background(colorBackground)
   }
 }
+#endif

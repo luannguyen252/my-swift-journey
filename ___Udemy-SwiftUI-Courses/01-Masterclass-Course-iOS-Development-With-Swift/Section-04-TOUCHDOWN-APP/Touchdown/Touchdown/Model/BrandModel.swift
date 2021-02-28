@@ -1,12 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import Foundation
 
+// MARK: - BRAND DATA MODEL
 struct Brand: Codable, Identifiable {
-  let id: Int
-  let image: String
+  let id    : Int
+  let image : String
 }

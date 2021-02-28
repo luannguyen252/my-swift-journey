@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct QuantityFavouriteDetailView: View {
   // MARK: - PROPERTY
-  
   @State private var counter: Int = 0
   
   // MARK: - BODY
-  
   var body: some View {
     HStack(alignment: .center, spacing: 6, content: {
       Button(action: {
@@ -53,7 +45,7 @@ struct QuantityFavouriteDetailView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct QuantityFavouriteDetailView_Previews: PreviewProvider {
   static var previews: some View {
     QuantityFavouriteDetailView()
@@ -61,3 +53,4 @@ struct QuantityFavouriteDetailView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

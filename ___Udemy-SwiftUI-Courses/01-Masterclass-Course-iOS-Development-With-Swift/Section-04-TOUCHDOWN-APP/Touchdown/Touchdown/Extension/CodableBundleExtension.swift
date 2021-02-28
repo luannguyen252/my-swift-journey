@@ -1,9 +1,3 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import Foundation
 
 extension Bundle {
@@ -12,7 +6,7 @@ extension Bundle {
     guard let url = self.url(forResource: file, withExtension: nil) else {
       fatalError("Failed to locate \(file) in bundle.")
     }
-    
+
     // 2. Create a property for the data
     guard let data = try? Data(contentsOf: url) else {
       fatalError("Failed to load \(file) from bundle.")

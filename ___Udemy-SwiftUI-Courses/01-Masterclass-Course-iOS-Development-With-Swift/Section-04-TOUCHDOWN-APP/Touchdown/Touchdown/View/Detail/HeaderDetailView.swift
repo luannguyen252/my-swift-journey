@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct HeaderDetailView: View {
   // MARK: - PROPERTY
-  
   @EnvironmentObject var shop: Shop
   
   // MARK: - BODY
-  
   var body: some View {
     VStack(alignment: .leading, spacing: 6, content: {
       Text("Protective Gear")
@@ -26,7 +18,7 @@ struct HeaderDetailView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct HeaderDetailView_Previews: PreviewProvider {
   static var previews: some View {
     HeaderDetailView()
@@ -36,3 +28,4 @@ struct HeaderDetailView_Previews: PreviewProvider {
       .background(Color.gray)
   }
 }
+#endif

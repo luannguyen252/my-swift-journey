@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct NavigationBarView: View {
   // MARK: - PROPERTY
-  
   @State private var isAnimated: Bool = false
   
   // MARK: - BODY
-  
   var body: some View {
     HStack {
       Button(action: {}, label: {
@@ -51,7 +43,7 @@ struct NavigationBarView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct NavigationBarView_Previews: PreviewProvider {
   static var previews: some View {
     NavigationBarView()
@@ -59,3 +51,4 @@ struct NavigationBarView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

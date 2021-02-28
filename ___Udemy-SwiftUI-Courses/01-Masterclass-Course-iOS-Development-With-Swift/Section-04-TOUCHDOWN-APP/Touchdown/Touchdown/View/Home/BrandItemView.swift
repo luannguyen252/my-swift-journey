@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct BrandItemView: View {
   // MARK: - PROPERTY
-  
   let brand: Brand
   
   // MARK: - BODY
-  
   var body: some View {
     Image(brand.image)
       .resizable()
@@ -26,7 +18,7 @@ struct BrandItemView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct BrandItemView_Previews: PreviewProvider {
   static var previews: some View {
     BrandItemView(brand: brands[0])
@@ -35,3 +27,4 @@ struct BrandItemView_Previews: PreviewProvider {
       .background(colorBackground)
   }
 }
+#endif

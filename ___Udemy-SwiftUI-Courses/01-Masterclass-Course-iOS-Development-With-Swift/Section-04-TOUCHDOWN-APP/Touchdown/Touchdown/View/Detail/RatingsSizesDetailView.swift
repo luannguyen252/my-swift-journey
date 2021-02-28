@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct RatingsSizesDetailView: View {
   // MARK: - PROPERTY
-  
   let sizes: [String] = ["XS", "S", "M", "L", "XL"]
   
   // MARK: - BODY
-  
   var body: some View {
     HStack(alignment: .top, spacing: 3, content: {
       // RATINGS
@@ -65,7 +57,7 @@ struct RatingsSizesDetailView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct RatingsSizesDetailView_Previews: PreviewProvider {
   static var previews: some View {
     RatingsSizesDetailView()
@@ -73,3 +65,4 @@ struct RatingsSizesDetailView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

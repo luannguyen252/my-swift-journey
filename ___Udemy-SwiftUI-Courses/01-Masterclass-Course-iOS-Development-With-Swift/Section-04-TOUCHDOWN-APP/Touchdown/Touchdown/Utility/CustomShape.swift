@@ -1,11 +1,6 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
+// MARK: - CUSTOM SHAPE
 struct CustomShape: Shape {
   func path(in rect: CGRect) -> Path {
     let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 35, height: 35))
@@ -14,6 +9,8 @@ struct CustomShape: Shape {
   }
 }
 
+// MARK: - PREVIEWS
+#if DEBUG
 struct CustomShape_Previews: PreviewProvider {
   static var previews: some View {
     CustomShape()
@@ -21,3 +18,4 @@ struct CustomShape_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

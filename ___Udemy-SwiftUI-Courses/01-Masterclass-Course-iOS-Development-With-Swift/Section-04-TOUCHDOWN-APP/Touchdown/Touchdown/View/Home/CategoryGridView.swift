@@ -1,16 +1,9 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct CategoryGridView: View {
   // MARK: - PROPERTY
   
   // MARK: - BODY
-  
   var body: some View {
     ScrollView(.horizontal, showsIndicators: false, content: {
       LazyHGrid(rows: gridLayout, alignment: .center, spacing: columnSpacing, pinnedViews: [], content: {
@@ -31,7 +24,7 @@ struct CategoryGridView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct CategoryGridView_Previews: PreviewProvider {
   static var previews: some View {
     CategoryGridView()
@@ -40,3 +33,4 @@ struct CategoryGridView_Previews: PreviewProvider {
       .background(colorBackground)
   }
 }
+#endif

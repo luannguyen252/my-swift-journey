@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct CategoryItemView: View {
   // MARK: - PROPERTY
-  
   let category: Category
   
   // MARK: - BODY
-  
   var body: some View {
     Button(action: {}, label: {
       HStack(alignment: .center, spacing: 6) {
@@ -40,7 +32,7 @@ struct CategoryItemView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct CategoryItemView_Previews: PreviewProvider {
   static var previews: some View {
     CategoryItemView(category: categories[0])
@@ -49,3 +41,4 @@ struct CategoryItemView_Previews: PreviewProvider {
       .background(colorBackground)
   }
 }
+#endif

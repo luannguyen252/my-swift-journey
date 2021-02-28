@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct ProductDetailView: View {
   // MARK: - PROPERTY
-  
   @EnvironmentObject var shop: Shop
   
   // MARK: - BODY
-  
   var body: some View {
     VStack(alignment: .leading, spacing: 5, content: {
       // NAVBAR
@@ -66,13 +58,14 @@ struct ProductDetailView: View {
         red: shop.selectedProduct?.red ?? sampleProduct.red,
         green: shop.selectedProduct?.green ?? sampleProduct.green,
         blue: shop.selectedProduct?.blue ?? sampleProduct.blue
-      ).ignoresSafeArea(.all, edges: .all)
+      )
+      .ignoresSafeArea(.all, edges: .all)
     )
   }
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct ProductDetailView_Previews: PreviewProvider {
   static var previews: some View {
     ProductDetailView()
@@ -80,3 +73,4 @@ struct ProductDetailView_Previews: PreviewProvider {
       .previewLayout(.fixed(width: 375, height: 812))
   }
 }
+#endif

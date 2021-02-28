@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct TitleView: View {
-  // MARK: - PREVIEW
-  
+  // MARK: - PROPERTY
   var title: String
   
   // MARK: - BODY
-  
   var body: some View {
     HStack {
       Text(title)
@@ -28,7 +20,7 @@ struct TitleView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct TitleView_Previews: PreviewProvider {
   static var previews: some View {
     TitleView(title: "Helmet")
@@ -36,3 +28,4 @@ struct TitleView_Previews: PreviewProvider {
       .background(colorBackground)
   }
 }
+#endif

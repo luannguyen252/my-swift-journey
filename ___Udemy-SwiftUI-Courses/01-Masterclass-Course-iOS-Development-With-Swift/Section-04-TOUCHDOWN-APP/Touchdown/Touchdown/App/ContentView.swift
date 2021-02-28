@@ -1,18 +1,10 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct ContentView: View {
   // MARK: - PROPERTY
-  
   @EnvironmentObject var shop: Shop
   
   // MARK: - BODY
-  
   var body: some View {
     ZStack {
       if shop.showingProduct == false && shop.selectedProduct == nil {
@@ -68,11 +60,12 @@ struct ContentView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
       .environmentObject(Shop())
   }
 }
+#endif
