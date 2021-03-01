@@ -1,13 +1,6 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 // MARK: - CARD DATA
-
 let cardData: [Card] = [
   Card(
     title: "SwiftUI 2",

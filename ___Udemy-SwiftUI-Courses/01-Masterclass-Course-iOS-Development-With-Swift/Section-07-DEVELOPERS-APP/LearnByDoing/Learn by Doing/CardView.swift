@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct CardView: View {
   // MARK: - PROPERTIES
-  
   var card: Card
   
   @State private var fadeIn: Bool = false
@@ -19,7 +12,6 @@ struct CardView: View {
   var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
   
   // MARK: - CARD
-  
   var body: some View {
     ZStack {
       Image(card.imageName)
@@ -85,10 +77,11 @@ struct CardView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct CardView_Previews: PreviewProvider {
   static var previews: some View {
     CardView(card: cardData[2])
       .previewLayout(.sizeThatFits)
   }
 }
+#endif

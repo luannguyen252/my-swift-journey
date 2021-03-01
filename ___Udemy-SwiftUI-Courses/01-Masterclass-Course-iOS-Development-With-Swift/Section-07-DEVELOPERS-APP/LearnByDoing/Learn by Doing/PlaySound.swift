@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import Foundation
 import AVFoundation
 
 // MARK: - AUDIO PLAYER
-
 var audioPlayer: AVAudioPlayer?
 
 func playSound(sound: String, type: String) {
