@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct RipeningStagesView: View {
   // MARK: - PROPERTIES
-  
   var ripeningStages: [Ripening] = ripeningData
   
   var body: some View {

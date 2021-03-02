@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct RecipeDetailView: View {
   // MARK: - PROPERTIES
-  
   var recipe: Recipe
   
   @State private var pulsate: Bool = false

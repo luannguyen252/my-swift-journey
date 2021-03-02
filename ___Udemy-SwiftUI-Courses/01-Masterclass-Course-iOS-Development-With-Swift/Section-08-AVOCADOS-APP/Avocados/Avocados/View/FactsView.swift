@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct FactsView: View {
   // MARK: - PROPERTIES
-  
   var fact: Fact
   
   var body: some View {

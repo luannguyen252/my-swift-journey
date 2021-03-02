@@ -1,13 +1,6 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 // MARK: - RIPENING DATA
-
 let ripeningData: [Ripening] = [
   Ripening(
     image: "avocado-ripening-1",

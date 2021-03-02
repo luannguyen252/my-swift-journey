@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct HeaderView: View {
   // MARK: - PROPERTIES
-  
   var header: Header
   
   @State private var showHeadline: Bool = false

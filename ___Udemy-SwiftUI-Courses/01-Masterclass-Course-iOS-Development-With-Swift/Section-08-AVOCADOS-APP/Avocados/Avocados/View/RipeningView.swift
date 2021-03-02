@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct RipeningView: View {
   // MARK: PROPERTIES
-  
   var ripening: Ripening
   
   @State private var slideInAnimation: Bool = false

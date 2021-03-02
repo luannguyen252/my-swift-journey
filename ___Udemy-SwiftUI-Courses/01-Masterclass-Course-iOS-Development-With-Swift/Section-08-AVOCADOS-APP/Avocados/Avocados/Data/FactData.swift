@@ -1,13 +1,6 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 // MARK: - FACTS DATA
-
 let factsData: [Fact] = [
   Fact(
     image: "avocado-fact-1",

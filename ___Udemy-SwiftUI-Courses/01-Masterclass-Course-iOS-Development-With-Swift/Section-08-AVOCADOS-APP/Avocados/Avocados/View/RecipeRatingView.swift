@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct RecipeRatingView: View {
   // MARK: - PROPERTIES
-  
   var recipe: Recipe
   
   var body: some View {

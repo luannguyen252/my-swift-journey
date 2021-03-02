@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct SettingsView: View {
   // MARK: - PROPERTIES
-  
   @State private var enableNotification: Bool = true
   @State private var backgroundRefresh: Bool = false
   
@@ -58,17 +51,17 @@ struct SettingsView: View {
             HStack {
               Text("Developer").foregroundColor(Color.gray)
               Spacer()
-              Text("John / Jane")
+              Text("Luan Nguyen")
             }
             HStack {
               Text("Designer").foregroundColor(Color.gray)
               Spacer()
-              Text("Robert Petras")
+              Text("Luan Nguyen")
             }
             HStack {
               Text("Website").foregroundColor(Color.gray)
               Spacer()
-              Text("swiftuimasterclass.com")
+              Text("luannguyen.design")
             }
             HStack {
               Text("Version").foregroundColor(Color.gray)

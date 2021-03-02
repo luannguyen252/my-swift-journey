@@ -1,9 +1,3 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct AppView: View {
@@ -37,7 +31,7 @@ struct AppView: View {
 struct AppView_Previews: PreviewProvider {
   static var previews: some View {
     AppView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
       .environment(\.colorScheme, .dark)
   }
 }

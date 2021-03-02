@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct ContentView: View {
   // MARK: - PROPERTIES
-  
   var headers: [Header] = headersData
   var facts: [Fact] = factsData
   var recipes: [Recipe] = recipesData
@@ -17,7 +10,6 @@ struct ContentView: View {
     ScrollView(.vertical, showsIndicators: false) {
       VStack(alignment: .center, spacing: 20) {
         // MARK: - HEADER
-        
         ScrollView(.horizontal, showsIndicators: false) {
           HStack(alignment: .top, spacing: 0) {
             ForEach(headers) { item in
@@ -27,7 +19,6 @@ struct ContentView: View {
         }
         
         // MARK: - DISHES
-        
         Text("Avocado Dishes")
           .fontWeight(.bold)
           .modifier(TitleModifier())
@@ -36,7 +27,6 @@ struct ContentView: View {
           .frame(maxWidth: 640)
         
         // MARK: - AVOCADO FACTS
-        
         Text("Avocado Facts")
           .fontWeight(.bold)
           .modifier(TitleModifier())
@@ -53,7 +43,6 @@ struct ContentView: View {
         }
         
         // MARK: - RECIPE CARDS
-        
         Text("Avocado Recipes")
           .fontWeight(.bold)
           .modifier(TitleModifier())
@@ -67,7 +56,6 @@ struct ContentView: View {
         .padding(.horizontal)
         
         // MARK: - FOOTER
-        
         VStack(alignment: .center, spacing: 20) {
           Text("All About Avocados")
             .fontWeight(.bold)
@@ -100,6 +88,6 @@ struct TitleModifier: ViewModifier {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView(headers: headersData, facts: factsData, recipes: recipesData)
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }

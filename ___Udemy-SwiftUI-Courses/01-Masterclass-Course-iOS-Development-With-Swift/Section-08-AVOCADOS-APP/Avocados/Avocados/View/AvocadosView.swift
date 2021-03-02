@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct AvocadosView: View {
   // MARK: - PROPERTIES
-  
   @State private var pulsateAnimation: Bool = false
   
   var body: some View {
@@ -60,7 +53,7 @@ Avocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado r
 struct AvocadosView_Previews: PreviewProvider {
   static var previews: some View {
     AvocadosView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
       .environment(\.colorScheme, .dark)
   }
 }
