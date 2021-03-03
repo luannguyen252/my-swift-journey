@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-  
   var window: UIWindow?
   
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -65,7 +58,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 
 // MARK: - ALTERNATE ICONS
-
 class IconNames: ObservableObject {
   var iconNames: [String?] = [nil]
   @Published var currentIndex = 0

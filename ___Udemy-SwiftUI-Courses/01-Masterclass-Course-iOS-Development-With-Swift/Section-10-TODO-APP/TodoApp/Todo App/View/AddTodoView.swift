@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct AddTodoView: View {
   // MARK: - PROPERTIES
-  
   @Environment(\.managedObjectContext) var managedObjectContext
   @Environment(\.presentationMode) var presentationMode
   
@@ -22,12 +15,10 @@ struct AddTodoView: View {
   @State private var errorMessage: String = ""
   
   // THEME
-  
   @ObservedObject var theme = ThemeSettings.shared
   var themes: [Theme] = themeData
   
   // MARK: - BODY
-  
   var body: some View {
     NavigationView {
       VStack {
@@ -100,10 +91,11 @@ struct AddTodoView: View {
 }
 
 // MARK: - PREIVIEW
-
+#if DEBUG
 struct AddTodoView_Previews: PreviewProvider {
   static var previews: some View {
     AddTodoView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

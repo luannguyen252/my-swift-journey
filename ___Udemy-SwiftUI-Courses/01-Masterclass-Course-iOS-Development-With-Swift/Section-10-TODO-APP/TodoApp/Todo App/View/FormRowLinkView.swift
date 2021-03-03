@@ -1,21 +1,13 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct FormRowLinkView: View {
   // MARK: - PROPERTIES
-  
   var icon: String
   var color: Color
   var text: String
   var link: String
   
   // MARK: - BODY
-  
   var body: some View {
     HStack {
       ZStack {
@@ -47,11 +39,12 @@ struct FormRowLinkView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct FormRowLinkView_Previews: PreviewProvider {
   static var previews: some View {
-    FormRowLinkView(icon: "globe", color: Color.pink, text: "Website", link: "https://swiftuimasterclass.com")
+    FormRowLinkView(icon: "globe", color: Color.pink, text: "Website", link: "https://luannguyen.design")
       .previewLayout(.fixed(width: 375, height: 60))
       .padding()
   }
 }
+#endif

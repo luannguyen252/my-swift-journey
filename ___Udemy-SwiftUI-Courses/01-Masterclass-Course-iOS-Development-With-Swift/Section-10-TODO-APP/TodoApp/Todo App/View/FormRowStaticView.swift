@@ -1,20 +1,12 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct FormRowStaticView: View {
   // MARK: - PROPERTIES
-  
   var icon: String
   var firstText: String
   var secondText: String
   
   // MARK: - BODY
-  
   var body: some View {
     HStack {
       ZStack {
@@ -33,7 +25,7 @@ struct FormRowStaticView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct FormRowStaticView_Previews: PreviewProvider {
   static var previews: some View {
     FormRowStaticView(icon: "gear", firstText: "Application", secondText: "Todo")
@@ -41,3 +33,4 @@ struct FormRowStaticView_Previews: PreviewProvider {
       .padding()
   }
 }
+#endif

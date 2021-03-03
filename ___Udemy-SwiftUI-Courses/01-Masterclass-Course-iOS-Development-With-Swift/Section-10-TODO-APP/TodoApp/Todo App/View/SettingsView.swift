@@ -1,33 +1,22 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct SettingsView: View {
   // MARK: - PROPERTIES
-  
   @Environment(\.presentationMode) var presentationMode
   @EnvironmentObject var iconSettings: IconNames
   
   // THEME
-  
   let themes: [Theme] = themeData
   @ObservedObject var theme = ThemeSettings.shared
   @State private var isThemeChanged: Bool = false
   
   // MARK: - BODY
-  
   var body: some View {
     NavigationView {
       VStack(alignment: .center, spacing: 0) {
         // MARK: - FORM
-        
         Form {
           // MARK: - SECTION 1
-          
           Section(header: Text("Choose the app icon")) {
             Picker(selection: $iconSettings.currentIndex, label:
               HStack {
@@ -45,7 +34,6 @@ struct SettingsView: View {
                   .fontWeight(.bold)
                   .foregroundColor(Color.primary)
               } //: LABEL
-              
             ) {
               ForEach(0..<iconSettings.iconNames.count) { index in
                 HStack {
@@ -80,7 +68,6 @@ struct SettingsView: View {
             .padding(.vertical, 3)
           
           // MARK: - SECTION 2
-          
           Section(header:
             HStack {
               Text("Choose the app theme")
@@ -118,22 +105,20 @@ struct SettingsView: View {
           }
           
           // MARK: - SECTION 3
-          
           Section(header: Text("Follow us on social media")) {
-            FormRowLinkView(icon: "globe", color: Color.pink, text: "Website", link: "https://swiftuimasterclass.com")
-            FormRowLinkView(icon: "link", color: Color.blue, text: "Twitter", link: "https://twitter.com/robertpetras")
-            FormRowLinkView(icon: "play.rectangle", color: Color.green, text: "Courses", link: "https://www.udemy.com/user/robert-petras")
+            FormRowLinkView(icon: "globe", color: Color.pink, text: "Website", link: "https://luannguyen.design")
+            FormRowLinkView(icon: "link", color: Color.blue, text: "Twitter", link: "https://twitter.com/luannguyen252")
+            FormRowLinkView(icon: "play.rectangle", color: Color.green, text: "Courses", link: "https://designstack.dev/")
           } //: SECTION 3
             .padding(.vertical, 3)
           
           // MARK: - SECTION 4
-          
           Section(header: Text("About the application")) {
             FormRowStaticView(icon: "gear", firstText: "Application", secondText: "Todo")
             FormRowStaticView(icon: "checkmark.seal", firstText: "Compatibility", secondText: "iPhone, iPad")
-            FormRowStaticView(icon: "keyboard", firstText: "Developer", secondText: "John / Jane")
-            FormRowStaticView(icon: "paintbrush", firstText: "Designer", secondText: "Robert Petras")
-            FormRowStaticView(icon: "flag", firstText: "Version", secondText: "1.5.0")
+            FormRowStaticView(icon: "keyboard", firstText: "Developer", secondText: "Luan Nguyen")
+            FormRowStaticView(icon: "paintbrush", firstText: "Designer", secondText: "Luan Nguyen")
+            FormRowStaticView(icon: "flag", firstText: "Version", secondText: "1.0.0")
           } //: SECTION 4
             .padding(.vertical, 3)
         } //: FORM
@@ -141,7 +126,6 @@ struct SettingsView: View {
           .environment(\.horizontalSizeClass, .regular)
         
         // MARK: - FOOTER
-        
         Text("Copyright © All rights reserved.\nBetter Apps ♡ Less Code")
           .multilineTextAlignment(.center)
           .font(.footnote)
@@ -165,10 +149,11 @@ struct SettingsView: View {
 }
 
 // MARK: - PREIVEW
-
+#if DEBUG
 struct SettingsView_Previews: PreviewProvider {
   static var previews: some View {
     SettingsView().environmentObject(IconNames())
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

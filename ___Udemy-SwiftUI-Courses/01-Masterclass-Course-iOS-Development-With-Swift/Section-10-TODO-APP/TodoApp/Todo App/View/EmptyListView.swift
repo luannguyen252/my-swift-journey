@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct EmptyListView: View {
   // MARK: - PROPERTIES
-  
   @State private var isAnimated: Bool = false
   
   let images: [String] = [
@@ -28,12 +21,10 @@ struct EmptyListView: View {
   ]
   
   // THEME
-  
   @ObservedObject var theme = ThemeSettings.shared
   var themes: [Theme] = themeData
   
   // MARK: - BODY
-  
   var body: some View {
     ZStack {
       VStack(alignment: .center, spacing: 20) {
@@ -65,11 +56,12 @@ struct EmptyListView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct EmptyListView_Previews: PreviewProvider {
   static var previews: some View {
     EmptyListView()
       // .environment(\.colorScheme, .dark)
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif

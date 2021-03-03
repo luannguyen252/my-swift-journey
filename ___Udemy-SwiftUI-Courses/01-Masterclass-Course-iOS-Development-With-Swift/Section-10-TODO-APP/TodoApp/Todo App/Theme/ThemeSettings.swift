@@ -1,13 +1,6 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 // MARK: - THEME CLASS
-
 final public class ThemeSettings: ObservableObject {
   @Published public var themeSettings: Int = UserDefaults.standard.integer(forKey: "Theme") {
     didSet {

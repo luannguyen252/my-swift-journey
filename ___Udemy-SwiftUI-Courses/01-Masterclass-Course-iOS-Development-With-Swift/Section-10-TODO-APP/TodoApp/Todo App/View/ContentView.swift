@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
 import SwiftUI
 
 struct ContentView: View {
   // MARK: - PROPERTIES
-  
   @Environment(\.managedObjectContext) var managedObjectContext
   
   @FetchRequest(entity: Todo.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Todo.name, ascending: true)]) var todos: FetchedResults<Todo>
@@ -24,7 +17,6 @@ struct ContentView: View {
   var themes: [Theme] = themeData
   
   // MARK: - BODY
-  
   var body: some View {
     NavigationView {
       ZStack {
@@ -115,7 +107,6 @@ struct ContentView: View {
   }
   
   // MARK: - FUNCTIONS
-  
   private func deleteTodo(at offsets: IndexSet) {
     for index in offsets {
       let todo = todos[index]
@@ -144,12 +135,13 @@ struct ContentView: View {
 }
 
 // MARK: - PREVIEW
-
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
       return ContentView()
         .environment(\.managedObjectContext, context)
-        .previewDevice("iPhone 12 Pro")
+        .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif
