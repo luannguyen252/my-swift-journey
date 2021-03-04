@@ -1,9 +1,3 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com
-//
-
 import SwiftUI
 
 struct GuideComponent: View {
@@ -13,6 +7,7 @@ struct GuideComponent: View {
   var description: String
   var icon: String
   
+  // MARK: - BODY
   var body: some View {
     HStack(alignment: .center, spacing: 20) {
       Image(systemName: icon)
@@ -40,6 +35,8 @@ struct GuideComponent: View {
   }
 }
 
+// MARK: - PREVIEWS
+#if DEBUG
 struct GuideComponent_Previews: PreviewProvider {
   static var previews: some View {
     GuideComponent(
@@ -50,3 +47,4 @@ struct GuideComponent_Previews: PreviewProvider {
       .previewLayout(.sizeThatFits)
   }
 }
+#endif

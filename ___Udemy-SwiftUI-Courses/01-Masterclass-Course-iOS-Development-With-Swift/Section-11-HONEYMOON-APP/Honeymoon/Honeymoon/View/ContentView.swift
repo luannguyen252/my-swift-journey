@@ -1,14 +1,7 @@
-//
-//  Created by Robert Petras
-//  SwiftUI Masterclass ♥ Better Apps. Less Code.
-//  https://swiftuimasterclass.com 
-//
-
-import SwiftUI 
+import SwiftUI
 
 struct ContentView: View {
   // MARK: - PROPERTIES
-  
   @State var showAlert: Bool = false
   @State var showGuide: Bool = false
   @State var showInfo: Bool = false
@@ -18,7 +11,6 @@ struct ContentView: View {
   @State private var cardRemovalTransition = AnyTransition.trailingBottom
   
   // MARK: - CARD VIEWS
-  
   @State var cardViews: [CardView] = {
     var views = [CardView]()
     for index in 0..<2 {
@@ -28,7 +20,6 @@ struct ContentView: View {
   }()
   
   // MARK: - MOVE THE CARD
-  
   private func moveCards() {
     cardViews.removeFirst()
     
@@ -42,7 +33,6 @@ struct ContentView: View {
   }
   
   // MARK: TOP CARD
-  
   private func isTopCard(cardView: CardView) -> Bool {
     guard let index = cardViews.firstIndex(where: { $0.id == cardView.id }) else {
       return false
@@ -51,7 +41,6 @@ struct ContentView: View {
   }
   
   // MARK: - DRAG STATES
-  
   enum DragState {
     case inactive
     case pressing
@@ -172,9 +161,12 @@ struct ContentView: View {
   }
 }
 
+// MARK: - PREVIEWS
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
-      .previewDevice("iPhone 12 Pro")
+      .previewDevice("iPhone 12 Pro Max")
   }
 }
+#endif
