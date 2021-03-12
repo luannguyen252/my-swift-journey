@@ -32,6 +32,12 @@ Visit SwiftUI Tutorials from Apple: [SwiftUI Tutorials](https://developer.apple.
 
 ---
 
+## Courses
+
+[SwiftUI for Designers](https://swiftui.design/guide)
+
+---
+
 ## Navigation View
 
 ```swift
